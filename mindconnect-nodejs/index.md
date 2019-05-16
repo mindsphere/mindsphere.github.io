@@ -7,7 +7,7 @@ show_mit_license_text: True
 
 ## Introduction 
 
-This is the documentation for the MindConnect-NodeJs library and CLI. 
+This is the documentation for the MindConnect-NodeJs library and CLI. The development of this package has started as community effort at Siemens and is now managed as open source library under the MIT License.
 
 ## What is it
 
@@ -15,8 +15,7 @@ This is a nodejs library which can be used as a starting point for custom agent 
 
 ## Prerequisites
 
-You will need [<i class="fab fa-node"></i> Node.js](https://nodejs.org) which can be acquired from [nodejs.org](https://nodejs.org/en/download/).
-
+You will need [<i class="fab fa-node"></i> Node.js](https://nodejs.org) which can be acquired from [nodejs.org](https://nodejs.org/en/download/). The library can be installed everywhere where nodejs is running (Windows, Linux MacOS, Raspbian...)
 
 ## Getting and Installing the MindConnect-NodeJS Library
 
