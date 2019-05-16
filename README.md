@@ -1,2 +1,2 @@
-# mindsphere.github.io
-Community Documentation
+# MindSphere Community Documentation
+
