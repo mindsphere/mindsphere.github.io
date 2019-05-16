@@ -1,5 +1,5 @@
 ---
-title: MindConnect-NodeJS - Setting up the CLI
+title: MindConnect-NodeJS - CLI - Setting up the CLI
 hide_license_text: True
 show_mit_license_text: True
 ---

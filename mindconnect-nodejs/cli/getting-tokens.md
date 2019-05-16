@@ -1,10 +1,10 @@
 ---
-title: MindConnect-NodeJS - Getting Tokens
+title: MindConnect-NodeJS - CLI - Getting Tokens
 hide_license_text: True
 show_mit_license_text: True
 ---
 
-# Getting Tokens
+# MindConnect NodeJS - CLI - <small>Getting Tokens</small>
 
 Sometimes it is required during development to have an easy way to get a valid service token or agent token for the tools which are using MindSphere API (curl, postman...)
 
