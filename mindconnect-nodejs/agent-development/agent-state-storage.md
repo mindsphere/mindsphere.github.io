@@ -99,7 +99,7 @@ export class MySecureStorage implements IConfigurationStorage {
         const fileName = `${this._basePath}/${config.content.clientId}.bin`;
         return await this.lock.acquire(fileName, () => {
             const data = JSON.stringify(config);
-            fs.writeFileSync(fileName, tihs.encrypt(data));
+            fs.writeFileSync(fileName, this.encrypt(data));
             return config;
         });
     }
