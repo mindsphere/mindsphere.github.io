@@ -16,7 +16,7 @@ This state information consists of
 
 This information needs to be persisted over time. 
 
-``` info
+!!! info
     The agent stores the eTag of the file so that they can overwrite these files in the future. 
     This will change once agents can read the eTags of the files.
 
