@@ -4,7 +4,7 @@ hide_license_text: True
 show_mit_license_text: True
 ---
 
-#MindConnect-NodeJS - <small>Setting up the CLI</small>
+# MindConnect-NodeJS - <small>Setting up the CLI</small>
 
 ## Acquiring service credentials
 

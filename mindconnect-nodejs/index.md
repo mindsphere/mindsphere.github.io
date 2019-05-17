@@ -15,7 +15,7 @@ This is a nodejs library which can be used as a starting point for custom agent 
 
 ## Prerequisites
 
-You will need [<i class="fab fa-node"></i> Node.js](https://nodejs.org) which can be acquired from [nodejs.org](https://nodejs.org/en/download/). The library can be installed everywhere where nodejs is running (Windows, Linux MacOS, Raspbian...)
+You will need [<i class="fab fa-node"></i> Node.js](https://nodejs.org) which can be acquired from [nodejs.org](https://nodejs.org/en/download/). The library can be installed everywhere where nodejs is running (<i class="fab fa-windows"></i> Windows,<i class="fab fa-linux"></i> Linux, <i class="fab fa-apple"></i>OSX , <i class="fab fa-raspberry-pi"></i> Raspbian...)
 
 ## Getting and Installing the MindConnect-NodeJS Library
 

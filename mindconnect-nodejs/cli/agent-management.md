@@ -4,7 +4,7 @@ hide_license_text: True
 show_mit_license_text: True
 ---
 
-#MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
+# MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
 
 ## Acquiring the agent credentials from the mindsphere
 

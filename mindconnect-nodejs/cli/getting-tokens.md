@@ -6,6 +6,8 @@ show_mit_license_text: True
 
 # MindConnect NodeJS - CLI - <small>Getting Tokens</small>
 
+## Introduction
+
 Sometimes it is required during development to have an easy way to get a valid service token or agent token for the tools which are using MindSphere API (curl, postman...)
 
 The CLI provides two utility commands which can generate a service credential token and agent token.
@@ -57,6 +59,7 @@ You can run the command like this to pipe the output directly to the clipboard:
 ```
 mc service-token --passkey {yourpasskey} | clip
 ```
+
 !!! info
     running the ```mc service-token --passkey {yourpasskey} --verbose``` command will also print out the decrypted token content.
 
