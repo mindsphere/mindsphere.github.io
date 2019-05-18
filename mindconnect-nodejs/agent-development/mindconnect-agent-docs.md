@@ -367,7 +367,7 @@ public GetMindConnectConfiguration(): IMindConnectConfiguration
 
 ### GetValidator
 
-Time series validator. Validates the data points against the configuration
+Time series validator. Validates the data points against the configuration.
 
 ```typescript
 /**
@@ -386,11 +386,12 @@ Event validator. Validates the data points against the configuration.
 
 ```typescript
 /**
- * Event validator. Validates the data points against the configuration
+ * Events validator. Validates the events before sending them to MindSphere
  *
  * @returns {ajv.ValidateFunction}
  *
  * @memberOf MindConnectAgent
  */
- ```
+public GetEventValidator(): ajv.ValidateFunction
+```
 

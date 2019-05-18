@@ -5,7 +5,7 @@ show_mit_license_text: True
 ---
 
 
-# MindConnect-NodeJS - Agent Development - <small>Retrying the operaitons</small>
+# MindConnect-NodeJS - Agent Development - <small>Retrying the operations</small>
 
 ## Making sure that the data arrives also with flaky internet connection
 
