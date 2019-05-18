@@ -7,7 +7,9 @@ show_mit_license_text: True
 
 ## Introduction 
 
-This is the documentation for the MindConnect-NodeJs library and CLI. The development of this package has started as community effort at Siemens and is now managed as open source library under the MIT License.
+This is a nodejs library which can be used as a starting point for custom agent implementation in nodejs. The library also contains useful tooling like command line support, which enables the user to easily import (historical) timeseries data, files and events to MindSphere. 
+
+[<i class="fab fa-github"></i> GitHub](https://github.com/mindsphere/mindconnect-nodejs) [<i class="fab fa-npm"></i> npm](https://www.npmjs.com/package/@mindconnect/mindconnect-nodejs) 
 
 ## What is it
 

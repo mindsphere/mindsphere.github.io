@@ -16,7 +16,7 @@ The following steps describe the easiest way to test the library. You can of cou
 
 ### TypeScript vs JavaScript
 
-All examples are in [typescript <i class="fa fa-link"></i>](https://www.typescriptlang.org/). They can be converted to javascript by removing the types.
+All examples are in [typescript <i class="fa fa-external-link-alt"></i>](https://www.typescriptlang.org/). They can be converted to javascript by removing the types.
 
 ```typescript
 
@@ -24,7 +24,7 @@ All examples are in [typescript <i class="fa fa-link"></i>](https://www.typescri
 const i: number = 0;
 
 // example in javascript
-const number = 0;
+const i = 0;
 ```
 
 
@@ -60,7 +60,7 @@ Mindsphere V3 IoT model requires that you create an asset type and aspect types 
 
 ![assetype](../images/types.png)
 
-More information about [MindSphere Data Model](http://bit.ly/2IgVB9T).
+More information about [MindSphere Data Model](https://documentation.mindsphere.io/resources/html/asset-manager/en-US/116404525451.html).
 
 ### Step 1: Create an asset
 
@@ -85,7 +85,7 @@ Create an agent in Asset Manager of type core.MindConnectLib create initial JSON
 }
 ```
 
-More Information about [core.MindConnectLib](http://bit.ly/2HZ2ehE) configuration.
+More Information about [core.MindConnectLib](https://documentation.mindsphere.io/resources/html/asset-manager/en-US/121145483915.html) configuration.
 
 ### Step 3 : Create an agent
 
