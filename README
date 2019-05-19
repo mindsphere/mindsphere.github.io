@@ -1,3 +1,4 @@
+<!-- vim: syntax=Markdown -->
 # MindSphere Community Documentation
 
 MindSphere Open Source Tools and Libraries are contributions from the MindSphere community. These are demo applications, libraries and SDKs and useful connectivity tools which are maintained and released as open source software.
@@ -5,7 +6,7 @@ MindSphere Open Source Tools and Libraries are contributions from the MindSphere
 This project contains documentation for MindSphere Open Source Tools and Libraries which is available on [https://developer.mindsphere.io](https://developer.mindsphere.io).
 
 - [Contributing](./CONTRIBUTING)
-- [CODE_OF_CONDUCT](./CODE_OF_CONDUCT)
+- [Code of conduct](./CODE_OF_CONDUCT)
 - [License](./LICENSE)
 
 ## Legal
