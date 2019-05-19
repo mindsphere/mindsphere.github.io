@@ -32,6 +32,4 @@ pipeline {
   environment {
     CI = 'true'
   }
-  post {
-  }
 }
