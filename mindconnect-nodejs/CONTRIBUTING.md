@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - Contributing
 hide_license_text: True
 show_mit_license_text: True
 hide_community_button: True
@@ -7,15 +6,15 @@ hide_community_button: True
 
 # MindConnect-NodeJS - <small>Contributing</small>
 
-**We are currently only accepting contributions coming from within Siemens organization **
+We are currently only accepting contributions coming from within Siemens organization.
 
 We welcome contributions in several forms, e.g.
 
-* Sponsoring
-* Documenting
-* Testing
-* Coding
-* etc.
+- Sponsoring
+- Documenting
+- Testing
+- Coding
+- etc.
 
 Please read [14 Ways to Contribute to Open Source without Being a Programming Genius or a Rock Star](https://smartbear.com/blog/test-and-monitor/14-ways-to-contribute-to-open-source-without-being/).
 
@@ -43,7 +42,7 @@ Commit messages shall follow the conventions defined by [conventional-changelog]
 #### What to use as scope
 
 In most cases the changed component is a good choice as scope
-e.g. if the change is done in the MindConnectAgent  the scope should be *Agent*.
+e.g. if the change is done in the MindConnectAgent the scope should be _Agent_.
 
 ### Code Style
 

@@ -1,5 +1,4 @@
 ---
-title: MindConnect Node-RED Node - Contributing
 hide_license_text: True
 show_mit_license_text: True
 hide_community_button: True
@@ -11,11 +10,11 @@ hide_community_button: True
 
 We welcome contributions in several forms, e.g.
 
-* Sponsoring
-* Documenting
-* Testing
-* Coding
-* etc.
+- Sponsoring
+- Documenting
+- Testing
+- Coding
+- etc.
 
 Please read [14 Ways to Contribute to Open Source without Being a Programming Genius or a Rock Star](http://blog.smartbear.com/programming/14-ways-to-contribute-to-open-source-without-being-a-programming-genius-or-a-rock-star/).
 
@@ -39,16 +38,7 @@ Commit messages shall follow the conventions defined by [conventional-changelog]
 #### What to use as scope
 
 In most cases the changed component is a good choice as scope
-e.g. if the change is done in the MindConnectAgent  the scope should be *Agent*.
-
-### License Headers
-
-The only license header we need for a software written by Siemens is:
-
-```javascript
-// Copyright Siemens AG, YEAR
-```
-The YEAR shall reflect the creation date.
+e.g. if the change is done in the MindConnectAgent the scope should be _Agent_.
 
 ### Code Style
 

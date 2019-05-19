@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - CLI - Starter Projects
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -10,7 +9,7 @@ show_mit_license_text: True
 
 The CLI provides a convinient way to kick off your custom agent development.
 
-## TypeScript Starter Project (```mc starter-ts```) 
+## TypeScript Starter Project (`mc starter-ts`)
 
 ```text
 Usage: starter-ts|st [options]
@@ -24,22 +23,23 @@ Options:
 
   Examples:
 
-    mc starter-ts 			 this creates a directory called starterts
-    mc st --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
+    mc starter-ts                     this creates a directory called starterts
+    mc st --dir mindconnect-agent     this creates a directory called mindconnect-agent
 ```
+
 ### Example
 
 Run:
 
-```
+```bash
 mc starter-ts
 ```
 
 !!! info
-    Run ```npm install``` in your starter project directory to install all dependencies
+Run `npm install` in your starter project directory to install all dependencies
 
+## JavaScript Starter Project (`mc starter-js`)
 
-## JavaScript Starter Project (```mc starter-js```)
 ```text
 Usage: starter-js|sj [options]
 
@@ -52,21 +52,20 @@ Options:
 
   Examples:
 
-    mc starter-js 			 this creates a directory called starterts
-    mc sj --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
+    mc starter-js                    this creates a directory called starterts
+    mc sj --dir mindconnect-agent    this creates a directory called mindconnect-agent
 
 ```
 
 ### Example
 
-Run 
+Run
 
-```
+```bash
 mc starter-js --dir mydir
 ```
 
 to create a starter project in mydir directory.
 
 !!! info
-    Run ```npm install``` in your starter project directory to install all dependencies
-
+Run `npm install` in your starter project directory to install all dependencies

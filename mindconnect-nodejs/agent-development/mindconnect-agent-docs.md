@@ -1,19 +1,19 @@
 ---
-title: MindConnect-NodeJS - Agent Development - MindConnect Agent Methods
 hide_license_text: True
 show_mit_license_text: True
 ---
 
-
 # MindConnect-NodeJS - Agent Development - <small>MindConnect Agent Methods</small>
 
-Here are the most important methods of the ```MindConnectAgent```
+## Introduction
 
-### Constructor
+Here are the most important methods of the `MindConnectAgent`
+
+## Constructor
 
 Constructing the MindConnectAgent
 
-``` typescript
+```typescript
 /**
  * Creates an instance of AgentAuth.
  * @param {IMindConnectConfiguration} _configuration
@@ -25,10 +25,10 @@ constructor(
     configuration: IMindConnectConfiguration,
     protected _tokenValidity: number = 600,
     basePath: string | IConfigurationStorage = process.cwd() + "/.mc/"
-) 
+)
 ```
 
-### SetupAgentCertificate
+## SetupAgentCertificate
 
 This is used for RSA_3072 agents.
 
@@ -42,10 +42,10 @@ This is used for RSA_3072 agents.
  *
  * @memberOf AgentAuth
  */
-public SetupAgentCertificate(privateCert: string | Buffer) 
+public SetupAgentCertificate(privateCert: string | Buffer)
 ```
 
-### GetProfile
+## GetProfile
 
 Returns the security profile of the agent.
 
@@ -60,7 +60,7 @@ Returns the security profile of the agent.
 public GetProfile()
 ```
 
-### GetAgentToken
+## GetAgentToken
 
 Acquires the agent token.
 
@@ -76,12 +76,12 @@ Acquires the agent token.
 public async GetAgentToken()
 ```
 
-### RenewToken
+## RenewToken
 
-Renews the agent token. 
+Renews the agent token.
 
 !!! info
-    The library renews the tokens for you but you can enforce the token renewal if you really want to
+The library renews the tokens for you but you can enforce the token renewal if you really want to
 
 ```typescript
 /**
@@ -94,7 +94,7 @@ Renews the agent token.
 public async RenewToken(): Promise<boolean>
 ```
 
-### OnBoard
+## OnBoard
 
 Onboard the agent and return the onboarding state.
 
@@ -108,7 +108,7 @@ Onboard the agent and return the onboarding state.
 public async OnBoard(): Promise<OnboardingStatus.StatusEnum>
 ```
 
-### IsOnBoarded
+## IsOnBoarded
 
 Checks if the agent is onboarded.
 
@@ -122,22 +122,22 @@ Checks if the agent is onboarded.
 public IsOnBoarded(): boolean
 ```
 
-### ClientId
+## ClientId
 
 The agent id
 
 ```typescript
 /**
  * Client Id
- * 
- * @returns 
- * 
+ *
+ * @returns
+ *
  * @memberOf MindConnectAgent
  */
 public ClientId()
 ```
 
-### HasDataSourceConfiguration
+## HasDataSourceConfiguration
 
 Checks if the agent has a data source configuration.
 
@@ -151,7 +151,7 @@ Checks if the agent has a data source configuration.
 public HasDataSourceConfiguration(): boolean
 ```
 
-### HasDataMappings
+## HasDataMappings
 
 Checks if the agent has mappings
 
@@ -165,7 +165,7 @@ Checks if the agent has mappings
 public HasDataMappings(): boolean
 ```
 
-### PutDataSourceConfiguration
+## PutDataSourceConfiguration
 
 Stores the configuration in the mindsphere.
 
@@ -189,53 +189,53 @@ public async PutDataSourceConfiguration(
 ): Promise<DataSourceConfiguration
 ```
 
-### GetDataSourceConfiguration
+## GetDataSourceConfiguration
 
 Get the DataSourceConfiguration from MindSphere.
 
 ```typescript
 /**
  * Get the DataSourceConfiguration
- * 
+ *
  * @returns {Promise<DataSourceConfiguration>}
- * 
+ *
  * @memberOf MindConnectAgent
  */
-public async GetDataSourceConfiguration(): Promise<DataSourceConfiguration> 
+public async GetDataSourceConfiguration(): Promise<DataSourceConfiguration>
 ```
 
-### GetDataMappings
+## GetDataMappings
 
 Get Data Mapings from MindSphere.
 
 ```typescript
 /**
  * Get Data Mapings
- * 
- * @returns {Promise<Array<Mapping>>} 
- * 
+ *
+ * @returns {Promise<Array<Mapping>>}
+ *
  * @memberOf MindConnectAgent
  */
 public async GetDataMappings(): Promise<Array<Mapping>>
 ```
 
-### PutDataMappings
+## PutDataMappings
 
 Stores the data mappings in the mindsphere. (if you know the assetid as agents are not able to read the asset inforamtion)
 
 ```typescript
 /**
  * Stores the data mappings in the mindsphere. (if you know the assetid)
- * 
- * @param {Mapping[]} mappings 
- * @returns {Promise<boolean>} 
- * 
+ *
+ * @param {Mapping[]} mappings
+ * @returns {Promise<boolean>}
+ *
  * @memberOf MindConnectAgent
  */
 public async PutDataMappings(mappings: Mapping[]): Promise<boolean>
 ```
 
-### Post Event
+## Post Event
 
 Posts the Events to the Exchange Endpoint.
 
@@ -255,10 +255,10 @@ public async PostEvent(
     event: BaseEvent,
     timeStamp: Date = new Date(),
     validateModel: boolean = true
-): Promise<boolean> 
+): Promise<boolean>
 ```
 
-### PostData
+## PostData
 
 Post Data Point Values to the Exchange Endpoint.
 
@@ -282,18 +282,18 @@ public async PostData(
 ): Promise<boolean>
 ```
 
-### BulkPostData
+## BulkPostData
 
 Bulk Post Data to exchange endpoint
 
 ```typescript
 /**
  * Bulk Post Data to exchange endpoint
- * 
- * @param {TimeStampedDataPoint[]} timeStampedDataPoints 
- * @param {boolean} [validateModel=true] 
- * @returns {Promise<boolean>} 
- * 
+ *
+ * @param {TimeStampedDataPoint[]} timeStampedDataPoints
+ * @param {boolean} [validateModel=true]
+ * @returns {Promise<boolean>}
+ *
  * @memberOf MindConnectAgent
  */
 public async BulkPostData(
@@ -302,10 +302,9 @@ public async BulkPostData(
 ): Promise<boolean>
 ```
 
-### Upload File
+## Upload File
 
 Upload file to MindSphere IOTFileService
-
 
 ```typescript
 /**
@@ -350,11 +349,11 @@ public async UploadFile(
 ): Promise<string>
 ```
 
-### GetMindConnectConfiguration
+## GetMindConnectConfiguration
 
 Gets the current agent configuration.
 
-```
+```typescript
 /**
  * Gets the current agent configuraton
  *
@@ -365,7 +364,7 @@ Gets the current agent configuration.
 public GetMindConnectConfiguration(): IMindConnectConfiguration
 ```
 
-### GetValidator
+## GetValidator
 
 Time series validator. Validates the data points against the configuration.
 
@@ -380,7 +379,7 @@ Time series validator. Validates the data points against the configuration.
 public GetValidator(): ajv.ValidateFunction
 ```
 
-### GetEventValidator
+## GetEventValidator
 
 Event validator. Validates the data points against the configuration.
 
@@ -394,4 +393,3 @@ Event validator. Validates the data points against the configuration.
  */
 public GetEventValidator(): ajv.ValidateFunction
 ```
-
