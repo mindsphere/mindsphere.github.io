@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run style && npm run commitlint && npm run lint",
     "style": "eclint check **/*.md",
-    "commitlint": "commitlint --from=origin/master",
+    "commitlint": "commitlint . --from=HEAD~1",
     "lint": "markdownlint . -i node_modules"
   },
   "repository": {
