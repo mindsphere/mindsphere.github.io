@@ -1,5 +1,4 @@
 ---
-title: MindSphere DevOps Demo - License
 hide_license_text: True
 show_mit_license_text: False
 hide_community_button: True

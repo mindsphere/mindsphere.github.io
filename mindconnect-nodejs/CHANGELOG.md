@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - Changelog
 hide_license_text: True
 show_mit_license_text: True
 hide_community_button: True
@@ -11,7 +10,7 @@ hide_community_button: True
 
 ## Bugfix 3.5.2
 
- - fixed incorrect handling of --force parameter in mc start-bulk command
+- fixed incorrect handling of --force parameter in mc start-bulk command
 
 ## 3.5.1 - (Venetian Red Vienna) - May 2019
 
@@ -23,18 +22,18 @@ hide_community_button: True
 - CLI Command: check-bulk - checks the progress of the upload jobs
 - CLI Command: create-agent - creates a new agent in the mindsphere (#12)
 - CLI Command: offboard-agent - offboards the agent in the mindsphere (#11)
-- CLI Command: renew-agent  - renews the agent secrets (#13)
-- CLI Command: upload-file -  New option: passkey : enables uploading the files also with service credentials
-- CLI Command: upload-file -  New option: parallel :configures the number of parallel uploads
+- CLI Command: renew-agent - renews the agent secrets (#13)
+- CLI Command: upload-file - New option: passkey : enables uploading the files also with service credentials
+- CLI Command: upload-file - New option: parallel :configures the number of parallel uploads
 - CLI Command: create-event - New option: passkey : enables creation of events also with service credentials
-- CLI Command: renew-agent  - renews the agent secrets (#13)
+- CLI Command: renew-agent - renews the agent secrets (#13)
 - mindconnect-agent: created new UploadFile method capable of running the multipart upload (#4)
 - mindconnect-agent: the UploadFile can now take a buffer additionally to file (#23)
 - mindconnect-agent: the UploadFile can now run in parallel (#23)
 - mindconnect-agent: the MindSphere path name can be configured (#23)
 - mindconnect-agent: removed the manual chunking of the files in favor of multipart upload (#23)
 - mindconnect-agent: deprecated the old upload method (#23)
-- SDK: started a  PRELIMINARY SDK for the new commands which require additional mindsphere APIs
+- SDK: started a PRELIMINARY SDK for the new commands which require additional mindsphere APIs
 - SDK: preliminary Support for following services
 - Agent Management Service
 - Asset Management Service
@@ -43,7 +42,7 @@ hide_community_button: True
 - Time Series Bulk Service
 - IoT File Service
 - CLI: color support for low color terminals
- -CLI: progress tracking for long-running commands (upload-file, bulk-run...)
+  -CLI: progress tracking for long-running commands (upload-file, bulk-run...)
 
 ## Bugfixes and improvements 3.5.1
 
@@ -78,7 +77,7 @@ works with service credetials authentication.
 
 At this point in time (May 2019) the Bulk Import only works for Simulation Assets and not for Performance Assets. This is why in this version
 we still use the standard APIs for the import of the historical data. Please be aware that the use of this feature has a direct impact
-on *your* mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 
 The standard import feature will be deprecated and removed from the CLI once bulk upload also gets enabled for performance assets.
 
@@ -141,7 +140,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 - The cli uses now os.homedir() per default for settings instead of local directory
 
-## 3.0.0 - Beta 8  (Lime Vienna) - August 2018
+## 3.0.0 - Beta 8 (Lime Vienna) - August 2018
 
 - Bulk upload of time series data for the agent (for CLI support)
 - Added mindconnect CLI (command line interface)

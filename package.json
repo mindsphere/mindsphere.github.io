@@ -1,0 +1,45 @@
+{
+  "name": "mindsphere.github.io",
+  "version": "1.0.0",
+  "description": "MindSphere Open Source Tools and Libraries documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run style && npm run commitlint && npm run lint",
+    "style": "eclint check **/*.md",
+    "commitlint": "commitlint . --from=HEAD~1",
+    "lint": "markdownlint . -i node_modules",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG -s && git add CHANGELOG"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mindsphere/mindsphere.github.io.git"
+  },
+  "keywords": [
+    "MindSphere",
+    "MindConnect",
+    "Documentation",
+    "Devops",
+    "Collaboration"
+  ],
+  "author": "Siemens AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mindsphere/mindsphere.github.io/issues"
+  },
+  "homepage": "https://github.com/mindsphere/mindsphere.github.io#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "commitlint": "^7.6.1",
+    "conventional-changelog-cli": "^2.0.21",
+    "eclint": "^2.8.1",
+    "husky": "^2.3.0",
+    "markdownlint-cli": "^0.16.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  }
+}

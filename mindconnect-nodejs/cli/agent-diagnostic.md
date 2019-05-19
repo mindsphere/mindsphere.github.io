@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - CLI - Agent Diagnostics
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -12,10 +11,9 @@ If you are experiencing some problems with your agents (due to missing DataSourc
 to the diagnostic endpoint of MindConnect API.
 
 !!! info
-    MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
+MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
 
-
-## Register the agent for diagnostic (```mc register-diagnostic```)
+## Register the agent for diagnostic (`mc register-diagnostic`)
 
 This command registers the agent for diagnostic.
 
@@ -37,11 +35,11 @@ Options:
     mc rd -k mypasskey
     mc register-diagnostic --config someagent.json -passkey mypasskey
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 ```
 
@@ -53,7 +51,7 @@ This will register the agent with the configuration stored in {yourconfig.json} 
 mc register-diagnostic --config {yourconfig.json} --passkey {yourpasskey}
 ```
 
-## Retrieve the diagnostic data (```mc get-diagnostic```)
+## Retrieve the diagnostic data (`mc get-diagnostic`)
 
 This command retrieves the diagnostic data.
 
@@ -73,17 +71,17 @@ Options:
   -v, --verbose               verbose output
   -h, --help                  output usage information
 
-  Examples: 
+  Examples:
 
     mc gd -k mypasskey
     mc get-diagnostic --config someagent.json --passkey mypasskey
     mc get-diagnostic --passkey mypasskey --text --all > log.csv
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
 ```
@@ -102,9 +100,7 @@ This will get all diagnostic data for the agent with {yourconfig.json} configura
 mc get-diagnostic --config {yourconfig.json} --passkey {yourpasskey} --text --all > log.csv
 ```
 
-
-
-## Unregister the agent (```mc unregister-diagnostic```)
+## Unregister the agent (`mc unregister-diagnostic`)
 
 This command unregisters the agent from diagnostic.
 
@@ -126,11 +122,11 @@ Options:
     mc ud -k mypasskey
     mc unregister-diagnostic --config someagent.json -passkey mypasskey
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
 ```
@@ -142,4 +138,3 @@ Unregister the agent:
 ```bash
 mc unregister-diagnostic --config {yourconfig.json} --passkey {yourpasskey}
 ```
-

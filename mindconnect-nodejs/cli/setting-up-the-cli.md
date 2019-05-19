@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - CLI - Setting up the CLI
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -50,16 +49,15 @@ mc service-credentials --user {your_username} --password {your_password} --t ten
 --gateway {eu1|eu2.. } --passkey {your_passkey}
 ```
 
-The gateway paramter can also be a full url like this https://gateway.eu1.mindsphere.io
+The gateway paramter can also be a full url like this `https://gateway.eu1.mindsphere.io`
 
 ## Location of stored credentials
 
 The credentials you have created are stored in the %HOME% directory of the user (%USERPROFILE% on windows) in a hidden folder called .mc
 
 ```bash
- ls -la .mc/auth.json
+ls -la .mc/auth.json
 -rw-r--r-- 1 sn0wcat 1049089 249 Oct  2  2018 .mc/auth.json
 ```
 
 The credentials are encrypted with the passkey you provided during the creation. This passkey must be provided to all other commands which require service credentials.
-

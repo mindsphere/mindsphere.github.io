@@ -1,25 +1,19 @@
 ---
-title: MindConnect-NodeJS - Agent Development - MindConnect Agent
 hide_license_text: True
 show_mit_license_text: True
 ---
 
-
 # MindConnect-NodeJS - Agent Development - <small>How to create a NodeJS MindSphere agent</small>
-
 
 ## Introduction
 
 The following steps describe the easiest way to test the library. You can of course create the required dependencies also programmatically via API calls.
-    
-
 
 ### TypeScript vs JavaScript
 
 All examples are in [typescript <i class="fa fa-external-link-alt"></i>](https://www.typescriptlang.org/). They can be converted to javascript by removing the types.
 
 ```typescript
-
 // example in typescript
 const i: number = 0;
 
@@ -27,24 +21,22 @@ const i: number = 0;
 const i = 0;
 ```
 
-
 ### async/await vs Promises
 
 The examples use the async/await syntax for the promisses (available in typescript and in javascript from EcmaScript8)
 
-
-``` javascript 
+```javascript
 try {
-    await agent.OnBoard();
-    console.log("agent was successfully onboarded");
+  await agent.OnBoard();
+  console.log("agent was successfully onboarded");
 } catch (err) {
-    console.log(err);
+  console.log(err);
 }
 ```
 
 But you can also write code like this using the classical promise syntax:
 
-``` javascript
+```javascript
 agent.OnBoard()
     .then (function() {
         console.log("agent was successfully onboarded";
@@ -72,16 +64,14 @@ Create an agent in Asset Manager of type core.MindConnectLib create initial JSON
 
 ```json
 {
-    "content": {
-        "baseUrl": "https://southgate.eu1.mindsphere.io",
-        "iat": "<yourtokenishere>",
-        "clientCredentialProfile": [
-            "SHARED_SECRET"
-        ],
-        "clientId": "a3ac5ae889544717b02fa8282a30d1b4",
-        "tenant": "<yourtenantishere>"
-    },
-    "expiration": "2018-04-06T00:47:39.000Z"
+  "content": {
+    "baseUrl": "https://southgate.eu1.mindsphere.io",
+    "iat": "<yourtokenishere>",
+    "clientCredentialProfile": ["SHARED_SECRET"],
+    "clientId": "a3ac5ae889544717b02fa8282a30d1b4",
+    "tenant": "<yourtenantishere>"
+  },
+  "expiration": "2018-04-06T00:47:39.000Z"
 }
 ```
 
@@ -93,11 +83,11 @@ Read the initial configuration from the config file and create the agent.
 If you are using the **SHARED_SECRET** profile there is no need to setup the local certificate for the communication (recommended for smaller devices).
 
 ```typescript
-    const configuration = require("../../agentconfig.json");
-    const agent = new MindConnectAgent(configuration);
+const configuration = require("../../agentconfig.json");
+const agent = new MindConnectAgent(configuration);
 ```
 
- If you want to use the **RSA_3072** profile you must also set up the agent certificate.
+If you want to use the **RSA_3072** profile you must also set up the agent certificate.
 
 ```typescript
 // you can create the private.key for example using openssl:
@@ -116,13 +106,13 @@ This data is stored by default in the .mc folder in your application if you don'
 
 ```typescript
 if (!agent.IsOnBoarded()) {
-    await agent.OnBoard();
+  await agent.OnBoard();
 }
 ```
 
 ### Step 5: Configure the data model and data mappings to asset variables. (via UI)
 
-In the mindsphere  version 3 you can configure the data model and mappings to aspect variables in the UI of the asset manager as well. Just go to configuration of mindconnectlib and configure the data sources like this.
+In the mindsphere version 3 you can configure the data model and mappings to aspect variables in the UI of the asset manager as well. Just go to configuration of mindconnectlib and configure the data sources like this.
 
 ![datasources](../images/datasources.png)
 
@@ -134,7 +124,7 @@ After that you can pull the configuration from mindsphere.
 
 ```typescript
 if (!agent.HasDataSourceConfiguration()) {
-    await agent.GetDataSourceConfiguration();
+  await agent.GetDataSourceConfiguration();
 }
 ```
 
@@ -142,44 +132,75 @@ if (!agent.HasDataSourceConfiguration()) {
 
 ```typescript
 for (let index = 0; index < 5; index++) {
+  const values: DataPointValue[] = [
+    {
+      dataPointId: "DP-Temperature",
+      qualityCode: "0",
+      value: (Math.sin(index) * (20 + (index % 2)) + 25).toString()
+    },
+    {
+      dataPointId: "DP-Pressure",
+      qualityCode: "0",
+      value: (Math.cos(index) * (20 + (index % 25)) + 25).toString()
+    },
+    {
+      dataPointId: "DP-Humidity",
+      qualityCode: "0",
+      value: ((index + 30) % 100).toString()
+    },
+    {
+      dataPointId: "DP-Acceleration",
+      qualityCode: "0",
+      value: (1000.0 + index).toString()
+    },
+    {
+      dataPointId: "DP-Frequency",
+      qualityCode: "0",
+      value: (60.0 + index * 0.1).toString()
+    },
+    {
+      dataPointId: "DP-Displacement",
+      qualityCode: "0",
+      value: (index % 10).toString()
+    },
+    {
+      dataPointId: "DP-Velocity",
+      qualityCode: "0",
+      value: (50.0 + index).toString()
+    }
+  ];
 
-    const values: DataPointValue[] = [
-        { "dataPointId": "DP-Temperature", "qualityCode": "0", "value": (Math.sin(index) * (20 + index % 2) + 25).toString() },
-        { "dataPointId": "DP-Pressure", "qualityCode": "0", "value": (Math.cos(index) * (20 + index % 25) + 25).toString() },
-        { "dataPointId": "DP-Humidity", "qualityCode": "0", "value": ((index + 30) % 100).toString() },
-        { "dataPointId": "DP-Acceleration", "qualityCode": "0", "value": (1000.0 + index).toString() },
-        { "dataPointId": "DP-Frequency", "qualityCode": "0", "value": (60.0 + (index * 0.1)).toString() },
-        { "dataPointId": "DP-Displacement", "qualityCode": "0", "value": (index % 10).toString() },
-        { "dataPointId": "DP-Velocity", "qualityCode": "0", "value": (50.0 + index).toString() }
-    ];
-
-    // there is an optional timestamp parameter if you need to use something else instead of Date.now()
-    const result = await agent.PostData(values);
+  // there is an optional timestamp parameter if you need to use something else instead of Date.now()
+  const result = await agent.PostData(values);
 }
 ```
 
 !!! info
-    If you were using UI to configure data mappings you will have long integers instead of human-readable data point Ids.
+If you were using UI to configure data mappings you will have long integers instead of human-readable data point Ids.
 
 ### Step 6.1 using bulk upload
 
 If you don't want to send the data points one by one, you can also use the bulkpostdata method
 
 ```typescript
-const bulk: TimeStampedDataPoint[] =
-    [{
-        "timestamp": "2018-08-23T18:38:02.135Z",
-        "values":
-            [{ "dataPointId": "DP-Temperature", "qualityCode": "0", "value": "10" },
-            { "dataPointId": "DP-Pressure", "qualityCode": "0", "value": "10" }]
-    },
-    {
-        "timestamp": "2018-08-23T19:38:02.135Z",
-        "values": [{ "dataPointId": "DP-Temperature", "qualityCode": "0", "value": "10" },
-        { "dataPointId": "DP-Pressure", "qualityCode": "0", "value": "10" }]
-    }];
+const bulk: TimeStampedDataPoint[] = [
+  {
+    timestamp: "2018-08-23T18:38:02.135Z",
+    values: [
+      { dataPointId: "DP-Temperature", qualityCode: "0", value: "10" },
+      { dataPointId: "DP-Pressure", qualityCode: "0", value: "10" }
+    ]
+  },
+  {
+    timestamp: "2018-08-23T19:38:02.135Z",
+    values: [
+      { dataPointId: "DP-Temperature", qualityCode: "0", value: "10" },
+      { dataPointId: "DP-Pressure", qualityCode: "0", value: "10" }
+    ]
+  }
+];
 
-await agent.BulkPostData (bulk);
+await agent.BulkPostData(bulk);
 ```
 
 ## Events
@@ -191,17 +212,17 @@ const configuration = require("../../agentconfig.json");
 const agent = new MindConnectAgent(configuration);
 
 if (!agent.IsOnBoarded()) {
-    await agent.OnBoard();
+  await agent.OnBoard();
 }
 
 const event: MindsphereStandardEvent = {
-    "entityId": configuration.content.clientId, // use assetid if you dont want to store event in the agent :)
-    "sourceType": "Event",
-    "sourceId": "application",
-    "source": "Meowz",
-    "severity": 20, // 0-99 : 20:error, 30:warning, 40: information
-    "timestamp": new Date().toISOString(),
-    "description": "Test"
+  entityId: configuration.content.clientId, // use assetid if you dont want to store event in the agent :)
+  sourceType: "Event",
+  sourceId: "application",
+  source: "Meowz",
+  severity: 20, // 0-99 : 20:error, 30:warning, 40: information
+  timestamp: new Date().toISOString(),
+  description: "Test"
 };
 
 // send event with current timestamp
@@ -222,15 +243,20 @@ const configuration = require("../../agentconfig.json");
 const agent = new MindConnectAgent(configuration);
 
 if (!agent.IsOnBoarded()) {
-    await agent.OnBoard();
+  await agent.OnBoard();
 }
 
-await agent.UploadFile(agent.ClientId(), "custom/mindsphere/path/package.json", "package.json", {
+await agent.UploadFile(
+  agent.ClientId(),
+  "custom/mindsphere/path/package.json",
+  "package.json",
+  {
     retry: RETRYTIMES,
     description: "File uploaded with MindConnect-NodeJS Library",
     parallelUploads: 5,
     chunk: true
-});
+  }
+);
 ```
 
 ![files](../images/files.png)
@@ -239,7 +265,7 @@ await agent.UploadFile(agent.ClientId(), "custom/mindsphere/path/package.json", 
 
 Here is a demo agent implementation.
 
- [![mindsphere-agent](https://img.shields.io/badge/mindsphere-agent-green.svg)](https://github.com/mindsphere/mindconnect-nodejs/blob/master/src/demoagent/test-agent.ts) 
+[![mindsphere-agent](https://img.shields.io/badge/mindsphere-agent-green.svg)](https://github.com/mindsphere/mindconnect-nodejs/blob/master/src/demoagent/test-agent.ts)
 
 ## Generating the documentation
 
@@ -269,4 +295,3 @@ Environment data:
 Vibration data:
 
 ![Vibration Data](../images/vibrationdata.PNG)
-

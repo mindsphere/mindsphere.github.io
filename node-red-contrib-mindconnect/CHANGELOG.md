@@ -1,5 +1,4 @@
 ---
-title: MindConnect Node-RED Node - Changelog
 hide_license_text: True
 show_mit_license_text: True
 hide_community_button: True
@@ -15,7 +14,7 @@ hide_community_button: True
 - auto keep-alive: the node will renew the token every hour even when there is no data sent.
 - programatic delivery of the configuration - prerequisite for auto-configuration node which is coming in next versions
 - moved schema-validation to mindconnect-schema.ts, improved code and documentation
-- new msg._error message with timestamped error property for better flows
+- new msg.\_error message with timestamped error property for better flows
 
 ## 3.3.0 (Vienna Panthers) - February 2019
 

@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - CLI -Managing Agent Credentials
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -15,9 +14,7 @@ The mindsphere agents require the initial agent configuration which can be acqui
   "content": {
     "baseUrl": "https://southgate.eu1.mindsphere.io",
     "iat": "ey...",
-    "clientCredentialProfile": [
-      "SHARED_SECRET"
-    ],
+    "clientCredentialProfile": ["SHARED_SECRET"],
     "clientId": "5d06988ac50a44758ed0d9bff9edc4a0",
     "tenant": "{yourtenant}"
   },
@@ -31,15 +28,15 @@ The mindconnect-nodejs CLI provides a set of commands which can be used to acqui
 
 These commands can
 
-- Create new agent in the MindSphere ```mc create-agent```
-- Onboard the agent ```mc onboard```
-- Check the agent status ```mc agent-status```
-- Offboard the agent ```mc offboard-agent``` 
-- Renew the agent secret ```mc renew-agent```
+- Create new agent in the MindSphere `mc create-agent`
+- Onboard the agent `mc onboard`
+- Check the agent status `mc agent-status`
+- Offboard the agent `mc offboard-agent`
+- Renew the agent secret `mc renew-agent`
 
-The prerequsite for most of these commands is that you have registered your service credentials using ```mc service-credentials``` command.
+The prerequsite for most of these commands is that you have registered your service credentials using `mc service-credentials` command.
 
-## Creating a new agent via CLI (```mc create-agent```)
+## Creating a new agent via CLI (`mc create-agent`)
 
 ```bash
 mc create-agent --help
@@ -84,9 +81,9 @@ for example with help of openssh:
 openssl genrsa -out private.key 3072
 ```
 
-## Onboarding the agent (```mc onboard```)
+## Onboarding the agent (`mc onboard`)
 
-The cli can onboard the agent with help of the ```mc onboard``` command
+The cli can onboard the agent with help of the `mc onboard` command
 
 ```bash
 mc onboard --help
@@ -104,9 +101,9 @@ Options:
 
   Examples:
 
-    mc ob   				uses default agentconfig.json
-    mc onboard --config agent.json 	uses specified configuration file
-    mc onboard --config agent.json --cert private.key 	uses specified key for RSA_3072 profile
+    mc ob   uses default agentconfig.json
+    mc onboard --config agent.json   uses specified configuration file
+    mc onboard --config agent.json --cert private.key   uses specified key for RSA_3072 profile
 ```
 
 ### Example
@@ -117,9 +114,9 @@ The command below will onboard your agent with the configuration stored in agent
 mc onboard --config agent.json --cert private.key
 ```
 
-## Checking the agent status (```mc agent-status```)
+## Checking the agent status (`mc agent-status`)
 
-The CLI can check the local and remote agent status. The passkey parameter is not required if you only 
+The CLI can check the local and remote agent status. The passkey parameter is not required if you only
 want to see the local status
 
 ```bash
@@ -167,7 +164,7 @@ Online Status: OFFLINE since: 2019-05-14T06:54:19.411Z
 Agent is ONBOARDED
 ```
 
-## Offboarding the agent (```mc offboard-agent```)
+## Offboarding the agent (`mc offboard-agent`)
 
 The agent can be offboarded with help of the CLI as well.
 
@@ -187,13 +184,13 @@ Options:
 
   Examples:
 
-    mc offboard-agent --config agent.json --passkey passkey... 	 offboard agent with agent.json configuration
+    mc offboard-agent --config agent.json --passkey passkey...  offboard agent with agent.json configuration
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
 ```
@@ -207,15 +204,14 @@ mc offboard-agent --config agentconfig.json --passkey {yourpasskey}
 ```
 
 !!! warning
-    You will have to renew the agent secret before you can onboard the agent again.
+You will have to renew the agent secret before you can onboard the agent again.
 
-
-## Renewing the agent secrets (```mc renew-agent```)
+## Renewing the agent secrets (`mc renew-agent`)
 
 The agent secrets can be renewed with help of the mc renew-agent command.
 
 ```bash
-mc renew-agent --help 
+mc renew-agent --help
 
 Usage: renew-agent|rn [options]
 
@@ -230,13 +226,13 @@ Options:
 
   Examples:
 
-    mc renew-agent --config agent.json --passkey passkey... 	 renew agent secrets in agent.json configuration
+    mc renew-agent --config agent.json --passkey passkey...  renew agent secrets in agent.json configuration
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
 ```
@@ -245,7 +241,7 @@ Options:
 
 ```bash
 mc renew-agent --config agent.json --passkey {yourpasskey}
-``` 
+```
 
 !!! info
-    you should offboard the agent first before renewing the secrets
+you should offboard the agent first before renewing the secrets

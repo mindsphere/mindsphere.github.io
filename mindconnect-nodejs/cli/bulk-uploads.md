@@ -1,45 +1,41 @@
 ---
-title: MindConnect-NodeJS - CLI - Uploading historical data
 hide_license_text: True
 show_mit_license_text: True
 ---
 
 # MindConnect-NodeJS - CLI - <small>Uploading historical timeseries data</small>
 
-
 ## Introduction
 
 The CLI provides the command line tooling for import of the historical timeseries data to the MindSphere, which is something which you might need when starting to work with the platform. This set of commands sends the data directly to the (Bulk-)TimeSeries APIs of the MindSphere.
 
+<!-- prettier-ignore-start -->
 !!! warning
     Please be aware that the use of this feature has a direct impact
-    on *your* mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+    on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+<!-- prettier-ignore-end -->
 
+At the present time (May 2019), MindSphere supports the bulk timeseries upload only for simulation assets. A simulation asset (`twinType: simulation`) is an asset which can contain high volume of simulated data with up to a nanosecond timestamp precision. The asset types of these assets must also inherit from core.basicdevice.
 
-At the present time (May 2019), MindSphere supports the bulk timeseries upload only for simulation assets. A simulation asset (```twinType: simulation```) is an asset which can contain high volume of simulated data with up to a nanosecond timestamp precision. The asset types of these assets must also inherit from core.basicdevice.
-
-This is why these commands still use the standard timeseries API for the performance assets (```twinType: performance```). This behavior will be changed as soon as MindSphere starts supporting the timeseries bulk upload for the performance assets as well.
-
+This is why these commands still use the standard timeseries API for the performance assets (`twinType: performance`). This behavior will be changed as soon as MindSphere starts supporting the timeseries bulk upload for the performance assets as well.
 
 The upload of historical timeseries data to MindSphere is done in several steps:
 
-- Preparing the directory with the template  ```.csv``` files for the data upload.
+- Preparing the directory with the template `.csv` files for the data upload.
 - Importing your data into the prepared directory according to the created template
-- Converting the imported files to ```.json``` format.
+- Converting the imported files to `.json` format.
 - Running the import jobs
 
-As the bulk import is asynchronous you can check the progress of the job by running the ```mc check-bulk``` command.
+As the bulk import is asynchronous you can check the progress of the job by running the `mc check-bulk` command.
 
-
-
-## Preparing the directory for the data upload (```mc prepare-bulk```)
+## Preparing the directory for the data upload (`mc prepare-bulk`)
 
 This command creates a directory with the template .csv files. You will need to create your files in the same format as the provided templates.
 
 !!! warning
-    The ```twinType: performance``` Bulk Import API expects all the data in the file to be from the same hour.
+The `twinType: performance` Bulk Import API expects all the data in the file to be from the same hour.
 
-You can either create a new asset for the data or import the data to the existing asset by providing the ```--assetid``` parameter.
+You can either create a new asset for the data or import the data to the existing asset by providing the `--assetid` parameter.
 
 ```text
 mc prepare-bulk --help
@@ -51,8 +47,8 @@ creates a template directory for timeseries (bulk) upload *
 Options:
   -d, --dir <directoryname>  config file with agent configuration (default: "bulkupload")
   -w, --twintype <mode>      twintype of asset [performance|simulation]
-  -i, --assetid <assetid>    asset id from the mindsphere 
-  -t, --typeid <typeid>      typeid e.g. castidev.Engine 
+  -i, --assetid <assetid>    asset id from the mindsphere
+  -t, --typeid <typeid>      typeid e.g. castidev.Engine
   -s, --size <size>          entries per file  (default: 100)
   -f, --files <files>        generated files  (default: 2)
   -o, --offset <days>        offset in days from current date  (default: 0)
@@ -63,22 +59,23 @@ Options:
 
   Examples:
 
-    mc prepare-bulk  --typeid castidev.Engine 	 this creates a directory called bulkimport for new asset of type castidev.Engine
-    mc pb --dir asset1 -i 123456...abc 		 this creates a directory called asset1 for existing asset
-    mc pb -of 3 -t castidev.Engine 		 start data creation template 3 days before now
+    mc prepare-bulk  --typeid castidev.Engine  this creates a directory called bulkimport for new asset of type castidev.Engine
+    mc pb --dir asset1 -i 123456...abc         this creates a directory called asset1 for existing asset
+    mc pb -of 3 -t castidev.Engine             start data creation template 3 days before now
 
-	use --mode performance for standard data generation or --mode simulation for high frequency data generation 
-	The typeid must be derived from core.basicdevice and asset twintype must be simulation for high frequency data upload
+
+  use --mode performance for standard data generation or --mode simulation for high frequency data generation
+  The typeid must be derived from core.basicdevice and asset twintype must be simulation for high frequency data upload
 ```
 
 ### Example - Simulation Asset
 
 ```bash
-mc prepare-bulk  --typeid {yourtenant}.SimulationEngine \ 
+mc prepare-bulk  --typeid {yourtenant}.SimulationEngine \
 --passkey {yourpasskey} --twintype simulation --dir bulkupload
 ```
 
-will create a directory ```bulkupload``` with the following content
+will create a directory `bulkupload` with the following content
 
 ```bash
 $ ls -la
@@ -96,19 +93,19 @@ You can edit the asset.json to change the asset data (name, location) and create
 
 This will create a similar directory for the performance assets.
 
-``` example
+```example
 mc prepare-bulk  --assetid 123...ef \
 --passkey {yourpasskey} --twintype performance --dir bulkupload1
 ```
 
-## Uploading time series data (```mc run-bulk```)
+## Uploading time series data (`mc run-bulk`)
 
-This command can be used to 
+This command can be used to
 
-- convert the csv files to json and verify their content (running ```mc run-bulk``` command without the ```--start``` parameter)
-- start the timeseries (bulk) upload jobs (with ```--start```) command
+- convert the csv files to json and verify their content (running `mc run-bulk` command without the `--start` parameter)
+- start the timeseries (bulk) upload jobs (with `--start`) command
 
-```text 
+```text
 mc run-bulk --help
 
 Usage: run-bulk|rb [options]
@@ -153,9 +150,9 @@ The following command will start uploading the data to MindSphere
 mc run-bulk --passkey {yourpasskey} --start
 ```
 
-## Checking the progress of the upload jobs (```mc check-bulk```)
+## Checking the progress of the upload jobs (`mc check-bulk`)
 
-You can check the progress of your historical time series import by running the ```mc check-bulk``` command.
+You can check the progress of your historical time series import by running the `mc check-bulk` command.
 
 ```bash
 Usage: check-bulk|cb [options]
@@ -171,8 +168,8 @@ Options:
 
   Examples:
 
-    mc check-bulk 	 displays job progress of bulkimport directory
-    mc check-bulk --dir asset1 --verbose 	displays job progress of asset1 directory with verbose output
+    mc check-bulk   displays job progress of bulkimport directory
+    mc check-bulk --dir asset1 --verbose   displays job progress of asset1 directory with verbose output
 ```
 
 ### Example
@@ -190,7 +187,3 @@ will product an output similar to this one:
 1 job(s) in status SUCCESS.
 3 job(s) in status IN_PROGRESS.
 ```
-
-
-
-

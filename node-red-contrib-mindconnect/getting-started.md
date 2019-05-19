@@ -1,11 +1,9 @@
 ---
-title: MindConnect Node-RED Node - Getting Started
 hide_license_text: True
 show_mit_license_text: True
 ---
 
 # MindConnect Node-RED Node - <small>Getting Started</small>
-
 
 ## Installing the node
 
@@ -17,11 +15,7 @@ cd ~/.node-red/
 npm install @mindconnect/node-red-contrib-mindconnect
 ```
 
-!!! info
-    - install to the .node-red folder if you have installed node-red globally
-    - install to the userDir directory if you have custom userDir
-    - make sure that your nodejs version is relatively current
-
+!!! info - install to the .node-red folder if you have installed node-red globally - install to the userDir directory if you have custom userDir - make sure that your nodejs version is relatively current
 
 ## Node-RED - Manage Palette Installation
 
@@ -70,9 +64,9 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-    { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-    { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
+  { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+  { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+  { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
 ];
 
 msg._time = new Date();
@@ -88,22 +82,22 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    {
-        timestamp: "2018-11-09T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
-        ]
-    },
-    {
-        timestamp: "2018-11-08T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "12" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "15.76" }
-        ]
-    }
+  {
+    timestamp: "2018-11-09T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
+    ]
+  },
+  {
+    timestamp: "2018-11-08T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "12" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "15.76" }
+    ]
+  }
 ];
 
 msg.payload = values;
@@ -116,15 +110,15 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
-    sourceType: "Agent",
-    sourceId: "application",
-    source: "Meowz",
-    severity: 30, // 0-99 : 20:error, 30:warning, 40: information
-    description: "Event sent at " + new Date().toISOString(),
-    timestamp: new Date().toISOString(),
-    additionalproperty1: "123",
-    additionalproperty2: "456"
+  entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
+  sourceType: "Agent",
+  sourceId: "application",
+  source: "Meowz",
+  severity: 30, // 0-99 : 20:error, 30:warning, 40: information
+  description: "Event sent at " + new Date().toISOString(),
+  timestamp: new Date().toISOString(),
+  additionalproperty1: "123",
+  additionalproperty2: "456"
 };
 return msg;
 ```
@@ -138,10 +132,10 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
-    fileName: "package.json",
-    fileType: "application/json", //optional, it is automatically determined if there is no fileType specified
-    description: "testfile"
+  entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
+  fileName: "package.json",
+  fileType: "application/json", //optional, it is automatically determined if there is no fileType specified
+  description: "testfile"
 };
 return msg;
 ```
@@ -155,19 +149,16 @@ If you need more complex flows, the node also returns the
 
 ```javascript
 msg._mindsphereStatus; // OK on success othervise error
-msg_error // The timestamped error message
+msg_error; // The timestamped error message
 ```
 
 properties which can be used to create more complex flows. (e.g. in the flow below, the unrecoverable errors are written in error.log file and the failed data is stored in backupdata.log file)
 
 ![errorhandling](images/errorhandling.png)
 
-
 ## Demo Flows
 
-You can take a look at some live demo flows at [https://playground.mindconnect.rocks <i class="fa fa-external-link-alt"></i>](https://playground.mindconnect.rocks ){:target="_new"}
-
-
+You can take a look at some live demo flows at [https://playground.mindconnect.rocks <i class="fa fa-external-link-alt"></i>](https://playground.mindconnect.rocks){:target="\_new"}
 
 ## How to reset everything
 
@@ -197,4 +188,3 @@ Set the http_proxy or HTTP_PROXY environment variable if you need to connect via
 
 export HTTP_PROXY=http://localhost:8888
 ```
-

@@ -1,0 +1,89 @@
+<!-- vim: syntax=Markdown -->
+# Contributing
+
+Interested in contributing to the MindSphere Open Source Tools and Libraries Documentation?
+Want to report a bug? Before you do, please read the following guidelines.
+
+## Submission context
+
+### Got a question or problem?
+
+For quick questions there's no need to open an [issue] as you can reach us on [MindSphere Developer Space](https://community.plm.automation.siemens.com/t5/Developer-Space/).
+
+### Found a problem?
+
+If you found a problem in the documentation, you can help us by submitting an issue to the [issue tracker] in our GitHub repository. Even better, you can submit a Pull Request with a fix. However, before doing so, please read the [submission guidelines](#submission-guidelines).
+
+### Missing a Document?
+
+You can request a new Document by submitting an [issue] to our GitHub Repository. If you would like to implement a new Document, please submit an [issue] with a proposal for your work first, to be sure that it is of use for everyone, as the MindSphere Developer Documentation is also published for all customers. Please consider what kind of change it is:
+
+- For a major feature, first open an [issue] and outline your proposal so that it can be discussed. This will also allow us to better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project.
+
+- Small features and bugs can be crafted and directly submitted as a [Pull Request]. However, there is no guarantee that your feature will make it into the master, as it's always a matter of opinion whether it benefits the overall purpose of the documentation.
+
+## Submission guidelines
+
+### Submitting an issue
+
+Before you submit an issue, please search the [issue tracker], maybe an issue for your problem already exists and the discussion might inform you of workarounds readily available.
+
+We want to fix all the issues as soon as possible, but before fixing a bug we need to reproduce and confirm it. In order to reproduce bugs we will systematically ask you to provide a minimal reproduction scenario using the custom issue template. Please stick to the issue template.
+
+Unfortunately we are not able to investigate / fix bugs without a minimal reproduction scenario, so if we don't hear back from you we may close the issue.
+
+### Submitting a Pull Request
+
+Search GitHub for an open or closed [Pull Request] that relates to your submission. You don't want to duplicate effort. If you do not find a related issue or Pull Request, go ahead.
+
+1. **Development:** Fork the project, set up the development environment, make your changes in a separate git branch and add descriptive messages to your commits. We use a commit linter!
+
+2. **Build:** Before submitting a [Pull Request], build the documentation. This is a mandatory requirement for your Pull Request to get accepted, as the documentation should at all times be buildable.
+
+3. **Pull Request:** After building the documentation, push your branch to GitHub and send a Pull Request to the master branch. If we suggest changes, make the required updates, rebase your branch and push the changes to your Branch which will automatically update the pull request.
+
+### Building documentation on your computer
+
+```bash
+npm install
+npm test
+```
+
+This steps ensures that the style (editorconfig, markdownlint) and the commit message (commitlint) are consitent in the documentation.
+
+## Additional Information
+
+If you are new to open source or inner source development, please read [14 Ways to Contribute to Open Source without Being a Programming Genius or a Rock Star](http://blog.smartbear.com/programming/14-ways-to-contribute-to-open-source-without-being-a-programming-genius-or-a-rock-star/).
+
+### Format of the Commit Message
+
+We follow a rough convention for commit messages that is designed to answer two
+questions: what changed and why. The subject line shall feature the what and
+the body of the commit shall describe the why.
+
+Commit messages should follow the conventions defined by [conventional-changelog](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary).
+
+```text
+docs: add the test-cluster command
+Fixes #42
+```
+
+The format can be described more formally as follows:
+
+```text
+<subsystem>: <what changed>
+<BLANK LINE>
+<why this change was made>
+<BLANK LINE>
+<footer>
+```
+
+The first line is the subject and shall be no longer than 70 characters, the
+second line is always blank, and other lines shall be wrapped at 80 characters.
+This allows the message to be easier to read on GitHub as well as in various
+git tools.
+
+[issue]: https://github.com/mindsphere/mindsphere.github.io/issues
+[issues]: https://github.com/mindsphere/mindsphere.github.io/issues
+[issue tracker]: https://github.com/mindsphere/mindsphere.github.io/issues
+[pull request]: https://github.com/mindsphere/mindsphere.github.io/pulls

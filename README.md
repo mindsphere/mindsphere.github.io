@@ -1,2 +1,0 @@
-# MindSphere Community Documentation
-

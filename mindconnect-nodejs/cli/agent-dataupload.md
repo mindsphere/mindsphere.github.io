@@ -1,28 +1,24 @@
 ---
-title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
 hide_license_text: True
 show_mit_license_text: True
 ---
 
 # MindConnect-NodeJS - CLI - <small>Uploading Data to MindSphere</small>
 
-
 ## Introduction
 
-The MindConnect APIs provide the agents with the possibility to 
+The MindConnect APIs provide the agents with the possibility to
 
-- ingest timeseries data (```mc upload-timeseries```)
-- create events in the Mindsphere (```mc create-event```)
-- upload files to the the MindSphere (```mc upload-file```)
+- ingest timeseries data (`mc upload-timeseries`)
+- create events in the Mindsphere (`mc create-event`)
+- upload files to the the MindSphere (`mc upload-file`)
 
 All these commands use the agent credentials. Take a look at [Agent Management](./agent-management.md) part of the documentation for instructions how to acquire them.
 
-
-## Ingesting Time Series Data via MindConnect (```mc upload-timeseries```)
+## Ingesting Time Series Data via MindConnect (`mc upload-timeseries`)
 
 !!! warning
-    This commands are provided for testing/working with the MindConnect (Agent) interfaces. IF you want to use this CLI to import historical data please take a look to the [uploading historical data](./bulk-uploads.md) part of the documentation.
-
+This commands are provided for testing/working with the MindConnect (Agent) interfaces. IF you want to use this CLI to import historical data please take a look to the [uploading historical data](./bulk-uploads.md) part of the documentation.
 
 This command offers to the user a way to import the .csv files through MindConnect (Agent) API.
 
@@ -45,8 +41,8 @@ Options:
 
   Examples:
 
-    mc ts -f timeseries.csv 					 upload timeseries from the csv file to mindsphere 
-    mc upload-timeseries --file timeseries.csv  --size 100  	 use http post size of 100 records 
+    mc ts -f timeseries.csv        upload timeseries from the csv file to mindsphere
+    mc upload-timeseries --file timeseries.csv  --size 100  use http post size of 100 records
 
   Data Format: (use your own data point ids from mindsphere)
 
@@ -55,7 +51,7 @@ Options:
   2019-05-16T14:50:54.048Z, DP-Humidity, 0, 70
   2019-05-16T14:50:55.048Z, DP-Pressure, 0, 1012.3
 
-  Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important. 
+  Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
   The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)
 
   Important:
@@ -66,9 +62,9 @@ Options:
 
 ## Example
 
-The timeseries data for the upload must match your DataSourceConfiguration in the Mindsphere. 
-For example: if you have the data source configuration from the 
-development example the csv file should look like in the documentation below. 
+The timeseries data for the upload must match your DataSourceConfiguration in the Mindsphere.
+For example: if you have the data source configuration from the
+development example the csv file should look like in the documentation below.
 
 Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
 The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)
@@ -80,18 +76,18 @@ timestamp, dataPointId, qualityCode, value
 2019-05-16T15:58:39.626Z, DP-Pressure, 0, 1012.3
 ```
 
-Running the command 
+Running the command
 
-```bash 
+```bash
 mc upload-timeseries --file timeseries.csv --size 100 --config agentconfig.json
 ```
 
 will upload the data to MindConnect API in batches of 100 messages.
 
-## Creating events (```mc create-event```)
+## Creating events (`mc create-event`)
 
 !!! info
-    This command can also be used with service credentials instead.
+This command can also be used with service credentials instead.
 
 ```text
 Usage: create-event|ce [options]
@@ -115,9 +111,9 @@ Options:
 
   Examples:
 
-    mc create-event 				 create error event with default values and current timestamp
-    mc ce --desc Warning! --severity 30 	 create warning with description warning
-    mc ce --desc "custom event" --i 123....4 	 create error event for asset with id 123....4
+    mc create-event                           create error event with default values and current timestamp
+    mc ce --desc Warning! --severity 30       create warning with description warning
+    mc ce --desc "custom event" --i 123....4  create error event for asset with id 123....4
 
 ```
 
@@ -131,18 +127,14 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 
 **Severity levels:**
 
-!!! info
-    - 20: Error
-    - 30: Warning
-    - 40: Information
+!!! info - 20: Error - 30: Warning - 40: Information
 
-## Uploading files  (```mc upload-file```)
+## Uploading files (`mc upload-file`)
 
 !!! info
-    This command can also be used with service credentials instead.
+This command can also be used with service credentials instead.
 
 The upload-file command can upload the files to mindsphere. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overriden in the mindsphere.
-
 
 ```text
 Usage: upload-file|uf [options]
@@ -166,9 +158,9 @@ Options:
 
   Examples:
 
-    mc uf -f CHANGELOG.md   							 upload file CHANGELOG.md to the agent
-    mc upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain 	 upload file to a specified asset with custom mime type
-    mc upload-file --file  CHANGELOG.md  --chunked 				 upload file using experimental chunked upload
+    mc uf -f CHANGELOG.md        upload file CHANGELOG.md to the agent
+    mc upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain    upload file to a specified asset with custom mime type
+    mc upload-file --file  CHANGELOG.md  --chunked     upload file using experimental chunked upload
 ```
 
 ### Example
@@ -176,7 +168,7 @@ Options:
 The following command will upload the file to the MindSphere using multipart upload and 5 parallel threads.
 
 ```bash
-mc upload-file --file simulationdata.zip --chunked --parallel 5 
+mc upload-file --file simulationdata.zip --chunked --parallel 5
 ```
 
 The command returns the md5 hash of the uploaded file.

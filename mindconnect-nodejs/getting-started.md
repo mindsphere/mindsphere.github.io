@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - Getting Started
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -8,12 +7,12 @@ show_mit_license_text: True
 
 ## Installing the Command Line Interface
 
-The library comes with a command line interface which should be installed globally. 
+The library comes with a command line interface which should be installed globally.
 You can use the command line mode to upload timeseries, files and create events in the mindsphere.
 
 ```bash
 # install the library globaly if you want to use its command line interface.
- npm install -g @mindconnect/mindconnect-nodejs
+npm install -g @mindconnect/mindconnect-nodejs
 ```
 
 This enables the command line interface which can be used to create starter projects, upload timeseries, events and files, read agent diagnostics etc.

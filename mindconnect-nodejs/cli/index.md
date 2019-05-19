@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - CLI - Overview
 hide_license_text: True
 show_mit_license_text: True
 hide_community_button: True
@@ -15,6 +14,7 @@ The library comes with a command line interface which can be used to upload time
 ```bash
 npm install -g @mindconnect/mindconnect-nodejs
 ```
+
 See also [getting started](../getting-started.md) section of this documentation
 
 ## What is it

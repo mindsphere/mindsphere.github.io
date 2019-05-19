@@ -1,5 +1,4 @@
 ---
-title: MindConnect-NodeJS - Agent Development - Agent State Storage
 hide_license_text: True
 show_mit_license_text: True
 ---
@@ -8,17 +7,17 @@ show_mit_license_text: True
 
 ## Introduction
 
-The agents need to manage their state information over time. 
+The agents need to manage their state information over time.
 This state information consists of
 
 - agent secrets
 - list of uploaded files and corresponding eTags (so that agents can overwrite the files if necessary)
 
-This information needs to be persisted over time. 
+This information needs to be persisted over time.
 
 !!! info
-    The agent stores the eTag of the file so that they can overwrite these files in the future. 
-    This will change once agents can read the eTags of the files.
+The agent stores the eTag of the file so that they can overwrite these files in the future.
+This will change once agents can read the eTags of the files.
 
 ## Default Implementaiton
 
@@ -38,7 +37,6 @@ drwxr-xr-x 1 sn0wcat 1049089    0 May 17 17:41 ..
 If you need to store the data in a different or more secure fashion you can provide your own implementation of the StorageProvider. You need to implement the following interface
 
 ```typescript
-
 /**
  * Per default, the library stores the agent settings in the directory .mc
  * You can pass a class which implements a ConfigurationStorage in the constructor if you want to store
@@ -47,19 +45,20 @@ If you need to store the data in a different or more secure fashion you can prov
  * @interface ConfigurationStorage
  */
 export interface IConfigurationStorage {
-    GetConfig(config: IMindConnectConfiguration): IMindConnectConfiguration;
-    SaveConfig(config: IMindConnectConfiguration): Promise<IMindConnectConfiguration>;
+  GetConfig(config: IMindConnectConfiguration): IMindConnectConfiguration;
+  SaveConfig(
+    config: IMindConnectConfiguration
+  ): Promise<IMindConnectConfiguration>;
 }
-
 ```
 
 The GetConfig method should check if the config has changed and return no value so that the agent can be onboarded again
 
 ```typescript
 if (_.isEqual(json.content, configuration.content)) {
-        return json;
-    } else {
-        log("The configuration has changed we will onboard again.");
+  return json;
+} else {
+  log("The configuration has changed we will onboard again.");
 }
 ```
 
@@ -120,5 +119,9 @@ export class MySecureStorage implements IConfigurationStorage {
 You can pass the instance of your storage provider to the MindConnectAgent constructor.
 
 ```typescript
-const agent = new MindConnectAgent(configuration, undefined, new MySecureStorage());
+const agent = new MindConnectAgent(
+  configuration,
+  undefined,
+  new MySecureStorage()
+);
 ```
