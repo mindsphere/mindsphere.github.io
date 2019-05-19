@@ -1,6 +1,8 @@
 <!-- vim: syntax=Markdown -->
 # MindSphere Community Documentation
 
+[![Build Status](https://jenkins.mindconnect.rocks/buildStatus/icon?job=mindsphere.github.io/master)](https://jenkins.mindconnect.rocks/blue/organizations/jenkins/mindsphere.github.io/activity/) [![The MIT License](https://img.shields.io/badge/license-MIT-009999.svg?style=flat)](./LICENSE)
+
 MindSphere Open Source Tools and Libraries are contributions from the MindSphere community. These are demo applications, libraries, SDKs and useful connectivity tools which are maintained and released as open source software.
 
 This project contains documentation for MindSphere Open Source Tools and Libraries which is available on [https://developer.mindsphere.io](https://developer.mindsphere.io).
