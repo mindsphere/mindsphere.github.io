@@ -61,8 +61,10 @@ You can run the command like this to pipe the output directly to the clipboard:
 mc service-token --passkey {yourpasskey} | clip
 ```
 
+<!-- prettier-ignore-start -->
 !!! info
-running the `mc service-token --passkey {yourpasskey} --verbose` command will also print out the decrypted token content.
+    running the `mc service-token --passkey {yourpasskey} --verbose` command will also print out the decrypted token content.
+<!-- prettier-ignore-end -->
 
 ## Get Agent Token (`mc agent-token`)
 

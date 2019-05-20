@@ -15,7 +15,12 @@ cd ~/.node-red/
 npm install @mindconnect/node-red-contrib-mindconnect
 ```
 
-!!! info - install to the .node-red folder if you have installed node-red globally - install to the userDir directory if you have custom userDir - make sure that your nodejs version is relatively current
+<!-- prettier-ignore-start -->
+!!! info
+    - install to the .node-red folder if you have installed node-red globally
+    - install to the userDir directory if you have custom userDir
+    - make sure that your nodejs version is relatively current
+<!-- prettier-ignore-end -->
 
 ## Node-RED - Manage Palette Installation
 

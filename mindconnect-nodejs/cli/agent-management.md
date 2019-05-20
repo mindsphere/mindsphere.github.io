@@ -203,8 +203,10 @@ This command will offboard the agent with the agent configuration stored in agen
 mc offboard-agent --config agentconfig.json --passkey {yourpasskey}
 ```
 
+<!-- prettier-ignore-start -->
 !!! warning
-You will have to renew the agent secret before you can onboard the agent again.
+    You will have to renew the agent secret before you can onboard the agent again.
+<!-- prettier-ignore-end -->
 
 ## Renewing the agent secrets (`mc renew-agent`)
 
@@ -243,5 +245,7 @@ Options:
 mc renew-agent --config agent.json --passkey {yourpasskey}
 ```
 
+<!-- prettier-ignore-start -->
 !!! info
-you should offboard the agent first before renewing the secrets
+    you should offboard the agent first before renewing the secrets
+<!-- prettier-ignore-end -->
