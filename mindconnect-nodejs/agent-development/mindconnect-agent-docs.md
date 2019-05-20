@@ -80,8 +80,10 @@ public async GetAgentToken()
 
 Renews the agent token.
 
+<!-- prettier-ignore-start -->
 !!! info
-The library renews the tokens for you but you can enforce the token renewal if you really want to
+    The library renews the tokens for you but you can enforce the token renewal if you really want to
+<!-- prettier-ignore-end -->
 
 ```typescript
 /**

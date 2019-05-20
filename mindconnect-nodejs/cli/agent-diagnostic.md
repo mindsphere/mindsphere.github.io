@@ -10,8 +10,10 @@ show_mit_license_text: True
 If you are experiencing some problems with your agents (due to missing DataSourceConfiguration, agent Mappings or similar) you can register your Agent
 to the diagnostic endpoint of MindConnect API.
 
+<!-- prettier-ignore-start -->
 !!! info
-MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
+    MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
+<!-- prettier-ignore-end -->
 
 ## Register the agent for diagnostic (`mc register-diagnostic`)
 

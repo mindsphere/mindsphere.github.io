@@ -32,8 +32,10 @@ As the bulk import is asynchronous you can check the progress of the job by runn
 
 This command creates a directory with the template .csv files. You will need to create your files in the same format as the provided templates.
 
+<!-- prettier-ignore-start -->
 !!! warning
-The `twinType: performance` Bulk Import API expects all the data in the file to be from the same hour.
+    The `twinType: performance` Bulk Import API expects all the data in the file to be from the same hour.
+<!-- prettier-ignore-end -->
 
 You can either create a new asset for the data or import the data to the existing asset by providing the `--assetid` parameter.
 

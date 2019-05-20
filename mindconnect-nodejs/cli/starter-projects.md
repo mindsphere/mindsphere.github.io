@@ -35,8 +35,10 @@ Run:
 mc starter-ts
 ```
 
+<!-- prettier-ignore-start -->
 !!! info
-Run `npm install` in your starter project directory to install all dependencies
+    Run `npm install` in your starter project directory to install all dependencies
+<!-- prettier-ignore-end -->
 
 ## JavaScript Starter Project (`mc starter-js`)
 
@@ -67,5 +69,7 @@ mc starter-js --dir mydir
 
 to create a starter project in mydir directory.
 
+<!-- prettier-ignore-start -->
 !!! info
-Run `npm install` in your starter project directory to install all dependencies
+    Run `npm install` in your starter project directory to install all dependencies
+<!-- prettier-ignore-end -->

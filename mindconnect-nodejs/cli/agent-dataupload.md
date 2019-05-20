@@ -17,8 +17,10 @@ All these commands use the agent credentials. Take a look at [Agent Management](
 
 ## Ingesting Time Series Data via MindConnect (`mc upload-timeseries`)
 
+<!-- prettier-ignore-start -->
 !!! warning
-This commands are provided for testing/working with the MindConnect (Agent) interfaces. IF you want to use this CLI to import historical data please take a look to the [uploading historical data](./bulk-uploads.md) part of the documentation.
+    This commands are provided for testing/working with the MindConnect (Agent) interfaces. IF you want to use this CLI to import historical data please take a look to the [uploading historical data](./bulk-uploads.md) part of the documentation.
+<!-- prettier-ignore-end-->
 
 This command offers to the user a way to import the .csv files through MindConnect (Agent) API.
 
@@ -86,8 +88,10 @@ will upload the data to MindConnect API in batches of 100 messages.
 
 ## Creating events (`mc create-event`)
 
+<!-- prettier-ignore-start -->
 !!! info
-This command can also be used with service credentials instead.
+    This command can also be used with service credentials instead.
+<!-- prettier-ignore-end -->
 
 ```text
 Usage: create-event|ce [options]
@@ -127,12 +131,19 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 
 **Severity levels:**
 
-!!! info - 20: Error - 30: Warning - 40: Information
+<!-- prettier-ignore-start -->
+!!! info
+    - 20: Error
+    - 30: Warning
+    - 40: Information
+<!-- prettier-ignore-end -->
 
 ## Uploading files (`mc upload-file`)
 
+<!-- prettier-ignore-start -->
 !!! info
-This command can also be used with service credentials instead.
+    This command can also be used with service credentials instead.
+<!-- prettier-ignore-end -->
 
 The upload-file command can upload the files to mindsphere. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overriden in the mindsphere.
 
