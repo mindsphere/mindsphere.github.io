@@ -1,3 +1,27 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2019-05-20)
+
+
+### Bug Fixes
+
+* **build:** added pre-commit hook for linting ([5d45ec3](https://github.com/mindsphere/mindsphere.github.io/commit/5d45ec3))
+* **build:** commit lint from head only ([d35bbfc](https://github.com/mindsphere/mindsphere.github.io/commit/d35bbfc))
+* **build:** removed post step ([fdd71de](https://github.com/mindsphere/mindsphere.github.io/commit/fdd71de))
+*  no extensions for own md files ([509352a](https://github.com/mindsphere/mindsphere.github.io/commit/509352a))
+* agent state storage ([e5ad90c](https://github.com/mindsphere/mindsphere.github.io/commit/e5ad90c))
+* **info:** proper align for info fields ([15ac801](https://github.com/mindsphere/mindsphere.github.io/commit/15ac801))
+* typo in  readme ([a453306](https://github.com/mindsphere/mindsphere.github.io/commit/a453306))
+
+
+### Features
+
+* getting started ([a981ce0](https://github.com/mindsphere/mindsphere.github.io/commit/a981ce0))
+* initial structure ([0175d44](https://github.com/mindsphere/mindsphere.github.io/commit/0175d44))
+* mindconnect-nodejs documentation ([4d7b0eb](https://github.com/mindsphere/mindsphere.github.io/commit/4d7b0eb))
+* **readme:** badges ([61107f8](https://github.com/mindsphere/mindsphere.github.io/commit/61107f8))
+
+
+
 <!-- vim: syntax=Markdown -->
 # 1.0.0 (2019-05-19)
 
