@@ -1,3 +1,5 @@
+<!-- vim: syntax=Markdown -->
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2019-05-20)
 
@@ -21,8 +23,6 @@
 * **readme:** badges ([61107f8](https://github.com/mindsphere/mindsphere.github.io/commit/61107f8))
 
 
-
-<!-- vim: syntax=Markdown -->
 # 1.0.0 (2019-05-19)
 
 ### Bug Fixes
