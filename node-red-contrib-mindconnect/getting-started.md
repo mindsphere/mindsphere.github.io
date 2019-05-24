@@ -137,15 +137,22 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-  entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
-  fileName: "package.json",
-  fileType: "application/json", //optional, it is automatically determined if there is no fileType specified
-  description: "testfile"
+    entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
+    fileName: "digitaltwin.png", // you can also pass an instance of a Buffer
+    fileType: "image/png", //optional, it is automatically determined if there is no fileType specified
+    filePath: "images/digitaltwin.png", // required if you are using buffer instead of the file name
+    description: "testfile"
 };
 return msg;
 ```
 
-If the experimental chunking feature is on, the files which are bigger then 8MB will be uploaded in 8 MB Chunks.
+##### File Upload with a  Buffer
+
+Instead of file name you can use a buffer instead.
+
+##### Multipart-Upload
+
+If the multipart upload is on, the files which are larger than 8MB will be uploaded in 8 MB Chunks.
 
 #### Error handling in the flows
 
@@ -154,7 +161,7 @@ If you need more complex flows, the node also returns the
 
 ```javascript
 msg._mindsphereStatus; // OK on success othervise error
-msg_error; // The timestamped error message
+msg._error; // The timestamped error message
 ```
 
 properties which can be used to create more complex flows. (e.g. in the flow below, the unrecoverable errors are written in error.log file and the failed data is stored in backupdata.log file)
