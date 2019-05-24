@@ -1,15 +1,17 @@
 {
   "name": "mindsphere.github.io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MindSphere Open Source Tools and Libraries documentation",
   "main": "index.js",
   "scripts": {
+    "start": "markserv .",
     "test": "npm run style && npm run commitlint && npm run lint",
     "style": "eclint check **/*.md",
     "commitlint": "commitlint . --from=HEAD~1",
     "lint": "markdownlint . -i node_modules",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG -s && git add CHANGELOG",
-    "version": "conventional-changelog -p angular -i CHANGELOG -s && git add CHANGELOG"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.raw -s && git add CHANGELOG.raw",
+    "changelog:version": " cat CHANGELOG.header.raw > CHANGELOG &&  cat CHANGELOG.raw >> CHANGELOG && git add CHANGELOG",
+    "version": "npm run changelog && npm run changelog:version"
   },
   "repository": {
     "type": "git",
@@ -35,11 +37,11 @@
     "conventional-changelog-cli": "^2.0.21",
     "eclint": "^2.8.1",
     "husky": "^2.3.0",
-    "markdownlint-cli": "^0.16.0"
+    "markdownlint-cli": "^0.16.0",
+    "markserv": "^1.17.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
       "pre-push": "npm test"
     }
   }
