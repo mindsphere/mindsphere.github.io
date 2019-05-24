@@ -49,13 +49,13 @@ npm install
 npm test
 ```
 
+This step ensures that the style (editorconfig, markdownlint) and the commit message (commitlint) are consitent in the documentation.
+
 ### Running a simple markdown HTTP server locally
 
 ```bash
 npm start
 ```
-
-This steps ensures that the style (editorconfig, markdownlint) and the commit message (commitlint) are consitent in the documentation.
 
 ## Additional Information
 
