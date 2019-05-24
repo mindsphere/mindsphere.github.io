@@ -70,7 +70,7 @@ the body of the commit shall describe the why.
 Commit messages should follow the conventions defined by [conventional-changelog](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary).
 
 ```text
-docs: add the test-cluster command
+feat: add the test-cluster command
 Fixes #42
 ```
 
