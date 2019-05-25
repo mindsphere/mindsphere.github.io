@@ -6,6 +6,12 @@ hide_community_button: True
 
 # MindConnect-NodeJS - <small>Changelog</small>
 
+## 3.5.3 - (Venetian Red Vienna) - May 2019 - Recovery
+
+## Bugfix 3.5.3
+
+- added node v8 compatible URL import for Raspberry PIs
+
 ## 3.5.2 - (Venetian Red Vienna) - May 2019 - Recovery
 
 ## Bugfix 3.5.2

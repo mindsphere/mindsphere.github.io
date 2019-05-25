@@ -49,13 +49,13 @@ npm install
 npm test
 ```
 
+This step ensures that the style (editorconfig, markdownlint) and the commit message (commitlint) are consitent in the documentation.
+
 ### Running a simple markdown HTTP server locally
 
 ```bash
 npm start
 ```
-
-This steps ensures that the style (editorconfig, markdownlint) and the commit message (commitlint) are consitent in the documentation.
 
 ## Additional Information
 
@@ -70,7 +70,7 @@ the body of the commit shall describe the why.
 Commit messages should follow the conventions defined by [conventional-changelog](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary).
 
 ```text
-docs: add the test-cluster command
+feat: add the test-cluster command
 Fixes #42
 ```
 
