@@ -7,7 +7,7 @@
     "start": "markserv .",
     "test": "npm run style && npm run commitlint && npm run lint",
     "style": "eclint check **/*.md",
-    "commitlint": "commitlint . --from=HEAD~1",
+    "commitlint": "commitlint . --from=origin/master",
     "lint": "markdownlint . -i node_modules",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.raw -s && git add CHANGELOG.raw",
     "changelog:version": " cat CHANGELOG.header.raw > CHANGELOG &&  cat CHANGELOG.raw >> CHANGELOG && git add CHANGELOG",
