@@ -20,12 +20,12 @@ pipeline {
       steps {
 
         sh '''
-        cp -R . /srv/jekyll/docs
+        cp -R ./docs/ /srv/jekyll/
+        cp -R ./_data/ /srv/jekyll/
+
         chown -R jekyll:jekyll /srv/jekyll/
-        chmod 777 /srv/jekyll
-        cd /srv/jekyll/docs
-        rm -rf node_modules
-        mv /srv/jekyll/docs/_data /srv/jekyll/
+        chmod +w /srv/jekyll
+
         cd /srv/jekyll/
         bundle update
         bundle exec jekyll build
