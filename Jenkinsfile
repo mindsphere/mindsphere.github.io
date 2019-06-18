@@ -44,6 +44,7 @@ pipeline {
             usernamePassword(credentialsId: 'AWS_BUCKET', passwordVariable: 'AWS_BUCKET', usernameVariable: 'e')]) {
 
             sh '''
+            cd /srv/jekyll/
             echo Deploying to s3://$AWS_BUCKET/
             aws s3 sync --delete _site/ s3://$AWS_BUCKET/
             aws cloudfront create-invalidation --distribution-id $AWS_DEPLOYMENT_ID --paths "/*"
