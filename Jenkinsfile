@@ -36,7 +36,7 @@ pipeline {
       steps {
         sh '''
         cd /srv/jekyll/
-        tar -zcvf mindsphere.github.io.tar.gz ./_site/
+        tar -zcvf mindsphere.github.io.tgz ./_site/
         '''
       }
     }
