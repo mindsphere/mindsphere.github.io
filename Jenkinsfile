@@ -16,7 +16,7 @@ pipeline {
         sh 'npm test'
       }
     }
-    stage('Prepare Jekyll Build') {
+    stage('Jekyll Build') {
       steps {
 
         sh '''
@@ -34,6 +34,23 @@ pipeline {
         ls -la _site/
         '''
       }
+    }
+    stage('Publish to AWS') {
+      steps {
+          // when { branch 'master'} {
+            withCredentials([usernamePassword(credentialsId: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_ACCESS_KEY_ID', usernameVariable: ''),
+            usernamePassword(credentialsId: 'AWS_SECRET_ACCESS_KEY', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: ''),
+            usernamePassword(credentialsId: 'AWS_REGION', passwordVariable: 'AWS_REGION', usernameVariable: ''),
+            usernamePassword(credentialsId: 'AWS_BUCKET', passwordVariable: 'AWS_BUCKET', usernameVariable: '')]) {
+
+            sh '''
+            cd /srv/jekyll
+            echo Deploying to s3://$AWS_BUCKET/
+            aws s3 sync --delete _site/ s3://$AWS_BUCKET/
+            aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION --paths "/*"
+            '''
+          }
+      // }
     }
     stage('Package') {
       steps {
