@@ -36,6 +36,9 @@ pipeline {
       }
     }
     stage('Publish to AWS') {
+      when {
+        branch 'master'
+      }
       steps {
             withCredentials([usernamePassword(credentialsId: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_ACCESS_KEY_ID', usernameVariable: 'a'),
             usernamePassword(credentialsId: 'AWS_SECRET_ACCESS_KEY', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'b'),
