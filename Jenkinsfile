@@ -27,8 +27,8 @@ pipeline {
         rm -rf node_modules
         mv /srv/jekyll/docs/_data /srv/jekyll/
         cd /srv/jekyll/
-        ls -la
-        jekyll build .
+        bundle exec jekyll build
+        ls -la _site/
         '''
       }
     }
