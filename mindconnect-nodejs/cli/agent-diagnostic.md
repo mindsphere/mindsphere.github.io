@@ -10,7 +10,7 @@ If you are experiencing some problems with your agents (due to missing DataSourc
 to the diagnostic endpoint of MindConnect API.
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
 <!-- prettier-ignore-end -->
 

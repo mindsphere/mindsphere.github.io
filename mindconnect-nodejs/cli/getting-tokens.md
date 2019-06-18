@@ -61,7 +61,7 @@ mc service-token --passkey {yourpasskey} | clip
 ```
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     running the `mc service-token --passkey {yourpasskey} --verbose` command will also print out the decrypted token content.
 <!-- prettier-ignore-end -->
 
@@ -107,6 +107,6 @@ mc agent-token --passkey {yourpasskey} | clip
 ```
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     running the ```mc agent-token --passkey {yourpasskey} --verbose``` command will also print out the decrypted token content.
 <!-- prettier-ignore-end -->

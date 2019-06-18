@@ -175,7 +175,7 @@ for (let index = 0; index < 5; index++) {
 ```
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     If you were using UI to configure data mappings you will have long integers instead of human-readable data point Ids.
 <!-- prettier-ignore-end -->
 

@@ -80,7 +80,7 @@ public async GetAgentToken()
 Renews the agent token.
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     The library renews the tokens for you but you can enforce the token renewal if you really want to
 <!-- prettier-ignore-end -->
 

@@ -35,7 +35,7 @@ mc starter-ts
 ```
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     Run `npm install` in your starter project directory to install all dependencies
 <!-- prettier-ignore-end -->
 
@@ -69,6 +69,6 @@ mc starter-js --dir mydir
 to create a starter project in mydir directory.
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     Run `npm install` in your starter project directory to install all dependencies
 <!-- prettier-ignore-end -->

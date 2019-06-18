@@ -88,7 +88,7 @@ will upload the data to MindConnect API in batches of 100 messages.
 ## Creating events (`mc create-event`)
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 
@@ -131,7 +131,7 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 **Severity levels:**
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     - 20: Error
     - 30: Warning
     - 40: Information
@@ -140,7 +140,7 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 ## Uploading files (`mc upload-file`)
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 

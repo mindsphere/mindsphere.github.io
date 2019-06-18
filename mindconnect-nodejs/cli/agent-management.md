@@ -245,6 +245,6 @@ mc renew-agent --config agent.json --passkey {yourpasskey}
 ```
 
 <!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i> 
+<i class="fas fa-info-circle"></i>
     you should offboard the agent first before renewing the secrets
 <!-- prettier-ignore-end -->
