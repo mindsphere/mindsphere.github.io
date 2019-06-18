@@ -42,7 +42,7 @@ pipeline {
     }
     stage('Archive Artifacts') {
       steps {
-        archiveArtifacts '*.tgz'
+        archiveArtifacts '/srv/jekyll/*.tgz'
       }
     }
   }
