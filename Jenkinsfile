@@ -24,6 +24,7 @@ pipeline {
         chown -R jekyll:jekyll /srv/jekyll/
         chmod 777 /srv/jekyll
         cd /srv/jekyll/docs
+        rm -rf node_modules
         mv /srv/jekyll/docs/_data /srv/jekyll/
         cd /srv/jekyll/
         ls -la
@@ -34,7 +35,8 @@ pipeline {
     stage('Package') {
       steps {
         sh '''
-        tar -zcvf mindsphere.github.io.tar.gz _site/
+        cd /srv/jekyll/
+        tar -zcvf mindsphere.github.io.tar.gz ./_site/
         '''
       }
     }
