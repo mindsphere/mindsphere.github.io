@@ -29,6 +29,8 @@ pipeline {
         cd /srv/jekyll/
         bundle update
         bundle exec jekyll build
+        cp search.json _site/
+        rm _site/Dockerfile/
         ls -la _site/
         '''
       }
