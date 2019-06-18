@@ -21,7 +21,10 @@ pipeline {
 
         sh '''
         cp -R . /srv/jekyll/docs
+        chown jekyll:jekyll /srv/jekyll/docs
         cd /srv/jekyll/docs
+        mv /srv/jekyll/docs/_data /srv/jekyll/
+        cf /srv/jekyll/
         ls -la
         jekyll build
         '''
