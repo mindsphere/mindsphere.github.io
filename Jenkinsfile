@@ -37,7 +37,6 @@ pipeline {
     }
     stage('Publish to AWS') {
       steps {
-          // when { branch 'master'} {
             withCredentials([usernamePassword(credentialsId: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_ACCESS_KEY_ID', usernameVariable: ''),
             usernamePassword(credentialsId: 'AWS_SECRET_ACCESS_KEY', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: ''),
             usernamePassword(credentialsId: 'AWS_REGION', passwordVariable: 'AWS_REGION', usernameVariable: ''),
@@ -50,7 +49,7 @@ pipeline {
             aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION --paths "/*"
             '''
           }
-      // }
+      }
     }
     stage('Package') {
       steps {
