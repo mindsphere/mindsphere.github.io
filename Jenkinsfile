@@ -37,11 +37,11 @@ pipeline {
     }
     stage('Publish to AWS') {
       steps {
-            withCredentials([usernamePassword(credentialsId: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_ACCESS_KEY_ID', usernameVariable: ''),
-            usernamePassword(credentialsId: 'AWS_SECRET_ACCESS_KEY', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: ''),
-            usernamePassword(credentialsId: 'AWS_REGION', passwordVariable: 'AWS_REGION', usernameVariable: ''),
-            usernamePassword(credentialsId: 'AWS_DEPLOYMENT_ID', passwordVariable: 'AWS_DEPLOYMENT_ID', usernameVariable: ''),
-            usernamePassword(credentialsId: 'AWS_BUCKET', passwordVariable: 'AWS_BUCKET', usernameVariable: '')]) {
+            withCredentials([usernamePassword(credentialsId: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_ACCESS_KEY_ID', usernameVariable: 'a'),
+            usernamePassword(credentialsId: 'AWS_SECRET_ACCESS_KEY', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'b'),
+            usernamePassword(credentialsId: 'AWS_REGION', passwordVariable: 'AWS_REGION', usernameVariable: 'c'),
+            usernamePassword(credentialsId: 'AWS_DEPLOYMENT_ID', passwordVariable: 'AWS_DEPLOYMENT_ID', usernameVariable: 'd'),
+            usernamePassword(credentialsId: 'AWS_BUCKET', passwordVariable: 'AWS_BUCKET', usernameVariable: 'e')]) {
 
             sh '''
             echo Deploying to s3://$AWS_BUCKET/
