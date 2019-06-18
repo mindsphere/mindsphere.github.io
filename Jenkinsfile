@@ -24,7 +24,7 @@ pipeline {
         chown jekyll:jekyll /srv/jekyll/docs
         cd /srv/jekyll/docs
         mv /srv/jekyll/docs/_data /srv/jekyll/
-        cf /srv/jekyll/
+        cd /srv/jekyll/
         ls -la
         jekyll build
         '''
