@@ -21,12 +21,13 @@ pipeline {
 
         sh '''
         cp -R . /srv/jekyll/docs
-        chown jekyll:jekyll /srv/jekyll/docs
+        chown -R jekyll:jekyll /srv/jekyll/
+        chmod 777 /srv/jekyll
         cd /srv/jekyll/docs
         mv /srv/jekyll/docs/_data /srv/jekyll/
         cd /srv/jekyll/
         ls -la
-        jekyll build
+        jekyll build .
         '''
       }
     }
