@@ -20,10 +20,9 @@ pipeline {
       steps {
 
         sh '''
-        rm -rf node_modules
-        mv _data/ ../
-        cd ..
-        mv mindsphere.github.io docs
+        cp -R . /srv/jekyll/docs
+        cd /srv/jekyll/docs
+        ls -la
         jekyll build
         '''
       }
