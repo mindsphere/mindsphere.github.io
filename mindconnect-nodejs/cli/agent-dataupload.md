@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
 ---
 
 # MindConnect-NodeJS - CLI - <small>Uploading Data to MindSphere</small>
@@ -18,7 +17,7 @@ All these commands use the agent credentials. Take a look at [Agent Management](
 ## Ingesting Time Series Data via MindConnect (`mc upload-timeseries`)
 
 <!-- prettier-ignore-start -->
-!!! warning
+<i class="fas fa-exclamation-triangle"></i>
     This commands are provided for testing/working with the MindConnect (Agent) interfaces. IF you want to use this CLI to import historical data please take a look to the [uploading historical data](./bulk-uploads.md) part of the documentation.
 <!-- prettier-ignore-end-->
 
@@ -89,7 +88,7 @@ will upload the data to MindConnect API in batches of 100 messages.
 ## Creating events (`mc create-event`)
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 
@@ -132,7 +131,7 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 **Severity levels:**
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     - 20: Error
     - 30: Warning
     - 40: Information
@@ -141,7 +140,7 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
 ## Uploading files (`mc upload-file`)
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 

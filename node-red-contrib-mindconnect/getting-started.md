@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect Node-RED Node - Getting Started
 ---
 
 # MindConnect Node-RED Node - <small>Getting Started</small>
@@ -16,7 +15,7 @@ npm install @mindconnect/node-red-contrib-mindconnect
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     - install to the .node-red folder if you have installed node-red globally
     - install to the userDir directory if you have custom userDir
     - make sure that your nodejs version is relatively current

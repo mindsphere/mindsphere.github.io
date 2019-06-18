@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect--NodeJS - CLI - Starter Projects
 ---
 
 # MindConnect--NodeJS - CLI - <small>Starter Projects</small>
@@ -36,7 +35,7 @@ mc starter-ts
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     Run `npm install` in your starter project directory to install all dependencies
 <!-- prettier-ignore-end -->
 
@@ -70,6 +69,6 @@ mc starter-js --dir mydir
 to create a starter project in mydir directory.
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     Run `npm install` in your starter project directory to install all dependencies
 <!-- prettier-ignore-end -->

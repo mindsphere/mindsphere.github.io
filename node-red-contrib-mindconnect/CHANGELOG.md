@@ -1,7 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
-hide_community_button: True
+title: MindConnect Node-RED Node - <small>Changelog</small>
 ---
 
 # MindConnect Node-RED Node - <small>Changelog</small>

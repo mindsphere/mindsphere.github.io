@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - Agent Development - How to create a NodeJS MindSphere agent
 ---
 
 # MindConnect-NodeJS - Agent Development - <small>How to create a NodeJS MindSphere agent</small>
@@ -13,7 +12,7 @@ The following steps describe the easiest way to test the library. You can of cou
 
 All examples are in [typescript <i class="fa fa-external-link-alt"></i>](https://www.typescriptlang.org/). They can be converted to javascript by removing the types.
 
-```typescript
+```javascript
 // example in typescript
 const i: number = 0;
 
@@ -82,14 +81,14 @@ More Information about [core.MindConnectLib](https://documentation.mindsphere.io
 Read the initial configuration from the config file and create the agent.
 If you are using the **SHARED_SECRET** profile there is no need to setup the local certificate for the communication (recommended for smaller devices).
 
-```typescript
+```javascript
 const configuration = require("../../agentconfig.json");
 const agent = new MindConnectAgent(configuration);
 ```
 
 If you want to use the **RSA_3072** profile you must also set up the agent certificate.
 
-```typescript
+```javascript
 // you can create the private.key for example using openssl:
 // openssl genrsa -out private.key 3072
 
@@ -104,7 +103,7 @@ This data is stored by default in the .mc folder in your application if you don'
 
 **Important**: Make sure that your folder with the configurations is not reachable from the internet as it contains the client_secret for the authentication.
 
-```typescript
+```javascript
 if (!agent.IsOnBoarded()) {
   await agent.OnBoard();
 }
@@ -122,7 +121,7 @@ In the mindsphere version 3 you can configure the data model and mappings to asp
 
 After that you can pull the configuration from mindsphere.
 
-```typescript
+```javascript
 if (!agent.HasDataSourceConfiguration()) {
   await agent.GetDataSourceConfiguration();
 }
@@ -130,7 +129,7 @@ if (!agent.HasDataSourceConfiguration()) {
 
 ### Step 6 After this you can send the data in the code
 
-```typescript
+```javascript
 for (let index = 0; index < 5; index++) {
   const values: DataPointValue[] = [
     {
@@ -176,7 +175,7 @@ for (let index = 0; index < 5; index++) {
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     If you were using UI to configure data mappings you will have long integers instead of human-readable data point Ids.
 <!-- prettier-ignore-end -->
 
@@ -184,7 +183,7 @@ for (let index = 0; index < 5; index++) {
 
 If you don't want to send the data points one by one, you can also use the bulkpostdata method
 
-```typescript
+```javascript
 const bulk: TimeStampedDataPoint[] = [
   {
     timestamp: "2018-08-23T18:38:02.135Z",
@@ -240,7 +239,7 @@ Files can now be uploaded via the library. You can upload files for your agent o
 Since version 3.5.1. the agents are using the multipart upload API of the MindSphere. This means that the agents can upload files also bigger > 8 MB, The
 multipart upload must be switched on (chunk:true) if you want to activate this behavior. The parameter parallelUploads determine the maximal number of paraellel uploads. You can increase this on a powerfull computer to speed up the upload or decrease to prevent network congestion.
 
-```typescript
+```javascript
 const configuration = require("../../agentconfig.json");
 const agent = new MindConnectAgent(configuration);
 

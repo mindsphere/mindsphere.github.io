@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS
 ---
 
 # MindConnect-NodeJS
@@ -10,10 +9,6 @@ show_mit_license_text: True
 This is a nodejs library which can be used as a starting point for custom agent implementation in nodejs. The library also contains useful tooling like command line support, which enables the user to easily import (historical) timeseries data, files and events to MindSphere.
 
 [<i class="fab fa-github"></i> GitHub](https://github.com/mindsphere/mindconnect-nodejs) [<i class="fab fa-npm"></i> npm](https://www.npmjs.com/package/@mindconnect/mindconnect-nodejs)
-
-## What is it
-
-This is a nodejs library which can be used as a starting point for custom agent implementation in nodejs. The library also contains useful tooling like command line support, which enables the user to easily import (historical) timeseries data, files and events to MindSphere.
 
 ## Prerequisites
 

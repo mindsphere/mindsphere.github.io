@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - CLI - Uploading historical timeseries data
 ---
 
 # MindConnect-NodeJS - CLI - <small>Uploading historical timeseries data</small>
@@ -10,7 +9,7 @@ show_mit_license_text: True
 The CLI provides the command line tooling for import of the historical timeseries data to the MindSphere, which is something which you might need when starting to work with the platform. This set of commands sends the data directly to the (Bulk-)TimeSeries APIs of the MindSphere.
 
 <!-- prettier-ignore-start -->
-!!! warning
+<i class="fas fa-exclamation-triangle"></i>
     Please be aware that the use of this feature has a direct impact
     on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 <!-- prettier-ignore-end -->
@@ -33,7 +32,7 @@ As the bulk import is asynchronous you can check the progress of the job by runn
 This command creates a directory with the template .csv files. You will need to create your files in the same format as the provided templates.
 
 <!-- prettier-ignore-start -->
-!!! warning
+<i class="fas fa-exclamation-triangle"></i>
     The `twinType: performance` Bulk Import API expects all the data in the file to be from the same hour.
 <!-- prettier-ignore-end -->
 

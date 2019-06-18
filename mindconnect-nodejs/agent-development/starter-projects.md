@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: Mindconnect-NodeJS - Agent Development - Starter Projects
 ---
 
 # Mindconnect-NodeJS - Agent Development - <small>Starter Projects</small>
@@ -74,7 +73,7 @@ Link the variables to an asset:
 
 ## Step 3 - Change the IDs to your Datapoint Ids and start the agent
 
-```typescript
+```javascript
 import {
   DataPointValue,
   MindConnectAgent,

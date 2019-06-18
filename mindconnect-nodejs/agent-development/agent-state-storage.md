@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: Mindconnect-NodeJS - Agent Development - Agent State Storage
 ---
 
 # Mindconnect-NodeJS - Agent Development - <small>Agent State Storage</small>
@@ -16,7 +15,7 @@ This state information consists of
 This information needs to be persisted over time.
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     The agent stores the eTag of the file so that they can overwrite these files in the future.
     This will change once agents can read the eTags of the files.
 <!-- prettier-ignore-end -->
@@ -38,7 +37,7 @@ drwxr-xr-x 1 sn0wcat 1049089    0 May 17 17:41 ..
 
 If you need to store the data in a different or more secure fashion you can provide your own implementation of the StorageProvider. You need to implement the following interface
 
-```typescript
+```javascript
 /**
  * Per default, the library stores the agent settings in the directory .mc
  * You can pass a class which implements a ConfigurationStorage in the constructor if you want to store
@@ -56,7 +55,7 @@ export interface IConfigurationStorage {
 
 The GetConfig method should check if the config has changed and return no value so that the agent can be onboarded again
 
-```typescript
+```javascript
 if (_.isEqual(json.content, configuration.content)) {
   return json;
 } else {
@@ -66,7 +65,7 @@ if (_.isEqual(json.content, configuration.content)) {
 
 ### Example
 
-```typescript
+```javascript
 export class MySecureStorage implements IConfigurationStorage {
     private lock: AsyncLock;
 
@@ -120,7 +119,7 @@ export class MySecureStorage implements IConfigurationStorage {
 
 You can pass the instance of your storage provider to the MindConnectAgent constructor.
 
-```typescript
+```javascript
 const agent = new MindConnectAgent(
   configuration,
   undefined,

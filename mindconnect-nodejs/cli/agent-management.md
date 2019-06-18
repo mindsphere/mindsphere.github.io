@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - CLI - Managing Agent Credentials
 ---
 
 # MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
@@ -152,7 +151,7 @@ Options:
 ### Example
 
 ```bash
-mc  agent-status --passkey {{your passkey}}
+mc  agent-status --passkey {your passkey}
 ```
 
 This would return a similar response to the one below.
@@ -204,7 +203,7 @@ mc offboard-agent --config agentconfig.json --passkey {yourpasskey}
 ```
 
 <!-- prettier-ignore-start -->
-!!! warning
+<i class="fas fa-exclamation-triangle"></i>
     You will have to renew the agent secret before you can onboard the agent again.
 <!-- prettier-ignore-end -->
 
@@ -246,6 +245,6 @@ mc renew-agent --config agent.json --passkey {yourpasskey}
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     you should offboard the agent first before renewing the secrets
 <!-- prettier-ignore-end -->

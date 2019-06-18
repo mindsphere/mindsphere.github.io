@@ -1,7 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: False
-hide_community_button: True
+title: MindConnect-Node-RED Node - License
 ---
 
 # MindConnect-Node-RED Node - <small>License</small>

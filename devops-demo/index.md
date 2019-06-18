@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: Devops Demo - Overview
 ---
 
 # Devops Demo - <small>Overview</small>

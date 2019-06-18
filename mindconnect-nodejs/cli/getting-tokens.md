@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect NodeJS - CLI - Getting Tokens
 ---
 
 # MindConnect NodeJS - CLI - <small>Getting Tokens</small>
@@ -62,7 +61,7 @@ mc service-token --passkey {yourpasskey} | clip
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     running the `mc service-token --passkey {yourpasskey} --verbose` command will also print out the decrypted token content.
 <!-- prettier-ignore-end -->
 
@@ -108,6 +107,6 @@ mc agent-token --passkey {yourpasskey} | clip
 ```
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     running the ```mc agent-token --passkey {yourpasskey} --verbose``` command will also print out the decrypted token content.
 <!-- prettier-ignore-end -->

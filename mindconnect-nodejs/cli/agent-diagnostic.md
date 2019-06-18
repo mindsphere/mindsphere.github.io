@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - CLI - Agent Diagnostics
 ---
 
 # MindConnect-NodeJS - CLI - <small>Agent Diagnostics</small>
@@ -11,7 +10,7 @@ If you are experiencing some problems with your agents (due to missing DataSourc
 to the diagnostic endpoint of MindConnect API.
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     MindSphere provides the Agent Diagnostic application on your launchpad which can be used to acquire this information as well.
 <!-- prettier-ignore-end -->
 

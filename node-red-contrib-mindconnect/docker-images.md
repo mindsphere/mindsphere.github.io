@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect Node-RED Node - Docker Images
 ---
 
 # MindConnect Node-RED Node - <small>Docker Images</small>

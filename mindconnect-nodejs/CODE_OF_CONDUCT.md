@@ -1,7 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
-hide_community_button: True
+title: MindConnect-NodeJS - Code of Conduct
 ---
 
 # MindConnect-NodeJS - <small>Code of Conduct</small>

@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - Getting Started
 ---
 
 # MindConnect-NodeJS - <small>Getting Started</small>

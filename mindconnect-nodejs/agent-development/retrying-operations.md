@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - Agent Development - Retrying the operations
 ---
 
 # MindConnect-NodeJS - Agent Development - <small>Retrying the operations</small>
@@ -9,7 +8,7 @@ show_mit_license_text: True
 
 You can wrap all asynchronous object calls into the retry function which will automatically retry the operation for n times before throwing an exception.
 
-```typescript
+```javascript
 import {
   MindConnectAgent,
   MindsphereStandardEvent,
@@ -48,7 +47,7 @@ await retry(5, () => agent.BulkPostData(bulk));
 
 For the large files upload you would typically want to retry only the upload operations of the chunks and not the whole multipart upload once an error occures. Therefore the UploadFile method offers the possibility to retry only the chunked upload:
 
-```typescript
+```javascript
 // upload file
 // the upload-file can be a multipart operation and therefore can be configured to
 // retry the upload of the chunks instead the upload of the whole file.

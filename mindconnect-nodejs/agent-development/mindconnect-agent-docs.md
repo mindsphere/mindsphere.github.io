@@ -1,6 +1,5 @@
 ---
-hide_license_text: True
-show_mit_license_text: True
+title: MindConnect-NodeJS - Agent Development - MindConnect Agent Methods
 ---
 
 # MindConnect-NodeJS - Agent Development - <small>MindConnect Agent Methods</small>
@@ -13,7 +12,7 @@ Here are the most important methods of the `MindConnectAgent`
 
 Constructing the MindConnectAgent
 
-```typescript
+```javascript
 /**
  * Creates an instance of AgentAuth.
  * @param {IMindConnectConfiguration} _configuration
@@ -32,7 +31,7 @@ constructor(
 
 This is used for RSA_3072 agents.
 
-```typescript
+```javascript
 /**
  * Set up the certificate for RSA_3072 communication.
  * You can generate a certificate e.g. using openssl
@@ -49,7 +48,7 @@ public SetupAgentCertificate(privateCert: string | Buffer)
 
 Returns the security profile of the agent.
 
-```typescript
+```javascript
 /**
  * returns the security profile of the agent
  *
@@ -64,7 +63,7 @@ public GetProfile()
 
 Acquires the agent token.
 
-```typescript
+```javascript
 /**
  * Returns the current agent token.
  * This token can be used in e.g. in Postman to call mindspher APIs.
@@ -81,11 +80,11 @@ public async GetAgentToken()
 Renews the agent token.
 
 <!-- prettier-ignore-start -->
-!!! info
+<i class="fas fa-info-circle"></i> 
     The library renews the tokens for you but you can enforce the token renewal if you really want to
 <!-- prettier-ignore-end -->
 
-```typescript
+```javascript
 /**
  * The /exchange token handling. Handles validation, secret renewal and token renewal. Should be called
  * at the beginning of each operation which handles /exchange endpoint.
@@ -100,7 +99,7 @@ public async RenewToken(): Promise<boolean>
 
 Onboard the agent and return the onboarding state.
 
-```typescript
+```javascript
 /**
  * Onboard the agent and return the onboarding state.
  *
@@ -114,7 +113,7 @@ public async OnBoard(): Promise<OnboardingStatus.StatusEnum>
 
 Checks if the agent is onboarded.
 
-```typescript
+```javascript
 /**
  * Checks if the agent is onboarded.
  *
@@ -128,7 +127,7 @@ public IsOnBoarded(): boolean
 
 The agent id
 
-```typescript
+```javascript
 /**
  * Client Id
  *
@@ -143,7 +142,7 @@ public ClientId()
 
 Checks if the agent has a data source configuration.
 
-```typescript
+```javascript
 /**
  * Checks if the agent has a data source configuration
  *
@@ -157,7 +156,7 @@ public HasDataSourceConfiguration(): boolean
 
 Checks if the agent has mappings
 
-```typescript
+```javascript
 /**
  * Checks if the agent has mappings
  *
@@ -171,7 +170,7 @@ public HasDataMappings(): boolean
 
 Stores the configuration in the mindsphere.
 
-```typescript
+```javascript
 /**
  * Stores the configuration in the mindsphere.
  *
@@ -195,7 +194,7 @@ public async PutDataSourceConfiguration(
 
 Get the DataSourceConfiguration from MindSphere.
 
-```typescript
+```javascript
 /**
  * Get the DataSourceConfiguration
  *
@@ -210,7 +209,7 @@ public async GetDataSourceConfiguration(): Promise<DataSourceConfiguration>
 
 Get Data Mapings from MindSphere.
 
-```typescript
+```javascript
 /**
  * Get Data Mapings
  *
@@ -225,7 +224,7 @@ public async GetDataMappings(): Promise<Array<Mapping>>
 
 Stores the data mappings in the mindsphere. (if you know the assetid as agents are not able to read the asset inforamtion)
 
-```typescript
+```javascript
 /**
  * Stores the data mappings in the mindsphere. (if you know the assetid)
  *
@@ -241,7 +240,7 @@ public async PutDataMappings(mappings: Mapping[]): Promise<boolean>
 
 Posts the Events to the Exchange Endpoint.
 
-```typescript
+```javascript
 /**
  * Posts the Events to the Exchange Endpoint
  *
@@ -264,7 +263,7 @@ public async PostEvent(
 
 Post Data Point Values to the Exchange Endpoint.
 
-```typescript
+```javascript
 /**
  * Post Data Point Values to the Exchange Endpoint
  *
@@ -288,7 +287,7 @@ public async PostData(
 
 Bulk Post Data to exchange endpoint
 
-```typescript
+```javascript
 /**
  * Bulk Post Data to exchange endpoint
  *
@@ -308,7 +307,7 @@ public async BulkPostData(
 
 Upload file to MindSphere IOTFileService
 
-```typescript
+```javascript
 /**
  * Upload file to MindSphere IOTFileService
  *
@@ -355,7 +354,7 @@ public async UploadFile(
 
 Gets the current agent configuration.
 
-```typescript
+```javascript
 /**
  * Gets the current agent configuraton
  *
@@ -370,7 +369,7 @@ public GetMindConnectConfiguration(): IMindConnectConfiguration
 
 Time series validator. Validates the data points against the configuration.
 
-```typescript
+```javascript
 /**
  * Time series validator. Validates the data points against the configuration
  *
@@ -385,7 +384,7 @@ public GetValidator(): ajv.ValidateFunction
 
 Event validator. Validates the data points against the configuration.
 
-```typescript
+```javascript
 /**
  * Events validator. Validates the events before sending them to MindSphere
  *
