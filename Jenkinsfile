@@ -38,7 +38,8 @@ pipeline {
     stage('Package') {
       steps {
         sh '''
-        tar -zcvf mindsphere.github.io.tgz /srv/jekyll/_site/
+        cp -R /srv/jekyll/_site/ .
+        tar -zcvf mindsphere.github.io.tgz ./_site/
         '''
       }
     }
