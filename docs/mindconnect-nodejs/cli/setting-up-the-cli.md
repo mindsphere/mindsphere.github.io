@@ -39,7 +39,7 @@ Options:  -u, --user <username>      service credentials: username  -p, --passwo
 
 ## Example
 
-Let's assume that we have acquired the {your_username} {your_password} credentials from mindsphere support and that your tenant is called {your_tenant} on the {eu1|eu2...} instance on the mindsphere.
+Let's assume that you have acquired the `{your_username}` `{your_password}` credentials from mindsphere support and that your tenant is called `{your_tenant}` on the `{eu1|eu2...}` instance on the mindsphere.
 
 You can register this with the library by running the following command:
 
