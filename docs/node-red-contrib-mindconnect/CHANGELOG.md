@@ -4,6 +4,39 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+## 3.6.1 (Vienna Jungle Cats) - July 2019 - Recovery
+
+## Bugfixes 3.6.1
+
+- Security fix: Bumped the lodash dependency to 4.17.4
+
+## 3.6.0 (Vienna Jungle Cats) - July 2019
+
+## New Features 3.6.0
+
+- Added Links to MindSphere OpenSource Tools and Libraries Documentation
+- upgraded to version 3.6.0 of the mindconnect-nodejs library
+- bumped all dependencies
+- added explicit :rw to the docker container documentation (see #39)
+
+## Bugfixes 3.6.0
+
+- improved documentation in README.md
+
+## 3.5.0 (Vienna Clouded Leopards) - May 2019
+
+## New Features 3.5.0
+
+- updated to version 3.5.3 of mindconnect-nodejs library
+- chunked upload is now using the multipart upload file API
+- there is a new experimental parameter max async uploads: If this setting is > 1 the node will not wait for every request to finish
+- switched documentation generation to compodoc as typedoc doesn't seem to be maintained
+- bumped all versions
+
+## Bugfixes 3.5.0
+
+- improved documentation in README.md
+
 ## 3.4.0 (Vienna Caracals) - April 2019
 
 ## New Features 3.4.0
@@ -12,7 +45,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 - auto keep-alive: the node will renew the token every hour even when there is no data sent.
 - programatic delivery of the configuration - prerequisite for auto-configuration node which is coming in next versions
 - moved schema-validation to mindconnect-schema.ts, improved code and documentation
-- new msg.\_error message with timestamped error property for better flows
+- new msg._error message with timestamped error property for better flows
 
 ## 3.3.0 (Vienna Panthers) - February 2019
 
