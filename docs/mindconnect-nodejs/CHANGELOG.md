@@ -4,6 +4,30 @@ title: MindConnect-NodeJS - Changelog
 
 # MindConnect-NodeJS - <small>Changelog</small>
 
+## 3.6.0 - (Cobalt Blue Vienna) - July 2019
+
+- SDK: The SDK in this package is stil only a **preliminary version** which is used to provide support for the CLI.
+- SDK: added IotTimeSeriesAggregateClient to the SDK
+- SDK: added SpectrumAnalysisClient to the SDK
+- SDK: added SignalValidationClient to the SDK
+- CLI Command: mc spectrum-analysis: performs spectrum analysis on a sound file (#40)
+- CLI Command: mc signal-validation: performs signal validation on the mindsphere data (#39)
+- CLI Command: mc list-files: lists iot files stored with the asset (#35)
+- CLI Command: mc list-assets: lists assets in the tenant (#35)
+- CLI Command: mc download-file: downloads file from MindSphere iot file service (#35)
+
+## Bugfixes and Improvements 3.6.0
+
+- SDK: IoTfile - GetFiles - optional parameters are now in query string (bugfix)
+- CLI - agent commands - precedence for location of the .mc directory:  path to agentconfig.json > currentdir > user home dir (#65)
+- All tests are now self-contained.
+- All images are now shrinked.
+- Bumped all dependencies. (including all lodash security updates until 7/14/2019)
+
+## Contributions 3.6.0 :heart: <3
+
+- Thanks to goko for the contribution and deniz for finding the bug #65.
+
 ## 3.5.3 - (Venetian Red Vienna) - May 2019 - Recovery
 
 ## Bugfix 3.5.3
