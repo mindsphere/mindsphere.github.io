@@ -41,5 +41,5 @@ docker run -it --name mind-red -p 1880:1880 mindconnect/node-red-contrib-mindcon
 Run the container as a service, keeping the state on the host in the /DATA and /DATA/.mc directory , behind a http proxy running at `http://192.168.0.1`
 
 ```bash
-docker run -dit --name mind-red-service -p 1880:1880 -v /DATA:/data -v /DATA/mc:/usr/src/node-red/.mc --restart unless-stopped -e HTTP_PROXY=http://192.168.0.1 mindconnect/node-red-contrib-mindconnect
+docker run -dit --name mind-red-service -p 1880:1880 -v /DATA:/data:rw -v /DATA/mc:/usr/src/node-red/.mc:rw --restart unless-stopped -e HTTP_PROXY=http://192.168.0.1 mindconnect/node-red-contrib-mindconnect
 ```
