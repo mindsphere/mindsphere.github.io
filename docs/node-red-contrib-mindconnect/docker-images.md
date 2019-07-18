@@ -6,7 +6,7 @@ title: MindConnect Node-RED Node - Docker Images
 
 ## Availability
 
-The docker images are available at [<i class="fab fa-docker"></i> DockerHub](https://hub.docker.com/r/mindconnect/node-red-contrib-mindconnect)
+The docker images are available on [<i class="fab fa-docker"></i> DockerHub](https://hub.docker.com/r/mindconnect/node-red-contrib-mindconnect)
 
 ## Node-RED Agent for the MindConnect API
 
