@@ -8,7 +8,9 @@ title: MindConnect-NodeJS - Setting up the CLI
 
 The first step in setting up the command line interface is to acquire the [service credentials](/howto/howto-selfhosted-api-access.html#creating-service-credentials). These credentials can be used to access the MindSphere APIs in order to perform the administrative tasks.
 
-After the service credentials have been aquired you can register them with the command line interface. You will have to create and remember a passkey at this moment which must be used in other CLI commands to unlock the credential store.
+After the service credentials have been aquired you can register them with the command line interface. You will have to create and remember a passkey at this moment. 
+
+This passkey will be used later with other CLI commands in order to unlock the credential store. This passkey should be sufficiently complex (you should follow the password guidelines of your organization).
 
 ## Command Overview
 
