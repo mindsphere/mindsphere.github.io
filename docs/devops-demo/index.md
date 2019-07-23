@@ -6,7 +6,13 @@ title: Devops Demo - Overview
 
 ## Introduction
 
-Demo application, providing tools and a devops admin backend for accessing Prometheus and Grafana. (Presented during MindSphere Developer Days in Berlin, Sept. 2018)
+Demo application, providing tools and a devops admin backend for accessing
+Prometheus and Grafana.
+
+Presented during MindSphere Developer Days in Berlin, Sept. 2018:
+
+- [Slides](DevOps_with_MindSphere.pdf)
+- [Video recording](https://www.youtube.com/watch?v=S8Hul5YeCrw)
 
 [<i class="fab fa-gitlab"></i> GitLab](https://gitlab.com/mindsphere/devops-demo) [<i class="fab fa-github"></i> GitHub Mirror](https://github.com/mindsphere/devops-demo)
 
