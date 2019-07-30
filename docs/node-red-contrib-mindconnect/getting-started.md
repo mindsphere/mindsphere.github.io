@@ -108,6 +108,8 @@ msg.payload = values;
 return msg;
 ```
 
+**Note:** All MindSphere timestamps must be in the **ISO format** (use `toISOString()` function).
+
 #### Send events
 
 The node requires json objects as input in following format (e.g. from a function node). You can send an event to any asset you have access to in your tenant. Just use the asset id in the entityid.
