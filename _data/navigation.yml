@@ -6,7 +6,7 @@ subpages:
         local_path: docs/mindconnect-nodejs
         subpages:
             - name: Overview
-              file_name: index.html 
+              file_name: index.html
 
             - name: Agent Development
               local_path: docs/mindconnect-nodejs/agent-development
@@ -38,13 +38,15 @@ subpages:
                   file_name: getting-tokens.html
                 - name: Uploading Historical Data
                   file_name: bulk-uploads.html
+                - name: Asset and File Commands
+                  file_name: asset-file-commands.html
                 - name: Analyzing Data
                   file_name: analysis-commands.html
                 - name: Creating Starter Projects
                   file_name: starter-projects.html
             - name: Contributing
               local_path: docs/mindconnect-nodejs
-              subpages:    
+              subpages:
                 - name: Code of Conduct
                   file_name: CODE_OF_CONDUCT.html
                 - name: Contribution Guidelines
@@ -57,14 +59,14 @@ subpages:
         local_path: docs/node-red-contrib-mindconnect
         subpages:
             - name: Overview
-              file_name: index.html 
+              file_name: index.html
             - name: Getting started
               file_name: getting-started.html
             - name: Docker images
               file_name: docker-images.html
             - name: Contributing
               local_path: docs/node-red-contrib-mindconnect
-              subpages:    
+              subpages:
                 - name: Code of Conduct
                   file_name: CODE_OF_CONDUCT.html
                 - name: Contribution Guidelines
@@ -77,10 +79,10 @@ subpages:
         local_path: docs/devops-demo
         subpages:
             - name: Overview
-              file_name: index.html 
+              file_name: index.html
             - name: Contributing
               local_path: docs/devops-demo
-              subpages:    
+              subpages:
                 - name: Code of Conduct
                   file_name: CODE_OF_CONDUCT.html
                 - name: Contribution Guidelines
