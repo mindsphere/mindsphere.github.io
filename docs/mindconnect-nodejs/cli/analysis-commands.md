@@ -8,17 +8,17 @@ title: MindConnect-NodeJS -CLI - Analysis Commands
 
 The analytical functions of MindSphere like:
 
-- Spectrum Analysis or 
+- Spectrum Analysis or
 - Signal Validation
 
-can be used with help of the CLI. 
+can be used with help of the CLI.
 
 These commands require  [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
 
 ## Spectrum Analysis (`mc spectrum-analysis`)
 
-This command uses the [MindSphere Spectrum Analysis service](https://developer.mindsphere.io/apis/analytics-spectrumanalysis/api-spectrumanalysis-overview.html) to perform time domain to perform time domain and frequency domain analysis. 
-It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform) 
+This command uses the [MindSphere Spectrum Analysis service](https://developer.mindsphere.io/apis/analytics-spectrumanalysis/api-spectrumanalysis-overview.html) to perform time domain to perform time domain and frequency domain analysis.
+It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform)
 and to detect threshold breaches of their amplitudes.
 
 ```text
@@ -39,18 +39,18 @@ Options:
 
   Examples:
 
-    mc spectrum-analysis -f machine.wav  	 Decomposes the sound file into frequency components
-    mc spectrum-analysis -f machine.wav --windowtype blackman 	 use blackman window type for FFT preprocessing
-    mc spectrum-analysis --mode threshold 	 detect threshold violations for thresholds stored in thresholds.spectrum.json
+    mc spectrum-analysis -f machine.wav       Decomposes the sound file into frequency components
+    mc spectrum-analysis -f machine.wav --windowtype blackman      use blackman window type for FFT preprocessing
+    mc spectrum-analysis --mode threshold      detect threshold violations for thresholds stored in thresholds.spectrum.json
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
-  More Information: 
+  More Information:
 
     https://opensource.mindsphere.io
 
@@ -99,7 +99,7 @@ Options:
   -w, --windowsize [windowsize]                                        processing window size
   -r, --windowradius [windowradius]                                    processing window radius (for noise)
   -t, --threshold [threshold]                                          processing threshold
-  -s, --step [step]                                                    processing step (for bias detection) 
+  -s, --step [step]                                                    processing step (for bias detection)
   -z, --size [size]                                                    generating test data size  (default: 100)
   -y, --retry <number>                                                 retry attempts before giving up (default: 3)
   -p, --passkey <passkey>                                              passkey
@@ -108,22 +108,22 @@ Options:
 
   Examples:
 
-    mc signal-validation --mode range --lowerlimit  -1 --upperlimit 1  	 performes the range validation for range [-1..1]
-    mc signal-validation -mode jumps --windowsize 12  			 searches for jumps in the data
-    mc signal-validation --mode interpolate --threshold 1000  		 interpolates a value for every gap > 1000ms
+    mc signal-validation --mode range --lowerlimit  -1 --upperlimit 1       performes the range validation for range [-1..1]
+    mc signal-validation -mode jumps --windowsize 12                        searches for jumps in the data
+    mc signal-validation --mode interpolate --threshold 1000                interpolates a value for every gap > 1000ms
 
   Additional Documentation:
 
     https://developer.mindsphere.io/apis/analytics-signalvalidation/api-signalvalidation-basics.html
 
-  Important: 
+  Important:
 
-    you need to supply the service credentials for this operation and provide the passkey 
+    you need to supply the service credentials for this operation and provide the passkey
 
-    how to get service credentials: 
+    how to get service credentials:
     https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
 
-  More Information: 
+  More Information:
 
     https://opensource.mindsphere.io
 ```
