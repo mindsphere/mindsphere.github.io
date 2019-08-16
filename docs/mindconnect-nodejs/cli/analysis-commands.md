@@ -62,14 +62,14 @@ Options:
 This will decompose the sound file into corresponding frequency components (using default flattop windo.
 
 ```bash
- mc spectrum-analysis -f machine.wav --passkey yourpasskey
+mc spectrum-analysis -f machine.wav --passkey yourpasskey
 ```
 
 Detecting threshold violations for thresholds stored in threshold.spectrum.json file :
 
 ```bash
- mc spectrum-analysis --mode threshold --thresholds threshold.spectrum.json --passkey yourpasskey
- ```
+mc spectrum-analysis --mode threshold --thresholds threshold.spectrum.json --passkey yourpasskey
+```
 
 ## Signal Validation (`mc signal-validation`)
 
@@ -136,5 +136,5 @@ This will perform the [jump alert detection](https://developer.mindsphere.io/api
 ![Jump Alert](https://developer.mindsphere.io/apis/analytics-signalvalidation/images/step-alert.png)
 
 ```bash
- mc signal-validation -mode jumps --windowsize 12
+mc signal-validation -mode jumps --windowsize 12
 ```
