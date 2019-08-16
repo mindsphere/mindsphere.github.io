@@ -22,6 +22,8 @@ It provides functions to transform a time-domain signal into its frequency compo
 and to detect threshold breaches of their amplitudes.
 
 ```text
+mc spectrum-analysis --help
+
 Usage: spectrum-analysis|sp [options]
 
 perform spectrum analysis on a sound file @
@@ -85,6 +87,8 @@ to perform different checks on the time series data:
 The Signal Validation Service documentation provides the [full description](https://developer.mindsphere.io/apis/analytics-signalvalidation/api-signalvalidation-basics.html) of all checks the signal validation can perform.
 
 ```text
+mc signal-validation --help
+
 Usage: signal-validation|sv [options]
 
 perform signal validation @
