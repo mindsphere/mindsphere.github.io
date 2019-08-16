@@ -38,6 +38,8 @@ subpages:
                   file_name: getting-tokens.html
                 - name: Uploading Historical Data
                   file_name: bulk-uploads.html
+                - name: Analyzing Data
+                  file_name: analysis-commands.html
                 - name: Creating Starter Projects
                   file_name: starter-projects.html
             - name: Contributing
