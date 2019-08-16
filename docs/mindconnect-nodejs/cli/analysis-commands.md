@@ -21,7 +21,6 @@ This command uses the [MindSphere Spectrum Analysis service](https://developer.m
 It provides functions to transform a time-domain signal into its frequency components (via Discrete Fourier Transform) 
 and to detect threshold breaches of their amplitudes.
 
-
 ```text
 Usage: spectrum-analysis|sp [options]
 
