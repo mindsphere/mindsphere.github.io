@@ -37,7 +37,7 @@
     "conventional-changelog-cli": "^2.0.21",
     "eclint": "^2.8.1",
     "husky": "^3.0.0",
-    "markdownlint-cli": "^0.17.0",
+    "markdownlint-cli": "^0.18.0",
     "markserv": "^1.17.2"
   },
   "husky": {
