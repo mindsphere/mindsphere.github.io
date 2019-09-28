@@ -4,6 +4,12 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+## 3.6.2 (Vienna Jungle Cats) - September 2019
+
+## Bugfixes 3.6.2
+
+- Fixed problem with cached agent configuration which was preventing redeployments.
+
 ## 3.6.1 (Vienna Jungle Cats) - July 2019 - Recovery
 
 ## Bugfixes 3.6.1
