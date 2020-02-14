@@ -24,6 +24,7 @@ The CLI can be used to create starter projects, upload timeseries, events and fi
 ## List of all commands
 
 ```text
+mc --help
 Usage: mc [options] [command]
 
 Options:
@@ -48,11 +49,16 @@ Commands:
   prepare-bulk|pb [options]           creates a template directory for timeseries (bulk) upload *
   run-bulk|rb [options]               runs the timeseries (bulk) upload job from <directoryname> directory *
   check-bulk|cb [options]             checks the progress of the upload jobs from <directoryname> directory *
+  download-bulk|db [options]          download the timeseries from mindsphere
   list-assets|la [options]            list assets in the tenant *
+  delete-asset|da [options]           delete asset with id <assetid> from mindsphere *
   list-files|ls [options]             list files stored with the asset *
   download-file|df [options]          download the file from mindsphere file service *
+  delete-file|de [options]            delete the file from mindsphere file service *
   spectrum-analysis|sp [options]      perform spectrum analysis on a sound file @
   signal-validation|sv [options]      perform signal validation @
+  trend-prediction|tp [options]       perform trend prediction (linear/polynomial) @
+  kpi-calculation|kp [options]        calculate kpi states or compute kpis @
   starter-ts|st [options]             creates a starter project in typescript #
   starter-js|sj [options]             creates a starter project in javascript #
 
