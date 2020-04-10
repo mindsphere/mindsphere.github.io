@@ -40,6 +40,12 @@ This is necessary because of the change in the base docker image of node-red. Se
 
 Stay strong, safe and healthy! <3 :hearth:
 
+## 3.6.2 (Vienna Jungle Cats) - September 2019
+
+## Bugfixes 3.6.2
+
+- Fixed problem with cached agent configuration which was preventing redeployments.
+
 ## 3.6.1 (Vienna Jungle Cats) - July 2019 - Recovery
 
 ## Bugfixes 3.6.1

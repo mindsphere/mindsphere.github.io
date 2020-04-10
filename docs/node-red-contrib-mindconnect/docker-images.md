@@ -36,7 +36,7 @@ These docker images are based on the [Node-RED-Docker](https://hub.docker.com/r/
 Running the image with Node-RED avaialble at : [http://localhost:1880](http://localhost:1880)
 
 ``` bash
- docker run -it --name mind-red -p 1880:1880 mindconnect/node-red-contrib-mindconnect  
+docker run -it --name mind-red -p 1880:1880 mindconnect/node-red-contrib-mindconnect  
 ```
 
 Run the container as a service, keeping the state on the host in the /DATA and /DATA/.mc directory , behind a http proxy running at [http://192.168.0.1](http://192.168.0.1)

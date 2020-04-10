@@ -2,6 +2,8 @@
 title: MindConnect-NodeJS - Changelog
 ---
 
+# MindConnect-NodeJS - <small>Changelog</small>
+
 ## 3.7.0 - (Boysenberry Vienna) - February 2020
 
 ## Bugfixes and Improvements 3.7.0
@@ -26,8 +28,6 @@ title: MindConnect-NodeJS - Changelog
 ## Bugfixes and Improvements 3.6.1
 
 - MindConnect Agent Storage: Fixed the bug where the change of configuration. This was causing problems in node-RED when redeploying the flow. (#82)
-
-# MindConnect-NodeJS - <small>Changelog</small>
 
 ## 3.6.0 - (Cobalt Blue Vienna) - July 2019
 
