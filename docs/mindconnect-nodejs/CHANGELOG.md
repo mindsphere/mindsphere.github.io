@@ -2,6 +2,31 @@
 title: MindConnect-NodeJS - Changelog
 ---
 
+## 3.7.0 - (Boysenberry Vienna) - February 2020
+
+## Bugfixes and Improvements 3.7.0
+
+- CLI: mc kpi-calculation command (calculate kpis and kpi states based on signal values)
+- CLI: mc trend-prediction command (perform linear and polynomial trend prediction on mindsphere aspects)
+- CLI: mc bulk-download command (download timeseries aspects from mindsphere)
+- CLI: mc delete-file command
+- CLI: mc delete-asset command
+- CLI: mc agent-token and mc service-token command print out the full token (including header in signature) in --verbose mode
+- SDK: Token rotation for agent credentials (#99)
+- SDK: added TrendPredictionClient to the SDK
+- SDK: added KPICalcuationClient to the SDK
+- AGENT: TryRecovery: new method which will try to recover from the sporadic errors which can happen when there is internet connection problem during key rotation.
+- Bumped all dependencies
+- Chore: Improved spelling
+- Upgraded https-proxy-agent to fix [https://snyk.io/vuln/SNYK-JS-HTTPSPROXYAGENT-469131](https://snyk.io/vuln/SNYK-JS-HTTPSPROXYAGENT-469131)
+- Added stale issues bot watcher to github
+
+## 3.6.1 - (Cobalt Blue Vienna) - September 2019
+
+## Bugfixes and Improvements 3.6.1
+
+- MindConnect Agent Storage: Fixed the bug where the change of configuration. This was causing problems in node-RED when redeploying the flow. (#82)
+
 # MindConnect-NodeJS - <small>Changelog</small>
 
 ## 3.6.0 - (Cobalt Blue Vienna) - July 2019
