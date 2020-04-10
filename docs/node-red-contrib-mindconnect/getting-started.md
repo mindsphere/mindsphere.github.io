@@ -68,9 +68,9 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-  { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-  { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-  { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
+    { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+    { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+    { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
 ];
 
 msg._time = new Date();
@@ -86,22 +86,22 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-  {
-    timestamp: "2018-11-09T07:46:36.699Z",
-    values: [
-      { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-      { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-      { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
-    ]
-  },
-  {
-    timestamp: "2018-11-08T07:46:36.699Z",
-    values: [
-      { dataPointId: "1000000000", qualityCode: "1", value: "12" },
-      { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
-      { dataPointId: "1000000003", qualityCode: "1", value: "15.76" }
-    ]
-  }
+    {
+        timestamp: "2018-11-09T07:46:36.699Z",
+        values: [
+            { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+            { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+            { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
+        ]
+    },
+    {
+        timestamp: "2018-11-08T07:46:36.699Z",
+        values: [
+            { dataPointId: "1000000000", qualityCode: "1", value: "12" },
+            { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
+            { dataPointId: "1000000003", qualityCode: "1", value: "15.76" }
+        ]
+    }
 ];
 
 msg.payload = values;
@@ -116,15 +116,15 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-  entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
-  sourceType: "Agent",
-  sourceId: "application",
-  source: "Meowz",
-  severity: 30, // 0-99 : 20:error, 30:warning, 40: information
-  description: "Event sent at " + new Date().toISOString(),
-  timestamp: new Date().toISOString(),
-  additionalproperty1: "123",
-  additionalproperty2: "456"
+    entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
+    sourceType: "Agent",
+    sourceId: "application",
+    source: "Meowz",
+    severity: 30, // 0-99 : 20:error, 30:warning, 40: information
+    description: "Event sent at " + new Date().toISOString(),
+    timestamp: new Date().toISOString(),
+    additionalproperty1: "123",
+    additionalproperty2: "456"
 };
 return msg;
 ```
@@ -147,13 +147,7 @@ msg.payload = {
 return msg;
 ```
 
-##### File Upload with a  Buffer
-
-Instead of file name you can use a buffer instead.
-
-##### Multipart-Upload
-
-If the multipart upload is on, the files which are larger than 8MB will be uploaded in 8 MB Chunks.
+If the experimental chunking feature is on, the files which are larger than 8MB will be uploaded in 8 MB Chunks.
 
 #### Error handling in the flows
 
@@ -169,11 +163,30 @@ properties which can be used to create more complex flows. (e.g. in the flow bel
 
 ![errorhandling](images/errorhandling.png)
 
-## Demo Flows
+## Demo flows
 
-You can take a look at some live demo flows at [https://playground.mindconnect.rocks <i class="fa fa-external-link-alt"></i>](https://playground.mindconnect.rocks){:target="\_new"}
+[![Demo Flows](https://img.shields.io/badge/node--RED-playground-%23009999.svg)](https://playground.mindconnect.rocks)
 
-## How to reset everything
+[MindConnect Node-RED playground](https://playground.mindconnect.rocks) provides following demo flows importing following data points to MindSphere
+
+- CPU-Usage
+- Batched MQTT Data
+- OPC-UA Data
+- Real Weather Data to MindSphere
+- Simulated Water Pump Data
+
+The simulated water pump data can be inspected at
+
+<https://dreamforce.mindconnect.rocks>
+
+This application can be used without mindsphere credentials.
+
+- username: guest@mindsphere.io
+- password: Siemens123!
+
+This data is also used as an example for the KPI-Calculation and Trend prediction with help of MindSphere APIs. <https://github.com/mindsphere/analytics-examples>
+
+## Troubleshooting
 
 If you have problems with your agent:
 
@@ -182,6 +195,23 @@ If you have problems with your agent:
 3. Offboard the agent.
 4. Create new settings for the mindconnect library.
 5. copy the new settings to the node.
+
+### Reseting the agent settings from version 3.7.0
+
+Since version 3.7.0. it is possible to delete the content of the .mc/agentconfig.json file and the agent settings directly from the node.
+
+Press on the "delete local configuration" :wastebucket: button on the node, confirm the dialog and redeploy the node.
+
+![delete local settings](images/deletelocal.png)
+
+If you are having problems, it is a good idea to restart the Node-RED runtime completely.
+
+### Diagnostic in MindSphere
+
+If the data is not arriving in your configured asset you should take a look if the data is beeing dropped in MindSphere because of a misconfiguration.
+The agent diagnostic button will lead you directly to the agent diagnostic application in the MindSphere.
+
+![diagnostic](images/diag.png)
 
 ## Generating the documentation
 
@@ -200,4 +230,22 @@ Set the http_proxy or HTTP_PROXY environment variable if you need to connect via
 # set http proxy environment variable if you are using e.g. fiddler on the localhost.
 
 export HTTP_PROXY=http://localhost:8888
+```
+
+## How to setup development environment
+
+```bash
+# create a directory ../devnodes
+cd ..
+mkdir devnodes
+cd devnodes
+# this registers your development directory with node red
+npm link ../node-red-contrib-mindconnect
+
+# after that in you can start developing with
+cd ../node-red-contrib-mindconnect
+
+npm run start-dev
+
+# your node red flows will be stored in the ../devnodes directory
 ```
