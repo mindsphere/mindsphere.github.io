@@ -88,4 +88,5 @@ Commands:
     the service credentials should only be used in secure environments for setup tasks
     Full documentation: https://opensource.mindsphere.io
 
+
 ```
