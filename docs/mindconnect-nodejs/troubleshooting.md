@@ -2,7 +2,7 @@
 title: MindConnect-NodeJS - Troubleshooting
 ---
 
-# MindConnect-NodeJS - <small>Troubleshooting MindSphere Connectivity</small>
+# Troubleshooting Tips
 
 Most troubleshooting tips apply for both the mindconnect-nodejs library and the Node-RED node.
 
@@ -22,7 +22,7 @@ The proxy configuration is set via environment variables:
 # set http proxy environment variable 
 export HTTP_PROXY=http://localhost:8888
 ```
-If you are using node-RED make sure that the environment variable is created ** before the node-RED process is started**, especially if you are running it as a service.
+If you are using node-RED make sure that the environment variable is created **before the node-RED process is started**, especially if you are running it as a service.
 
 
 ### MindSphere Online Status
@@ -35,11 +35,11 @@ If you are convinced that your proxy settings are correctly set, it also might b
 
 This is probably caused by some misconfiguration in your data source configuration and/or in the mappings. Please use Agent Diagnostic Tool on your MindSpher edashboard to troubleshoot the issue. 
 
-Add Image
+![delete local settings](images/diagnostic.png)
 
 If you are using node-RED node, there is a link leading directly to the diagnostic tool in the node-red configuration.
 
-Add Image
+![diagnostic link](images/diag-link.png)
 
 ## The client secret has expired you will have to onboard your agent again
 
@@ -54,7 +54,7 @@ Here are some probable causes:
 
 ### The agent hasn't called MindSphere APIs for a long time
 
-If your agent is calling MindSphere APIs only occasionally the authentication secrets might expire. In order to prevent that the Node-RED has an automatic keep alive feature which renews the client secrets even if no data is sent. If you are writing a custom agent make sure that you are doing a similar thing e.g. like this:
+If your agent is calling MindSphere APIs only occasionally the authentication secrets might expire. In order to prevent that the Node-RED has an automatic keep alive feature which renews the client secrets even if no data is sent. If you are writing a custom agent make sure that you are doing something like this:
 
 ```javascript
 setInterval (async () => {
@@ -68,6 +68,10 @@ setInterval (async () => {
 The date and time on the device where the agent is running is not configured properly. This can happen on e.g. virtual machines which are put into sleep mode, edge devices and gateways which don't have access to NTP server etc. Please make sure that the time is set properly. 
 
 ## Error occured during keep alive (in Node-RED)
+
+```text
+Error occured during keep alive
+```
 
 If this error occurs in node red, the probable cause is the implementation of keep alive functionality paired with regular deployments.
 Prior to the version 3.7.0. the node wasn't clearing the old interval_id timer after redeployment. This could cause a state where two or more concurrent timers were trying to renew the agent token and sometimes the agent would get tangled in the different renewals.
