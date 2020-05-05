@@ -14,10 +14,6 @@ The CLI provides the command line tooling for import of the historical timeserie
     on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 <!-- prettier-ignore-end -->
 
-At the present time (May 2019), MindSphere supports the bulk timeseries upload only for simulation assets. A simulation asset (`twinType: simulation`) is an asset which can contain high volume of simulated data with up to a nanosecond timestamp precision. The asset types of these assets must also inherit from core.basicdevice.
-
-This is why these commands still use the standard timeseries API for the performance assets (`twinType: performance`). This behavior will be changed as soon as MindSphere starts supporting the timeseries bulk upload for the performance assets as well.
-
 The upload of historical timeseries data to MindSphere is done in several steps:
 
 - Preparing the directory with the template `.csv` files for the data upload.
