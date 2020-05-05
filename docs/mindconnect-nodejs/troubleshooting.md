@@ -33,7 +33,7 @@ If you are convinced that your proxy settings are correctly set, it also might b
 
 ## The library/node are sending the data but there is no data in Fleet Manager
 
-This is probably caused by some misconfiguration in your data source configuration and/or in the mappings. Please use Agent Diagnostic Tool on your MindSpher edashboard to troubleshoot the issue. 
+This is probably caused by some misconfiguration in your data source configuration and/or in the mappings. Please use Agent Diagnostic Tool on your MindSphere dashboard to troubleshoot the issue. 
 
 ![delete local settings](images/diagnostic.png)
 
