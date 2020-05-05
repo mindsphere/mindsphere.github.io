@@ -51,6 +51,8 @@ subpages:
                 file_name: CODE_OF_CONDUCT.html
               - name: Contribution Guidelines
                 file_name: CONTRIBUTING.html
+          - name: Troubleshooting Tips
+            file_name: troubleshooting.html
           - name: Changelog
             file_name: CHANGELOG.html
           - name: License
