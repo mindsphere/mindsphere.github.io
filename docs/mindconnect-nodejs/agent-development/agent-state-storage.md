@@ -19,11 +19,11 @@ This information needs to be persisted over time.
 
 <!-- prettier-ignore-start -->
 <i class="fas fa-info-circle"></i>
-    The agent stores the eTag of the file so that they can overwrite these files in the future.
+    The agents store the eTag of the file so that they can overwrite these files in the future.
     This will change once agents can read the eTags of the files.
 <!-- prettier-ignore-end -->
 
-## Default Implementation
+## Storage Provider - Default Implementation
 
 The default implementation stores the state in the hidden .mc directory in the root directory of your project.
 
@@ -36,7 +36,7 @@ drwxr-xr-x 1 sn0wcat 1049089    0 May 17 17:41 ..
 -rw-r--r-- 1 sn0wcat 1049089 2814 May 17 17:41 8ed19ef5515542b4bb05842bfbd48f38.json
 ```
 
-## Storing the data in the different target
+## Storing the data using different storage provider
 
 If you need to store the data in a different or more secure fashion you can provide your own implementation of the StorageProvider. You need to implement the following interface
 
