@@ -10,6 +10,9 @@ The agents need to manage their state information over time.
 This state information consists of
 
 - agent secrets
+- agent configuration
+- agent mappings
+- history of agent secrets
 - list of uploaded files and corresponding eTags (so that agents can overwrite the files if necessary)
 
 This information needs to be persisted over time.
@@ -20,7 +23,7 @@ This information needs to be persisted over time.
     This will change once agents can read the eTags of the files.
 <!-- prettier-ignore-end -->
 
-## Default Implementaiton
+## Default Implementation
 
 The default implementation stores the state in the hidden .mc directory in the root directory of your project.
 
