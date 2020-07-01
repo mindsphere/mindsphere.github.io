@@ -10,7 +10,7 @@ The typescript SDK works with so called Authorizers which can be passed to the c
 
 All authorizer implement the `TokenRotation` interface so that you can also develop your own custom authorizer class by implementing that interface.
 
-<i class="fa fa-info"></i> The `HttpAction` method is overriden in different authorizers, this is how the SDK worksin both backend and frontend scenarios.
+<i class="fa fa-info"></i> The `HttpAction` method is overriden in different authorizers, this is how the SDK works in both backend and frontend scenarios.
 
 All backend authorizer are automatically rotating the MindSphere Bearer tokens, you don't have to do it manually. For the frontend authorization we suggest to implement some kind of keep alive functionality in your app to avoid session expiration.
 
@@ -27,7 +27,7 @@ export interface TokenRotation {
 
 <i class="fa fa-info"></i> The `BrowserAuth` authentication and authorization only works for applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> MindSphere APP Gateway<i class="fa fac-fa-external-link-alt"></i></a>.
 
-This Authorizer implements support for calling applications from frontend, where `Authorization: Bearer...` Token is not required. Instead, the authorizer reuses the SESSION and XSRF-TOKEN Cookies and sets the X-XSRF-TOKEN header for you.
+This Authorizer implements support for calling applications from frontend, where `Authorization: Bearer...` token is not required. Instead, the authorizer reuses the SESSION and XSRF-TOKEN Cookies and sets the X-XSRF-TOKEN header for you.
 
 -   [Calling APIs from Frontend](https://developer.mindsphere.io/concepts/concept-authentication.html#calling-apis-from-frontend)
 -   [Local Development with Session Cookies](https://developer.mindsphere.io/howto/howto-local-development.html#accessing-mindsphere-apis-using-session-cookies)
