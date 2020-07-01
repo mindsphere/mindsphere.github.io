@@ -10,13 +10,13 @@ The library comes with the typescript SDK which can be used to access MindSphere
 
 [![SDK](https://img.shields.io/badge/SDK-full%20documentation-%23009999.svg)](/docs/mindconnect-nodejs/sdk/index.html)
 
-It implements support for both frontend (browser e.g. angular, react...) and backend development in node.js. and different MindSphere authentication types:
+It implements support for both frontend (browser e.g. angular, react...) and backend development in node.js while supporting different MindSphere authentication types.
 
 **Frontend:** - Browser (Session, Cookies)
 
 **Backend (node-js):** - UserCredentials - AppCredentials - ServiceCredentials - MindSphere Agents
 
-and Clients for following APIs
+The SDK implements the Clients for following APIs:
 
 -   AgentManagementClient
 -   AssetManagementClient
@@ -58,4 +58,4 @@ const assets = await am.GetAssets({
 // you will get fully typed assets in response
 ```
 
-If an API is missing and you would like to contribute a Client for it take a look at [contributing to SDK](./contributing-to-sdk.html).
+If an API is missing (and you would like to contribute a client for it), take a look at [contributing to SDK](./contributing-to-sdk.html).
