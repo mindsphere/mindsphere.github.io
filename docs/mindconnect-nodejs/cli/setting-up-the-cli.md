@@ -6,11 +6,11 @@ title: MindConnect-NodeJS - Setting up the CLI
 
 # MindConnect-NodeJS - <small>Setting up the CLI</small>
 
-First step is to configure the CLI. For this you will need service credentials (which have been deprecated) or application credentials from your developer cockpit or session and XSRF-TOKEN from the application you have been developing.
+The first step is to configure the CLI. For this, you will need service credentials (which have been deprecated) or application credentials from your developer cockpit or SESSION and XSRF-TOKEN from the application you have been developing.
 
--   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
--   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
--   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
+- [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
+- [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
+- [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
 
 ## Application Credentials / Service Credentials Configuration
 
@@ -35,13 +35,13 @@ You can get the application credentials from your developer or operator cockpit 
 
 ![CLI](../images/cockpit.png)
 
-Once configred you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created as you will be using it with almost all CLI commands.
+Once configred you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created ,as you will be using it with almost all CLI commands.
 
 ## Passkey as environment variable
 
 If you don't want to enter your passkey all the time you can also set it up as Environment Variable `MDSP_PASSKEY'
 
-This will save you the typing of the `--passkey` option most of the time. Remember that this is not as secure as typing it in all the time. Use with care.
+This will save you the typing of the `--passkey` option most of the time. Remember that this is not as secure as typing it in. Use with care.
 
 Bash:
 
@@ -95,4 +95,4 @@ The results of the commands will be collored yellow if you are using SESSION / X
 
 ![Cookie Auth](../images/cookieresult.png)
 
-The use of Service or Application credentials always takes precedence ofer Session Cookie/ XSRF-TOKEN Authentication.
+The use of Service or Application credentials always takes precedence over Session Cookie / XSRF-TOKEN Authentication.
