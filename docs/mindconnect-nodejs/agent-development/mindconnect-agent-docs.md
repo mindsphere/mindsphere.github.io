@@ -2,120 +2,24 @@
 title: MindConnect-NodeJS - Agent Development - MindConnect Agent Methods
 ---
 
+<!-- @format -->
+
 # MindConnect-NodeJS - Agent Development - <small>MindConnect Agent Methods</small>
 
-## Introduction
+MindConnect Agent implements the V3 of the Mindsphere API.
 
-Here are the most important methods of the `MindConnectAgent`
+The synchronous methods (IsOnBoarded, HasConfiguration, HasDataMapping...) are operating on agent state storage only.
 
-## Constructor
-
-Constructing the MindConnectAgent
-
-```javascript
-/**
- * Creates an instance of AgentAuth.
- * @param {IMindConnectConfiguration} _configuration
- * @param {number} [_tokenValidity=600] // this was required in previous versions of the implmentation , kept for compatibility.
- * @param {string} [_basePath=process.cwd() + "/.mc/"]
- * @memberof AgentAuth
- */
-constructor(
-    configuration: IMindConnectConfiguration,
-    protected _tokenValidity: number = 600,
-    basePath: string | IConfigurationStorage = process.cwd() + "/.mc/"
-)
-```
-
-## SetupAgentCertificate
-
-This is used for RSA_3072 agents.
-
-```javascript
-/**
- * Set up the certificate for RSA_3072 communication.
- * You can generate a certificate e.g. using openssl
- * openssl genrsa -out private.key 3072
- *
- * @param {(string | Buffer)} privateCert
- *
- * @memberOf AgentAuth
- */
-public SetupAgentCertificate(privateCert: string | Buffer)
-```
-
-## GetProfile
-
-Returns the security profile of the agent.
-
-```javascript
-/**
- * returns the security profile of the agent
- *
- * @returns "SHARED_SECRET" || "RSA_3072"
- *
- * @memberOf AgentAuth
- */
-public GetProfile()
-```
-
-## GetAgentToken
-
-Acquires the agent token.
-
-```javascript
-/**
- * Returns the current agent token.
- * This token can be used in e.g. in Postman to call mindspher APIs.
- *
- * @returns {(Promise<string>)}
- *
- * @memberOf AgentAuth
- */
-public async GetAgentToken()
-```
-
-## RenewToken
-
-Renews the agent token.
-
-<!-- prettier-ignore-start -->
-<i class="fas fa-info-circle"></i>
-    The library renews the tokens for you but you can enforce the token renewal if you really want to
-<!-- prettier-ignore-end -->
-
-```javascript
-/**
- * The /exchange token handling. Handles validation, secret renewal and token renewal. Should be called
- * at the beginning of each operation which handles /exchange endpoint.
- * @private
- * @returns {Promise<boolean>}
- * @memberof AgentAuth
- */
-public async RenewToken(): Promise<boolean>
-```
-
-## OnBoard
-
-Onboard the agent and return the onboarding state.
-
-```javascript
-/**
- * Onboard the agent and return the onboarding state.
- *
- * @returns {Promise<OnBoardingState>}
- * @memberof MindConnectAgent
- */
-public async OnBoard(): Promise<OnboardingStatus.StatusEnum>
-```
+The asynchronous methods (GetDataSourceConfiguration, BulkPostData...) are calling MindSphere APIs.
 
 ## IsOnBoarded
 
-Checks if the agent is onboarded.
-
 ```javascript
 /**
- * Checks if the agent is onboarded.
+ *
+ * Check in the local storage if the agent is onboarded.
+ *
+ * * This is a local agent state storage setting only. MindSphere API is not called.
  *
  * @returns {boolean}
  * @memberof MindConnectAgent
@@ -123,28 +27,15 @@ Checks if the agent is onboarded.
 public IsOnBoarded(): boolean
 ```
 
-## ClientId
-
-The agent id
-
-```javascript
-/**
- * Client Id
- *
- * @returns
- *
- * @memberOf MindConnectAgent
- */
-public ClientId()
-```
-
 ## HasDataSourceConfiguration
 
-Checks if the agent has a data source configuration.
-
 ```javascript
 /**
- * Checks if the agent has a data source configuration
+ * Checks in the local storage if the agent has a data source configuration.
+ *
+ * * This is a local agent state storage setting only. MindSphere API is not called.
+ * * Call await GetDataSourceConfiguration() if you want to check if there is configuration in the mindsphere.
+ *
  *
  * @returns {boolean}
  * @memberof MindConnectAgent
@@ -154,11 +45,14 @@ public HasDataSourceConfiguration(): boolean
 
 ## HasDataMappings
 
-Checks if the agent has mappings
-
 ```javascript
 /**
- * Checks if the agent has mappings
+ * Checks in the local storage if the agent has configured mappings.
+ *
+ * * This is a local agent state storage setting only. MindSphere API is not called.
+ * * Call await GetDataMappings() to check if the agent has configured mappings in the MindSphere.
+ *
+ * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
  * @returns {boolean}
  * @memberof MindConnectAgent
@@ -168,9 +62,8 @@ public HasDataMappings(): boolean
 
 ## PutDataSourceConfiguration
 
-Stores the configuration in the mindsphere.
-
 ```javascript
+
 /**
  * Stores the configuration in the mindsphere.
  *
@@ -187,16 +80,16 @@ Stores the configuration in the mindsphere.
 public async PutDataSourceConfiguration(
     dataSourceConfiguration: DataSourceConfiguration,
     ignoreEtag: boolean = true
-): Promise<DataSourceConfiguration
+): Promise<DataSourceConfiguration>
 ```
 
 ## GetDataSourceConfiguration
 
-Get the DataSourceConfiguration from MindSphere.
-
 ```javascript
 /**
- * Get the DataSourceConfiguration
+ * Acquire DataSource Configuration and store it in the Agent Storage.
+ *
+ * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
  * @returns {Promise<DataSourceConfiguration>}
  *
@@ -207,11 +100,11 @@ public async GetDataSourceConfiguration(): Promise<DataSourceConfiguration>
 
 ## GetDataMappings
 
-Get Data Mapings from MindSphere.
-
 ```javascript
 /**
- * Get Data Mapings
+ * Acquire the data mappings from the MindSphere and store them in the agent state storage.
+ *
+ * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
  * @returns {Promise<Array<Mapping>>}
  *
@@ -222,11 +115,11 @@ public async GetDataMappings(): Promise<Array<Mapping>>
 
 ## PutDataMappings
 
-Stores the data mappings in the mindsphere. (if you know the assetid as agents are not able to read the asset inforamtion)
-
 ```javascript
 /**
- * Stores the data mappings in the mindsphere. (if you know the assetid)
+ * Store data mappings in the mindsphere and also in the local agent state storage.
+ *
+ * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
  * @param {Mapping[]} mappings
  * @returns {Promise<boolean>}
@@ -236,9 +129,18 @@ Stores the data mappings in the mindsphere. (if you know the assetid as agents a
 public async PutDataMappings(mappings: Mapping[]): Promise<boolean>
 ```
 
-## Post Event
+## DeleteAllMappings
 
-Posts the Events to the Exchange Endpoint.
+```javascript
+/**
+ * Deletes all mappings from the agent
+ *
+ * @memberOf MindConnectAgent
+ */
+public async DeleteAllMappings();
+```
+
+## PostEvent
 
 ```javascript
 /**
@@ -252,21 +154,18 @@ Posts the Events to the Exchange Endpoint.
  * @returns {Promise<boolean>}
  * @memberof MindConnectAgent
  */
-public async PostEvent(
-    event: BaseEvent,
-    timeStamp: Date = new Date(),
-    validateModel: boolean = true
-): Promise<boolean>
+public async PostEvent
+        event: BaseEvent | CustomEvent,
+        timeStamp: Date = new Date(),
+        validateModel: boolean = true
+    ): Promise<boolean>
 ```
 
-## PostData
-
-Post Data Point Values to the Exchange Endpoint.
+## Post Data
 
 ```javascript
 /**
  * Post Data Point Values to the Exchange Endpoint
- *
  *
  * @see: https://developer.mindsphere.io/howto/howto-upload-agent-data/index.html
  *
@@ -285,11 +184,9 @@ public async PostData(
 
 ## BulkPostData
 
-Bulk Post Data to exchange endpoint
-
 ```javascript
 /**
- * Bulk Post Data to exchange endpoint
+ * Post Bulk Data Point Values to the Exchange Endpoint.
  *
  * @param {TimeStampedDataPoint[]} timeStampedDataPoints
  * @param {boolean} [validateModel=true]
@@ -303,9 +200,7 @@ public async BulkPostData(
 ): Promise<boolean>
 ```
 
-## Upload File
-
-Upload file to MindSphere IOTFileService
+## UploadFile
 
 ```javascript
 /**
@@ -350,28 +245,97 @@ public async UploadFile(
 ): Promise<string>
 ```
 
-## GetMindConnectConfiguration
-
-Gets the current agent configuration.
+## GenerateDataSourceConfiguration
 
 ```javascript
 /**
- * Gets the current agent configuraton
+ * Generates a Data Source Configuration for specified Asset Type
  *
- * @returns {IMindConnectConfiguration}
+ * you still have to generate the mappings (or use ConfigureAgentForAssetId method)
+ *
+ * @example
+ * config = await agent.GenerateDataSourceConfiguration("castidev.Engine");
+ *
+ * @param {string} assetTypeId
+ * @param {("NUMERICAL" | "DESCRIPTIVE")} [mode="DESCRIPTIVE"]
+ * @returns {Promise<DataSourceConfiguration>}
  *
  * @memberOf MindConnectAgent
  */
-public GetMindConnectConfiguration(): IMindConnectConfiguration
+public async GenerateDataSourceConfiguration(
+    assetTypeId: string,
+    mode: "NUMERICAL" | "DESCRIPTIVE" = "DESCRIPTIVE"
+): Promise<DataSourceConfiguration>
+```
+
+## GenerateMappings
+
+```javascript
+/**
+ * Generate automatically the mappings for the specified target assetid
+ *
+ * !Important! this only works if you have created the data source coniguration automatically
+ *
+ * @example
+ * config = await agent.GenerateDataSourceConfiguration("castidev.Engine");
+ * await agent.PutDataSourceConfiguration(config);
+ * const mappings = await agent.GenerateMappings(targetassetId);
+ * await agent.PutDataMappings (mappings);
+ *
+ * @param {string} targetAssetId
+ * @returns {Mapping[]}
+ *
+ * @memberOf MindConnectAgent
+ */
+public GenerateMappings(targetAssetId: string): Mapping[]
+```
+
+## ConfigureAgentForAssetId
+
+```javascript
+/**
+ * This method can automatically create all necessary configurations and mappings for selected target asset id.
+ *
+ * * This method will automatically create all necessary configurations and mappings to start sending the data
+ * * to an asset with selected assetid in Mindsphere
+ *
+ * @param {string} targetAssetId
+ * @param {("NUMERICAL" | "DESCRIPTIVE")} mode
+ * @param {boolean} [overwrite=true] ignore eTag will overwrite mappings and data source configuration
+ *
+ * * NUMERICAL MODE will use names like CF0001 for configurationId , DS0001,DS0002,DS0003... for data source ids and DP0001, DP0002... for dataPointIds
+ * * DESCRIPTIVE MODE will use names like CF-assetName for configurationId , DS-aspectName... for data source ids and DP-variableName for data PointIds (default)
+ * @memberOf MindConnectAgent
+ */
+public async ConfigureAgentForAssetId
+```
+
+## SDK
+
+```javascript
+/**
+ * MindSphere SDK using agent authentication
+ *
+ * ! important: not all APIs can be called with agent credentials, however MindSphere is currently working on making this possible.
+ *
+ *  * Here is a list of some APIs which you can use:
+ *
+ *  * AssetManagementClient (Read Methods)
+ *  * MindConnectApiClient
+ *
+ * @returns {MindSphereSdk}
+ *
+ * @memberOf MindConnectAgent
+ */
+public Sdk(): MindSphereSdk
 ```
 
 ## GetValidator
 
-Time series validator. Validates the data points against the configuration.
-
 ```javascript
 /**
- * Time series validator. Validates the data points against the configuration
+ * Ajv Validator (@see https://github.com/ajv-validator/ajv) for the data points. Validates if the data points array is only
+ * containing dataPointIds which are configured in the agent configuration.
  *
  * @returns {ajv.ValidateFunction}
  *
@@ -382,15 +346,32 @@ public GetValidator(): ajv.ValidateFunction
 
 ## GetEventValidator
 
-Event validator. Validates the data points against the configuration.
-
 ```javascript
 /**
- * Events validator. Validates the events before sending them to MindSphere
+ *
+ * Ajv Validator (@see https://github.com/ajv-validator/ajv) for the events. Validates the syntax of the mindsphere events.
  *
  * @returns {ajv.ValidateFunction}
  *
  * @memberOf MindConnectAgent
  */
 public GetEventValidator(): ajv.ValidateFunction
+
+```
+
+## GetMindConnectConfiguration
+
+```javascript
+/**
+ * Get local configuration from the agent state storage.
+ *
+ * * This is a local agent state storage setting only. MindSphere API is not called.
+ *
+ * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
+ *
+ * @returns {IMindConnectConfiguration}
+ *
+ * @memberOf MindConnectAgent
+ */
+public GetMindConnectConfiguration(): IMindConnectConfiguration
 ```

@@ -2,63 +2,97 @@
 title: MindConnect-NodeJS - Setting up the CLI
 ---
 
+<!-- @format -->
+
 # MindConnect-NodeJS - <small>Setting up the CLI</small>
 
-## Acquiring service credentials
+First step is to configure the CLI. For this you will need service credentials (which have been deprecated) or application credentials from your developer cockpit or session and XSRF-TOKEN from the application you have been developing.
 
-The first step in setting up the command line interface is to acquire the [service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials). These credentials can be used to access the MindSphere APIs in order to perform the administrative tasks.
+-   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
+-   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
+-   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
 
-After the service credentials have been aquired you can register them with the command line interface. You will have to create and remember a passkey at this moment.
+## Application Credentials / Service Credentials Configuration
 
-This passkey will be used later with other CLI commands in order to unlock the credential store. This passkey should be sufficiently complex (you should follow the password guidelines of your organization).
-
-## Command Overview
-
-```bash
-$ mc service-credentials --help
-
-Usage: service-credentials|sc [options]
-provide login for commands which require technical user credentials *
-
-Options:  -u, --user <username>      service credentials: username  -p, --password <password>  service credendials: password
-  -g, --gateway <gateway>    region string or full gateway url (e.g. eu1, eu2 or https://gateway.eu1.mindsphere.io)
-  -t, --tenant <tenant>      your tenant name
-  -k, --passkey <passkey>    passkey (you will use this in the commands which require service credentials)
-  -v, --verbose              verbose output
-  -h, --help                 output usage information
-
-  Example:
-
-    mc service-credentials --user tenantx001 --password xxxx-xxx-x-x --gateway eu1 --tenant tenantx --passkey mypasskey
-
-  Important:
-
-    you need to supply the service credentials for this operation and provide the passkey
-
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
-```
-
-## Example
-
-Let's assume that you have acquired the `{your_username}` `{your_password}` credentials from mindsphere support and that your tenant is called `{your_tenant}` on the `{eu1|eu2...}` instance on the mindsphere.
-
-You can register this with the library by running the following command:
+First start the credentials configuration. This will start a web server on your local computer where you can enter the credentials.
 
 ```bash
-mc service-credentials --user {your_username} --password {your_password} --t tenantx \
---gateway {eu1|eu2.. } --passkey {your_passkey}
+# run mc service-credentials --help for full information
+
+$ mc service-credentials
+navigate to http://localhost:4994 to configure the CLI
+press CTRL + C to exit
+
 ```
 
-The gateway paramter can also be a full url like this `https://gateway.eu1.mindsphere.io`
+Navigate to [http://localhost:4994](http://localhost:4994) to configure the CLI. (see [full documentation](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/index.html) for XSRF-TOKEN and SESSION)
 
-## Location of stored credentials
+The image below shows the dialog for adding new credentials (press on the + sign in the upper left corner)
 
-The credentials you have created are stored in the %HOME% directory of the user (%USERPROFILE% on windows) in a hidden folder called .mc
+![CLI](../images/servicecredentials.png)
+
+You can get the application credentials from your developer or operator cockpit in MindSphere. (if you don't have any application you can register a dummy one just for CLI)
+
+![CLI](../images/cockpit.png)
+
+Once configred you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created as you will be using it with almost all CLI commands.
+
+## Passkey as environment variable
+
+If you don't want to enter your passkey all the time you can also set it up as Environment Variable `MDSP_PASSKEY'
+
+This will save you the typing of the `--passkey` option most of the time. Remember that this is not as secure as typing it in all the time. Use with care.
+
+Bash:
 
 ```bash
-ls -la .mc/auth.json
--rw-r--r-- 1 sn0wcat 1049089 249 Oct  2  2018 .mc/auth.json
+export MDSP_PASSKEY="my.complex.passkey"
 ```
 
-The credentials are encrypted with the passkey you provided during the creation. This passkey must be provided to all other commands which require service credentials.
+Windows CMD
+
+```cmd
+set "MDSP_PASSKEY=my.complex.passkey"
+```
+
+Windows Powershell
+
+```powershell
+$Env:MDSP_PASSKEY="my.complex.passkey"
+```
+
+The results of the commands will be colored in magenta if you are using Application of Service Credentials.
+
+![Credentials Auth](../images/appcredentialsresult.png)
+
+## Session Cookie - XSRF-Token configuration
+
+You can also use the SESSION Cookie and XSRF-TOKEN from the application you are developing in the CLI. Just configure following environment variables.
+
+```bash
+export MDSP_HOST="mytenant-myapp.eu1.mindsphere.io"
+export MDSP_SESSION="ZDcyMWVkNjMtYXXXXXXXlkYmQtODYxZDljZjIzOGI1"
+export MDSP_XSRF_TOKEN="33771ee2-9650-XXXX-ab73-10f52cad12bf"
+```
+
+Windows CMD
+
+```bash
+set "MDSP_HOST=mytenant-myapp.eu1.mindsphere.io"
+set "MDSP_SESSION=ZDcyMWVkNjMtYXXXXXXXlkYmQtODYxZDljZjIzOGI1"
+set "MDSP_XSRF_TOKEN=33771ee2-9650-XXXX-ab73-10f52cad12bf"
+```
+
+Windows Powershell
+
+```bash
+$Env:MDSP_HOST="mytenant-myapp.eu1.mindsphere.io";
+$Env:MDSP_SESSION="ZDcyMWVkNjMtYXXXXXXXlkYmQtODYxZDljZjIzOGI1";
+$Env:MDSP_XSRF_TOKEN="33771ee2-9650-XXXX-ab73-10f52cad12bf";
+```
+
+The results of the commands will be collored yellow if you are using SESSION / XSRF-TOKEN type of authorization.
+
+![Cookie Auth](../images/cookieresult.png)
+
+The use of Service or Application credentials always takes precedence ofer Session Cookie/ XSRF-TOKEN Authentication.
