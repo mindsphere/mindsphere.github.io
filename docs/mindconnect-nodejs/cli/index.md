@@ -21,8 +21,6 @@ See also [getting started](../setting-up-the-cli.md) section of this documentati
 
 The CLI can be used to create starter projects, upload timeseries, events and files, read agent diagnostics etc.
 
-![CLI in action](../images/full.gif)
-
 ## List of all commands
 
 ````text
