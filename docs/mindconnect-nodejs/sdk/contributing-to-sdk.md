@@ -6,7 +6,7 @@ title: TypeScript SDK - Contributing
 
 # TypeScript SDK - Contributing
 
-If you want to contribute with a new Client Implementation to typescript SDK here are some guidelines
+If you want to contribute with a new client implementation to typescript SDK here are some guidelines:
 
 ## 1. Create Issue
 
@@ -99,4 +99,4 @@ export * from "./iotaggregate/iot-timeseries-aggregate-models";
 ...
 ```
 
-make sure that the tests are running and create a pull request. We would also really appreciate a CLI contribution.
+Make sure that the tests are running and create a pull request. We would also really appreciate a CLI contribution. :heart:
