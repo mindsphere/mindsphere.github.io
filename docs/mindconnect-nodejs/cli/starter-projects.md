@@ -6,7 +6,7 @@ title: MindConnect--NodeJS - CLI - Starter Projects
 
 ## Introduction
 
-The CLI provides a convinient way to kick off your custom agent development.
+The CLI provides a convenient way to kick off your custom agent development.
 
 ## TypeScript Starter Project (`mc starter-ts`)
 
