@@ -1,3 +1,5 @@
+# @format
+
 subpages:
   - name: Home
     file_name: index.html
@@ -7,56 +9,72 @@ subpages:
         subpages:
           - name: Overview
             file_name: index.html
-
-          - name: Agent Development
-            local_path: docs/mindconnect-nodejs/agent-development
-            subpages:
-              - name: MindConnectAgent
-                file_name: mindconnect-agent.html
-              - name: Retrying the Operations
-                file_name: retrying-operations.html
-              - name: MindConnectAgent Methods
-                file_name: mindconnect-agent-docs.html
-              - name: Using Starter Projects
-                file_name: starter-projects.html
-              - name: Agent State Storage
-                file_name: agent-state-storage.html
-          - name: Command Line Interface
-            local_path: docs/mindconnect-nodejs/cli
-            subpages:
-              - name: Overview
-                file_name: index.html
-              - name: Setting Up the CLI
-                file_name: setting-up-the-cli.html
-              - name: Managing Agent Credentials
-                file_name: agent-management.html
-              - name: Uploading Data to MindSphere
-                file_name: agent-dataupload.html
-              - name: Agent Diagnostics
-                file_name: agent-diagnostic.html
-              - name: Getting Tokens
-                file_name: getting-tokens.html
-              - name: Uploading Historical Data
-                file_name: bulk-uploads.html
-              - name: Asset and File Commands
-                file_name: asset-file-commands.html
-              - name: Analyzing Data
-                file_name: analysis-commands.html
-              - name: Creating Starter Projects
-                file_name: starter-projects.html
-          - name: Contributing
-            local_path: docs/mindconnect-nodejs
-            subpages:
-              - name: Code of Conduct
-                file_name: CODE_OF_CONDUCT.html
-              - name: Contribution Guidelines
-                file_name: CONTRIBUTING.html
+          - name: Proxy Support
+            file_name: proxy-support.html
           - name: Troubleshooting Tips
             file_name: troubleshooting.html
+          - name: Code of Conduct
+            file_name: CODE_OF_CONDUCT.html
+          - name: Contribution Guidelines
+            file_name: CONTRIBUTING.html
           - name: Changelog
             file_name: CHANGELOG.html
           - name: License
             file_name: LICENSE.html
+
+      - name: Agent Development
+        local_path: docs/mindconnect-nodejs/agent-development
+        subpages:
+          - name: Getting Started
+            file_name: mindconnect-agent.html
+          - name: Retrying the Operations
+            file_name: retrying-operations.html
+          - name: MindConnectAgent Methods
+            file_name: mindconnect-agent-docs.html
+          - name: Using Starter Projects
+            file_name: starter-projects.html
+          - name: Agent State Storage
+            file_name: agent-state-storage.html
+      - name: TypeScript SDK
+        local_path: docs/mindconnect-nodejs/sdk
+        subpages:
+          - name: Overview
+            file_name: index.html
+          - name: Authorization
+            file_name: auth.html
+          - name: HttpAction
+            file_name: using-http-action.html
+          - name: Contributing to SDK
+            file_name: contributing-to-sdk.html
+      - name: Command Line Interface
+        local_path: docs/mindconnect-nodejs/cli
+        subpages:
+          - name: Overview
+            file_name: index.html
+          - name: Setting Up the CLI
+            file_name: setting-up-the-cli.html
+          - name: Managing Agent Credentials
+            file_name: agent-management.html
+          - name: Uploading Data to MindSphere
+            file_name: agent-dataupload.html
+          - name: Agent Diagnostics
+            file_name: agent-diagnostic.html
+          - name: Getting Tokens
+            file_name: getting-tokens.html
+          - name: Uploading Historical Data
+            file_name: bulk-uploads.html
+          - name: Asset and File Commands
+            file_name: asset-file-commands.html
+          - name: Analyzing Data
+            file_name: analysis-commands.html
+          - name: Creating Starter Projects
+            file_name: starter-projects.html
+      - name: MindSphere Development Proxy
+        local_path: docs/mindconnect-nodejs/cli
+        subpages:
+          - name: Development Proxy
+            file_name: development-proxy.html
+
       - name: MindConnect Node-RED Node
         local_path: docs/node-red-contrib-mindconnect
         subpages:
