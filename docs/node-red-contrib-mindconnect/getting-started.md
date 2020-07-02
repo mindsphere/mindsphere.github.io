@@ -129,8 +129,11 @@ msg.payload = {
 return msg;
 ```
 
-The node will per default validate if the event is valid for your agent configuration. This feature can be switched off in the settings but it
-is not recommended to do so.
+If you are using the custom events instead of MindSphere Standard Events please include the following switch in the message.
+
+```javascript
+msg._customEvent=true;
+```
 
 #### File Upload
 
@@ -162,6 +165,23 @@ msg._error; // The timestamped error message
 properties which can be used to create more complex flows. (e.g. in the flow below, the unrecoverable errors are written in error.log file and the failed data is stored in backupdata.log file)
 
 ![errorhandling](images/errorhandling.png)
+
+## JWT Token Generation for SouthBound APIs
+
+The node can be used to generate authentication tokens which you can use to call your own custom southbound APIs.
+The msg.headers will have a Mindsphere Authorization JWT.
+
+```javascript
+msg._includeMindSphereToken=true;
+```
+
+if you just want to get the token without sending any data to MindSphere
+
+```javascript
+msg._ignorePayload=true;
+```
+
+Treat tokens as you would any other credentials.
 
 ## Demo flows
 
