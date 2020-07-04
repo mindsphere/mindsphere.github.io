@@ -4,7 +4,6 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
-
 ## 3.8.1 (Vienna Tigers) - July 2020
 
 ## Bugfix 3.8.1
