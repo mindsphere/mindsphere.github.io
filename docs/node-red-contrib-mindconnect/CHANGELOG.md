@@ -4,6 +4,13 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+
+## 3.8.1 (Vienna Tigers) - July 2020
+
+## Bugfix 3.8.1
+
+- Removed Ajv from global scope
+
 ## 3.8.0 (Vienna Tigers) - July 2020
 
 ## New Features 3.8.0
