@@ -260,6 +260,8 @@ public async UploadFile(
  * @param {("NUMERICAL" | "DESCRIPTIVE")} [mode="DESCRIPTIVE"]
  * @returns {Promise<DataSourceConfiguration>}
  *
+ * * NUMERICAL MODE will use names like CF0001 for configurationId , DS0001,DS0002,DS0003... for data source ids and DP0001, DP0002... for dataPointIds
+ * * DESCRIPTIVE MODE will use names like CF-assetName for configurationId , DS-aspectName... for data source ids and DP-variableName for data PointIds (default)
  * @memberOf MindConnectAgent
  */
 public async GenerateDataSourceConfiguration(
