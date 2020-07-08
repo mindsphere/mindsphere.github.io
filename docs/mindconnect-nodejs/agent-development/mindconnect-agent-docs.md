@@ -307,7 +307,11 @@ public GenerateMappings(targetAssetId: string): Mapping[]
  * * DESCRIPTIVE MODE will use names like CF-assetName for configurationId , DS-aspectName... for data source ids and DP-variableName for data PointIds (default)
  * @memberOf MindConnectAgent
  */
-public async ConfigureAgentForAssetId
+public async ConfigureAgentForAssetId(
+  targetAssetId: string,
+  mode: "NUMERICAL" | "DESCRIPTIVE" = "DESCRIPTIVE",
+  overwrite: boolean = true
+)
 ```
 
 ## SDK
