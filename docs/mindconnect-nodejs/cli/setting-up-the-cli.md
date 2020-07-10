@@ -12,7 +12,7 @@ The first step is to configure the CLI. For this, you will need service credenti
 - [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials) (deprecated)
 - [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
 
-**Important:** the service credentials (which are now deprecated) could only be acquired by emailing MindSphere Support. They are not connected to the *Cloud Foundry Service Credentials* from MindSphere settings app.
+**Important:** the service credentials (which are now deprecated) could only be acquired by emailing MindSphere Support. They are not connected to the _Cloud Foundry Service Credentials_ from MindSphere settings app.
 
 ## Application Credentials / Service Credentials Configuration
 
@@ -38,7 +38,6 @@ You can get the application credentials from your developer or operator cockpit 
 ![CLI](../images/cockpit.png)
 
 Once configred you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created ,as you will be using it with almost all CLI commands.
-
 
 ## Passkey as environment variable
 
