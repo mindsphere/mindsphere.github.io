@@ -6,6 +6,13 @@ title: MindConnect-NodeJS - Changelog
 
 # MindConnect-NodeJS - <small>Changelog</small>
 
+## 3.8.2 - (Electric Blue Vienna) - July 2020
+
+## Bugfix 3.8.2
+
+- bumped lodash dependency for security scanners [#163](https://github.com/mindsphere/mindconnect-nodejs/issues/163)
+- implemented more robust naming convention for DESCRIPTIVE mode ([#174](https://github.com/mindsphere/mindconnect-nodejs/issues/174))
+
 ## 3.8.1 - (Electric Blue Vienna) - June 2020
 
 ## Bugfix
