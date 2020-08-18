@@ -74,7 +74,15 @@ subpages:
         subpages:
           - name: Development Proxy
             file_name: development-proxy.html
-
+      - name: MindSphere Auth Helper
+        local_path: docs/mindsphere-auth-helper
+        subpages:
+          - name: Overview
+            file_name: index.html
+          - name: Changelog
+            file_name: CHANGELOG.html
+          - name: License
+            file_name: License.html
       - name: MindConnect Node-RED Node
         local_path: docs/node-red-contrib-mindconnect
         subpages:
