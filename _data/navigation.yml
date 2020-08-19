@@ -82,7 +82,7 @@ subpages:
           - name: Changelog
             file_name: CHANGELOG.html
           - name: License
-            file_name: License.html
+            file_name: LICENSE.html
       - name: MindConnect Node-RED Node
         local_path: docs/node-red-contrib-mindconnect
         subpages:

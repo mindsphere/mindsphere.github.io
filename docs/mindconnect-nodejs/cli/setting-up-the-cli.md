@@ -98,3 +98,11 @@ The results of the commands will be collored yellow if you are using SESSION / X
 ![Cookie Auth](../images/cookieresult.png)
 
 The use of Service or Application credentials always takes precedence over Session Cookie / XSRF-TOKEN Authentication.
+
+## MindSphere Authentication Helper
+
+You can use the [Mindsphere Auth Helper](../../mindsphere-auth-helper/index.html) Chrome extension (<a href="https://chrome.google.com/webstore/detail/mindsphere-authentication/licndiiilobojikmhmmcgdbpmnmdeoee"><i class="fab fa-chrome"></i> chrome web store</a>
+) to simplify the copying of the authentication cookies. The extension already
+provides the cookies in the proper format for the CLI so that you don't have to craft the MDSP_HOST, MDSP_SESSION and MDSP_XSRF_TOKEN variable manually.
+
+![extension](../../mindsphere-auth-helper/images/screenshot.extension.png)
