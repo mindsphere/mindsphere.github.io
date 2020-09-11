@@ -4,6 +4,17 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+## 3.9.0 (Vienna Bobcats) - September 2020
+
+## New Features 3.9.0
+
+- Automatical Data Source Configuration and Mapping to a selected asset. (#89)
+- Configuration Information Dialog about current agent state.
+- Buttons to copy timeseries-, bulk timeseries-, event- and file- templates to the clipboard.
+- New examples on <https://playground.mindconnect.rocks> for flows
+- MindSphere Start for Free suited example on <https://playground.mindconnect.rocks>
+- Bumped all dependencies
+
 ## 3.8.1 (Vienna Tigers) - July 2020
 
 ## Bugfix 3.8.1
@@ -14,9 +25,9 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## New Features 3.8.0
 
-- Custom Event Support via _customEvent switch on the message.
-- Added msg._includeMindSphereToken and msg._ignorePayload switch which propagates the MindSphere Authentication Token in msg.headers
-- The msg._includeMindSphereToken switch can be used in conjuction with the http request node to call custom southbound mindsphere APIs (#83)
+- Custom Event Support via \_customEvent switch on the message.
+- Added msg.\_includeMindSphereToken and msg.\_ignorePayload switch which propagates the MindSphere Authentication Token in msg.headers
+- The msg.\_includeMindSphereToken switch can be used in conjuction with the http request node to call custom southbound mindsphere APIs (#83)
 - New examples on <https://playground.mindconnect.rocks> for flows
 - Bumped all dependencies
 - New Logo <3
@@ -29,8 +40,8 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## New Features 3.7.0
 
-- new docker images with version 1.0.* for multiple architectures
-- the old 0.20.* based docker images are now deprecated
+- new docker images with version 1.0.\* for multiple architectures
+- the old 0.20.\* based docker images are now deprecated
 - the node has now a link to agent diagnostic application in the mindsphere
 - new configuration button to delete all local data of the agent (including the .mc/agentconfig.json)
 - the node will await parallel asynchronous requests automatically after configured number of seconds
@@ -38,7 +49,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ### Important docker image user change - for users upgrading from versions before 3.7.0
 
-If you are using host directories for docker persistence and you are upgrading from previous version of docker images (which were based on 0.20.* version of node red) you will have to ensure that any existing data and .mc directory has the correct ownership.
+If you are using host directories for docker persistence and you are upgrading from previous version of docker images (which were based on 0.20.\* version of node red) you will have to ensure that any existing data and .mc directory has the correct ownership.
 As of 1.0 this needs to be 1000:1000. This can be forced by running the command
 
 ```bash
@@ -108,7 +119,7 @@ Stay strong, safe and healthy! <3 :hearth:
 - auto keep-alive: the node will renew the token every hour even when there is no data sent.
 - programatic delivery of the configuration - prerequisite for auto-configuration node which is coming in next versions
 - moved schema-validation to mindconnect-schema.ts, improved code and documentation
-- new msg._error message with timestamped error property for better flows
+- new msg.\_error message with timestamped error property for better flows
 
 ## 3.3.0 (Vienna Panthers) - February 2019
 
