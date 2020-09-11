@@ -14,11 +14,15 @@ The node is written in typescript/javascript without any native dependencies so 
 
 ## What is it
 
-The Node-RED platform targets the makers who want an easy, flow-based way to configure and manage the flow of data with their IoT devices. This node provides the
-connectivity to MindSphere for TimeSeries upload, File upload and Event Creation.
+The Node-RED platform targets the makers who want an easy, flow-based way to configure and manage the flow of data with their IoT devices. This node provides the connectivity to MindSphere for TimeSeries upload, File upload and Event Creation.
 
 ![MindConnect Node-RED Node](./images/mindconnectagent-flow.png)
 
-## Legal
+## Using the Mindconnect Node-RED Node
 
-This project has been released under an [Open Source license](./LICENSE.md). The release may include and/or use APIs to Siemens’ or third parties’ products or services. In no event shall the project’s Open Source license grant any rights in or to these APIs, products or services that would alter, expand, be inconsistent with, or supersede any terms of separate license agreements applicable to those APIs. “API” means application programming interfaces and their specifications and implementing code that allows other software to communicate with or call on Siemens’ or third parties’ products or services and may be made available through Siemens’ or third parties’ products, documentations or otherwise.
+The video below shows how to use the Node-RED node with DemoPump asset which is available in [MindSphere Start for Free Account](https://siemens.mindsphere.io/en/start).
+
+<video width="640" height="480" controls>
+  <source src="images/node-red-start-for-free-no-sound.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
