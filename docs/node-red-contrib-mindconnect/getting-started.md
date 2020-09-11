@@ -29,19 +29,14 @@ You can install the node also via the Manage palette feature in the Node-RED adm
 
 ## How to use the Node-RED node
 
-### Step 1: Create (at least) one asset, agent, configuration and mappings
+Since version 3.9.0 it is possible to completely configure the agent from Node-RED. You will only need the initial Boarding configuration from the MindSphere UI.
+
+### Step 0: Create (at least) one asset and one agent in MindSphere
 
 - Create an asset in Asset Manager for your data
 - Create an agent of the type MindConnectLib [core.mclib] and store the agent.
-- Create a new data configuration
 
-![configuration](images/dataconfig.png)
-
-- Create mappings to your asset.
-
-![mappings](images/datamappings.png)
-
-### Step 2: Get the initial agent configuration from Mindsphere Asset Manager
+### Step 1: Get the initial agent configuration from Mindsphere Asset Manager
 
 You can choose between:
 
@@ -56,11 +51,31 @@ openssl genrsa -out private.key 3072
 
 There is no additional configuration required for SHARED_SECRET security profile.
 
-### Step 3: Copy the agent configuration (and if necessary the private key to the node)
+![boarding configuration](images/boarding-configuration.png)
 
-![implementation](images/mindconnectagent-flow.png)
+### Step 2: Copy the agent onboarding information (and if necessary the RSA 3072 private key) to the node and deploy the flow
 
-### Step 4: Create and deploy the flow
+Copy the agent onboarding information and optionally the RSA_3072 private key to the node and deploy the flow.
+
+![implementation](images/configured-node.png)
+
+### Step 3: Press the agent configuration button and select the target asset
+
+The most common agent configuration setup is to have a 1:1 mapping between the Node-RED agent which is delivering the data and your target
+MindSphere Asset. If this type of configuration is sufficient for your use case you just have to click on the asset to which you want to map the data in the asset list. (you can use the filter asset listbox to quickly find your asset)
+
+![implementation](images/automatic-configuration.png)
+
+The node will automatically configure all necessary data sources and mapping for you. If you need a more complex setup, just click on the **MindSphere Configuration Dialog** button which will lead you to the configuration dialog in the MindSphere, where you can create more complex configurations and mappings.
+
+![implementation](images/mindsphere-configuration.png)
+
+### Step 4: Create and deploy the flow and send data
+
+You can use the node to send timeseries, bulk timeseries, events and files to MindSphere. The templates for the input messages are listed
+below, but you can also just use the **Agent Information** button which will let you copy the corresponding template to clipboard.
+
+![implementation](images/infodialog-templates.png)
 
 #### Send data points
 
@@ -68,9 +83,9 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-    { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-    { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
+  { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+  { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+  { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
 ];
 
 msg._time = new Date();
@@ -86,22 +101,22 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    {
-        timestamp: "2018-11-09T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "45.76" }
-        ]
-    },
-    {
-        timestamp: "2018-11-08T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "12" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "15.76" }
-        ]
-    }
+  {
+    timestamp: "2018-11-09T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
+    ],
+  },
+  {
+    timestamp: "2018-11-08T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "12" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "15.76" },
+    ],
+  },
 ];
 
 msg.payload = values;
@@ -116,15 +131,15 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
-    sourceType: "Agent",
-    sourceId: "application",
-    source: "Meowz",
-    severity: 30, // 0-99 : 20:error, 30:warning, 40: information
-    description: "Event sent at " + new Date().toISOString(),
-    timestamp: new Date().toISOString(),
-    additionalproperty1: "123",
-    additionalproperty2: "456"
+  entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
+  sourceType: "Agent",
+  sourceId: "application",
+  source: "Meowz",
+  severity: 30, // 0-99 : 20:error, 30:warning, 40: information
+  description: "Event sent at " + new Date().toISOString(),
+  timestamp: new Date().toISOString(),
+  additionalproperty1: "123",
+  additionalproperty2: "456",
 };
 return msg;
 ```
@@ -132,7 +147,7 @@ return msg;
 If you are using the custom events instead of MindSphere Standard Events please include the following switch in the message.
 
 ```javascript
-msg._customEvent=true;
+msg._customEvent = true;
 ```
 
 #### File Upload
@@ -141,11 +156,11 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
-    fileName: "digitaltwin.png", // you can also pass an instance of a Buffer
-    fileType: "image/png", //optional, it is automatically determined if there is no fileType specified
-    filePath: "images/digitaltwin.png", // required if you are using buffer instead of the file name
-    description: "testfile"
+  entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
+  fileName: "digitaltwin.png", // you can also pass an instance of a Buffer
+  fileType: "image/png", //optional, it is automatically determined if there is no fileType specified
+  filePath: "images/digitaltwin.png", // required if you are using buffer instead of the file name
+  description: "testfile",
 };
 return msg;
 ```
@@ -172,13 +187,13 @@ The node can be used to generate authentication tokens which you can use to call
 The msg.headers will have a Mindsphere Authorization JWT.
 
 ```javascript
-msg._includeMindSphereToken=true;
+msg._includeMindSphereToken = true;
 ```
 
 if you just want to get the token without sending any data to MindSphere
 
 ```javascript
-msg._ignorePayload=true;
+msg._ignorePayload = true;
 ```
 
 Treat tokens as you would any other credentials.
@@ -205,6 +220,18 @@ This application can be used without mindsphere credentials.
 - password: Siemens123!
 
 This data is also used as an example for the KPI-Calculation and Trend prediction with help of MindSphere APIs. <https://github.com/mindsphere/analytics-examples>
+
+## Securing API Endpoints
+
+The corresponding API calls for reading the data source configuration and mappings in Agent Configuration and Agent Information dialog require that the user has:
+
+`mindconnect.read`
+
+permission. The automatic configuration requires
+
+`mindconnect.write`
+
+permission.
 
 ## Troubleshooting
 
