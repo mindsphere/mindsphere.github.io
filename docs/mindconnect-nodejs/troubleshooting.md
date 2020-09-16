@@ -58,9 +58,9 @@ Here are some probable causes:
 If your agent is calling MindSphere APIs only occasionally the authentication secrets might expire. In order to prevent that the Node-RED has an automatic keep alive feature which renews the client secrets even if no data is sent. If you are writing a custom agent make sure that you are doing something like this:
 
 ```javascript
-setInterval (async () => {
-  await retry (5, ()=>agent.RenewToken());
-}, 3600000)
+setInterval(async () => {
+  await retry(5, () => agent.RenewToken());
+}, 3600000);
 ```
 
 ### Invalid date/time on the device
@@ -105,3 +105,8 @@ Press on the "delete local configuration" :wastebucket: button on the node, conf
 ![delete local settings](images/deletelocal.png)
 
 If you are having problems, it is a good idea to restart the Node-RED runtime completely
+
+### Node-RED node 3.9.0 is not loading in chromium on Raspberry Pi
+
+If the node is not loading in your chromium browser on your Raspberry Pi, please either upgrade chromium to a newer version (83.0.\*) or upgrade
+the node to the version 3.9.1 which should also work in older chromium versions. (See also the [corresponding issue](https://github.com/mindsphere/node-red-contrib-mindconnect/issues/103) on GitHub.)
