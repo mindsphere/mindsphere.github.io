@@ -106,7 +106,7 @@ Press on the "delete local configuration" :wastebucket: button on the node, conf
 
 If you are having problems, it is a good idea to restart the Node-RED runtime completely
 
-### Node-RED node 3.9.0 is not loading in chromium on Raspberry Pi
+## Node-RED node 3.9.0 is not loading in chromium on Raspberry Pi
 
 If the node is not loading in your chromium browser on your Raspberry Pi, please either upgrade chromium to a newer version (83.0.\*) or upgrade
 the node to the version 3.9.1 which should also work in older chromium versions. (See also the [corresponding issue](https://github.com/mindsphere/node-red-contrib-mindconnect/issues/103) on GitHub.)
