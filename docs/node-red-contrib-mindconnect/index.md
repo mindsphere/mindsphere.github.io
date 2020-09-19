@@ -12,7 +12,7 @@ A Node-RED node which can be used to upload the time series data, files and even
 
 The node is written in typescript/javascript without any native dependencies so it should work beside x86 also on other platforms (e.g. on raspberry pi, [Simatic IoT2000 Gateways](https://w3.siemens.com/mcms/pc-based-automation/en/industrial-iot/Pages/Default.aspx?tabcardname=simatic%20iot2000%20io-shield), [Siemens Industrial Edge](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge.html) etc., you just have to have [Node-RED](https://nodered.org) installed).
 
-## What is it
+## About MindConnect Node-RED Node
 
 The Node-RED platform targets the makers who want an easy, flow-based way to configure and manage the flow of data with their IoT devices. This node provides the connectivity to MindSphere for TimeSeries upload, File upload and Event Creation.
 
