@@ -21,7 +21,7 @@ docker pull mindconnect/node-red-contrib-mindconnect
 
 ### Tags
 
--   **latest** : latest state of the master branch on [GitHub](https://github.com/mindsphere/node-red-mindconnect) for multiple processor architecture.
+- **latest** : latest state of the master branch on [GitHub](https://github.com/mindsphere/node-red-mindconnect) for multiple processor architecture.
 
 ## Deprecated images supporting x86 or ARM architectures (until-3.6.2)
 
@@ -29,9 +29,9 @@ These docker images are based on the [Node-RED-Docker](https://hub.docker.com/r/
 
 ### Deprecated Tags
 
--   **arm-latest** : latest state of the mater branch on [GitHub](https://github.com/mindsphere/node-red-mindconnect) for ARM processor architecture. (deprecated)
--   **x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for X86. (deprecated before 3.7.0)
--   **arm-x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for ARM. (deprecated)
+- **arm-latest** : latest state of the mater branch on [GitHub](https://github.com/mindsphere/node-red-mindconnect) for ARM processor architecture. (deprecated)
+- **x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for X86. (deprecated before 3.7.0)
+- **arm-x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for ARM. (deprecated)
 
 ## Using the images
 
@@ -39,6 +39,12 @@ Running the image with Node-RED avaialble at : [http://localhost:1880](http://lo
 
 ```bash
 docker run -it --name mind-red -p 1880:1880 mindconnect/node-red-contrib-mindconnect
+```
+
+Run the container as a service, keeping the state on the host in the /DATA and /DATA/.mc directory:
+
+```bash
+docker run -dit --name mind-red-service -p 1880:1880 -v /DATA:/data:rw -v /DATA/mc:/usr/src/node-red/.mc:rw --restart unless-stopped mindconnect/node-red-contrib-mindconnect
 ```
 
 Run the container as a service, keeping the state on the host in the /DATA and /DATA/.mc directory , behind a http proxy running at [http://192.168.0.1](http://192.168.0.1)
@@ -69,3 +75,12 @@ sudo chown -R 1000:1000 /DATA/.mc
 Consider using docker named volumes instead. <https://docs.docker.com/storage/volumes/>
 
 This is necessary because of the change in the base docker image of node-red. See also <https://nodered.org/docs/getting-started/docker>
+
+## Node-RED docker image with preinstalled MindConnect Node running on Raspberry Pi
+
+The video below shows how to use of the docker image with preinstalled MindConnect Node-RED Node:
+
+<video width="640" height="480" controls>
+  <source src="images/node-red-docker-raspberry.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
