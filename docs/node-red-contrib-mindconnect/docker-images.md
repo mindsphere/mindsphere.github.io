@@ -81,6 +81,6 @@ This is necessary because of the change in the base docker image of node-red. Se
 The video below shows how to use of the docker image with preinstalled MindConnect Node-RED Node:
 
 <video width="640" height="480" controls>
-  <source src="images/node-red-docker-raspberry.mp4" type="video/mp4">
+  <source src="images/node_red_docker_raspberry.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
