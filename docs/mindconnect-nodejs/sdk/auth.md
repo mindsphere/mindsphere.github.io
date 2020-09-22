@@ -263,7 +263,7 @@ agent.SetupAgentCertificate(fs.readFileSync("private.key"));
 await agent.OnBoard();
 
 const sdk = new MindSphereSdk (agent);
-await sdk..GetAssetManagementClient().GetAssetType(assetTypeId, { exploded: true });
+await sdk.GetAssetManagementClient().GetAssetType(assetTypeId, { exploded: true });
 ```
 
 ## Using credentials instead of Authorizer
