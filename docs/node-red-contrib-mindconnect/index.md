@@ -22,7 +22,7 @@ The Node-RED platform targets the makers who want an easy, flow-based way to con
 
 The video below shows how to use the Node-RED node with DemoPump asset which is available in [MindSphere Start for Free Account](https://siemens.mindsphere.io/en/start).
 
-<video width="640" height="480" controls>
+<video style='width: 100% !important; height: auto !important;' controls>
   <source src="images/node-red-start-for-free-no-sound.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>

@@ -13,9 +13,9 @@ at your local machine at
 
 which will authenticate all requests using either one of:
 
--   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials) - **Recommended**
--   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
--   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
+- [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials) - **Recommended**
+- [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
+- [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
 
 ## Developing with SESSION and XSRF-TOKEN Cookie
 
@@ -100,3 +100,12 @@ Options:
 
     see more documentation at https://opensource.mindsphere.io/docs/mindconnect-nodejs/development-proxy.html
 ```
+
+## Example
+
+This video shows how to use the development proxy in combination with React web application using frontend authentication.
+
+<video style='width: 100% !important; height: auto !important;' controls>
+  <source src="../images/using_dev_proxy.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
