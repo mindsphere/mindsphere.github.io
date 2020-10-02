@@ -1,5 +1,14 @@
 ---
 title: MindConnect-NodeJS - License
+next:
+    - title: Overview
+      link: index
+    - title: Troubleshooting Tips
+      link: troubleshooting
+---
+
+<!-- @format -->
+
 ---
 
 <!-- @format -->

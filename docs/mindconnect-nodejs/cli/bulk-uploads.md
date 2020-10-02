@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS - CLI - Uploading historical timeseries data
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS - CLI - <small>Uploading historical timeseries data</small>
 
@@ -16,10 +23,10 @@ The CLI provides the command line tooling for import of the historical timeserie
 
 The upload of historical timeseries data to MindSphere is done in several steps:
 
-- Preparing the directory with the template `.csv` files for the data upload.
-- Importing your data into the prepared directory according to the created template
-- Converting the imported files to `.json` format.
-- Running the import jobs
+-   Preparing the directory with the template `.csv` files for the data upload.
+-   Importing your data into the prepared directory according to the created template
+-   Converting the imported files to `.json` format.
+-   Running the import jobs
 
 As the bulk import is asynchronous you can check the progress of the job by running the `mc check-bulk` command.
 
@@ -99,8 +106,8 @@ mc prepare-bulk  --assetid 123...ef \
 
 This command can be used to
 
-- convert the csv files to json and verify their content (running `mc run-bulk` command without the `--start` parameter)
-- start the timeseries (bulk) upload jobs (with `--start`) command
+-   convert the csv files to json and verify their content (running `mc run-bulk` command without the `--start` parameter)
+-   start the timeseries (bulk) upload jobs (with `--start`) command
 
 ```text
 mc run-bulk --help

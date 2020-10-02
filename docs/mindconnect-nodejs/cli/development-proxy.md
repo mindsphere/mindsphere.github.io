@@ -1,5 +1,10 @@
 ---
 title: MindConnect-NodeJS - Setting up the CLI
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
 
 <!-- @format -->
@@ -13,9 +18,9 @@ at your local machine at
 
 which will authenticate all requests using either one of:
 
-- [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials) - **Recommended**
-- [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
-- [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
+-   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials) - **Recommended**
+-   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
+-   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials)
 
 ## Developing with SESSION and XSRF-TOKEN Cookie
 

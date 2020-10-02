@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS - CLI - Managing Agent Credentials
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
 
@@ -10,14 +17,14 @@ The mindsphere agents require the initial agent configuration which can be acqui
 
 ```json
 {
-  "content": {
-    "baseUrl": "https://southgate.eu1.mindsphere.io",
-    "iat": "ey...",
-    "clientCredentialProfile": ["SHARED_SECRET"],
-    "clientId": "5d06988ac50a44758ed0d9bff9edc4a0",
-    "tenant": "{yourtenant}"
-  },
-  "expiration": "2019-05-23T11:42:24.000Z"
+    "content": {
+        "baseUrl": "https://southgate.eu1.mindsphere.io",
+        "iat": "ey...",
+        "clientCredentialProfile": ["SHARED_SECRET"],
+        "clientId": "5d06988ac50a44758ed0d9bff9edc4a0",
+        "tenant": "{yourtenant}"
+    },
+    "expiration": "2019-05-23T11:42:24.000Z"
 }
 ```
 
@@ -27,11 +34,11 @@ The mindconnect-nodejs CLI provides a set of commands which can be used to acqui
 
 These commands can
 
-- Create new agent in the MindSphere `mc create-agent`
-- Onboard the agent `mc onboard`
-- Check the agent status `mc agent-status`
-- Offboard the agent `mc offboard-agent`
-- Renew the agent secret `mc renew-agent`
+-   Create new agent in the MindSphere `mc create-agent`
+-   Onboard the agent `mc onboard`
+-   Check the agent status `mc agent-status`
+-   Offboard the agent `mc offboard-agent`
+-   Renew the agent secret `mc renew-agent`
 
 The prerequsite for most of these commands is that you have registered your service credentials using `mc service-credentials` command.
 

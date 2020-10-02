@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS
+next:
+    - title: Proxy Support
+      link: proxy-support
+    - title: Troubleshooting Tips
+      link: troubleshooting
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS
 

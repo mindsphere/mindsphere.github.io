@@ -1,5 +1,12 @@
 ---
 title: TypeScript SDK - Using HttpAction
+next:
+    - title: Overview
+      link: index
+    - title: Authorization
+      link: auth
+    - title: Contributing to SDK
+      link: contributing-to-sdk
 ---
 
 <!-- @format -->

@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS - CLI - <small>Uploading Data to MindSphere</small>
 
@@ -8,9 +15,9 @@ title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
 
 The MindConnect APIs provide the agents with the possibility to
 
-- ingest timeseries data (`mc upload-timeseries`)
-- create events in the Mindsphere (`mc create-event`)
-- upload files to the the MindSphere (`mc upload-file`)
+-   ingest timeseries data (`mc upload-timeseries`)
+-   create events in the Mindsphere (`mc create-event`)
+-   upload files to the the MindSphere (`mc upload-file`)
 
 All these commands use the agent credentials. Take a look at [Agent Management](./agent-management.md) part of the documentation for instructions how to acquire them.
 

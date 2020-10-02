@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS -CLI - Analysis Commands
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS - CLI - <small>Analysis Commands</small>
 
@@ -8,12 +15,12 @@ title: MindConnect-NodeJS -CLI - Analysis Commands
 
 The analytical functions of MindSphere like:
 
-- Spectrum Analysis or
-- Signal Validation
+-   Spectrum Analysis or
+-   Signal Validation
 
 can be used with help of the CLI.
 
-These commands require  [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
+These commands require [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
 
 ## Spectrum Analysis (`mc spectrum-analysis`)
 
@@ -77,12 +84,12 @@ mc spectrum-analysis --mode threshold --thresholds threshold.spectrum.json --pas
 This command uses [MindSphere Signal Validation Service](https://developer.mindsphere.io/apis/analytics-signalvalidation/api-signalvalidation-overview.html)
 to perform different checks on the time series data:
 
-- Detect range violations
-- Detect spikes
-- Detect noise
-- Detect jumps
-- Detect/interpolate gaps
-- Detect bias
+-   Detect range violations
+-   Detect spikes
+-   Detect noise
+-   Detect jumps
+-   Detect/interpolate gaps
+-   Detect bias
 
 The Signal Validation Service documentation provides the [full description](https://developer.mindsphere.io/apis/analytics-signalvalidation/api-signalvalidation-basics.html) of all checks the signal validation can perform.
 

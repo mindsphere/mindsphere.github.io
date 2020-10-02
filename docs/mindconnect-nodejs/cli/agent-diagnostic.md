@@ -1,5 +1,10 @@
 ---
 title: MindConnect-NodeJS - CLI - Agent Diagnostics
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
 
 # MindConnect-NodeJS - CLI - <small>Agent Diagnostics</small>

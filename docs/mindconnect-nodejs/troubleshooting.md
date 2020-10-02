@@ -1,5 +1,14 @@
 ---
 title: MindConnect-NodeJS - Troubleshooting
+next:
+    - title: Overview
+      link: index
+    - title: Proxy Support
+      link: proxy-support
+---
+
+<!-- @format -->
+
 ---
 
 # Troubleshooting Tips
@@ -59,7 +68,7 @@ If your agent is calling MindSphere APIs only occasionally the authentication se
 
 ```javascript
 setInterval(async () => {
-  await retry(5, () => agent.RenewToken());
+    await retry(5, () => agent.RenewToken());
 }, 3600000);
 ```
 
