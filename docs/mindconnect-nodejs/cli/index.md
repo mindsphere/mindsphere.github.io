@@ -18,7 +18,7 @@ The library comes with a command line interface which can be used to upload time
 npm install -g @mindconnect/mindconnect-nodejs
 ```
 
-See also [getting started](../setting-up-the-cli.md) section of this documentation
+See also [getting started](setting-up-the-cli.html) section of this documentation
 
 ## What is it
 
