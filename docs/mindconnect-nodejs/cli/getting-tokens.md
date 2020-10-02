@@ -1,6 +1,13 @@
 ---
 title: MindConnect NodeJS - CLI - Getting Tokens
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect NodeJS - CLI - <small>Getting Tokens</small>
 

@@ -1,6 +1,13 @@
 ---
 title: MindConnect--NodeJS - CLI - Starter Projects
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect--NodeJS - CLI - <small>Starter Projects</small>
 

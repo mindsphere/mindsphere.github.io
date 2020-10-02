@@ -1,5 +1,14 @@
 ---
 title: MindConnect-NodeJS - Agent Development - Getting Started
+next:
+    - title: Retrying the Operations
+      link: retrying-operations
+    - title: MindConnect Agent Methods
+      link: mindconnect-agent-docs
+    - title: Starter Projects
+      link: starter-projects
+    - title: Agent State Storage
+      link: agent-state-storage
 ---
 
 <!-- @format -->

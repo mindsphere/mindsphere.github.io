@@ -1,5 +1,8 @@
 ---
 title: MindConnect-NodeJS - CLI - Overview
+next:
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
 
 <!-- @format -->

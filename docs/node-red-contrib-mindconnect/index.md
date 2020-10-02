@@ -1,6 +1,13 @@
 ---
 title: MindConnect Node-RED Node - Overview
+next:
+    - title: Getting Started
+      link: getting-started
+    - title: Docker images
+      link: docker-images
 ---
+
+<!-- @format -->
 
 # MindConnect Node-RED Node - <small>Overview</small>
 

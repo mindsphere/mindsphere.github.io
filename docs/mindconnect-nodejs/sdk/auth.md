@@ -1,5 +1,12 @@
 ---
 title: TypeScript SDK - Authentication & Authorization
+next:
+    - title: Overview
+      link: index
+    - title: HttpAction
+      link: using-http-action
+    - title: Contributing to SDK
+      link: contributing-to-sdk
 ---
 
 <!-- @format -->
@@ -262,7 +269,7 @@ const agent = new MindConnectAgent(configuration);
 agent.SetupAgentCertificate(fs.readFileSync("private.key"));
 await agent.OnBoard();
 
-const sdk = new MindSphereSdk (agent);
+const sdk = new MindSphereSdk(agent);
 await sdk.GetAssetManagementClient().GetAssetType(assetTypeId, { exploded: true });
 ```
 

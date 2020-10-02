@@ -92,13 +92,10 @@ subpages:
             file_name: getting-started.html
           - name: Docker images
             file_name: docker-images.html
-          - name: Contributing
-            local_path: docs/node-red-contrib-mindconnect
-            subpages:
-              - name: Code of Conduct
-                file_name: CODE_OF_CONDUCT.html
-              - name: Contribution Guidelines
-                file_name: CONTRIBUTING.html
+          - name: Code of Conduct
+            file_name: CODE_OF_CONDUCT.html
+          - name: Contribution Guidelines
+            file_name: CONTRIBUTING.html
           - name: Changelog
             file_name: CHANGELOG.html
           - name: License
@@ -108,13 +105,10 @@ subpages:
         subpages:
           - name: Overview
             file_name: index.html
-          - name: Contributing
-            local_path: docs/devops-demo
-            subpages:
-              - name: Code of Conduct
-                file_name: CODE_OF_CONDUCT.html
-              - name: Contribution Guidelines
-                file_name: CONTRIBUTING.html
+          - name: Code of Conduct
+            file_name: CODE_OF_CONDUCT.html
+          - name: Contribution Guidelines
+            file_name: CONTRIBUTING.html
           - name: License
             file_name: LICENSE.html
       - name: Analytics Examples
@@ -122,13 +116,10 @@ subpages:
         subpages:
           - name: Overview
             file_name: index.html
-          - name: Contributing
-            local_path: docs/analytics
-            subpages:
-              - name: Code of Conduct
-                file_name: CODE_OF_CONDUCT.html
-              - name: Contribution Guidelines
-                file_name: CONTRIBUTING.html
+          - name: Code of Conduct
+            file_name: CODE_OF_CONDUCT.html
+          - name: Contribution Guidelines
+            file_name: CONTRIBUTING.html
           - name: Changelog
             file_name: CHANGELOG.html
           - name: License

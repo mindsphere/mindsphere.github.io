@@ -1,6 +1,13 @@
 ---
 title: MindConnect-NodeJS -CLI - Asset and File Commands
+next:
+    - title: Overview
+      link: index
+    - title: Setting up the CLI
+      link: setting-up-the-cli
 ---
+
+<!-- @format -->
 
 # MindConnect-NodeJS - CLI - <small>Asset and File Commands</small>
 
@@ -8,10 +15,10 @@ title: MindConnect-NodeJS -CLI - Asset and File Commands
 
 The asset and file commands can be used to
 
-- list assets in the mindsphere tenant
-- list, upload and download files stored with the asset
+-   list assets in the mindsphere tenant
+-   list, upload and download files stored with the asset
 
-These commands require  [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
+These commands require [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
 
 ## List Assets (`mc list-assets`)
 

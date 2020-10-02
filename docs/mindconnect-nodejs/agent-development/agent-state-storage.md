@@ -1,6 +1,17 @@
 ---
 title: Mindconnect-NodeJS - Agent Development - Agent State Storage
+next:
+    - title: Getting Started
+      link: mindconnect-agent
+    - title: Retrying the Operations
+      link: retrying-operations
+    - title: MindConnect Agent Methods
+      link: mindconnect-agent-docs
+    - title: Starter Projects
+      link: starter-projects
 ---
+
+<!-- @format -->
 
 # Mindconnect-NodeJS - Agent Development - <small>Agent State Storage</small>
 
@@ -9,11 +20,11 @@ title: Mindconnect-NodeJS - Agent Development - Agent State Storage
 The agents need to manage their state information over time.
 This state information consists of
 
-- agent secrets
-- agent configuration
-- agent mappings
-- history of agent secrets
-- list of uploaded files and corresponding eTags (so that agents can overwrite the files if necessary)
+-   agent secrets
+-   agent configuration
+-   agent mappings
+-   history of agent secrets
+-   list of uploaded files and corresponding eTags (so that agents can overwrite the files if necessary)
 
 This information needs to be persisted over time.
 
@@ -49,10 +60,8 @@ If you need to store the data in a different or more secure fashion you can prov
  * @interface ConfigurationStorage
  */
 export interface IConfigurationStorage {
-  GetConfig(config: IMindConnectConfiguration): IMindConnectConfiguration;
-  SaveConfig(
-    config: IMindConnectConfiguration
-  ): Promise<IMindConnectConfiguration>;
+    GetConfig(config: IMindConnectConfiguration): IMindConnectConfiguration;
+    SaveConfig(config: IMindConnectConfiguration): Promise<IMindConnectConfiguration>;
 }
 ```
 
@@ -60,9 +69,9 @@ The GetConfig method should check if the config has changed and return no value 
 
 ```javascript
 if (_.isEqual(json.content, configuration.content)) {
-  return json;
+    return json;
 } else {
-  log("The configuration has changed we will onboard again.");
+    log("The configuration has changed we will onboard again.");
 }
 ```
 
@@ -123,9 +132,5 @@ export class MySecureStorage implements IConfigurationStorage {
 You can pass the instance of your storage provider to the MindConnectAgent constructor.
 
 ```javascript
-const agent = new MindConnectAgent(
-  configuration,
-  undefined,
-  new MySecureStorage()
-);
+const agent = new MindConnectAgent(configuration, undefined, new MySecureStorage());
 ```

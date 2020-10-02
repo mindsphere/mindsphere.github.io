@@ -1,5 +1,8 @@
 ---
 title: MindConnect-NodeJS - Setting up the CLI
+next:
+    - title: Overview
+      link: index
 ---
 
 <!-- @format -->
@@ -8,9 +11,9 @@ title: MindConnect-NodeJS - Setting up the CLI
 
 The first step is to configure the CLI. For this, you will need service credentials (which have been deprecated) or application credentials from your developer cockpit or SESSION and XSRF-TOKEN from the application you have been developing.
 
-- [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
-- [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials) (deprecated)
-- [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
+-   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
+-   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials) (deprecated)
+-   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
 
 **Important:** the service credentials (which are now deprecated) could only be acquired by emailing MindSphere Support. They are not connected to the _Cloud Foundry Service Credentials_ from MindSphere settings app.
 
