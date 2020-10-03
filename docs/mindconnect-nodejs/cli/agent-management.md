@@ -1,10 +1,10 @@
 ---
 title: MindConnect-NodeJS - CLI - Managing Agent Credentials
 next:
-    - title: Overview
-      link: index
-    - title: Setting up the CLI
-      link: setting-up-the-cli
+  - title: Overview
+    link: index
+  - title: Setting up the CLI
+    link: setting-up-the-cli
 ---
 
 <!-- @format -->
@@ -17,14 +17,14 @@ The mindsphere agents require the initial agent configuration which can be acqui
 
 ```json
 {
-    "content": {
-        "baseUrl": "https://southgate.eu1.mindsphere.io",
-        "iat": "ey...",
-        "clientCredentialProfile": ["SHARED_SECRET"],
-        "clientId": "5d06988ac50a44758ed0d9bff9edc4a0",
-        "tenant": "{yourtenant}"
-    },
-    "expiration": "2019-05-23T11:42:24.000Z"
+  "content": {
+    "baseUrl": "https://southgate.eu1.mindsphere.io",
+    "iat": "ey...",
+    "clientCredentialProfile": ["SHARED_SECRET"],
+    "clientId": "5d06988ac50a44758ed0d9bff9edc4a0",
+    "tenant": "{yourtenant}"
+  },
+  "expiration": "2019-05-23T11:42:24.000Z"
 }
 ```
 
@@ -34,11 +34,11 @@ The mindconnect-nodejs CLI provides a set of commands which can be used to acqui
 
 These commands can
 
--   Create new agent in the MindSphere `mc create-agent`
--   Onboard the agent `mc onboard`
--   Check the agent status `mc agent-status`
--   Offboard the agent `mc offboard-agent`
--   Renew the agent secret `mc renew-agent`
+- Create new agent in the MindSphere `mc create-agent`
+- Onboard the agent `mc onboard`
+- Check the agent status `mc agent-status`
+- Offboard the agent `mc offboard-agent`
+- Renew the agent secret `mc renew-agent`
 
 The prerequsite for most of these commands is that you have registered your service credentials using `mc service-credentials` command.
 
@@ -119,6 +119,55 @@ The command below will onboard your agent with the configuration stored in agent
 ```bash
 mc onboard --config agent.json --cert private.key
 ```
+
+## Configuring the agents (`mc configure-agent`)
+
+You can configure your agent using command line interface as well. The `mc configure-agent` command has following modes:
+
+- **config**: creates the data source configuration and optionally the data mappings for the agent
+- **map**: manages mapping for the agents
+- **print**: prints the current configuration
+- **delete**: deletes the data source configuration and or mappings
+- **test** : generates random data and sends them to mindsphere
+
+```text
+Usage: mc configure-agent|co [options]
+
+create data source configuration and mappings (optional: passkey) *
+
+Options:
+  -c, --config <agentconfig>                         config file with agent configuration
+  -m, --mode [config | map | print | delete | test]  command mode (default: "config")
+  -a, --agentid <agentid>                            agentid
+  -i, --assetid <assetid>                            target assetid for mapping
+  -t, --typeid <typeid>                              asset type for configuration
+  -k, --passkey <passkey>                            passkey
+  -y, --retry <number>                               retry attempts before giving up (default: "3")
+  -v, --verbose                                      verbose output
+  -h, --help                                         display help for command
+
+  Examples:
+
+    mc configure-agent --config agent.json -assetid 1234567...89            configures agent automatically for specified assetid
+    mc configure-agent --config agent.json --mode print                     prints data source configuration and mappings
+    mc configure-agent --agentid 12345..ef --typeid <tenant>.Engine         creates the data source configuration
+    mc configure-agent --mode map --agentid 12345..ef --assetid 1234567     creates the mappings for assetid
+    mc configure-agent --mode delete --agentid 12345..ef --assetid 1234567  deletes the mappings for assetid
+    mc configure-agent --config agent.json --mode test                      sends test data to mindsphere
+```
+
+For example the following command will automatically configure data source configuration and the mappings for selected assetid.
+
+```bash
+mc configure-agent --config agent.json -assetid 1234567...89
+```
+
+Here is an example how to quickly create an agent, onboard it, map it to the assetid and send some data:
+
+<video style='width: 100% !important; height: auto !important;' controls>
+  <source src="../images/configuration.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Checking the agent status (`mc agent-status`)
 
