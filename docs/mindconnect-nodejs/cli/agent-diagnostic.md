@@ -1,10 +1,10 @@
 ---
 title: MindConnect-NodeJS - CLI - Agent Diagnostics
 next:
-    - title: Overview
-      link: index
-    - title: Setting up the CLI
-      link: setting-up-the-cli
+  - title: Overview
+    link: index
+  - title: Setting up the CLI
+    link: setting-up-the-cli
 ---
 
 # MindConnect-NodeJS - CLI - <small>Agent Diagnostics</small>
@@ -25,16 +25,16 @@ This command registers the agent for diagnostic.
 
 ```text
 mc register-diagnostic --help
-
-Usage: register-diagnostic|rd [options]
+Usage: mc register-diagnostic|rd [options]
 
 register agent for diagnostic *
 
 Options:
   -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
+  -i, --agentid <agentid>     agent id
   -k, --passkey <passkey>     passkey
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
@@ -43,10 +43,18 @@ Options:
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
+
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -63,19 +71,19 @@ This command retrieves the diagnostic data.
 
 ```text
 mc get-diagnostic --help
-
-Usage: get-diagnostic|gd [options]
+Usage: mc get-diagnostic|gd [options]
 
 get diagnostic information *
 
 Options:
-  -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
+  -c, --config <agentconfig>  config file with agent configuration
+  -a, --agentid <agentid>     agent id
   -k, --passkey <passkey>     passkey
-  -a, --all                   display all entries not just the last page
+  -l, --all                   display all entries not just the last page
   -j, --json                  json output
   -t, --text                  text (raw) output
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
@@ -85,11 +93,18 @@ Options:
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -112,16 +127,16 @@ This command unregisters the agent from diagnostic.
 
 ```text
 mc unregister-diagnostic --help
-
-Usage: unregister-diagnostic|ud [options]
+Usage: mc unregister-diagnostic|ud [options]
 
 unregister agent from diagnostic *
 
 Options:
   -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
+  -i, --agentid <agentid>     agent id
   -k, --passkey <passkey>     passkey
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
@@ -130,11 +145,18 @@ Options:
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example

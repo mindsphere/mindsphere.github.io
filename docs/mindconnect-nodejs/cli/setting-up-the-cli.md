@@ -9,7 +9,7 @@ next:
 
 # MindConnect-NodeJS - <small>Setting up the CLI</small>
 
-The first step is to configure the CLI. For this, you will need service credentials (which have been deprecated) or application credentials from your developer cockpit or SESSION and XSRF-TOKEN from the application you have been developing.
+The first step is to configure the CLI. For this, you will need application credentials  (or deprecated service credentials) from your developer cockpit or SESSION and XSRF-TOKEN from the application you have been developing.
 
 -   [Application Credentials](https://documentation.mindsphere.io/resources/html/developer-cockpit/en-US/124342231819.html) - **Recommended**
 -   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials) (deprecated)

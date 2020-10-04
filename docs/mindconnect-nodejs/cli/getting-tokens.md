@@ -1,10 +1,10 @@
 ---
 title: MindConnect NodeJS - CLI - Getting Tokens
 next:
-    - title: Overview
-      link: index
-    - title: Setting up the CLI
-      link: setting-up-the-cli
+  - title: Overview
+    link: index
+  - title: Setting up the CLI
+    link: setting-up-the-cli
 ---
 
 <!-- @format -->
@@ -19,32 +19,39 @@ The CLI provides two utility commands which can generate a service credential to
 
 ## Get Service Token (`mc service-token`)
 
-This is a utility command which the developers can use to get the valid mindsphere API token using service credentials.
+This is a utility command which the developers can use to get the valid mindsphere API token.
 
 ```bash
 mc service-token --help
-
-Usage: service-token|stk [options]
+Usage: mc service-token|stk [options]
 
 displays the service token for use in other tools (e.g. postman) *
 
 Options:
   -k, --passkey <passkey>  passkey
-  -y, --retry <number>     retry attempts before giving up (default: 3)
+  -y, --retry <number>     retry attempts before giving up (default: "3")
   -v, --verbose            verbose output
-  -h, --help               output usage information
+  -h, --help               display help for command
 
   Examples:
 
-    mc service-token --passkey mypasskey   displays the service token (encoded only)
-    mc service-token --passkey mypasskey --verbose  displays the service token (encoded and decoded)
+    mc service-token --passkey mypasskey                displays the service token (encoded only)
+    mc service-token --passkey mypasskey --verbose      displays the service token (encoded and decoded)
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
+
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example

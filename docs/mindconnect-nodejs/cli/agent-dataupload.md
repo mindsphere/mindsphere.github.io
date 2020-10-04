@@ -1,10 +1,10 @@
 ---
 title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
 next:
-    - title: Overview
-      link: index
-    - title: Setting up the CLI
-      link: setting-up-the-cli
+  - title: Overview
+    link: index
+  - title: Setting up the CLI
+    link: setting-up-the-cli
 ---
 
 <!-- @format -->
@@ -15,9 +15,9 @@ next:
 
 The MindConnect APIs provide the agents with the possibility to
 
--   ingest timeseries data (`mc upload-timeseries`)
--   create events in the Mindsphere (`mc create-event`)
--   upload files to the the MindSphere (`mc upload-file`)
+- ingest timeseries data (`mc upload-timeseries`)
+- create events in the Mindsphere (`mc create-event`)
+- upload files to the the MindSphere (`mc upload-file`)
 
 All these commands use the agent credentials. Take a look at [Agent Management](./agent-management.md) part of the documentation for instructions how to acquire them.
 
@@ -96,35 +96,35 @@ will upload the data to MindConnect API in batches of 100 messages.
 
 <!-- prettier-ignore-start -->
 <i class="fas fa-info-circle"></i>
-    This command can also be used with service credentials instead.
+    This command can also be used with app or service credentials.
 <!-- prettier-ignore-end -->
 
 ```text
-Usage: create-event|ce [options]
+mc create-event --help
+Usage: mc create-event|ce [options]
 
 create an event in the mindsphere (optional: passkey) *
 
 Options:
-  -c, --config <agentconfig>     config file with agent configuration (default: "agentconfig.json")
+  -c, --config <agentconfig>     config file with agent configuration
   -r, --cert [privatekey]        required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -i, --assetid <assetid>        asset id from the mindsphere  (default: send event to the agent)
   -y, --sourceType <sourceType>  Source Type (default: "MindConnect-Agent")
   -S, --sourceId <sourceId>      Source Id (default: "md1ru58c")
   -O, --source <source>          Source (default: "MindConnect-NodeJs CLI")
-  -V, --severity <severity>      Severity (20:Error, 30:Warning , 40:information) (default: 20)
+  -V, --severity <severity>      Severity (20:Error, 30:Warning , 40:information) (default: "20")
   -d, --desc <description>       Event description (default: "CLI created event")
-  -t, --timestamp <timestamp>    Timestamp (default: "2019-05-16T16:19:56.373Z")
-  -y, --retry <number>           retry attempts before giving up (default: 3)
-  -p, --passkey <passkey>        passkey (optional, file upload uses service credentials *)
+  -t, --timestamp <timestamp>    Timestamp (default: "2020-10-04T03:51:46.916Z")
+  -y, --retry <number>           retry attempts before giving up (default: "3")
+  -p, --passkey <passkey>        passkey (optional, event creation uses service credentials *)
   -v, --verbose                  verbose output
-  -h, --help                     output usage information
+  -h, --help                     display help for command
 
   Examples:
 
-    mc create-event                           create error event with default values and current timestamp
-    mc ce --desc Warning! --severity 30       create warning with description warning
-    mc ce --desc "custom event" --i 123....4  create error event for asset with id 123....4
-
+    mc create-event                              create error event with default values and current timestamp
+    mc ce --desc Warning! --severity 30          create warning with description warning
+    mc ce --desc "custom event" --i 123....4     create error event for asset with id 123....4
 ```
 
 ### Example
