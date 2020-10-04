@@ -40,25 +40,26 @@ These commands can
 - Offboard the agent `mc offboard-agent`
 - Renew the agent secret `mc renew-agent`
 
-The prerequsite for most of these commands is that you have registered your service credentials using `mc service-credentials` command.
+The prerequsite for most of these commands is that you have registered your app or service credentials using `mc service-credentials` command.
 
 ## Creating a new agent via CLI (`mc create-agent`)
 
 ```bash
 mc create-agent --help
-Usage: create-agent|ca [options]
+Usage: mc create-agent|ca [options]
 
 create an agent in the mindsphere *
 
 Options:
-  -c, --config <agentconfig>  config file for agent configuration
-  -n, --name <name>           agent name (default: "Agent1558007568586")
-  -p, --parentid <name>       parent asset id
-  -f, --profile <profile>     security profile [SHARED_SECRET|RSA_3072] (default: "SHARED_SECRET")
-  -k, --passkey <passkey>     passkey
-  -y, --retry <number>        retry attempts before giving up (default: 3)
-  -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -c, --config <agentconfig>   config file for agent configuration
+  -r, --cert [privatekey]      required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
+  -n, --agentname <agentname>  agent name (default: "Agent1601783776019")
+  -p, --parentid <parentid>    parent asset id
+  -f, --profile <profile>      security profile [SHARED_SECRET|RSA_3072] (default: "SHARED_SECRET")
+  -k, --passkey <passkey>      passkey
+  -y, --retry <number>         retry attempts before giving up (default: "3")
+  -v, --verbose                verbose output
+  -h, --help                   display help for command
 
   Examples:
 
@@ -66,10 +67,18 @@ Options:
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
+
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -176,17 +185,18 @@ want to see the local status
 
 ```bash
 mc agent-status --help
-Usage: agent-status|as [options]
+Usage: mc agent-status|as [options]
 
 displays the agent status and agent onboarding status *
 
 Options:
-  -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
+  -c, --config <agentconfig>  config file with agent configuration
+  -a, --agentid <agentid>     agentid
   -k, --passkey <passkey>     passkey
   -r, --cert [privatekey]     required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
-  -y, --retry <number>        retry attempts before giving up (default: 3)
+  -y, --retry <number>        retry attempts before giving up (default: "3")
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
@@ -198,10 +208,18 @@ Options:
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
+
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -225,29 +243,37 @@ The agent can be offboarded with help of the CLI as well.
 
 ```bash
 mc offboard-agent --help
-
-Usage: offboard-agent|of [options]
+Usage: mc offboard-agent|of [options]
 
 offboards the agent in the mindsphere *
 
 Options:
   -c, --config <agentconfig>  config file for agent configuration
+  -i, --agentid <agentid>     agent id
   -k, --passkey <passkey>     passkey
-  -y, --retry <number>        retry attempts before giving up (default: 3)
+  -y, --retry <number>        retry attempts before giving up (default: "3")
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
-    mc offboard-agent --config agent.json --passkey passkey...  offboard agent with agent.json configuration
+    mc offboard-agent --config agent.json --passkey passkey...   offboard agent with agent.json configuration
+    mc offboard-agent --agentid 12345..ef --passkey passkey...   offboard agent with 12345..ef agentid
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -269,28 +295,35 @@ The agent secrets can be renewed with help of the mc renew-agent command.
 
 ```bash
 mc renew-agent --help
-
-Usage: renew-agent|rn [options]
+Usage: mc renew-agent|rn [options]
 
 renews the agent secrets  *
 
 Options:
   -c, --config <agentconfig>  config file for agent configuration
   -k, --passkey <passkey>     passkey
-  -y, --retry <number>        retry attempts before giving up (default: 3)
+  -y, --retry <number>        retry attempts before giving up (default: "3")
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  -h, --help                  display help for command
 
   Examples:
 
-    mc renew-agent --config agent.json --passkey passkey...  renew agent secrets in agent.json configuration
+    mc renew-agent --config agent.json --passkey passkey...      renew agent secrets in agent.json configuration
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
+
+  Authentication with borrowed session cookie and xsrf-token cookie
+
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 
 ```
 

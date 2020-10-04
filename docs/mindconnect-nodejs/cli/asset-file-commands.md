@@ -1,10 +1,10 @@
 ---
 title: MindConnect-NodeJS -CLI - Asset and File Commands
 next:
-    - title: Overview
-      link: index
-    - title: Setting up the CLI
-      link: setting-up-the-cli
+  - title: Overview
+    link: index
+  - title: Setting up the CLI
+    link: setting-up-the-cli
 ---
 
 <!-- @format -->
@@ -15,10 +15,10 @@ next:
 
 The asset and file commands can be used to
 
--   list assets in the mindsphere tenant
--   list, upload and download files stored with the asset
+- list assets in the mindsphere tenant
+- list, upload and download files stored with the asset
 
-These commands require [MindSphere service credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials).
+These commands require app or service credentials.
 
 ## List Assets (`mc list-assets`)
 
@@ -26,36 +26,39 @@ This command lists the assets in the current MindSphere tenant.
 
 ```text
 mc list-assets --help
-
-Usage: list-assets|la [options]
+Usage: mc list-assets|la [options]
 
 list assets in the tenant *
 
 Options:
-  -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
+  -f, --filter [filter]    filter (see:
+                            https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
   -a, --assetname [name]   search for assets with string [name] in asset name
   -t, --typeid [typeid]    search for assets with string [typeid] in typeid
   -k, --passkey <passkey>  passkey
-  -y, --retry <number>     retry attempts before giving up (default: 3)
+  -y, --retry <number>     retry attempts before giving up (default: "3")
   -v, --verbose            verbose output
-  -h, --help               output usage information
+  -h, --help               display help for command
 
   Examples:
 
-    mc list-assets --passkey mypasskey                         list all assets
-    mc la --typeid core.mclib --assetname nodered --passkey mypasskey         list all agents (assets of type core.mclib) with nodered in the name
-    mc la --filter '{"name" : {"contains" : "Engine"}}' --passkey mypasskey     list all assets where name contains string Engine
+    mc list-assets --passkey mypasskey                                          list all assets
+    mc la --typeid core.mclib --assetname nodered --passkey mypasskey           list all agents (assets of type core.mclib) with nodered in the name    mc la --filter '{"name" : {"contains" : "Engine"}}' --passkey mypasskey     list all assets where name contains string Engine
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
-  More Information:
+  Authentication with borrowed session cookie and xsrf-token cookie
 
-    https://opensource.mindsphere.io
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -89,8 +92,7 @@ List all files which are attached to specified asset.
 
 ```text
 mc list-files --help
-
-Usage: list-files|ls [options]
+Usage: mc list-files|ls [options]
 
 list files stored with the asset *
 
@@ -98,26 +100,29 @@ Options:
   -i, --assetid <assetid>  asset id from the mindsphere
   -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/iot-iotfile/api-iotfile-references-filtering.html)
   -k, --passkey <passkey>  passkey
-  -y, --retry <number>     retry attempts before giving up (default: 3)
+  -y, --retry <number>     retry attempts before giving up (default: "3")
   -v, --verbose            verbose output
-  -h, --help               output usage information
+  -h, --help               display help for command
 
   Examples:
 
-    mc ls --assetid 1234...ef --passkey mypasskey                 list all files for assetid
-    mc ls --assetid 1234...ef --filter "path=upload*" --passkey mypasskey     list all files where path contains upload
+    mc ls --assetid 1234...ef --passkey mypasskey                               list all files for assetid
+    mc ls --assetid 1234...ef --filter "path=upload*" --passkey mypasskey       list all files where path contains upload
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
-  More Information:
+  Authentication with borrowed session cookie and xsrf-token cookie
 
-    https://opensource.mindsphere.io
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
 
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
@@ -134,32 +139,30 @@ Upload a file to the asset
 
 ```text
 mc upload-file --help
-
-Usage: upload-file|uf [options]
+Usage: mc upload-file|uf [options]
 
 upload the file to the mindsphere file service (optional: passkey) *
 
 Options:
-  -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
+  -c, --config <agentconfig>  config file with agent configuration
   -r, --cert [privatekey]     required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -f, --file <fileToUpload>   file to upload to the file service
   -h, --filepath <filepath>   file path in the mindsphere
-  -l, --parallel <number>     parallel chunk uploads (default: 3)
+  -l, --parallel <number>     parallel chunk uploads (default: "3")
   -i, --assetid [assetid]     asset id from the mindsphere  (default: upload to the agent)
   -m, --mime [mime-type]      mime type of the file (default: automatic recognition)
   -d, --desc [description]    description
   -k, --chunked               Use chunked upload
-  -y, --retry <number>        retry attempts before giving up (default: 3)
+  -y, --retry <number>        retry attempts before giving up (default: "3")
   -p, --passkey <passkey>     passkey (optional, file upload uses service credentials *)
   -v, --verbose               verbose output
-  -h, --help                  output usage information
+  --help                      display help for command
 
   Examples:
 
-    mc uf -f CHANGELOG.md                               upload file CHANGELOG.md to the agent
-    mc upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain      upload file to a specified asset with custom mime type
-    mc upload-file --file  CHANGELOG.md  --chunked                  upload file using experimental chunked upload
-
+    mc uf -f CHANGELOG.md                                                        upload file CHANGELOG.md to the agent
+    mc upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain       upload file to a specified asset with custom mime type
+    mc upload-file --file  CHANGELOG.md  --chunked                               upload file using experimental chunked upload
 ```
 
 ### Example
@@ -175,10 +178,7 @@ mc upload-file --file  bigdata.zip --assetid 1234..ef  --chunked --passkey mypas
 Download a file from MindSphere
 
 ```text
-mc download-file --help
-
-
-Usage: download-file|df [options]
+Usage: mc download-file|df [options]
 
 download the file from mindsphere file service *
 
@@ -187,26 +187,30 @@ Options:
   -h, --filepath [filepath]    file path in the mindsphere (default: "")
   -i, --assetid <assetid>      asset id from the mindsphere
   -p, --passkey <passkey>      passkey
-  -y, --retry <number>         retry attempts before giving up (default: 3)
+  -y, --retry <number>         retry attempts before giving up (default: "3")
   -v, --verbose                verbose output
-  -h, --help                   output usage information
+  --help                       display help for command
 
   Examples:
 
-    mc download-file -f CHANGELOG.md  --assetid 5..f                              download file CHANGELOG.md from specified asset
-    mc download-file --file  CHANGELOG.md  --assetid 5...f --filepath upload      download file upload/CHANGELOG.md from specified asset
-    mc download-file --file  upload/CHANGELOG.md  --assetid 5...f                 download file upload/CHANGELOG.md from specified asset
+    mc download-file -f CHANGELOG.md  --assetid 5..f                             download file CHANGELOG.md from specified asset
+    mc download-file --file  CHANGELOG.md  --assetid 5...f --filepath upload     download file upload/CHANGELOG.md from specified asset
+    mc download-file --file  upload/CHANGELOG.md  --assetid 5...f                download file upload/CHANGELOG.md from specified asset
 
   Important:
 
-    you need to supply the service credentials for this operation and provide the passkey
+  Authentication with service credentials or app credentials
 
-    how to get service credentials:
-    https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials
+        - append option [--passkey <your passkey>] to the command
+        - create environment variable MDSP_PASSKEY with your current passkey
 
-  More Information:
+  Authentication with borrowed session cookie and xsrf-token cookie
 
-    https://opensource.mindsphere.io
+        - create environment variables MDSP_HOST , MDSP_SESSION and MDSP_XSRF_TOKEN using borrowed cookies
+
+  Full Documentation:
+
+    https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html
 ```
 
 ### Example
