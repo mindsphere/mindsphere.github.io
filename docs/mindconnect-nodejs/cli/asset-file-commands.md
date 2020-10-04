@@ -32,7 +32,7 @@ list assets in the tenant *
 
 Options:
   -f, --filter [filter]    filter (see:
-                           https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
+                            https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
   -a, --assetname [name]   search for assets with string [name] in asset name
   -t, --typeid [typeid]    search for assets with string [typeid] in typeid
   -k, --passkey <passkey>  passkey
