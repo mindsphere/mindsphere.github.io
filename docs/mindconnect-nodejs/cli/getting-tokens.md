@@ -19,7 +19,7 @@ The CLI provides two utility commands which can generate a service credential to
 
 ## Get Service Token (`mc service-token`)
 
-This is a utility command which the developers can use to get the valid mindsphere API token.
+This is a utility command which the developers can use to get the valid MindSphere API token.
 
 ```bash
 mc service-token --help

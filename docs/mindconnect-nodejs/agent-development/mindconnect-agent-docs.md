@@ -15,7 +15,7 @@ next:
 
 # MindConnect-NodeJS - Agent Development - <small>MindConnect Agent Methods</small>
 
-MindConnect Agent implements the V3 of the Mindsphere API.
+MindConnect Agent implements the V3 of the MindSphere API.
 
 The synchronous methods (IsOnBoarded, HasConfiguration, HasDataMapping...) are operating on agent state storage only.
 

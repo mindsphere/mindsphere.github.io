@@ -29,7 +29,7 @@ We use the
 [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 and review all changes we merge to master.
 
-Unfortunatelly that works only if the contributor has at least developer access
+Unfortunately that works only if the contributor has at least developer access
 rights in this project.
 
 If you plan to contribute regularly, please request developer access to be

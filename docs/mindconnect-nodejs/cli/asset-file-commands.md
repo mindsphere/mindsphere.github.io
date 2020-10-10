@@ -15,7 +15,7 @@ next:
 
 The asset and file commands can be used to
 
-- list assets in the mindsphere tenant
+- list assets in the MindSphere tenant
 - list, upload and download files stored with the asset
 
 These commands require app or service credentials.

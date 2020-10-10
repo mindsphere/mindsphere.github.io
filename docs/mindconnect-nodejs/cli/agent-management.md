@@ -11,9 +11,9 @@ next:
 
 # MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
 
-## Acquiring the agent credentials from the mindsphere
+## Acquiring the agent credentials from the MindSphere
 
-The mindsphere agents require the initial agent configuration which can be acquired from the MindSphere in several different ways. For example you can create an Agent in the asset manager of the type core.mclib and store the credenials on your machine (preferably in the file called agentconfig.json)
+The MindSphere agents require the initial agent configuration which can be acquired from the MindSphere in several different ways. For example you can create an Agent in the asset manager of the type core.mclib and store the credentials on your machine (preferably in the file called agentconfig.json)
 
 ```json
 {
@@ -40,7 +40,7 @@ These commands can
 - Offboard the agent `mc offboard-agent`
 - Renew the agent secret `mc renew-agent`
 
-The prerequsite for most of these commands is that you have registered your app or service credentials using `mc service-credentials` command.
+The prerequisite for most of these commands is that you have registered your app or service credentials using `mc service-credentials` command.
 
 ## Creating a new agent via CLI (`mc create-agent`)
 
@@ -83,7 +83,7 @@ Options:
 
 ### Example
 
-The command below will create a new agent with default settings in your root asset in the mindsphere and prompt you with the link to asset management in your cockpit where you can configure the agent details. Define the agent configuration, the asset mapping etc.
+The command below will create a new agent with default settings in your root asset in the MindSphere and prompt you with the link to asset management in your cockpit where you can configure the agent details. Define the agent configuration, the asset mapping etc.
 
 ```bash
 mc create-agent --config agentconfig.json --passkey {yourpasskey}
@@ -137,7 +137,7 @@ You can configure your agent using command line interface as well. The `mc confi
 - **map**: manages mapping for the agents
 - **print**: prints the current configuration
 - **delete**: deletes the data source configuration and or mappings
-- **test** : generates random data and sends them to mindsphere
+- **test** : generates random data and sends them to MindSphere
 
 ```text
 Usage: mc configure-agent|co [options]

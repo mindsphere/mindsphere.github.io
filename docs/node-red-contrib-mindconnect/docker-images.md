@@ -35,12 +35,12 @@ These docker images are based on the [Node-RED-Docker](https://hub.docker.com/r/
 ### Deprecated Tags
 
 -   **arm-latest** : latest state of the mater branch on [GitHub](https://github.com/mindsphere/node-red-mindconnect) for ARM processor architecture. (deprecated)
--   **x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for X86. (deprecated before 3.7.0)
--   **arm-x.x.x** : image containing the x.x.x. version of the node-red-contib-mondconnect agents for ARM. (deprecated)
+-   **x.x.x** : image containing the x.x.x. version of the node-red-contib-mindconnect agents for X86. (deprecated before 3.7.0)
+-   **arm-x.x.x** : image containing the x.x.x. version of the node-red-contib-mindconnect agents for ARM. (deprecated)
 
 ## Using the images
 
-Running the image with Node-RED avaialble at : [http://localhost:1880](http://localhost:1880)
+Running the image with Node-RED available at : [http://localhost:1880](http://localhost:1880)
 
 ```bash
 docker run -it --name mind-red -p 1880:1880 mindconnect/node-red-contrib-mindconnect

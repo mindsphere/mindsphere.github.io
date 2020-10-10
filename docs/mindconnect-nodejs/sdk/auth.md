@@ -17,7 +17,7 @@ The typescript SDK works with so called Authorizers which can be passed to the c
 
 All authorizer implement the `TokenRotation` interface so that you can also develop your own custom authorizer class by implementing that interface.
 
-<i class="fa fa-info"></i> The `HttpAction` method is overriden in different authorizers, this is how the SDK works in both backend and frontend scenarios.
+<i class="fa fa-info"></i> The `HttpAction` method is overridden in different authorizers, this is how the SDK works in both backend and frontend scenarios.
 
 All backend authorizer are automatically rotating the MindSphere Bearer tokens, you don't have to do it manually. For the frontend authorization we suggest to implement some kind of keep alive functionality in your app to avoid session expiration.
 
@@ -47,7 +47,7 @@ The Authorizer uses MindSphere Frontend API Calling Schema:
 
 This means that it is using relative URLs as it is expecting to run in the browser behind the MindSphere API gateway so it will call e.g. `/api/identitymanagement/v3/Users` instead of `https://gateway.eu1.mindsphere.io/api/identitymanagement/v3/Users`.
 
-You can simplify your local development by using the mindsphere <a href="../development-proxy.html">development proxy</a> when using this authorizer. You need to redirect the `/api/**` calls of your application to use the the development proxy which is running on `http://localhost:7707`.
+You can simplify your local development by using the MindSphere <a href="../development-proxy.html">development proxy</a> when using this authorizer. You need to redirect the `/api/**` calls of your application to use the the development proxy which is running on `http://localhost:7707`.
 
 ### Code Sample
 
@@ -82,7 +82,7 @@ The Authorizer uses MindSphere Backend API Calling Schema:
 gateway.{region}.{mindsphere-domain}/api/...
 ```
 
-You can simplify your local development by using the mindsphere <a href="../development-proxy.html">development proxy</a> when using this authorizer, just replace the gateway url with `http://localhost:7707` when instantiating this authorizer.
+You can simplify your local development by using the MindSphere <a href="../development-proxy.html">development proxy</a> when using this authorizer, just replace the gateway url with `http://localhost:7707` when instantiating this authorizer.
 
 ### Code Sample
 
@@ -275,7 +275,7 @@ await sdk.GetAssetManagementClient().GetAssetType(assetTypeId, { exploded: true 
 
 ## Using credentials instead of Authorizer
 
-For TokenManagerAuth und CredentialAuth you can also use just the object with authentication credentials instead of the Authorizer class.
+For TokenManagerAuth and CredentialAuth you can also use just the object with authentication credentials instead of the Authorizer class.
 
 The following two lines are equivalent:
 

@@ -76,7 +76,7 @@ setInterval(async () => {
 
 The date and time on the device where the agent is running is not configured properly. This can happen on e.g. virtual machines which are put into sleep mode, edge devices and gateways which don't have access to NTP server etc. Please make sure that the time is set properly.
 
-## Error occured during keep alive (in Node-RED)
+## Error occurred during keep alive (in Node-RED)
 
 ```text
 Error occured during keep alive
@@ -105,7 +105,7 @@ If you have problems with your agent:
 4. Create new settings for the mindconnect library.
 5. copy the new settings to the node.
 
-### Reseting the agent settings from version 3.7.0 in Node-RED
+### Resetting the agent settings from version 3.7.0 in Node-RED
 
 Since version 3.7.0. it is possible to delete the content of the .mc/agentconfig.json file and the agent settings directly from the node.
 

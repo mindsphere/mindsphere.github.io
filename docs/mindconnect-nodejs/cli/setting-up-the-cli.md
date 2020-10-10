@@ -40,7 +40,7 @@ You can get the application credentials from your developer or operator cockpit 
 
 ![CLI](../images/cockpit.png)
 
-Once configred you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created ,as you will be using it with almost all CLI commands.
+Once configured you can press CTRL + C to stop the configuration server and start using the CLI. Remember the passkey you have created ,as you will be using it with almost all CLI commands.
 
 ## Passkey as environment variable
 
@@ -60,7 +60,7 @@ Windows CMD
 set "MDSP_PASSKEY=my.complex.passkey"
 ```
 
-Windows Powershell
+Windows PowerShell
 
 ```powershell
 $Env:MDSP_PASSKEY="my.complex.passkey"
@@ -88,7 +88,7 @@ set "MDSP_SESSION=ZDcyMWVkNjMtYXXXXXXXlkYmQtODYxZDljZjIzOGI1"
 set "MDSP_XSRF_TOKEN=33771ee2-9650-XXXX-ab73-10f52cad12bf"
 ```
 
-Windows Powershell
+Windows PowerShell
 
 ```bash
 $Env:MDSP_HOST="mytenant-myapp.eu1.mindsphere.io";
@@ -96,7 +96,7 @@ $Env:MDSP_SESSION="ZDcyMWVkNjMtYXXXXXXXlkYmQtODYxZDljZjIzOGI1";
 $Env:MDSP_XSRF_TOKEN="33771ee2-9650-XXXX-ab73-10f52cad12bf";
 ```
 
-The results of the commands will be collored yellow if you are using SESSION / XSRF-TOKEN type of authorization.
+The results of the commands will be colored yellow if you are using SESSION / XSRF-TOKEN type of authorization.
 
 ![Cookie Auth](../images/cookieresult.png)
 
