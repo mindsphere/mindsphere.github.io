@@ -43,7 +43,7 @@ Commands:
   onboard|ob [options]                onboard the agent with configuration stored in the config file
   configure-agent|co [options]        create data source configuration and mappings (optional: passkey) *
   agent-token|atk [options]           displays the agent token for use in other tools (e.g. postman)
-  upload-timeseries|ts [options]      parse .csv file with timeseriesdata and upload the timeseries data to mindsphere
+  upload-timeseries|ts [options]      parse .csv file with timeseries data and upload the timeseries data to mindsphere
   upload-file|uf [options]            upload the file to the mindsphere file service (optional: passkey) *
   create-event|ce [options]           create an event in the mindsphere (optional: passkey) *
   agent-status|as [options]           displays the agent status and agent onboarding status *

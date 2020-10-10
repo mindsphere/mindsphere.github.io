@@ -47,7 +47,7 @@ const i = 0;
 
 ## async/await vs Promises
 
-The examples use the async/await syntax for the promisses (available in typescript and in javascript from EcmaScript8)
+The examples use the async/await syntax for the promises (available in typescript and in javascript from EcmaScript8)
 
 ```javascript
 try {
@@ -76,7 +76,7 @@ The following steps describe the easiest way to test the library. You can of cou
 
 ### Step 0: Create an asset type and aspect types
 
-Mindsphere V3 IoT model requires that you create an asset type and aspect types to describe your assets. For the example we will create an asset type of type Engine with two aspect types: Environment and Vibration. (Note that my tenant is called castidev, you will have to use your own tenant name)
+MindSphere V3 IoT model requires that you create an asset type and aspect types to describe your assets. For the example we will create an asset type of type Engine with two aspect types: Environment and Vibration. (Note that my tenant is called castidev, you will have to use your own tenant name)
 
 ![assetype](../images/types.png)
 
@@ -86,9 +86,9 @@ More information about [MindSphere Data Model](https://siemens.mindsphere.io/en/
 
 Create an asset (In example it is called **AcmeMotor**) of type Engine in AssetManager for your data.
 
-### Step 2: Create an agent of type MindConnectLib in Mindsphere
+### Step 2: Create an agent of type MindConnectLib in MindSphere
 
-Create an agent in Asset Manager of type core.MindConnectLib create initial JSON token and store it to file (e.g. agentconfig.json)
+Create an agent in Asset Manager of type MindConnectLib (core.mclib) create initial JSON token and store it to file (e.g. agentconfig.json)
 
 ```json
 {
@@ -103,7 +103,7 @@ Create an agent in Asset Manager of type core.MindConnectLib create initial JSON
 }
 ```
 
-More Information about [core.MindConnectLib](http://bit.ly/2HZ2ehE) configuration.
+More Information about [MindConnectLib](http://bit.ly/2HZ2ehE) configuration.
 
 ### Step 3 : Create an agent
 
@@ -126,7 +126,7 @@ agent.SetupAgentCertificate(fs.readFileSync("private.key"));
 
 ### Step 4: Onboard the agent
 
-The first operation is onboarding of the agent. This creates a client secret which is used for the communication with mindshpere.
+The first operation is onboarding of the agent. This creates a client secret which is used for the communication with MindSphere.
 
 This data is stored by default in the .mc folder in your application if you don't change the base path in the constructor of the agent.
 
@@ -184,7 +184,7 @@ await assetMgmt.GetAspectTypes(...);
 
 ```
 
-If you take a look at the mindsphere configuration of your agent now it should look like this:
+If you take a look at the MindSphere configuration of your agent now it should look like this:
 
 ![datasources](../images/datasources.png)
 
@@ -223,7 +223,7 @@ for (let index = 0; index < 5; index++) {
 
 ### Step 6.1 using bulk upload
 
-If you don't want to send the data points one by one, you can also use the bulkpostdata method
+If you don't want to send the data points one by one, you can also use the BulkPostData method
 
 ```javascript
 const bulk: TimeStampedDataPoint[] = [
@@ -248,7 +248,7 @@ await agent.BulkPostData(bulk);
 
 ## Events
 
-Events can now be created with the library. You can create events for your agent or for your entities. In order to create an event for your entity you need to know the asssetid of the asset.
+Events can now be created with the library. You can create events for your agent or for your entities. In order to create an event for your entity you need to know the assetId of the asset.
 
 ```javascript
 const configuration = require("../../agentconfig.json");
@@ -276,10 +276,10 @@ await agent.PostEvent(event);
 
 ## File Upload
 
-Files can now be uploaded via the library. You can upload files for your agent or for your entities. In order to create an event for your entity you need to know the assetid of the asset.
+Files can now be uploaded via the library. You can upload files for your agent or for your entities. In order to create an event for your entity you need to know the assetId of the asset.
 
 Since version 3.5.1. the agents are using the multipart upload API of the MindSphere. This means that the agents can upload files also bigger > 8 MB, The
-multipart upload must be switched on (chunk:true) if you want to activate this behavior. The parameter parallelUploads determine the maximal number of paraellel uploads. You can increase this on a powerfull computer to speed up the upload or decrease to prevent network congestion.
+multipart upload must be switched on (chunk:true) if you want to activate this behavior. The parameter parallelUploads determine the maximal number of parallel uploads. You can increase this on a powerful computer to speed up the upload or decrease to prevent network congestion.
 
 ```javascript
 const configuration = require("../../agentconfig.json");
@@ -305,4 +305,4 @@ Here is a demo agent implementation.
 
 [![mindsphere-agent](https://img.shields.io/badge/mindsphere-agent-green.svg)](https://github.com/mindsphere/mindconnect-nodejs/blob/master/src/demoagent/test-agent.ts)
 
-The data in the mindsphere can be observed in the fleet manager.
+The data in the MindSphere can be observed in the fleet manager.

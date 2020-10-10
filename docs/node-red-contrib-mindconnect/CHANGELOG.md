@@ -34,7 +34,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 - Custom Event Support via \_customEvent switch on the message.
 - Added msg.\_includeMindSphereToken and msg.\_ignorePayload switch which propagates the MindSphere Authentication Token in msg.headers
-- The msg.\_includeMindSphereToken switch can be used in conjuction with the http request node to call custom southbound mindsphere APIs (#83)
+- The msg.\_includeMindSphereToken switch can be used in conjunction with the http request node to call custom southbound mindsphere APIs (#83)
 - New examples on <https://playground.mindconnect.rocks> for flows
 - Bumped all dependencies
 - New Logo <3
@@ -72,7 +72,7 @@ This is necessary because of the change in the base docker image of node-red. Se
 
 ## Bugfixes 3.7.0
 
-- the node now removes previous keep alive and async logging interval on redeployement (#39)
+- the node now removes previous keep alive and async logging interval on redeployment (#39)
 - fixed CSS for node-red > 1.0.0 (the node title is white again)
 - updated to mindconnect-nodejs 3.7.0
 - bumped all dependencies
@@ -124,7 +124,7 @@ Stay strong, safe and healthy! <3 :hearth:
 
 - updated to version 3.4.0. of mindconnect-nodejs library.
 - auto keep-alive: the node will renew the token every hour even when there is no data sent.
-- programatic delivery of the configuration - prerequisite for auto-configuration node which is coming in next versions
+- programmatic delivery of the configuration - prerequisite for auto-configuration node which is coming in next versions
 - moved schema-validation to mindconnect-schema.ts, improved code and documentation
 - new msg.\_error message with timestamped error property for better flows
 

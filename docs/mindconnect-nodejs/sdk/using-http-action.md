@@ -13,7 +13,7 @@ next:
 
 # TypeScript SDK - HttpAction
 
-If a method is missing you can still call MindSphere APIs using the HttpAction Method which is avaiable on every Client.
+If a method is missing you can still call MindSphere APIs using the HttpAction Method which is available on every Client.
 
 Take a look first at this implementation. You should always pass `this.GetGateway()`, and `await this.GetToken()` to the HttpAction, which makes sure that the authorizer works correctly.
 

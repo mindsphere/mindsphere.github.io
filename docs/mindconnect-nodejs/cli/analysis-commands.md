@@ -71,7 +71,7 @@ Options:
 
 ### Example
 
-This will decompose the sound file into corresponding frequency components (using default flattop windo.
+This will decompose the sound file into corresponding frequency components (using default flattop window.
 
 ```bash
 mc spectrum-analysis -f machine.wav --passkey yourpasskey

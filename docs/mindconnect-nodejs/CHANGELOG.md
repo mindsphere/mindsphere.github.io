@@ -24,7 +24,7 @@ title: MindConnect-NodeJS - Changelog
 
 ## Bugfix
 
--   fixed model for PutTimeSeries in iot SDK
+-   fixed model for PutTimeSeries in IOT SDK
 
 ## 3.8.0 - (Electric Blue Vienna) - June 2020
 
@@ -36,7 +36,7 @@ title: MindConnect-NodeJS - Changelog
 -   SDK: typescript sdk released to beta status
 -   SDK: typescript browser support (e.g. for react, angular, etc)
 -   CLI: mc service-credentials command has now http based configuration frontend
--   CLI: mc dev-proxy added simple api proxy for mindsphere local app development
+-   CLI: mc dev-proxy added simple api proxy for MindSphere local app development
 
 ### Contributions 3.8.0 heart: <3
 
@@ -68,17 +68,17 @@ title: MindConnect-NodeJS - Changelog
 -   SDK: added ServiceCredentialsAuth to SDK
 -   Agent: added support for creating automatic data source configuration and automatic mappings
 -   Agent: added support for typed events
--   Agent: exposed Sdk() property on the Agent for future use (at the moment only some APIs of mindsphere can be called with Agent Credentials)
+-   Agent: exposed Sdk() property on the Agent for future use (at the moment only some APIs of MindSphere can be called with Agent Credentials)
 -   SDK: added utility class for MQTT OPC UA PubSub key rotation
 -   SDK: added TokenManagerAuth to SDK
--   CLI: mc iam command can now manage mindsphere users
+-   CLI: mc iam command can now manage MindSphere users
 -   CLI: mc configure-agent can now automatically create the data source configuration and the mappings for selected assetid
 -   CLI: mc configure-agent can now automatically create the data source configuration and the mappings for selected assetid
 -   CLI: mc offboard-agent has now a command to offboard an agent with the id only (mc offboard --assetid) (#130)
 -   CLI: added mc mqtt-createjwt command which can create a key for MQTT OPC UA PubSub authentication
 -   CLI: mc service-credentials command is now accepting application credentials
 -   CLI: mc service-credentials command has now http based configuration frontend
--   CLI: mc dev-proxy added simple api proxy for mindsphere local app development
+-   CLI: mc dev-proxy added simple api proxy for MindSphere local app development
 -   CLI: deprecated use of classical service credentials
 -   Improved documentation for GetDataSourceConfiguration and GetDataMappings methods (#149, #150)
 -   Switched the fetch library to cross-fetch for browser support for SDK
@@ -90,8 +90,8 @@ title: MindConnect-NodeJS - Changelog
 ## Bugfixes and Improvements 3.7.0
 
 -   CLI: mc kpi-calculation command (calculate kpis and kpi states based on signal values)
--   CLI: mc trend-prediction command (perform linear and polynomial trend prediction on mindsphere aspects)
--   CLI: mc bulk-download command (download timeseries aspects from mindsphere)
+-   CLI: mc trend-prediction command (perform linear and polynomial trend prediction on MindSphere aspects)
+-   CLI: mc bulk-download command (download timeseries aspects from MindSphere)
 -   CLI: mc delete-file command
 -   CLI: mc delete-asset command
 -   CLI: mc agent-token and mc service-token command print out the full token (including header in signature) in --verbose mode
@@ -102,7 +102,7 @@ title: MindConnect-NodeJS - Changelog
 -   Bumped all dependencies
 -   Chore: Improved spelling
 -   Upgraded https-proxy-agent to fix [https://snyk.io/vuln/SNYK-JS-HTTPSPROXYAGENT-469131](https://snyk.io/vuln/SNYK-JS-HTTPSPROXYAGENT-469131)
--   Added stale issues bot watcher to github
+-   Added stale issues bot watcher to GitHub
 
 ## 3.6.1 - (Cobalt Blue Vienna) - September 2019
 
@@ -112,22 +112,22 @@ title: MindConnect-NodeJS - Changelog
 
 ## 3.6.0 - (Cobalt Blue Vienna) - July 2019
 
--   SDK: The SDK in this package is stil only a **preliminary version** which is used to provide support for the CLI.
+-   SDK: The SDK in this package is still only a **preliminary version** which is used to provide support for the CLI.
 -   SDK: added IotTimeSeriesAggregateClient to the SDK
 -   SDK: added SpectrumAnalysisClient to the SDK
 -   SDK: added SignalValidationClient to the SDK
 -   CLI Command: mc spectrum-analysis: performs spectrum analysis on a sound file (#40)
--   CLI Command: mc signal-validation: performs signal validation on the mindsphere data (#39)
+-   CLI Command: mc signal-validation: performs signal validation on the MindSphere data (#39)
 -   CLI Command: mc list-files: lists iot files stored with the asset (#35)
 -   CLI Command: mc list-assets: lists assets in the tenant (#35)
 -   CLI Command: mc download-file: downloads file from MindSphere iot file service (#35)
 
 ## Bugfixes and Improvements 3.6.0
 
--   SDK: IoTfile - GetFiles - optional parameters are now in query string (bugfix)
+-   SDK: IoTFile - GetFiles - optional parameters are now in query string (bugfix)
 -   CLI - agent commands - precedence for location of the .mc directory: path to agentconfig.json > currentdir > user home dir (#65)
 -   All tests are now self-contained.
--   All images are now shrinked.
+-   All images are now shrunk.
 -   Bumped all dependencies. (including all lodash security updates until 7/14/2019)
 
 ## Contributions 3.6.0 :heart: <3
@@ -154,8 +154,8 @@ title: MindConnect-NodeJS - Changelog
 -   CLI Command: prepare-bulk - creates a template directory for timeseries (bulk) upload
 -   CLI Command: run-bulk - runs the timeseries (bulk) upload jobs
 -   CLI Command: check-bulk - checks the progress of the upload jobs
--   CLI Command: create-agent - creates a new agent in the mindsphere (#12)
--   CLI Command: offboard-agent - offboards the agent in the mindsphere (#11)
+-   CLI Command: create-agent - creates a new agent in the MindSphere (#12)
+-   CLI Command: offboard-agent - offboards the agent in the MindSphere (#11)
 -   CLI Command: renew-agent - renews the agent secrets (#13)
 -   CLI Command: upload-file - New option: passkey : enables uploading the files also with service credentials
 -   CLI Command: upload-file - New option: parallel :configures the number of parallel uploads
@@ -167,7 +167,7 @@ title: MindConnect-NodeJS - Changelog
 -   mindconnect-agent: the MindSphere path name can be configured (#23)
 -   mindconnect-agent: removed the manual chunking of the files in favor of multipart upload (#23)
 -   mindconnect-agent: deprecated the old upload method (#23)
--   SDK: started a PRELIMINARY SDK for the new commands which require additional mindsphere APIs
+-   SDK: started a PRELIMINARY SDK for the new commands which require additional MindSphere APIs
 -   SDK: preliminary Support for following services
 -   Agent Management Service
 -   Asset Management Service
@@ -194,7 +194,7 @@ title: MindConnect-NodeJS - Changelog
 -   SDK: the SDK will be extracted to a separate package in the version major version (4.0.0)
 -   CLI: the CLI will be extracted to a separate package in the future major version (4.0.0)
 -   We <3 contributions!
--   We are working on the legal framework to let outside (non-Siemens) collabarators contribute. Stay tuned :)
+-   We are working on the legal framework to let outside (non-Siemens) collaborators contribute. Stay tuned :)
 
 ## About the SDK in the project and what to expect
 
@@ -205,13 +205,13 @@ different scenarios like deployment in the browser and also different authentica
 backend authentication and token service authentication (for cross tenant access) in the SDK.
 
 This is at the moment really just a pre-pre-alpha version which was necessary in order to be able to provide the CLI commands and it only
-works with service credetials authentication.
+works with service credentials authentication.
 
 ## Bulk Imports and Standard Imports
 
 At this point in time (May 2019) the Bulk Import only works for Simulation Assets and not for Performance Assets. This is why in this version
 we still use the standard APIs for the import of the historical data. Please be aware that the use of this feature has a direct impact
-on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+on _your_ MindSphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 
 The standard import feature will be deprecated and removed from the CLI once bulk upload also gets enabled for performance assets.
 
@@ -252,7 +252,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 ## Bugfixes 3.0.3
 
--   Made the agent demo implementation more resillient
+-   Made the agent demo implementation more resilient
 
 ## 3.0.2 - (Iceberg Vienna) - November 2018
 
@@ -265,7 +265,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 ## 3.0.1 - (Honeydew Vienna) - November 2018
 
--   Added Mindsphere Developer License Agreement
+-   Added MindSphere Developer License Agreement
 -   Added RSA_3072 support
 -   Preparation for Open Source Release
 -   Refactored to separate authentication and function
@@ -295,9 +295,9 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 -   Added event support to the library
 -   Added file upload to the library
--   Warning chunking is experimental for fileUpload!
+-   Warning chunking is experimental for file upload!
 -   Added repository for the libraries
--   Preparation for github - automated legal and security checks
+-   Preparation for GitHub - automated legal and security checks
 
 ### Bugfixes 3.0.0 - Beta 6
 
@@ -311,7 +311,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 -   Added Validation for PostData Message (Thanks @Patrick Niederlohner for Contribution!)
 -   Fixed some path errors
 -   Added generators for starter agents (typescript and javascript)
--   Support for Mindsphere 3.0 version of the MindConnect API.
+-   Support for MindSphere 3.0 version of the MindConnect API.
 -   Agent Onboarding for the agents with SHARED_SECRET configuration.
 -   Key Rotation for agents with SHARED_SECRET configuration.
 -   Client Assertions for the agents with SHARED_SECRET configuration.
@@ -336,7 +336,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 ## 2.0.2 - (Jackson Violet) - October 2017
 
-### BugFixes 2.0.2
+### Bugfixes 2.0.2
 
 -   Fixed the missing prepare state in package.json.
 

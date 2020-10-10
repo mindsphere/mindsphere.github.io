@@ -56,7 +56,7 @@ await retry(5, () => agent.BulkPostData(bulk));
 
 ## Uploading large files with multipart upload
 
-For the large files upload you would typically want to retry only the upload operations of the chunks and not the whole multipart upload once an error occures. Therefore the UploadFile method offers the possibility to retry only the chunked upload:
+For the large files upload you would typically want to retry only the upload operations of the chunks and not the whole multipart upload once an error occurs. Therefore the UploadFile method offers the possibility to retry only the chunked upload:
 
 ```javascript
 // upload file

@@ -60,13 +60,13 @@ The todo app provides examples on CI/CD including unit and e2e tests
 
 ## Open API 3 Navigator
 
-OpenAPI documenation (Swagger-UI).
+OpenAPI documentation (Swagger-UI).
 
 ![TODO OpenAPI 3 Navigator](./images/todo-api-docs.png)
 
-## Grafana Adminstration Dashboard
+## Grafana Administration Dashboard
 
-Adminstration dashboard (Grafana)
+Administration dashboard (Grafana)
 
 ![DevOpsAdmin Grafana](./images/devopsadmin-grafana.png)
 

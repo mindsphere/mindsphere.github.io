@@ -16,7 +16,7 @@ next:
 The MindConnect APIs provide the agents with the possibility to
 
 - ingest timeseries data (`mc upload-timeseries`)
-- create events in the Mindsphere (`mc create-event`)
+- create events in the MindSphere (`mc create-event`)
 - upload files to the the MindSphere (`mc upload-file`)
 
 All these commands use the agent credentials. Take a look at [Agent Management](./agent-management.md) part of the documentation for instructions how to acquire them.
@@ -70,12 +70,12 @@ Options:
 
 ## Example
 
-The timeseries data for the upload must match your DataSourceConfiguration in the Mindsphere.
+The timeseries data for the upload must match your DataSourceConfiguration in the MindSphere.
 For example: if you have the data source configuration from the
 development example the csv file should look like in the documentation below.
 
 Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
-The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)
+The values must correspond with data types configured in MindSphere (in example: DP-Humidity must be an integer)
 
 ```csv
 timestamp, dataPointId, qualityCode, value
@@ -151,7 +151,7 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 
-The upload-file command can upload the files to mindsphere. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overriden in the mindsphere.
+The upload-file command can upload the files to MindSphere. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overridden in the MindSphere.
 
 ```text
 Usage: upload-file|uf [options]

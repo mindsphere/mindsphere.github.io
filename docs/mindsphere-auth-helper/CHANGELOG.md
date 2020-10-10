@@ -12,7 +12,7 @@ title: MindSphere Authentication Helper Extension - Changelog
 
 ## 1.0.1 August 2020
 
--   vendorded all dependencies
+-   vendored all dependencies
 
 ## 1.0.0 July 2020
 

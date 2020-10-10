@@ -13,7 +13,7 @@ next:
 
 ## Installing the node
 
-The node is avialable at the npmjs.org registry and can be installed with help of the following command:
+The node is available at the npmjs.org registry and can be installed with help of the following command:
 
 ```bash
 # change to your ~./node-red/ folder
@@ -50,7 +50,7 @@ You can choose between:
 -   **RSA_3072** public/private key pair (3072bit) for enhanced security which requires more computing power on the devices and
 -   **SHARED_SECRET** shared key (256bit) for lightweight devices.
 
-If you want to use RSA_3072 you will have to create a 3072bit key for your device, eg. with openssl:
+If you want to use RSA_3072 you will have to create a 3072bit key for your device, e.g.. with openssl:
 
 ```bash
 openssl genrsa -out private.key 3072
@@ -213,7 +213,7 @@ Treat tokens as you would any other credentials.
 
 -   CPU-Usage
 -   Batched MQTT Data
--   OPC-UA Data
+-   OPCUA Data
 -   Real Weather Data to MindSphere
 -   Simulated Water Pump Data
 
@@ -262,7 +262,7 @@ If you are having problems, it is a good idea to restart the Node-RED runtime co
 
 ### Diagnostic in MindSphere
 
-If the data is not arriving in your configured asset you should take a look if the data is beeing dropped in MindSphere because of a misconfiguration.
+If the data is not arriving in your configured asset you should take a look if the data is being dropped in MindSphere because of a misconfiguration.
 The agent diagnostic button will lead you directly to the agent diagnostic application in the MindSphere.
 
 ![diagnostic](images/diag.png)

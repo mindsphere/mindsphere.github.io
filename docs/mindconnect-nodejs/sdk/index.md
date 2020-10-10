@@ -21,7 +21,7 @@ It implements support for both frontend (browser e.g. angular, react...) and bac
 
 **Frontend:** - Browser (Session, Cookies)
 
-**Backend (node-js):** - UserCredentials - AppCredentials - ServiceCredentials - MindSphere Agents
+**Backend (node.js):** - UserCredentials - AppCredentials - ServiceCredentials - MindSphere Agents
 
 The SDK implements the Clients for following APIs:
 
