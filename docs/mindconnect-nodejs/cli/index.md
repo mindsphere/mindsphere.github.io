@@ -12,6 +12,7 @@ next:
 ## Introduction
 
 The library comes with a command line interface which can be used to upload timeseries, files and create events in the mindsphere.
+It can also be used to create starter projects, list, create and delete assets, aspect and asset types, manage users and groups, create data lake permissions etc.
 
 ### Installation via `npm` package manager
 
@@ -34,10 +35,6 @@ Download the version for your system and place it in folder which is in your PAT
 - `mc-linux` for Linux
 
 Linux, macOS: Rename the file to `mc` and make sure that the file is marked as executable (`chmod +x`).
-
-## What is it
-
-The CLI can be used to create starter projects, upload timeseries, events and files, read agent diagnostics etc.
 
 ## List of all commands
 
