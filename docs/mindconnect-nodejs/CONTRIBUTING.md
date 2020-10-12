@@ -39,7 +39,7 @@ Tell the community that you are working on an client :)
 
 ```text
 \test\
-       <yourapiclient>.spec.ts
+        <yourapiclient>.spec.ts
 ```
 
 **cli command(s):**
