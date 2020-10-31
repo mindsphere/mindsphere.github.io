@@ -70,7 +70,7 @@ The results of the commands will be colored in magenta if you are using Applicat
 
 ![Credentials Auth](../images/appcredentialsresult.png)
 
-## Example Video
+## Example Video (credentials)
 
 This video shows how to set up the CLI using application credentials.
 
@@ -118,3 +118,14 @@ You can use the [Mindsphere Auth Helper](../../mindsphere-auth-helper/index.html
 provides the cookies in the proper format for the CLI so that you don't have to craft the MDSP_HOST, MDSP_SESSION and MDSP_XSRF_TOKEN variable manually.
 
 ![extension](../../mindsphere-auth-helper/images/screenshot.extension.png)
+
+## Example Video (cookies)
+
+This video shows how to set up the CLI using borrowed application cookies.
+
+<video style='width: 100% !important; height: auto !important;' controls>
+  <source src="../images/clisetupcookies.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+
