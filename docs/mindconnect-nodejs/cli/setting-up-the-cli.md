@@ -70,6 +70,15 @@ The results of the commands will be colored in magenta if you are using Applicat
 
 ![Credentials Auth](../images/appcredentialsresult.png)
 
+## Example Video
+
+This video shows how to set up the CLI using application credentials.
+
+<video style='width: 100% !important; height: auto !important;' controls>
+  <source src="../images/clisetup.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 ## Session Cookie - XSRF-Token configuration
 
 You can also use the SESSION Cookie and XSRF-TOKEN from the application you are developing in the CLI. Just configure following environment variables.
