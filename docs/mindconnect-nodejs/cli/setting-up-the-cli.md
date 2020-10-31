@@ -127,5 +127,3 @@ This video shows how to set up the CLI using borrowed application cookies.
   <source src="../images/clisetupcookies.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-
-
