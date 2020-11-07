@@ -145,7 +145,6 @@ Download URL for uploads/CHANGELOG.md
 Click on the URL below to download the file:
 
 https://datalake-prod-a-presdev-1576231018923.s3.eu-central-1.amazonaws.com/data/ten%3Dpresdev/uploads/CHANGELOG.md?response-cache-control=No-cache&X-Amz-Security-Token=IQo...&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201107T185706Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7199&X-Amz-Credential=ASIAWX7P4S4D66C3ZEWI%2F20201107%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=f98204d1ed3b21b58649a7fcd49e325ae9f823585f3b09e82c2835725590a041
-sn0wcat@surface ( via: )~/github/mindconnect-nodejs  CF:none AWS:mindconnect.rocks (master)
 ```
 
 ## Uploading the files to Integrated Data Lake
