@@ -67,6 +67,8 @@ subpages:
             file_name: asset-file-commands.html
           - name: Analyzing Data
             file_name: analysis-commands.html
+          - name: Integrated Data Lake
+            file_name: data-lake.html
           - name: Creating Starter Projects
             file_name: starter-projects.html
       - name: MindSphere Development Proxy
