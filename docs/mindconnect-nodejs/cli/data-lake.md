@@ -30,8 +30,8 @@ Usage: mc data-lake|dlk [options]
 manage data lake, data lake access permissions and STS tokens *
 
 Options:
-  -m, --mode [...]                   mode: list | read | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload (default:
-                                     "list")
+  -m, --mode [...]                   mode: list | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload
+                                      (default:"list")
   -f, --file <file>                  file to upload
   -l, --shell [bash|ps|cmd]          output format for STS token [bash | ps | cmd] (default: "bash")
   -p, --path <path>                  path for read/write token or uploadUrl downloadUrl comamand
