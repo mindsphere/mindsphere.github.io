@@ -155,7 +155,7 @@ You can upload a file using `mc data-lake --mode upload` command
 Here is an example
 
 ```bash
-$ lmc data-lake --mode upload --path uploads/CHANGELOG.md --file CHANGELOG.md --verbose
+$ mc data-lake --mode upload --path uploads/CHANGELOG.md --file CHANGELOG.md --verbose
 ... The passkey was specified in environment variable MDSP_PASSKEY using service/app credentials
 ... Using configuration stored in C:\Users\z001ythk/.mc/
 ... No proxy configured.
