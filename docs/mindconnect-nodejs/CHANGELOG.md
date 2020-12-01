@@ -6,6 +6,25 @@ title: MindConnect-NodeJS - Changelog
 
 # MindConnect-NodeJS - <small>Changelog</small>
 
+## 3.11.0 - (Sandcastle Vienna) - December 2020
+
+### Bugfixes and Improvements 3.11.0
+
+- CLI: `mc data-lake` added `--mode meta` which prints out the metadata of a path
+- CLI: `mc configure-agent --mode template` can now generate a template for JSON schema to MindSphere conversion see [medium](https://medium.com/@sn0wcat_92713/how-to-create-mindsphere-artefacts-from-json-schema-definitions-1b2f3e446f6a) for more
+- CLI: new `--mode template` parameter on `mc configure-agent`  command
+- CLI: new `--mode info` parameter on `mc asset-types` and `mc aspects` commands (#211)
+- CLI: new `mc event-types` command with `--includeshared` support for cross-tenancy (#170)
+- CLI: updated `mc assets` with new `--includeshared` parameter - support for cross-tenancy (#170)
+- CLI: updated `mc asset-types` with new `--includeshared` parameter - support for cross-tenancy (#170)
+- CLI: updated `mc aspects` with new `--includeshared` parameter - support for cross-tenancy (#170)
+- CLI: updated `mc list-assets` with new `--includeshared` parameter - support for cross-tenancy (#170)
+- SDK: `DataLakeClient` - full data lake client (#199)
+- SDK: `UsageTransparencyClient` - added support for usage transparecy client to SDK (#200)
+- SDK: `EventManagementClient` support for cross-tenancy (#170)
+- SDK: `AssetManagementClient` support for cross-tenancy (#170)
+- Bumped all dependencies
+
 ## 3.10.0 - (Seafoam Vienna) - November 2020
 
 ### Highlights 3.10.0
