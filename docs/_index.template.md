@@ -46,6 +46,16 @@ featured:
       icon: components
       url1: https://github.com/mindsphere/start-for-free-demo-app
 
+    - title: JSON Schema to MindSphere Demo App
+      description: Demo Application showing how to create MindSphere modelling artifacts (Variables, Aspect- and Asset-Types as well as assets) straight from a JSON schema<br/><br/><a href="https://github.com/mindsphere/json-schema-to-mindsphere-demo-app" target="_new"><i class="fab fa-github"></i> GitHub</a> <a href="https://medium.com/@sn0wcat_92713/how-to-create-mindsphere-artefacts-from-json-schema-definitions-1b2f3e446f6a" target="_new"><i class="fab fa-medium"></i> Medium</a>
+      icon: components
+      url1: https://github.com/mindsphere/json-schema-to-mindsphere-demo-app
+
+    - title: MindConnect Library V4 Demo Agent
+      description: Agent for MindSphere based on Mindconnect Library V4 and written in C. Compiled and tested on Raspberry Pi V4 with Raspbian Buster. <br/><br/><a href="https://github.com/mindsphere/mindconnect-MCL-C-agent" target="_new"><i class="fab fa-github"></i> GitHub</a> 
+      icon: components
+      url1: https://github.com/mindsphere/mindconnect-MCL-C-agent
+
     - title: MindSphere Open Source Documentation
       description: This documentation is also available as an open source project.<br/><br/><a href="https://github.com/mindsphere/mindsphere.github.io" target="_new"><i class="fab fa-github"></i> GitHub</a>
       icon: components
