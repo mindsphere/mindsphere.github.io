@@ -23,7 +23,7 @@ pipeline {
         cp -R ./docs/ /srv/jekyll/
         cp -R ./_data/ /srv/jekyll/
 
-        rm /src/jekyll/index.md
+        rm /srv/jekyll/index.md
         mv ./docs/_index.template.md /srv/jekyll/index.md
 
         chown -R jekyll:jekyll /srv/jekyll/
