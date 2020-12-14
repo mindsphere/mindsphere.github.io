@@ -58,7 +58,7 @@ featured:
     <h1 class="mdsp-designsystem">
         MindSphere Open Source Tools and Libraries
     </h1>
-     <p class="mdsp-introduction">
+    <p class="mdsp-introduction">
         MindSphere Open Source Tools and Libraries are contributions from the MindSphere community.
         These are demo applications, libraries and SDKs and useful connectivity tools which are maintained and released as open source software.
         The source code for all libraries is available on <a href="https://github.com/mindsphere/"><i class="fab fa-github"></i> Github</a>
