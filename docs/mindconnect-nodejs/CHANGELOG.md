@@ -10,7 +10,7 @@ title: MindConnect-NodeJS - Changelog
 
 ### Bugfixes and Improvements 3.11.2
 
-- Fix for the changed mapping behavior which now supports nullable strings [[#238](https://github.com/mindsphere/mindconnect-nodejs/issues/238)]
+- Fix for the changed mapping behavior which now supports nullable strings. [[#238](https://github.com/mindsphere/mindconnect-nodejs/issues/238)]
 
 
 ## 3.11.1 - (Sandcastle Vienna) - March 2021
