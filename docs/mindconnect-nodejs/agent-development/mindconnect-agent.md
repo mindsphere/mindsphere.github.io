@@ -27,10 +27,10 @@ npx @mindconnect/mindconnect-nodejs starter-js
 # if you have CLI installed
 
 # for typescript project
-mc create-ts
+mc starter-ts
 
 # for javascript project
-mc create-js
+mc starter-js
 ```
 
 ## TypeScript vs JavaScript
