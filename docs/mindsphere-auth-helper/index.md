@@ -20,6 +20,8 @@ Once the extension is installed: log in to your MindSphere tenant, navigate to y
 
 The cookies can be used with the tools like [curl](https://developer.mindsphere.io/howto/howto-local-development.html#curl-example), [postman](https://developer.mindsphere.io/howto/howto-local-development.html#postman-example_1) etc. (Click on the links for more examples)
 
+### GET example
+
 ```bash
 #!/bin/bash
 
@@ -28,6 +30,19 @@ curl -vv \
   --cookie "SESSION=<session-copied-from=browser>;XSRF-TOKEN=<xsrf-copied-from-browser>" \
   -X GET \
   https://<tenantId>-<appId>-<tenantId>.<regionId>.mindsphere.io/api/assetmanagement/v3/assets
+```
+
+### PUT example
+
+```bash
+#!/bin/bash
+
+curl -v \
+   -X PUT https://<tenantId>-<appId>-<tenantId>.<regionId>.mindsphere.io/api/<puturl> \
+  --cookie "SESSION=<session-copied-from=browser>;XSRF-TOKEN=<xsrf-copied-from-browser>" \
+  --header "x-xsrf-token: <xsrf-copied-from-browser>" \
+  --header "Content-Type: application/json" \
+  --data-bin @<your data>
 ```
 
 ## Using the cookies with MindSphere CLI

@@ -56,6 +56,11 @@ featured:
       icon: components
       url1: https://github.com/mindsphere/mindconnect-MCL-C-agent
 
+    - title: Visual Flow Creator Examples
+      description: Example flows for <a href="https://documentation.mindsphere.io/resources/html/visualflow-creator/en-US/index.html">MindSphere Visual Flow Creator</a> The examples include the cloud to device communication and commanding via MQTT, creation of the custom API endpoints in the MindSphere and more. <br/><br/><a href="https://github.com/mindsphere/vfc-examples" target="_new"><i class="fab fa-github"></i> GitHub</a> 
+      icon: components
+      url1: https://github.com/mindsphere/vfc-examples
+    
     - title: MindSphere Open Source Documentation
       description: This documentation is also available as an open source project.<br/><br/><a href="https://github.com/mindsphere/mindsphere.github.io" target="_new"><i class="fab fa-github"></i> GitHub</a>
       icon: components
