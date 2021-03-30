@@ -60,6 +60,12 @@ featured:
       description: Example flows for <a href="https://documentation.mindsphere.io/resources/html/visualflow-creator/en-US/index.html">MindSphere Visual Flow Creator</a> The examples include the cloud to device communication and commanding via MQTT, creation of the custom API endpoints in the MindSphere and more. <br/><br/><a href="https://github.com/mindsphere/vfc-examples" target="_new"><i class="fab fa-github"></i> GitHub</a> 
       icon: components
       url1: https://github.com/mindsphere/vfc-examples
+      
+    - title: MindSphere SDK Example
+      description: How to use examples for MindSphere Developer SDKs (<a href="https://github.com/mindsphere/mindsphere-node-sdk-examples"><i class="fa fa-code" aria-hidden="true"></i> NodeJS</a>,<a href="https://github.com/mindsphere/mindsphere-python-sdk-examples"><i class="fa fa-code" aria-hidden="true"></i> Python</a>, <a href="https://github.com/mindsphere/mindsphere-java-sdk-examples"><i class="fa fa-code" aria-hidden="true"></i> Java</a>)<br/><br/>
+      
+      icon: components
+      url1: https://github.com/mindsphere/
     
     - title: MindSphere Open Source Documentation
       description: This documentation is also available as an open source project.<br/><br/><a href="https://github.com/mindsphere/mindsphere.github.io" target="_new"><i class="fab fa-github"></i> GitHub</a>
