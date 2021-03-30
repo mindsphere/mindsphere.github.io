@@ -62,7 +62,7 @@ featured:
       url1: https://github.com/mindsphere/vfc-examples
       
     - title: MindSphere SDK Examples
-      description: <i>How tos</i> for MindSphere Developer SDKs (<a href="https://github.com/mindsphere/mindsphere-node-sdk-examples"><i class="fa fa-file-code-o" aria-hidden="true"></i> NodeJS</a>,<a href="https://github.com/mindsphere/mindsphere-python-sdk-examples"><i class="fa fa-file-code-o" aria-hidden="true"></i> Python</a>, <a href="https://github.com/mindsphere/mindsphere-java-sdk-examples"><i class="fa fa-file-code-o" aria-hidden="true"></i> Java</a>)<br/><br/>    
+      description: <i>How tos</i> for MindSphere Developer SDKs (<a href="https://github.com/mindsphere/mindsphere-node-sdk-examples"><i class="fab fa-github" aria-hidden="true"></i> NodeJS</a>,<a href="https://github.com/mindsphere/mindsphere-python-sdk-examples"><i class="fab fa-github" aria-hidden="true"></i> Python</a>, <a href="https://github.com/mindsphere/mindsphere-java-sdk-examples"><i class="fab fa-github" aria-hidden="true"></i> Java</a>)<br/><br/>    
       icon: components
       url1: https://github.com/mindsphere/
     
