@@ -1,0 +1,46 @@
+name: Build 
+
+on:
+  push:
+    branches: 
+     - "!master"
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.5
+      
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        npm install
+        mkdir ./srv/jekyll
+        cp -R ./docs/ ./srv/jekyll
+        cp -R ./_data/ ./srv/jekyll/
+        rm ./srv/jekyll/index.md
+        cp ./docs/_index.template.md ./srv/jekyll/index.md
+        
+        docker run \
+        -v ${{ github.workspace }}/srv/jekyll:/srv/jekyll \
+        sn0wcat/builder:latest /bin/bash -c \ "
+          chown -R jekyll:jekyll /srv/jekyll && 
+          chmod +w /srv/jekyll && \
+          cd /srv/jekyll && \
+          bundle update && \
+          bundle exec jekyll build && \
+          cp search.json _site/ && \
+          ls -la _site/ && \
+          "
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        # Artifact name
+          name: site.zip # optional, default is artifact
+    # A file, directory or wildcard pattern that describes what to upload
+          path: ${{ github.workspace }}/srv/jekyll/_site/
+          retention-days: 10
+          
+    
