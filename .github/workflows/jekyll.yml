@@ -29,10 +29,10 @@ jobs:
         bash -c "cd /srv/jekyll && bash .build/build.sh"
 
     - name: Upload a Build Artifact
+      if: github.ref == 'refs/heads/master'
       uses: actions/upload-artifact@v2.2.3
       with:
           path: _site/
-          name: _site
           retention-days: 10
   deploy:
     environment: production
@@ -42,8 +42,6 @@ jobs:
     steps:
 
       - uses: actions/download-artifact@v2
-        with:
-          name: _site
 
       - name: Deploy site to opensource.mindsphere.io
         run: |
@@ -54,8 +52,16 @@ jobs:
            -e AWS_BUCKET \
            -e AWS_DEPLOYMENT_ID \
            amazon/aws-cli:latest \
-           s3 sync --delete _site/ s3://$AWS_BUCKET/
+           s3 sync --delete artifact/ s3://$AWS_BUCKET/
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+          AWS_BUCKET: ${{ secrets.AWS_BUCKET }}
+          AWS_DEPLOYMENT_ID: ${{ secrets.AWS_DEPLOYMENT_ID }}
 
+      - name: Invalidate distribution
+        run: |
           docker run --rm \
            -e AWS_ACCESS_KEY_ID \
            -e AWS_SECRET_ACCESS_KEY \
@@ -64,7 +70,6 @@ jobs:
            -e AWS_DEPLOYMENT_ID \
            amazon/aws-cli:latest \
            cloudfront create-invalidation --distribution-id $AWS_DEPLOYMENT_ID --paths "/*"
-
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
