@@ -32,6 +32,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
           path: _site/
+          name: _site
           retention-days: 10
   deploy:
     environment: production
