@@ -39,7 +39,9 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
+
+      - uses: actions/download-artifact@v2
+
       - name: Deploy app to opensource.mindsphere.io
-        uses: actions/download-artifact@v2
         run: |
           ls -R
