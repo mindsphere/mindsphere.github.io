@@ -1,11 +1,9 @@
 name: Build 
 
-on:
-  push:
+on: [push, pull_request]
   
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -16,6 +14,8 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         npm install
+        npm test
+        mkdir ./srv/
         mkdir ./srv/jekyll
         cp -R ./docs/ ./srv/jekyll
         cp -R ./_data/ ./srv/jekyll/
