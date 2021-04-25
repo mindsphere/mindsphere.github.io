@@ -19,7 +19,6 @@ jobs:
         mkdir ./srv/jekyll
         cp -R ./docs/ ./srv/jekyll
         cp -R ./_data/ ./srv/jekyll/
-        rm ./srv/jekyll/index.md
         cp ./docs/_index.template.md ./srv/jekyll/index.md
         
         docker run \
