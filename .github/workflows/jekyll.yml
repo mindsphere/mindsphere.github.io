@@ -1,7 +1,7 @@
-name: Build 
+name: Build
 
 on: [push, pull_request]
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,36 +9,27 @@ jobs:
     steps:
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
-      
+
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+
+    - name: lint markdown
       run: |
         npm install
         npm test
-        mkdir ./srv/
-        mkdir ./srv/jekyll
-        cp -R ./docs/ ./srv/jekyll
-        cp -R ./_data/ ./srv/jekyll/
-        cp ./docs/_index.template.md ./srv/jekyll/index.md
-        
+
+    - name: build site in sn0wcat/builder container
+      run: |
+        mkdir _site
         docker run \
-        -v ${{ github.workspace }}/srv/jekyll:/srv/jekyll \
-        sn0wcat/builder:latest /bin/bash -c \ "
-          chown -R jekyll:jekyll /srv/jekyll && 
-          chmod +w /srv/jekyll && \
-          cd /srv/jekyll && \
-          bundle update && \
-          bundle exec jekyll build && \
-          cp search.json _site/ && \
-          ls -la _site/ && \
-          "
+        -v ${{ github.workspace }}/_data:/srv/jekyll/_data \
+        -v ${{ github.workspace }}/docs:/srv/jekyll/docs \
+        -v ${{ github.workspace }}/.build:/srv/jekyll/.build \
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        sn0wcat/builder:latest \
+        bash -c "cd /srv/jekyll && bash .build/build.sh"
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        # Artifact name
-          name: site.zip # optional, default is artifact
-    # A file, directory or wildcard pattern that describes what to upload
-          path: ${{ github.workspace }}/srv/jekyll/_site/
+          path: ${{ github.workspace }}_site/
           retention-days: 10
-          
-    
