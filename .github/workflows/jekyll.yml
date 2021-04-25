@@ -11,7 +11,7 @@ jobs:
       uses: actions/setup-node@v2.1.5
 
     - uses: actions/checkout@v2
-    - uses: toko-bifrost/ms-teams-deploy-card@master #  or "./" if in a local set-up
+    - uses: toko-bifrost/ms-teams-deploy-card@master
       if: always()
       with:
         github-token: ${{ github.token }}
@@ -47,6 +47,12 @@ jobs:
     steps:
 
       - uses: actions/download-artifact@v2
+      - uses: toko-bifrost/ms-teams-deploy-card@master
+        if: always()
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
+
 
       - name: Deploy site to opensource.mindsphere.io
         run: |
