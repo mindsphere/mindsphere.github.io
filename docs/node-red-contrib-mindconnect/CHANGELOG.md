@@ -4,6 +4,15 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+## 3.12.0 (Vienna Siberian Tigers) - May 2021
+
+## New Features 3.12.0
+
+- Support for "bidirectional" communication with MindSphere [#129]
+- new message type to read asset information [#129]
+- new message type to execute a custom javascript script using MindSphere javascript/typescript SDK [#129]
+- Bumped all dependencies
+
 ## 3.11.0 (Vienna Jaguarundi) - March 2021
 
 ## New Features 3.11.0
@@ -21,7 +30,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## Bugfix 3.11.0
 
-- **Important** - There is now a new type of mapping in MindSphere (unitless mapping) which versions before 3.11.0 are not aware of and which was causing the node to create mappings with the *"null"* unit. (that is "null" as a string). This is fixed in version 3.11.0. It is **strongly recommended** to upgrade to 3.11.0 if you are using automatic mapping feature.
+- **Important** - There is now a new type of mapping in MindSphere (unitless mapping) which versions before 3.11.0 are not aware of and which was causing the node to create mappings with the _"null"_ unit. (that is "null" as a string). This is fixed in version 3.11.0. It is **strongly recommended** to upgrade to 3.11.0 if you are using automatic mapping feature.
 
 ## 3.10.0 (Vienna European Shorthair) - November 2020
 

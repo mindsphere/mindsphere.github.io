@@ -1,10 +1,10 @@
 ---
 title: MindConnect Node-RED Node - Getting Started
 next:
-    - title: Overview
-      link: index
-    - title: Docker images
-      link: docker-images
+  - title: Overview
+    link: index
+  - title: Docker images
+    link: docker-images
 ---
 
 <!-- @format -->
@@ -40,15 +40,15 @@ Since version 3.9.0 it is possible to completely configure the agent from Node-R
 
 ### Step 0: Create (at least) one asset and one agent in MindSphere
 
--   Create an asset in Asset Manager for your data
--   Create an agent of the type MindConnectLib [core.mclib] and store the agent.
+- Create an asset in Asset Manager for your data
+- Create an agent of the type MindConnectLib [core.mclib] and store the agent.
 
 ### Step 1: Get the initial agent configuration from Mindsphere Asset Manager
 
 You can choose between:
 
--   **RSA_3072** public/private key pair (3072bit) for enhanced security which requires more computing power on the devices and
--   **SHARED_SECRET** shared key (256bit) for lightweight devices.
+- **RSA_3072** public/private key pair (3072bit) for enhanced security which requires more computing power on the devices and
+- **SHARED_SECRET** shared key (256bit) for lightweight devices.
 
 If you want to use RSA_3072 you will have to create a 3072bit key for your device, e.g.. with openssl:
 
@@ -90,9 +90,9 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-    { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-    { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
+  { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+  { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+  { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
 ];
 
 msg._time = new Date();
@@ -108,22 +108,22 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 const values = [
-    {
-        timestamp: "2018-11-09T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "42" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
-        ],
-    },
-    {
-        timestamp: "2018-11-08T07:46:36.699Z",
-        values: [
-            { dataPointId: "1000000000", qualityCode: "1", value: "12" },
-            { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
-            { dataPointId: "1000000003", qualityCode: "1", value: "15.76" },
-        ],
-    },
+  {
+    timestamp: "2018-11-09T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "42" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "33.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "45.76" },
+    ],
+  },
+  {
+    timestamp: "2018-11-08T07:46:36.699Z",
+    values: [
+      { dataPointId: "1000000000", qualityCode: "1", value: "12" },
+      { dataPointId: "1000000001", qualityCode: "1", value: "13.7" },
+      { dataPointId: "1000000003", qualityCode: "1", value: "15.76" },
+    ],
+  },
 ];
 
 msg.payload = values;
@@ -138,15 +138,15 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
-    sourceType: "Agent",
-    sourceId: "application",
-    source: "Meowz",
-    severity: 30, // 0-99 : 20:error, 30:warning, 40: information
-    description: "Event sent at " + new Date().toISOString(),
-    timestamp: new Date().toISOString(),
-    additionalproperty1: "123",
-    additionalproperty2: "456",
+  entityId: "d72262e71ea0470eb9f880176b888938", // optional, use assetid if you want to send event somewhere else :)
+  sourceType: "Agent",
+  sourceId: "application",
+  source: "Meowz",
+  severity: 30, // 0-99 : 20:error, 30:warning, 40: information
+  description: "Event sent at " + new Date().toISOString(),
+  timestamp: new Date().toISOString(),
+  additionalproperty1: "123",
+  additionalproperty2: "456",
 };
 return msg;
 ```
@@ -163,11 +163,11 @@ The node requires json objects as input in following format (e.g. from a functio
 
 ```javascript
 msg.payload = {
-    entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
-    fileName: "digitaltwin.png", // you can also pass an instance of a Buffer
-    fileType: "image/png", //optional, it is automatically determined if there is no fileType specified
-    filePath: "images/digitaltwin.png", // required if you are using buffer instead of the file name
-    description: "testfile",
+  entityId: "d72262e71ea0470eb9f880176b888938", //optional (per default files are uploaded to the agent)
+  fileName: "digitaltwin.png", // you can also pass an instance of a Buffer
+  fileType: "image/png", //optional, it is automatically determined if there is no fileType specified
+  filePath: "images/digitaltwin.png", // required if you are using buffer instead of the file name
+  description: "testfile",
 };
 return msg;
 ```
@@ -190,8 +190,8 @@ The node requires json objects as input in following format (e.g. from a functio
 // The subTenantId can be optionally added to the messsage
 
 const dataLakeFileInfo = {
-  "dataLakeFile": "my/path/to/file.txt",
-  "dataLakeFilePath": "uploads/file.txt"
+  dataLakeFile: "my/path/to/file.txt",
+  dataLakeFilePath: "uploads/file.txt",
 };
 
 // Uncomment the next code line if you just want to generate an upload url (in msg._signedUrl)
@@ -208,6 +208,39 @@ Please note:
 - The MindConnect Node will apply this prefix automatically to the dataLakeFileUpload Path
 - You can pass either a javascript buffer or path to file in the dataLakeFile property for upload
 - The subTenantId can be optionally added to the messsage
+
+#### Reading Asset Information
+
+You can read the data (e.g. static asset variables, or full asset information) from MindSphere using the following message. This can be used to implement a "digital shadow/digital twin" pattern, where the change in the MindSphere variables is reflected to the real world asset. See [bidirectional communication example flow](https://playground.mindconnect.rocks/#flow/9ff72be.3d502d8) on playground for a full example.
+
+```javascript
+msg.payload = {
+  assetId: "{assetId}",
+  includeShared: false,
+  propertyNames: [],
+};
+
+return msg;
+```
+
+You can reduce the number of items in payload by specifying list of properties to include in the message: e.g.
+`propertyNames: ["variables"] or ["location"]`
+
+#### Executing custom functions using MindSphere javascript/typescript SDK
+
+The node can be used to execute a complex script which uses [MindSphere javascript/typescript SDK](https://opensource.mindsphere.io/docs/mindconnect-nodejs/sdk/index.html). The node will create an asyncronous function with one parameter (sdk) and the specified function body and execute it. You can only call the MindSphere APIs which allow agent authorization.
+
+```javascript
+msg.payload = {
+  function: `
+const assetManagement = sdk.GetAssetManagementClient();
+const asset = await assetManagement.GetAsset('{assetId}');
+return asset;
+`,
+};
+
+return msg;
+```
 
 #### Error handling in the flows
 
@@ -246,11 +279,11 @@ Treat tokens as you would any other credentials.
 
 [MindConnect Node-RED playground](https://playground.mindconnect.rocks) provides following demo flows importing following data points to MindSphere
 
--   CPU-Usage
--   Batched MQTT Data
--   OPCUA Data
--   Real Weather Data to MindSphere
--   Simulated Water Pump Data
+- CPU-Usage
+- Batched MQTT Data
+- OPCUA Data
+- Real Weather Data to MindSphere
+- Simulated Water Pump Data
 
 The simulated water pump data can be inspected at
 
@@ -258,8 +291,8 @@ The simulated water pump data can be inspected at
 
 This application can be used without mindsphere credentials.
 
--   username: guest@mindsphere.io
--   password: Siemens123!
+- username: guest@mindsphere.io
+- password: Siemens123!
 
 This data is also used as an example for the KPI-Calculation and Trend prediction with help of MindSphere APIs. <https://github.com/mindsphere/analytics-examples>
 
