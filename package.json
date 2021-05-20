@@ -31,13 +31,13 @@
   },
   "homepage": "https://github.com/mindsphere/mindsphere.github.io#readme",
   "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
-    "commitlint": "^9.0.1",
-    "conventional-changelog-cli": "^2.0.34",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitlint": "^12.1.4",
+    "conventional-changelog-cli": "^2.1.1",
     "eclint": "^2.8.1",
-    "husky": "^4.2.5",
-    "markdownlint-cli": "^0.23.2",
+    "husky": "^6.0.0",
+    "markdownlint-cli": "^0.27.1",
     "markserv": "^1.17.4"
   },
   "husky": {
