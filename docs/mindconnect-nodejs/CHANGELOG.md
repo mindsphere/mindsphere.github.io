@@ -35,7 +35,6 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 
 - Thanks to @jupiterbak for his Open Edge Client contributions. <3 :heart:
 
-
 ## 3.13.0 - (Phlox Vienna) - May 2021
 
 ### Bugfixes and Improvements 3.13.0
