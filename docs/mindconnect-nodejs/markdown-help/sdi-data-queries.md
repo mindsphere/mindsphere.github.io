@@ -1,0 +1,73 @@
+---
+title: MindSphere CLI -  mdsp sdi-data-queries Command
+next:
+    - title: Overview
+      link: ../cli/index
+    - title: Setting up the CLI
+      link: ../cli/setting-up-the-cli
+---
+
+
+# MindSphere CLI: mdsp sdi-data-queries Command
+
+Syntax:
+
+```bash
+mdsp sdi-data-queries
+```
+
+Alternative form:
+
+```bash
+mc sdi-data-queries
+```
+
+(The CLI was using `mc` as default command name in older versions)
+
+## Description
+
+manage data queries for SDI *
+
+## Usage
+
+List of all parameters and their description:
+
+```text
+Usage: mc sdi-data-queries|sdq [options]
+
+manage data queries for SDI *
+
+Options:
+  -m, --mode [list|create|update|template|info|delete|latest]  list | create | update | template | info | delete | latest (default: "list")
+  -d, --query                                           data query file with definition for --mode create or update command
+  -i, --queryid                                       the query id for --mode info, update or delete command
+  -o, --overwrite                                              overwrite template file if it already exists
+  -r, --result                                         result file for --mode latest (default: "sdi.query.latest.mdsp.json")
+  -k, --passkey                                       passkey
+  -y, --retry                                          retry attempts before giving up (default: "3")
+  -v, --verbose                                                verbose output
+  -h, --help                                                   display help for command
+
+```
+
+## Examples
+
+These are some examples of how to use the command. 
+
+```text
+
+  Examples:
+
+    mc sdi-data-queries --mode list 		 list all sdi dataqueries
+    mc sdi-data-queries --mode template 	 create template file
+    mc sdi-data-queries --mode create --query  	 create sdi data query
+    mc sdi-data-queries --mode update --query  --queryid                                                                                               		 update sdi data query
+    mc sdi-data-queries --mode info --queryid    		 get sdi data query info
+    mc sdi-data-queries --mode latest --queryid    		 get latest query results
+    mc sdi-data-queries --mode delete --queryid  		 delete sdi data query
+
+```
+
+The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
+
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
