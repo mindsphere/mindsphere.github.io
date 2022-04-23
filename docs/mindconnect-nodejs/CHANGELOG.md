@@ -6,6 +6,32 @@ title: MindConnect-NodeJS - Changelog
 
 # MindConnect-NodeJS - <small>Changelog</small>
 
+## 3.18.2 - (Hazelwood Vienna) - March 2022
+
+- fixed missing date-fns dependency in package.json
+
+## 3.18.1 - (Hazelwood Vienna) - March 2022
+
+- broken dependency in package.json
+
+## 3.18.0 - (Hazelwood Vienna) - March 2022
+
+- SDK: ResourceAccessManagement Client [[#308](https://github.com/mindsphere/mindconnect-nodejs/issues/308)]
+- SDK: CommandingAPI - Commanding Client [[#307](https://github.com/mindsphere/mindconnect-nodejs/issues/307)]
+- CLI: new `mc policy` command to manage policies [[#308](https://github.com/mindsphere/mindconnect-nodejs/issues/308)]
+- CLI: new `mc delivery-jobs` command to manage mqtt delivery jobs [[#307](https://github.com/mindsphere/mindconnect-nodejs/issues/307)]
+- CLI: fixed double use of `as` shortcut in `mc aspects` and `mc agent-status` command. The `mc aspects` command now uses the `asp` shortcut.
+- CLI: added last login information to `mc iam --user` command
+- Bumped most depenedencies to `^` version.
+
+## 3.17.0 - (Sandstone Vienna) - February 2022
+
+- CLI: completely new `mc iam` command with support for user, roles, and user groups management
+- SDK: Tenant Management added paging to the Tenant Management Client
+- mc dev-proxy reads now --passkey from MDSP_PASSKEY variable like other commands [#301]
+- fixed paging issue for `mc iam --group` command [#297]
+- Bumped all dependencies
+
 ## 3.16.0 - (Tyrian Vienna) - September 2021
 
 - CLI: new `mc message-broker` command - manage message broker subscriptions and webhooks
