@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp mobile-app-instances Command
 
 Syntax:
 
 ```bash
 mdsp mobile-app-instances
+```
+
+Help:
+
+```bash
+mdsp mobile-app-instances --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete mobile app instances *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc mobile-app-instances|mbi [options]
@@ -52,7 +57,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp mobile-app-instances` command:
 
 ```text
 
@@ -68,7 +73,5 @@ These are some examples of how to use the command.
 						delete mobile app instance
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

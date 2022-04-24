@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp download-bulk Command
 
 Syntax:
 
 ```bash
 mdsp download-bulk
+```
+
+Help:
+
+```bash
+mdsp download-bulk --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ download the timeseries data in bulk from mindsphere *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc download-bulk|db [options]
@@ -53,7 +58,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp download-bulk` command:
 
 ```text
 
@@ -62,7 +67,5 @@ These are some examples of how to use the command.
     mc download-bulk --assetid 12345..ef --from 12/10/2019 --to 12/16/2019  		 download timeseries from specified asset
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

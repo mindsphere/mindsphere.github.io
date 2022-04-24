@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp identity-management Command
 
 Syntax:
 
 ```bash
 mdsp identity-management
+```
+
+Help:
+
+```bash
+mdsp identity-management --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage mindsphere users, groups and roles *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc identity-management|iam [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp identity-management` command:
 
 ```text
 
@@ -92,7 +97,5 @@ These are some examples of how to use the command.
     mc iam --mode remove --role  --memberrole  	 remove member role from custom role role
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

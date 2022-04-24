@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp service-token Command
 
 Syntax:
 
 ```bash
 mdsp service-token
+```
+
+Help:
+
+```bash
+mdsp service-token --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ displays the service token for use in other tools (e.g. postman) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc service-token|stk [options]
@@ -47,7 +52,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp service-token` command:
 
 ```text
 
@@ -57,7 +62,5 @@ These are some examples of how to use the command.
     mc service-token --passkey mypasskey --verbose 	displays the service token (encoded and decoded)
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

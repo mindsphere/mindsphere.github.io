@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp get-diagnostic Command
 
 Syntax:
 
 ```bash
 mdsp get-diagnostic
+```
+
+Help:
+
+```bash
+mdsp get-diagnostic --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ get diagnostic information *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc get-diagnostic|gd [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp get-diagnostic` command:
 
 ```text
 
@@ -62,7 +67,5 @@ These are some examples of how to use the command.
     mc get-diagnostic --passkey mypasskey --text --all > log.csv
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

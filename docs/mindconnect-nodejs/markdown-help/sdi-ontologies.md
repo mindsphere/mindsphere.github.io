@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-ontologies Command
 
 Syntax:
 
 ```bash
 mdsp sdi-ontologies
+```
+
+Help:
+
+```bash
+mdsp sdi-ontologies --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage ontologies for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-ontologies|sdo [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-ontologies` command:
 
 ```text
 
@@ -64,7 +69,5 @@ These are some examples of how to use the command.
     mc sdi-ontologies --mode delete --ontologyid  		 delete sdi ontology
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

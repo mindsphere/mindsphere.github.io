@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-devices Command
 
 Syntax:
 
 ```bash
 mdsp oe-devices
+```
+
+Help:
+
+```bash
+mdsp oe-devices --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete (open edge) devices *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-devices|oed [options]
@@ -56,7 +61,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-devices` command:
 
 ```text
 
@@ -70,7 +75,5 @@ These are some examples of how to use the command.
                              create new device using the file openedge.device.mdsp.json
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

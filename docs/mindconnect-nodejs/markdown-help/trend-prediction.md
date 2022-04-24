@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp trend-prediction Command
 
 Syntax:
 
 ```bash
 mdsp trend-prediction
+```
+
+Help:
+
+```bash
+mdsp trend-prediction --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ perform trend prediction (linear/polynomial) @
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc trend-prediction|tp [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp trend-prediction` command:
 
 ```text
 
@@ -74,7 +79,5 @@ These are some examples of how to use the command.
     https://developer.mindsphere.io/apis/analytics-trendprediction/api-trendprediction-basics.html
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

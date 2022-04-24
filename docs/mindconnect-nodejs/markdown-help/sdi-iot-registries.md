@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-iot-registries Command
 
 Syntax:
 
 ```bash
 mdsp sdi-iot-registries
+```
+
+Help:
+
+```bash
+mdsp sdi-iot-registries --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage iot data registries for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-iot-registries|sdt [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-iot-registries` command:
 
 ```text
 
@@ -65,7 +70,5 @@ These are some examples of how to use the command.
     mc sdi-iot-registries --mode delete --registryid  		 delete sdi iot registry
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

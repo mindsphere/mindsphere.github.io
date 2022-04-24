@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp prepare-bulk Command
 
 Syntax:
 
 ```bash
 mdsp prepare-bulk
+```
+
+Help:
+
+```bash
+mdsp prepare-bulk --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ creates a template directory for timeseries (bulk) upload *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc prepare-bulk|pb [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp prepare-bulk` command:
 
 ```text
 
@@ -69,7 +74,5 @@ These are some examples of how to use the command.
 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

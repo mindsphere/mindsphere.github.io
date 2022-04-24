@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-execution-jobs Command
 
 Syntax:
 
 ```bash
 mdsp sdi-execution-jobs
+```
+
+Help:
+
+```bash
+mdsp sdi-execution-jobs --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data execution jobs for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-execution-jobs|sdx [options]
@@ -53,7 +58,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-execution-jobs` command:
 
 ```text
 
@@ -68,7 +73,5 @@ These are some examples of how to use the command.
     mc sdi-execution-jobs --mode delete --jobid  		 delete sdi data execution job
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

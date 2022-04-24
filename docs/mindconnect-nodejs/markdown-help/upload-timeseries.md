@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp upload-timeseries Command
 
 Syntax:
 
 ```bash
 mdsp upload-timeseries
+```
+
+Help:
+
+```bash
+mdsp upload-timeseries --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ parse .csv file with timeseriesdata and upload the timeseries data to mindsphere
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc upload-timeseries|ts [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp upload-timeseries` command:
 
 ```text
 
@@ -63,9 +68,9 @@ These are some examples of how to use the command.
   Data Format: (use your own data point ids from mindsphere)
 
   timestamp, dataPointId, qualityCode, value
-  2022-04-20T18:16:25.898Z, DP-Temperature ,0, 20.34
-  2022-04-20T18:16:26.898Z, DP-Humidity, 0, 70
-  2022-04-20T18:16:27.898Z, DP-Pressure, 0, 1012.3
+  2022-04-24T02:05:16.918Z, DP-Temperature ,0, 20.34
+  2022-04-24T02:05:17.918Z, DP-Humidity, 0, 70
+  2022-04-24T02:05:18.918Z, DP-Pressure, 0, 1012.3
 
   Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
   The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)
@@ -76,7 +81,5 @@ These are some examples of how to use the command.
     See also: https://documentation.mindsphere.io/resources/html/asset-manager/en-US/116404525451.html
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

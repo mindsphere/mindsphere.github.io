@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp subtenants Command
 
 Syntax:
 
 ```bash
 mdsp subtenants
+```
+
+Help:
+
+```bash
+mdsp subtenants --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete subtenants *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc subtenants|st [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp subtenants` command:
 
 ```text
 
@@ -64,7 +69,5 @@ These are some examples of how to use the command.
     mc subtenants --mode delete --subtenantid  	delete subtenant with specified id
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

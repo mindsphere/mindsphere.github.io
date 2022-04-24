@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp starter-ts Command
 
 Syntax:
 
 ```bash
 mdsp starter-ts
+```
+
+Help:
+
+```bash
+mdsp starter-ts --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ creates a starter project in typescript #
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc starter-ts|st [options]
@@ -46,7 +51,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp starter-ts` command:
 
 ```text
 
@@ -56,7 +61,5 @@ These are some examples of how to use the command.
     mc st --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

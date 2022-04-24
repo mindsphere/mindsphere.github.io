@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp upload-file Command
 
 Syntax:
 
 ```bash
 mdsp upload-file
+```
+
+Help:
+
+```bash
+mdsp upload-file --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ upload the file to the mindsphere file service (optional: passkey) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc upload-file|uf [options]
@@ -56,7 +61,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp upload-file` command:
 
 ```text
 
@@ -67,7 +72,5 @@ These are some examples of how to use the command.
     mc upload-file --file  CHANGELOG.md  --chunked 				 upload file using experimental chunked upload
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

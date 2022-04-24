@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-data-registries Command
 
 Syntax:
 
 ```bash
 mdsp sdi-data-registries
+```
+
+Help:
+
+```bash
+mdsp sdi-data-registries --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data registries for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-data-registries|sdr [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-data-registries` command:
 
 ```text
 
@@ -65,7 +70,5 @@ These are some examples of how to use the command.
     mc sdi-data-registries --mode delete --registryid  		 delete sdi data registry
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

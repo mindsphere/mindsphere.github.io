@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp asset-types Command
 
 Syntax:
 
 ```bash
 mdsp asset-types
+```
+
+Help:
+
+```bash
+mdsp asset-types --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete asset types *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc asset-types|at [options]
@@ -53,7 +58,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp asset-types` command:
 
 ```text
 
@@ -67,7 +72,5 @@ These are some examples of how to use the command.
 	create asset type Pump in MindSphere
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

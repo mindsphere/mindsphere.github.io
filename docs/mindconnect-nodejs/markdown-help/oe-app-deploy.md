@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-app-deploy Command
 
 Syntax:
 
 ```bash
 mdsp oe-app-deploy
+```
+
+Help:
+
+```bash
+mdsp oe-app-deploy --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create, update app installation task(s) (open edge) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-app-deploy|oead [options]
@@ -38,8 +43,7 @@ Usage: mc oe-app-deploy|oead [options]
 list, create, update app installation task(s) (open edge) *
 
 Options:
-  -m, --mode [list|create|update|accept|remove|template|info|check]  list | create | update | accept | remove | template | info | check (default:
-                                                                     "list")
+  -m, --mode [list|create|update|accept|remove|template|info|check]  list | create | update | accept | remove | template | info | check (default: "list")
   -i, --id                                                       the installation task id
   -d, --deviceid                                           deviceid to filter
   -r, --realeaseid                                       software realease id
@@ -55,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-app-deploy` command:
 
 ```text
 
@@ -79,7 +83,5 @@ These are some examples of how to use the command.
 	accept terms and condition of a software realease on a a specific device.
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

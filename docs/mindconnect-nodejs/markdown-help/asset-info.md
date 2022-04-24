@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp asset-info Command
 
 Syntax:
 
 ```bash
 mdsp asset-info
+```
+
+Help:
+
+```bash
+mdsp asset-info --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ get infos about asset *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc asset-info|ai [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp asset-info` command:
 
 ```text
 
@@ -57,7 +62,5 @@ These are some examples of how to use the command.
     mc asset-info --assetid 123456...ef 	 print out infos about asset with id 132456...ef
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

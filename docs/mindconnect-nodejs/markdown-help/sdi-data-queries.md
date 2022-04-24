@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-data-queries Command
 
 Syntax:
 
 ```bash
 mdsp sdi-data-queries
+```
+
+Help:
+
+```bash
+mdsp sdi-data-queries --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data queries for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-data-queries|sdq [options]
@@ -52,7 +57,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-data-queries` command:
 
 ```text
 
@@ -67,7 +72,5 @@ These are some examples of how to use the command.
     mc sdi-data-queries --mode delete --queryid  		 delete sdi data query
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

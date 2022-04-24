@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp event-analytics Command
 
 Syntax:
 
 ```bash
 mdsp event-analytics
+```
+
+Help:
+
+```bash
+mdsp event-analytics --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ analyze mindsphere events @
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc event-analytics|ea [options]
@@ -41,8 +46,8 @@ Options:
   -m, --mode [count|filter|duplicate|top]  mode see @ Additional Documentation (default: "top")
   -f, --file                         events file
   -o, --output                     result mode.ea.mdsp.json
-  -t, --type [timeseries|event]            event analytics can be used on both timeseries (with string properties as event names) and event formats
-                                           (default: "event")
+  -t, --type [timeseries|event]            event analytics can be used on both timeseries (with string properties as event names) and event formats (default:
+                                           "event")
   -p, --property                 property name used for grouping and counting (default: "description")
   -l, --filterlist             filter events (default: "[]")
   -x, --top                           number of events (for top mode) (default: "10")
@@ -56,7 +61,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp event-analytics` command:
 
 ```text
 
@@ -71,7 +76,5 @@ These are some examples of how to use the command.
     https://developer.mindsphere.io/apis/analytics-eventanalytics/api-eventanalytics-samples.html
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

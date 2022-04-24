@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp register-diagnostic Command
 
 Syntax:
 
 ```bash
 mdsp register-diagnostic
+```
+
+Help:
+
+```bash
+mdsp register-diagnostic --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ register agent for diagnostic *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc register-diagnostic|rd [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp register-diagnostic` command:
 
 ```text
 
@@ -58,7 +63,5 @@ These are some examples of how to use the command.
     mc register-diagnostic --config someagent.json -passkey mypasskey
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

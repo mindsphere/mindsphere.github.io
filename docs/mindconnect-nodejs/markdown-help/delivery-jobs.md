@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp delivery-jobs Command
 
 Syntax:
 
 ```bash
 mdsp delivery-jobs
+```
+
+Help:
+
+```bash
+mdsp delivery-jobs --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage mqtt delivery jobs to publish MQTT commands to the clients *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc delivery-jobs|dj [options]
@@ -38,8 +43,7 @@ Usage: mc delivery-jobs|dj [options]
 manage mqtt delivery jobs to publish MQTT commands to the clients *
 
 Options:
-  -m, --mode [list|create|delete|template|info|commands|commandinfo]  list | create | delete | template | info | commands | commandinfo (default:
-                                                                      "list")
+  -m, --mode [list|create|delete|template|info|commands|commandinfo]  list | create | delete | template | info | commands | commandinfo (default: "list")
   -f, --file                                                    .mdsp.json file with job definition (default: "deliveryjob.mqtt.mdsp.json")
   -i, --jobid                                                  the job id
   -c, --commandid                                          the command id
@@ -55,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp delivery-jobs` command:
 
 ```text
 
@@ -74,7 +78,5 @@ These are some examples of how to use the command.
                                                                          get info for selected command
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

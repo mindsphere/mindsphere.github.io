@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp jobs Command
 
 Syntax:
 
 ```bash
 mdsp jobs
+```
+
+Help:
+
+```bash
+mdsp jobs --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or stop jobs *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc jobs|jb [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp jobs` command:
 
 ```text
 
@@ -71,7 +76,5 @@ These are some examples of how to use the command.
     mc jobs --mode stop --jobid  			 stop job with job id
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

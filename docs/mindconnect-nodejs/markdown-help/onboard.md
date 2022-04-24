@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp onboard Command
 
 Syntax:
 
 ```bash
 mdsp onboard
+```
+
+Help:
+
+```bash
+mdsp onboard --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ onboard the agent with configuration stored in the config file
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc onboard|ob [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp onboard` command:
 
 ```text
 
@@ -59,7 +64,5 @@ These are some examples of how to use the command.
     mc onboard --config agent.json --cert private.key 	uses specified key for RSA_3072 profile
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

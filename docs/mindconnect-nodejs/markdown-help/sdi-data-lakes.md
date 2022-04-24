@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-data-lakes Command
 
 Syntax:
 
 ```bash
 mdsp sdi-data-lakes
+```
+
+Help:
+
+```bash
+mdsp sdi-data-lakes --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data lakes for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-data-lakes|sdl [options]
@@ -51,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-data-lakes` command:
 
 ```text
 
@@ -65,7 +70,5 @@ These are some examples of how to use the command.
     mc sdi-data-lakes --mode delete --datalakeid  		 delete sdi data lake
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

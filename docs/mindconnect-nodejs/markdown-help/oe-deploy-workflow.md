@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-deploy-workflow Command
 
 Syntax:
 
 ```bash
 mdsp oe-deploy-workflow
+```
+
+Help:
+
+```bash
+mdsp oe-deploy-workflow --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create/instantiate, update or delete/cancel workflow deployment model or i
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-deploy-workflow|oedw [options]
@@ -38,8 +43,8 @@ Usage: mc oe-deploy-workflow|oedw [options]
 list, create/instantiate, update or delete/cancel workflow deployment model or instance(s) (open edge) *
 
 Options:
-  -m, --mode [list|create|instantiate|update|cancel|delete|template|info]  list | create | instantiate | update | cancel | delete | template | info
-                                                                           (default: "list")
+  -m, --mode [list|create|instantiate|update|cancel|delete|template|info]  list | create | instantiate | update | cancel | delete | template | info (default:
+                                                                           "list")
   -k, --key                                                           the workflow model key
   -i, --id                                                             the deployment model instance id
   -f, --file                                                         .mdsp.json file
@@ -58,7 +63,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-deploy-workflow` command:
 
 ```text
 
@@ -78,7 +83,5 @@ These are some examples of how to use the command.
     mc oe-deploy-workflow --mode delete --key  	delete a deployment workflow model.
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

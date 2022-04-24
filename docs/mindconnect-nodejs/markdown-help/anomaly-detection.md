@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp anomaly-detection Command
 
 Syntax:
 
 ```bash
 mdsp anomaly-detection
+```
+
+Help:
+
+```bash
+mdsp anomaly-detection --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ train anomaly detection models and detect timeseries anomalies *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc anomaly-detection|ad [options]
@@ -59,7 +64,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp anomaly-detection` command:
 
 ```text
 
@@ -78,7 +83,5 @@ These are some examples of how to use the command.
                 detect anomalities of the timeseries on the specified asset and aspect with selected model
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

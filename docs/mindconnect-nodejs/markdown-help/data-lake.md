@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp data-lake Command
 
 Syntax:
 
 ```bash
 mdsp data-lake
+```
+
+Help:
+
+```bash
+mdsp data-lake --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data lake, data lake access permissions and STS tokens *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc data-lake|dlk [options]
@@ -38,8 +43,8 @@ Usage: mc data-lake|dlk [options]
 manage data lake, data lake access permissions and STS tokens *
 
 Options:
-  -m, --mode [...]                       mode: list | read | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload | meta |
-                                         subscriptions | subscribe | unsubscribe  (default: "list")
+  -m, --mode [...]                       mode: list | read | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload | meta | subscriptions |
+                                         subscribe | unsubscribe  (default: "list")
   -f, --file                       file to upload
   -l, --shell [bash|ps|cmd]              output format for STS token [bash | ps | cmd] (default: "bash")
   -p, --path                       path for read/write token or uploadUrl, downloadUrl, subscribe or unsubscribe comamand
@@ -57,7 +62,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp data-lake` command:
 
 ```text
 
@@ -83,7 +88,5 @@ These are some examples of how to use the command.
     Data Lake APIs: https://developer.mindsphere.io/apis/iot-integrated-data-lake/api-integrated-data-lake-overview.html
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

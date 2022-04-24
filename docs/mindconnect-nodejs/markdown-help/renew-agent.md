@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp renew-agent Command
 
 Syntax:
 
 ```bash
 mdsp renew-agent
+```
+
+Help:
+
+```bash
+mdsp renew-agent --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ renews the agent secrets  *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc renew-agent|rn [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp renew-agent` command:
 
 ```text
 
@@ -57,7 +62,5 @@ These are some examples of how to use the command.
     mc renew-agent --config agent.json --passkey passkey... 	 renew agent secrets in agent.json configuration
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

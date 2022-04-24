@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp asset-lock Command
 
 Syntax:
 
 ```bash
 mdsp asset-lock
+```
+
+Help:
+
+```bash
+mdsp asset-lock --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ lock/unlock asset model modifications *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc asset-lock|lck [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp asset-lock` command:
 
 ```text
 
@@ -59,7 +64,5 @@ These are some examples of how to use the command.
     mc asset-lock --mode unlock 			 unlock the asset model and enable modifications
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

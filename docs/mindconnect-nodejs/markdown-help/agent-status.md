@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp agent-status Command
 
 Syntax:
 
 ```bash
 mdsp agent-status
+```
+
+Help:
+
+```bash
+mdsp agent-status --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ displays the agent status and agent onboarding status *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc agent-status|as [options]
@@ -50,7 +55,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp agent-status` command:
 
 ```text
 
@@ -63,7 +68,5 @@ These are some examples of how to use the command.
     mc agent-status --passkey mypasskey --verbose 	displays additionally the mappings and configuration
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

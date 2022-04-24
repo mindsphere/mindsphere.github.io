@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp signal-validation Command
 
 Syntax:
 
 ```bash
 mdsp signal-validation
+```
+
+Help:
+
+```bash
+mdsp signal-validation --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ perform signal validation @
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc signal-validation|sv [options]
@@ -58,7 +63,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp signal-validation` command:
 
 ```text
 
@@ -73,7 +78,5 @@ These are some examples of how to use the command.
     https://developer.mindsphere.io/apis/analytics-signalvalidation/api-signalvalidation-basics.html
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

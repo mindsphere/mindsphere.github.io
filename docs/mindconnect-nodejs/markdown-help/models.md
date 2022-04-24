@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp models Command
 
 Syntax:
 
 ```bash
 mdsp models
+```
+
+Help:
+
+```bash
+mdsp models --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete analytic models *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc models|ml [options]
@@ -57,7 +62,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp models` command:
 
 ```text
 
@@ -72,7 +77,5 @@ These are some examples of how to use the command.
     mc models --mode download --modelid 123456...ef 	 download model with id 132456...ef
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-device-status Command
 
 Syntax:
 
 ```bash
 mdsp oe-device-status
+```
+
+Help:
+
+```bash
+mdsp oe-device-status --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, get, or update (open edge) device status information *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-device-status|oeds [options]
@@ -40,8 +45,8 @@ list, get, or update (open edge) device status information *
 Options:
   -m, --mode [list|info|update|template]                                list | info | update | template (default: "list")
   -i, --deviceid                                              the device id
-  -t, --target [health|health-config-data|inventory|connection-status]  type of status information to retrieve or to update. [ health |
-                                                                        health-config-data | inventory | connection-status] (default: "health")
+  -t, --target [health|health-config-data|inventory|connection-status]  type of status information to retrieve or to update. [ health | health-config-data |
+                                                                        inventory | connection-status] (default: "health")
   -w, --softwaretype [APP|FIRMWARE]                                     software type [ APP | FIRMWARE ]
   -s, --softwareid                                          software id
   -f, --file                                                      openedge.*.mdsp.json file with update information definition
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-device-status` command:
 
 ```text
 
@@ -83,7 +88,5 @@ These are some examples of how to use the command.
                              send a heartbeat to the device
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

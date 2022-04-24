@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp list-files Command
 
 Syntax:
 
 ```bash
 mdsp list-files
+```
+
+Help:
+
+```bash
+mdsp list-files --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list files stored with the asset *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc list-files|ls [options]
@@ -49,7 +54,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp list-files` command:
 
 ```text
 
@@ -59,7 +64,5 @@ These are some examples of how to use the command.
     mc ls --assetid 1234...ef --filter "path=upload*" --passkey mypasskey 	list all files where path contains upload
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

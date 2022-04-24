@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp dev-proxy Command
 
 Syntax:
 
 ```bash
 mdsp dev-proxy
+```
+
+Help:
+
+```bash
+mdsp dev-proxy --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ starts mindsphere development proxy & (optional passkey) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc dev-proxy|px [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp dev-proxy` command:
 
 ```text
 
@@ -73,7 +78,5 @@ These are some examples of how to use the command.
 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

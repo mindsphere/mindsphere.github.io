@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp assets Command
 
 Syntax:
 
 ```bash
 mdsp assets
+```
+
+Help:
+
+```bash
+mdsp assets --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete assets *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc assets|ast [options]
@@ -57,7 +62,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp assets` command:
 
 ```text
 
@@ -72,7 +77,5 @@ These are some examples of how to use the command.
 		creates a file template MyPump.asset.mdsp.json which can be use in create command
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp event-types Command
 
 Syntax:
 
 ```bash
 mdsp event-types
+```
+
+Help:
+
+```bash
+mdsp event-types --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete event types *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc event-types|et [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp event-types` command:
 
 ```text
 
@@ -68,7 +73,5 @@ These are some examples of how to use the command.
 	create event type PumpEvent in MindSphere
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

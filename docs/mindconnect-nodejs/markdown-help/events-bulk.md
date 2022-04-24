@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp events-bulk Command
 
 Syntax:
 
 ```bash
 mdsp events-bulk
+```
+
+Help:
+
+```bash
+mdsp events-bulk --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ download or delete the events in bulk *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc events-bulk|dn [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp events-bulk` command:
 
 ```text
 
@@ -69,7 +74,5 @@ These are some examples of how to use the command.
     mc events-bulk --mode check --jobid  		 check the state of bulk deleting job
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

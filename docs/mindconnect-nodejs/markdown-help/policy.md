@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp policy Command
 
 Syntax:
 
 ```bash
 mdsp policy
+```
+
+Help:
+
+```bash
+mdsp policy --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create or delete policies *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc policy|po [options]
@@ -52,7 +57,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp policy` command:
 
 ```text
 
@@ -66,7 +71,5 @@ These are some examples of how to use the command.
     mc policy --mode delete --policyid  	delete policy with specified id
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

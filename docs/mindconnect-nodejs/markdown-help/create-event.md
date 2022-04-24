@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp create-event Command
 
 Syntax:
 
 ```bash
 mdsp create-event
+```
+
+Help:
+
+```bash
+mdsp create-event --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ create an event in the mindsphere (optional: passkey) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc create-event|ce [options]
@@ -46,7 +51,7 @@ Options:
   -O, --source           Source (default: "MindConnect-NodeJs CLI")
   -V, --severity       Severity (20:Error, 30:Warning , 40:information) (default: "20")
   -d, --desc        Event description (default: "CLI created event")
-  -t, --timestamp     Timestamp (default: "2022-04-20T18:16:27.867Z")
+  -t, --timestamp     Timestamp (default: "2022-04-24T02:05:18.889Z")
   -y, --retry            retry attempts before giving up (default: "3")
   -p, --passkey         passkey (optional, event creation uses service credentials *)
   -v, --verbose                  verbose output
@@ -56,7 +61,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp create-event` command:
 
 ```text
 
@@ -67,7 +72,5 @@ These are some examples of how to use the command.
     mc ce --desc "custom event" --i 123....4 	 create error event for asset with id 123....4
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

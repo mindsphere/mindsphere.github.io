@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp configure-agent Command
 
 Syntax:
 
 ```bash
 mdsp configure-agent
+```
+
+Help:
+
+```bash
+mdsp configure-agent --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ create data source configuration and mappings (optional: passkey) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc configure-agent|co [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp configure-agent` command:
 
 ```text
 
@@ -71,7 +76,5 @@ These are some examples of how to use the command.
     	--typeid castidev.Pump --language python 			create mapping template and function in python
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

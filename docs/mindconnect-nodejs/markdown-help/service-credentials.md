@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp service-credentials Command
 
 Syntax:
 
 ```bash
 mdsp service-credentials
+```
+
+Help:
+
+```bash
+mdsp service-credentials --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ provide login for commands which require technical user credentials *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc service-credentials|sc [options]
@@ -57,7 +62,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp service-credentials` command:
 
 ```text
 
@@ -70,7 +75,5 @@ These are some examples of how to use the command.
     mc service-credentials --mode add --type APP ... 		 add new APP credentials
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

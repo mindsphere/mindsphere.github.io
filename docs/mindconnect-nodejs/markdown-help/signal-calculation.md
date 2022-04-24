@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp signal-calculation Command
 
 Syntax:
 
 ```bash
 mdsp signal-calculation
+```
+
+Help:
+
+```bash
+mdsp signal-calculation --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ process timeseries data *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc signal-calculation|cal [options]
@@ -57,7 +62,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp signal-calculation` command:
 
 ```text
 
@@ -83,7 +88,5 @@ These are some examples of how to use the command.
 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

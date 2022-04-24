@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp list-assets Command
 
 Syntax:
 
 ```bash
 mdsp list-assets
+```
+
+Help:
+
+```bash
+mdsp list-assets --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list assets in the tenant *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc list-assets|la [options]
@@ -38,8 +43,7 @@ Usage: mc list-assets|la [options]
 list assets in the tenant *
 
 Options:
-  -f, --filter [filter]    filter (see:
-                           https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
+  -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
   -a, --assetname [name]   search for assets with string [name] in asset name
   -t, --typeid [typeid]    search for assets with string [typeid] in typeid
   -c, --includeshared      include shared assets
@@ -52,7 +56,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp list-assets` command:
 
 ```text
 
@@ -63,7 +67,5 @@ These are some examples of how to use the command.
     mc la --filter '{"name" : {"contains" : "Engine"}}' --passkey mypasskey 	list all assets where name contains string Engine
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

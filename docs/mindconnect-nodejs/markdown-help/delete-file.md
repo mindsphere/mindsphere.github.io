@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp delete-file Command
 
 Syntax:
 
 ```bash
 mdsp delete-file
+```
+
+Help:
+
+```bash
+mdsp delete-file --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ delete the file from mindsphere file service *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc delete-file|de [options]
@@ -50,7 +55,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp delete-file` command:
 
 ```text
 
@@ -61,7 +66,5 @@ These are some examples of how to use the command.
     mc delete-file --file  upload/CHANGELOG.md  --assetid 5...f 		 delete file upload/CHANGELOG.md from specified asset
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

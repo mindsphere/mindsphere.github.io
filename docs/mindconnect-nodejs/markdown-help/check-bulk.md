@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp check-bulk Command
 
 Syntax:
 
 ```bash
 mdsp check-bulk
+```
+
+Help:
+
+```bash
+mdsp check-bulk --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ checks the progress of the upload jobs from  directory *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc check-bulk|cb [options]
@@ -49,7 +54,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp check-bulk` command:
 
 ```text
 
@@ -59,7 +64,5 @@ These are some examples of how to use the command.
     mc check-bulk --dir asset1 --verbose 	displays job progress of asset1 directory with verbose output
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

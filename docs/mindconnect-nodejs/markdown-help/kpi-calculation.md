@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp kpi-calculation Command
 
 Syntax:
 
 ```bash
 mdsp kpi-calculation
+```
+
+Help:
+
+```bash
+mdsp kpi-calculation --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ calculate kpi states or compute kpis @
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc kpi-calculation|kp [options]
@@ -60,7 +65,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp kpi-calculation` command:
 
 ```text
 
@@ -87,7 +92,5 @@ These are some examples of how to use the command.
     https://github.com/mindsphere/analytics-examples/blob/master/kpi-calculation.ipynb
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

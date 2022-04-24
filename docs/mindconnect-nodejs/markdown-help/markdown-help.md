@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp markdown-help Command
 
 Syntax:
 
 ```bash
 mdsp markdown-help
+```
+
+Help:
+
+```bash
+mdsp markdown-help --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ generates folder with markdown help commands for the CLI*
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc markdown-help|mdhelp [options]
@@ -46,7 +51,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp markdown-help` command:
 
 ```text
 
@@ -55,7 +60,5 @@ These are some examples of how to use the command.
     mc mdhelp
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

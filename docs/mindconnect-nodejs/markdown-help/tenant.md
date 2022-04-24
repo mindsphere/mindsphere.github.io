@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp tenant Command
 
 Syntax:
 
 ```bash
 mdsp tenant
+```
+
+Help:
+
+```bash
+mdsp tenant --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ create or delete tenant legal configuration and logo *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc tenant|ti [options]
@@ -49,7 +54,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp tenant` command:
 
 ```text
 
@@ -63,7 +68,5 @@ These are some examples of how to use the command.
     mc tenant --mode upload --file  	 uploads the company logo
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

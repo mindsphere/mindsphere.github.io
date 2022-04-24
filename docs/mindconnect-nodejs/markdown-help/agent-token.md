@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp agent-token Command
 
 Syntax:
 
 ```bash
 mdsp agent-token
+```
+
+Help:
+
+```bash
+mdsp agent-token --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ displays the agent token for use in other tools (e.g. postman)
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc agent-token|atk [options]
@@ -49,7 +54,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp agent-token` command:
 
 ```text
 
@@ -61,7 +66,5 @@ These are some examples of how to use the command.
     mc agent-token --verbose 			displays encoded and decoded version of the token
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

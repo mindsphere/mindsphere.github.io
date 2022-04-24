@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp mqtt-createjwt Command
 
 Syntax:
 
 ```bash
 mdsp mqtt-createjwt
+```
+
+Help:
+
+```bash
+mdsp mqtt-createjwt --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ creates a signed token for opcua pub sub authentication #
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc mqtt-createjwt|jw [options]
@@ -38,7 +43,7 @@ Usage: mc mqtt-createjwt|jw [options]
 creates a signed token for opcua pub sub authentication #
 
 Options:
-  -i, --clientid           MQTT ClientId (default: "cd26fda6-5601-4359-aecb-d67c029b6f98")
+  -i, --clientid           MQTT ClientId (default: "0cae1d64-630e-433b-ad0a-5032421fd442")
   -e, --expiration       time until the token is valid in seconds (default: "3600")
   -c, --rootca               path to CA root certificate (default: "CA-root.pem")
   -d, --devicecrt         path to device certificate (default: "device.crt.pem")
@@ -53,7 +58,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp mqtt-createjwt` command:
 
 ```text
 
@@ -72,7 +77,5 @@ These are some examples of how to use the command.
 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

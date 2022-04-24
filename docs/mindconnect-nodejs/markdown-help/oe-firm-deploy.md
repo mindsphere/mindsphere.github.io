@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-firm-deploy Command
 
 Syntax:
 
 ```bash
 mdsp oe-firm-deploy
+```
+
+Help:
+
+```bash
+mdsp oe-firm-deploy --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create, update firmware deployment task(s) (open edge) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-firm-deploy|oefd [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-firm-deploy` command:
 
 ```text
 
@@ -77,7 +82,5 @@ These are some examples of how to use the command.
 	accept terms and condition of a firmware realease on a a specific device.
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp message-broker Command
 
 Syntax:
 
 ```bash
 mdsp message-broker
+```
+
+Help:
+
+```bash
+mdsp message-broker --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage message broker subscriptions and webhooks *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc message-broker|mbk [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp message-broker` command:
 
 ```text
 
@@ -67,7 +72,5 @@ These are some examples of how to use the command.
     mc message-broker --mode send --file messagebroker.message.mdsp.json --topicid  	 send message to the topic 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

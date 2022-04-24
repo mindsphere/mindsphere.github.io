@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp run-bulk Command
 
 Syntax:
 
 ```bash
 mdsp run-bulk
+```
+
+Help:
+
+```bash
+mdsp run-bulk --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ runs the timeseries (bulk) upload job from  directory *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc run-bulk|rb [options]
@@ -53,7 +58,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp run-bulk` command:
 
 ```text
 
@@ -63,7 +68,5 @@ These are some examples of how to use the command.
     mc run-bulk --dir asset1 --verbose runs the upload job from the asset1 with verbose output
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

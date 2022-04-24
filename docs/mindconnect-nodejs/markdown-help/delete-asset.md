@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp delete-asset Command
 
 Syntax:
 
 ```bash
 mdsp delete-asset
+```
+
+Help:
+
+```bash
+mdsp delete-asset --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ delete asset with id  from mindsphere *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc delete-asset|da [options]
@@ -48,7 +53,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp delete-asset` command:
 
 ```text
 
@@ -57,7 +62,5 @@ These are some examples of how to use the command.
     mc delete-asset --assetid 123456...ef 		delete asset with id 132456...ef
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

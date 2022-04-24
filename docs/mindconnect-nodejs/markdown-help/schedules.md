@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp schedules Command
 
 Syntax:
 
 ```bash
 mdsp schedules
+```
+
+Help:
+
+```bash
+mdsp schedules --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create, start, stop or delete job schedules *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc schedules|js [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp schedules` command:
 
 ```text
 
@@ -70,7 +75,5 @@ These are some examples of how to use the command.
     mc schedules --mode stop --scheduleid  			 stop job schedule with job id
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

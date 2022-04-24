@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp oe-app-inst Command
 
 Syntax:
 
 ```bash
 mdsp oe-app-inst
+```
+
+Help:
+
+```bash
+mdsp oe-app-inst --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, create, configure or delete app instance (open edge) *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc oe-app-inst|oeai [options]
@@ -52,7 +57,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp oe-app-inst` command:
 
 ```text
 
@@ -68,7 +73,5 @@ These are some examples of how to use the command.
     mc oe-app-inst --mode delete --id 	delete app instance configuration.
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

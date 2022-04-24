@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp download-file Command
 
 Syntax:
 
 ```bash
 mdsp download-file
+```
+
+Help:
+
+```bash
+mdsp download-file --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ download the file from mindsphere file service *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc download-file|df [options]
@@ -50,7 +55,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp download-file` command:
 
 ```text
 
@@ -61,7 +66,5 @@ These are some examples of how to use the command.
     mc download-file --file  upload/CHANGELOG.md  --assetid 5...f 		 download file upload/CHANGELOG.md from specified asset
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

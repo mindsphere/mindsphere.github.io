@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-data-types Command
 
 Syntax:
 
 ```bash
 mdsp sdi-data-types
+```
+
+Help:
+
+```bash
+mdsp sdi-data-types --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage data types for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-data-types|sdy [options]
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-data-types` command:
 
 ```text
 
@@ -71,7 +76,5 @@ These are some examples of how to use the command.
     mc sdi-data-types --mode suggest --samplevalues  --testvalues                                                                               		 suggest patterns from sample data
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

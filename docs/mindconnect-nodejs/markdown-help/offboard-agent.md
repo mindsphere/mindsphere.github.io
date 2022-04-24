@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp offboard-agent Command
 
 Syntax:
 
 ```bash
 mdsp offboard-agent
+```
+
+Help:
+
+```bash
+mdsp offboard-agent --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ offboards the agent in the mindsphere *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc offboard-agent|of [options]
@@ -49,7 +54,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp offboard-agent` command:
 
 ```text
 
@@ -59,7 +64,5 @@ These are some examples of how to use the command.
     mc offboard-agent --agentid 12345..ef --passkey passkey... 	 offboard agent with 12345..ef agentid
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

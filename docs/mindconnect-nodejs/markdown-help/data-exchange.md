@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp data-exchange Command
 
 Syntax:
 
 ```bash
 mdsp data-exchange
+```
+
+Help:
+
+```bash
+mdsp data-exchange --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ list, upload, download and manage data exchange files and directories *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc data-exchange|dx [options]
@@ -38,8 +43,8 @@ Usage: mc data-exchange|dx [options]
 list, upload, download and manage data exchange files and directories *
 
 Options:
-  -m, --mode [list|info|download|upload|rename|delete|renamedir|mkdir|rmdir]  mode [list | info | download | upload | rename | renamedir | delete |
-                                                                              mkdir | rmdir ] (default: "list")
+  -m, --mode [list|info|download|upload|rename|delete|renamedir|mkdir|rmdir]  mode [list | info | download | upload | rename | renamedir | delete | mkdir |
+                                                                              rmdir ] (default: "list")
   -f, --file                                                            file path
   -n, --dirname                                                      directory name for --mode mkdir command
   -w, --newname                                                      new file or directory name for --mode rename or renamedir command
@@ -55,7 +60,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp data-exchange` command:
 
 ```text
 
@@ -74,7 +79,5 @@ These are some examples of how to use the command.
     mc data-exchange --mode rmdir --dirid  --recursive 		  delete directory with specified id recrusively
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

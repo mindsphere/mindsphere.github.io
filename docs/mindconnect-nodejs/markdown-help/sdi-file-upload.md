@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-file-upload Command
 
 Syntax:
 
 ```bash
 mdsp sdi-file-upload
+```
+
+Help:
+
+```bash
+mdsp sdi-file-upload --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ upload file to SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-file-upload|sdu [options]
@@ -50,7 +55,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-file-upload` command:
 
 ```text
 
@@ -64,7 +69,5 @@ These are some examples of how to use the command.
     If you are MindSphere Integrated Data Lake Customer use mc data-lake --mode upload command instead. 
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.

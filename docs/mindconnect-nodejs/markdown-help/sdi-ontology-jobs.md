@@ -7,13 +7,18 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-
 # MindSphere CLI: mdsp sdi-ontology-jobs Command
 
 Syntax:
 
 ```bash
 mdsp sdi-ontology-jobs
+```
+
+Help:
+
+```bash
+mdsp sdi-ontology-jobs --help
 ```
 
 Alternative form:
@@ -30,7 +35,7 @@ manage ontology jobs for SDI *
 
 ## Usage
 
-List of all parameters and their description:
+Parameter list:
 
 ```text
 Usage: mc sdi-ontology-jobs|sdb [options]
@@ -54,7 +59,7 @@ Options:
 
 ## Examples
 
-These are some examples of how to use the command. 
+Here are some examples of how to use the `mdsp sdi-ontology-jobs` command:
 
 ```text
 
@@ -64,7 +69,5 @@ These are some examples of how to use the command.
     mc sdi-ontology-jobs --mode info --jobid    			 get sdi ontology upload job info
 
 ```
-
-The most commmands use the client provided by TypeScript SDK to call the corresponding MindSphere API endpoint.
 
 See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
