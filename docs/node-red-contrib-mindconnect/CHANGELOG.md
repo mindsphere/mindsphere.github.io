@@ -4,6 +4,14 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 # MindConnect Node-RED Node - <small>Changelog</small>
 
+## 3.12.1 (Vienna Siberian Tigers) - May 2022
+
+## New Features 3.12.1
+
+- Support for MindSphere Integrated Data Lake in China
+- Docker images based on node-red 2.2.2
+- Bumped all dependencies
+
 ## 3.12.0 (Vienna Siberian Tigers) - May 2021
 
 ## New Features 3.12.0
