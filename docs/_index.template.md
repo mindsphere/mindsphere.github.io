@@ -32,9 +32,9 @@ featured:
       url1: /docs/mindsphere-auth-helper/index.html
 
     - title:  MQTT Native Certificates
-      description: Utility for creating self-signed certificates for MindSphere's MQTT Native endpoint.<br/> <br/> <a href="https://mqttnative.mindconnect.dev/" target="_new"><i class="fab fa-link"></i> https://mqttnative.mindconnect.dev</a>
+      description: Utility for creating self-signed certificates for MindSphere's MQTT Native endpoint. Go to  <a href="https://mqttnative.mindconnect.dev/" target="_new"><i class="fa fa-external-link-alt"></i> https://mqttnative.mindconnect.dev</a> to create the certificates.
       icon: components
-      url1: /docs/analytics/index.html
+      url1: https://mqttnative.mindconnect.dev
 
     - title: MindSphere Analytics Examples
       description: Jupyter Lab Notebooks demonstrating the use of the MindSphere Analytics APIs (KPI Calculation, SignalValidation...)<br/> <br/> <a href="https://github.com/mindsphere/analytics-examples" target="_new"><i class="fab fa-github"></i> GitHub</a>
