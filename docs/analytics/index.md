@@ -6,7 +6,7 @@ title: Analytics Examples
 
 ## Jupyter Notebooks
 
-These are the jupyter notebooks which demonstrate the use of the MindSphere Analytics APIs.
+These are the [jupyter notebooks](https://jupyter.org) which demonstrate the use of the MindSphere Analytics APIs.
 
 ### Trend Prediction API
 
