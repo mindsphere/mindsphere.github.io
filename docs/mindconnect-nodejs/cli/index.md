@@ -26,7 +26,7 @@ See also [getting started](../markdown-help/setting-up-the-cli.html) section of 
 
 ### Binary Releases
 
-The library can also be downloaded as executable from the [GitHub release page](../markdown-help/https://github.com/mindsphere/mindconnect-nodejs/releases).
+The library can also be downloaded as executable from the [GitHub release page](https://github.com/mindsphere/mindconnect-nodejs/releases).
 
 Download the version for your system and place it in folder which is in your PATH.
 
