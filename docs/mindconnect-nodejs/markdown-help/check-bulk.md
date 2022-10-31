@@ -38,7 +38,7 @@ checks the progress of the upload jobs from  directory *
 Parameter list:
 
 ```text
-Usage: mc check-bulk|cb [options]
+Usage: mdsp check-bulk|cb [options]
 
 checks the progress of the upload jobs from  directory *
 

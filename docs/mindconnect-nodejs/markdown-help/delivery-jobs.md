@@ -38,13 +38,15 @@ manage mqtt delivery jobs to publish MQTT commands to the clients *
 Parameter list:
 
 ```text
-Usage: mc delivery-jobs|dj [options]
+Usage: mdsp delivery-jobs|dj [options]
 
 manage mqtt delivery jobs to publish MQTT commands to the clients *
 
 Options:
-  -m, --mode [list|create|delete|template|info|commands|commandinfo]  list | create | delete | template | info | commands | commandinfo (default: "list")
-  -f, --file                                                    .mdsp.json file with job definition (default: "deliveryjob.mqtt.mdsp.json")
+  -m, --mode [list|create|delete|template|info|commands|commandinfo]  list | create | delete | template | info | commands | commandinfo
+                                                                      (default: "list")
+  -f, --file                                                    .mdsp.json file with job definition (default:
+                                                                      "deliveryjob.mqtt.mdsp.json")
   -i, --jobid                                                  the job id
   -c, --commandid                                          the command id
   -e, --name                                                    the name filter (contains) for list command

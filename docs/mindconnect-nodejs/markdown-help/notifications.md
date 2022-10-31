@@ -38,7 +38,7 @@ send email, sms and push notifications *
 Parameter list:
 
 ```text
-Usage: mc notifications|nt [options]
+Usage: mdsp notifications|nt [options]
 
 send email, sms and push notifications *
 

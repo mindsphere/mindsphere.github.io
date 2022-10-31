@@ -38,12 +38,13 @@ list assets in the tenant *
 Parameter list:
 
 ```text
-Usage: mc list-assets|la [options]
+Usage: mdsp list-assets|la [options]
 
 list assets in the tenant *
 
 Options:
-  -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
+  -f, --filter [filter]    filter (see:
+                           https://developer.mindsphere.io/apis/advanced-assetmanagement/api-assetmanagement-references-filtering.html)
   -a, --assetname [name]   search for assets with string [name] in asset name
   -t, --typeid [typeid]    search for assets with string [typeid] in typeid
   -c, --includeshared      include shared assets

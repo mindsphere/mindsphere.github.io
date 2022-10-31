@@ -38,13 +38,13 @@ list, create/instantiate, update or delete/cancel workflow deployment model or i
 Parameter list:
 
 ```text
-Usage: mc oe-deploy-workflow|oedw [options]
+Usage: mdsp oe-deploy-workflow|oedw [options]
 
 list, create/instantiate, update or delete/cancel workflow deployment model or instance(s) (open edge) *
 
 Options:
-  -m, --mode [list|create|instantiate|update|cancel|delete|template|info]  list | create | instantiate | update | cancel | delete | template | info (default:
-                                                                           "list")
+  -m, --mode [list|create|instantiate|update|cancel|delete|template|info]  list | create | instantiate | update | cancel | delete | template |
+                                                                           info (default: "list")
   -k, --key                                                           the workflow model key
   -i, --id                                                             the deployment model instance id
   -f, --file                                                         .mdsp.json file

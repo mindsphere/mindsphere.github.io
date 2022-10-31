@@ -38,12 +38,12 @@ creates a signed token for opcua pub sub authentication #
 Parameter list:
 
 ```text
-Usage: mc mqtt-createjwt|jw [options]
+Usage: mdsp mqtt-createjwt|jw [options]
 
 creates a signed token for opcua pub sub authentication #
 
 Options:
-  -i, --clientid           MQTT ClientId (default: "0cae1d64-630e-433b-ad0a-5032421fd442")
+  -i, --clientid           MQTT ClientId (default: "42b52b32-865a-4352-9807-31414b938cf5")
   -e, --expiration       time until the token is valid in seconds (default: "3600")
   -c, --rootca               path to CA root certificate (default: "CA-root.pem")
   -d, --devicecrt         path to device certificate (default: "device.crt.pem")

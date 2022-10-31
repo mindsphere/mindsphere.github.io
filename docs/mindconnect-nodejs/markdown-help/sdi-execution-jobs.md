@@ -38,7 +38,7 @@ manage data execution jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-execution-jobs|sdx [options]
+Usage: mdsp sdi-execution-jobs|sdx [options]
 
 manage data execution jobs for SDI *
 

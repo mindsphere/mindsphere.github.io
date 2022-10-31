@@ -38,7 +38,7 @@ manage message broker subscriptions and webhooks *
 Parameter list:
 
 ```text
-Usage: mc message-broker|mbk [options]
+Usage: mdsp message-broker|mbk [options]
 
 manage message broker subscriptions and webhooks *
 

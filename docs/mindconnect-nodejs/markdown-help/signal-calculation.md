@@ -38,7 +38,7 @@ process timeseries data *
 Parameter list:
 
 ```text
-Usage: mc signal-calculation|cal [options]
+Usage: mdsp signal-calculation|cal [options]
 
 process timeseries data *
 

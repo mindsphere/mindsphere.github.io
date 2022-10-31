@@ -38,25 +38,25 @@ list, create or delete assets *
 Parameter list:
 
 ```text
-Usage: mc assets|ast [options]
+Usage: mdsp assets|ast [options]
 
 list, create or delete assets *
 
 Options:
-  -m, --mode [list|create|delete|template]  mode [list | create | delete | template] (default: "list")
-  -f, --file                          .mdsp.json file with asset definition
-  -n, --assetname                assetname
-  -p, --parentid                  parentid
-  -e, --externalid              externalid
-  -i, --assetid                    mindsphere asset id
-  -t, --typeid                      typeid
-  -d, --desc                          description (default: "created with mindsphere CLI")
-  -w, --twintype                  digital twin type [performance|simulation]
-  -c, --includeshared                       include shared aspect types
-  -k, --passkey                    passkey
-  -y, --retry                       retry attempts before giving up (default: "3")
-  -v, --verbose                             verbose output
-  -h, --help                                display help for command
+  -m, --mode [list|create|delete|template|tree]  mode [list | create | delete | template | tree] (default: "list")
+  -f, --file                               .mdsp.json file with asset definition
+  -n, --assetname                     assetname
+  -p, --parentid                       parentid
+  -e, --externalid                   externalid
+  -i, --assetid                         mindsphere asset id
+  -t, --typeid                           typeid
+  -d, --desc                               description (default: "created with mindsphere CLI")
+  -w, --twintype                       digital twin type [performance|simulation]
+  -c, --includeshared                            include shared aspect types
+  -k, --passkey                         passkey
+  -y, --retry                            retry attempts before giving up (default: "3")
+  -v, --verbose                                  verbose output
+  -h, --help                                     display help for command
 
 ```
 

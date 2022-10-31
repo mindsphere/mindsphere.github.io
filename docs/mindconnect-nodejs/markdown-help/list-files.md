@@ -38,7 +38,7 @@ list files stored with the asset *
 Parameter list:
 
 ```text
-Usage: mc list-files|ls [options]
+Usage: mdsp list-files|ls [options]
 
 list files stored with the asset *
 

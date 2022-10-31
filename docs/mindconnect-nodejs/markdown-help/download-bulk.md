@@ -38,7 +38,7 @@ download the timeseries data in bulk from mindsphere *
 Parameter list:
 
 ```text
-Usage: mc download-bulk|db [options]
+Usage: mdsp download-bulk|db [options]
 
 download the timeseries data in bulk from mindsphere *
 

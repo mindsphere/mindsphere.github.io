@@ -38,7 +38,7 @@ train anomaly detection models and detect timeseries anomalies *
 Parameter list:
 
 ```text
-Usage: mc anomaly-detection|ad [options]
+Usage: mdsp anomaly-detection|ad [options]
 
 train anomaly detection models and detect timeseries anomalies *
 

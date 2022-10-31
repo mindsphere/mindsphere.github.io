@@ -38,7 +38,7 @@ displays the agent status and agent onboarding status *
 Parameter list:
 
 ```text
-Usage: mc agent-status|as [options]
+Usage: mdsp agent-status|as [options]
 
 displays the agent status and agent onboarding status *
 

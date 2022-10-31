@@ -38,13 +38,14 @@ list, create, start, stop or delete job schedules *
 Parameter list:
 
 ```text
-Usage: mc schedules|js [options]
+Usage: mdsp schedules|js [options]
 
 list, create, start, stop or delete job schedules *
 
 Options:
   -m, --mode [list|create|start|stop|template|info|delete]  list | create | stop | template | info (default: "list")
-  -f, --file                                          .mdsp.json file with job schedule definition (default: "jobmanager.schedule.mdsp.json")
+  -f, --file                                          .mdsp.json file with job schedule definition (default:
+                                                            "jobmanager.schedule.mdsp.json")
   -i, --scheduleid                              the schedule id
   -n, --name                                          the name filter (contains) for list command
   -s, --status                                      the status filter (equals, e.g. STOPPED, FAILED...) for list command

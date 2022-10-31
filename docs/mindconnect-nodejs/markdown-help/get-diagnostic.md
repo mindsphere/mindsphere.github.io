@@ -38,7 +38,7 @@ get diagnostic information *
 Parameter list:
 
 ```text
-Usage: mc get-diagnostic|gd [options]
+Usage: mdsp get-diagnostic|gd [options]
 
 get diagnostic information *
 

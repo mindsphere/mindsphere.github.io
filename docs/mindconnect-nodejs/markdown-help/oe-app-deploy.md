@@ -38,12 +38,13 @@ list, create, update app installation task(s) (open edge) *
 Parameter list:
 
 ```text
-Usage: mc oe-app-deploy|oead [options]
+Usage: mdsp oe-app-deploy|oead [options]
 
 list, create, update app installation task(s) (open edge) *
 
 Options:
-  -m, --mode [list|create|update|accept|remove|template|info|check]  list | create | update | accept | remove | template | info | check (default: "list")
+  -m, --mode [list|create|update|accept|remove|template|info|check]  list | create | update | accept | remove | template | info | check
+                                                                     (default: "list")
   -i, --id                                                       the installation task id
   -d, --deviceid                                           deviceid to filter
   -r, --realeaseid                                       software realease id

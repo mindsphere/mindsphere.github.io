@@ -38,7 +38,7 @@ create an event in the mindsphere (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mc create-event|ce [options]
+Usage: mdsp create-event|ce [options]
 
 create an event in the mindsphere (optional: passkey) *
 
@@ -51,7 +51,7 @@ Options:
   -O, --source           Source (default: "MindConnect-NodeJs CLI")
   -V, --severity       Severity (20:Error, 30:Warning , 40:information) (default: "20")
   -d, --desc        Event description (default: "CLI created event")
-  -t, --timestamp     Timestamp (default: "2022-04-24T02:05:18.889Z")
+  -t, --timestamp     Timestamp (default: "2022-10-31T16:18:24.690Z")
   -y, --retry            retry attempts before giving up (default: "3")
   -p, --passkey         passkey (optional, event creation uses service credentials *)
   -v, --verbose                  verbose output

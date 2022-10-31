@@ -38,13 +38,13 @@ manage data lake, data lake access permissions and STS tokens *
 Parameter list:
 
 ```text
-Usage: mc data-lake|dlk [options]
+Usage: mdsp data-lake|dlk [options]
 
 manage data lake, data lake access permissions and STS tokens *
 
 Options:
-  -m, --mode [...]                       mode: list | read | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload | meta | subscriptions |
-                                         subscribe | unsubscribe  (default: "list")
+  -m, --mode [...]                       mode: list | read | write | delete | readtoken | writetoken | uploadurl | downloadurl | upload | meta |
+                                         subscriptions | subscribe | unsubscribe  (default: "list")
   -f, --file                       file to upload
   -l, --shell [bash|ps|cmd]              output format for STS token [bash | ps | cmd] (default: "bash")
   -p, --path                       path for read/write token or uploadUrl, downloadUrl, subscribe or unsubscribe comamand

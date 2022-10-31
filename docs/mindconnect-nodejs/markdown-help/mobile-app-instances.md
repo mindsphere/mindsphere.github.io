@@ -38,7 +38,7 @@ list, create or delete mobile app instances *
 Parameter list:
 
 ```text
-Usage: mc mobile-app-instances|mbi [options]
+Usage: mdsp mobile-app-instances|mbi [options]
 
 list, create or delete mobile app instances *
 

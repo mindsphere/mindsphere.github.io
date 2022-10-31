@@ -38,7 +38,7 @@ renews the agent secrets  *
 Parameter list:
 
 ```text
-Usage: mc renew-agent|rn [options]
+Usage: mdsp renew-agent|rn [options]
 
 renews the agent secrets  *
 

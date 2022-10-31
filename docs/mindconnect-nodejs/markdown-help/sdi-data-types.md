@@ -38,7 +38,7 @@ manage data types for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-data-types|sdy [options]
+Usage: mdsp sdi-data-types|sdy [options]
 
 manage data types for SDI *
 

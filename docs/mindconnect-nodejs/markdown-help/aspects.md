@@ -38,7 +38,7 @@ list, create or delete aspects *
 Parameter list:
 
 ```text
-Usage: mc aspects|asp [options]
+Usage: mdsp aspects|asp [options]
 
 list, create or delete aspects *
 

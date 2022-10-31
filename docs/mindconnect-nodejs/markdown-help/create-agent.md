@@ -38,14 +38,14 @@ create an agent in the mindsphere *
 Parameter list:
 
 ```text
-Usage: mc create-agent|ca [options]
+Usage: mdsp create-agent|ca [options]
 
 create an agent in the mindsphere *
 
 Options:
   -c, --config    config file for agent configuration
   -r, --cert [privatekey]      required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
-  -n, --agentname   agent name (default: "Agent1650765918889")
+  -n, --agentname   agent name (default: "Agent1667233104690")
   -p, --parentid     parent asset id
   -f, --profile       security profile [SHARED_SECRET|RSA_3072] (default: "SHARED_SECRET")
   -k, --passkey       passkey

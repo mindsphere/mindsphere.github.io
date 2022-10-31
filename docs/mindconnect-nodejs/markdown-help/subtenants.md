@@ -38,7 +38,7 @@ list, create or delete subtenants *
 Parameter list:
 
 ```text
-Usage: mc subtenants|st [options]
+Usage: mdsp subtenants|st [options]
 
 list, create or delete subtenants *
 

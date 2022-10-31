@@ -38,7 +38,7 @@ manage ontology jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-ontology-jobs|sdb [options]
+Usage: mdsp sdi-ontology-jobs|sdb [options]
 
 manage ontology jobs for SDI *
 

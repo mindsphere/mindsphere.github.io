@@ -38,15 +38,15 @@ list, get, or update (open edge) device status information *
 Parameter list:
 
 ```text
-Usage: mc oe-device-status|oeds [options]
+Usage: mdsp oe-device-status|oeds [options]
 
 list, get, or update (open edge) device status information *
 
 Options:
   -m, --mode [list|info|update|template]                                list | info | update | template (default: "list")
   -i, --deviceid                                              the device id
-  -t, --target [health|health-config-data|inventory|connection-status]  type of status information to retrieve or to update. [ health | health-config-data |
-                                                                        inventory | connection-status] (default: "health")
+  -t, --target [health|health-config-data|inventory|connection-status]  type of status information to retrieve or to update. [ health |
+                                                                        health-config-data | inventory | connection-status] (default: "health")
   -w, --softwaretype [APP|FIRMWARE]                                     software type [ APP | FIRMWARE ]
   -s, --softwareid                                          software id
   -f, --file                                                      openedge.*.mdsp.json file with update information definition

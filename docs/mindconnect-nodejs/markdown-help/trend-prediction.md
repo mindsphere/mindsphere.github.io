@@ -38,7 +38,7 @@ perform trend prediction (linear/polynomial) @
 Parameter list:
 
 ```text
-Usage: mc trend-prediction|tp [options]
+Usage: mdsp trend-prediction|tp [options]
 
 perform trend prediction (linear/polynomial) @
 

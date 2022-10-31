@@ -38,7 +38,7 @@ list, create or delete asset types *
 Parameter list:
 
 ```text
-Usage: mc asset-types|at [options]
+Usage: mdsp asset-types|at [options]
 
 list, create or delete asset types *
 

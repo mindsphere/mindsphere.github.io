@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp policy Command
+title: MindSphere CLI -  mdsp workorder Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,46 +7,46 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp policy Command
+# MindSphere CLI: mdsp workorder Command
 
 Syntax:
 
 ```bash
-mdsp policy
+mdsp workorder
 ```
 
 Help:
 
 ```bash
-mdsp policy --help
+mdsp workorder --help
 ```
 
 Alternative form:
 
 ```bash
-mc policy
+mc workorder
 ```
 
 (The CLI was using `mc` as default command name in older versions)
 
 ## Description
 
-list, create or delete policies *
+list, create or delete workorders *
 
 ## Usage
 
 Parameter list:
 
 ```text
-Usage: mdsp policy|po [options]
+Usage: mdsp workorder|wo [options]
 
-list, create or delete policies *
+list, create or delete workorders *
 
 Options:
   -m, --mode [list|create|update|delete|template|info]  list | create | update | delete | template | info (default: "list")
-  -f, --file                                      .mdsp.json file with policy definition (default: "policy.mdsp.json")
-  -n, --policy                                  the policy name
-  -i, --policyid                              the policy id
+  -f, --file                                      .mdsp.json file with workorder definition (default: "workorder.mdsp.json")
+  -n, --workorder                            the workorder name
+  -i, --handle                                  the workorder id
   -o, --overwrite                                       overwrite template file if it already exists
   -k, --passkey                                passkey
   -y, --retry                                   retry attempts before giving up (default: "3")
@@ -57,18 +57,18 @@ Options:
 
 ## Examples
 
-Here are some examples of how to use the `mdsp policy` command:
+Here are some examples of how to use the `mdsp workorder` command:
 
 ```text
 
   Examples:
 
-    mc policy --mode list 				list all policies
-    mc policy --mode template --policy  	create a template file for 
-    mc policy --mode create --file  		create policy 
-    mc policy --mode update --file  --policyid  	 update policy 
-    mc policy --mode info --policyid  	policy info for specified id
-    mc policy --mode delete --policyid  	delete policy with specified id
+    mc workorder --mode list 				list all workorders
+    mc workorder --mode template --workorder  	create a template file for 
+    mc workorder --mode create --file  		create workorder 
+    mc workorder --mode update --file  --handle  	 update workorder 
+    mc workorder --mode info --handle  	workorder info for specified id
+    mc workorder --mode delete --handle  	delete workorder with specified id
 
 ```
 

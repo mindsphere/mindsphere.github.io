@@ -38,7 +38,7 @@ manage data queries for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-data-queries|sdq [options]
+Usage: mdsp sdi-data-queries|sdq [options]
 
 manage data queries for SDI *
 

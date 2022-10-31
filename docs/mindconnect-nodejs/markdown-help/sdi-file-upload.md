@@ -38,7 +38,7 @@ upload file to SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-file-upload|sdu [options]
+Usage: mdsp sdi-file-upload|sdu [options]
 
 upload file to SDI *
 

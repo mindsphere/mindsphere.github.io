@@ -38,7 +38,7 @@ manage data registries for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-data-registries|sdr [options]
+Usage: mdsp sdi-data-registries|sdr [options]
 
 manage data registries for SDI *
 

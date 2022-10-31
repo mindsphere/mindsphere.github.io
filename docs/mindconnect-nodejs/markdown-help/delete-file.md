@@ -38,7 +38,7 @@ delete the file from mindsphere file service *
 Parameter list:
 
 ```text
-Usage: mc delete-file|de [options]
+Usage: mdsp delete-file|de [options]
 
 delete the file from mindsphere file service *
 

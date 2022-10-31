@@ -38,7 +38,7 @@ manage iot data registries for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-iot-registries|sdt [options]
+Usage: mdsp sdi-iot-registries|sdt [options]
 
 manage iot data registries for SDI *
 

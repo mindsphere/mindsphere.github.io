@@ -38,7 +38,7 @@ search SDI schemas *
 Parameter list:
 
 ```text
-Usage: mc sdi-search-schemas|sds [options]
+Usage: mdsp sdi-search-schemas|sds [options]
 
 search SDI schemas *
 

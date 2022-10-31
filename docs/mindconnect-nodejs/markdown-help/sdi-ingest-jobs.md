@@ -38,7 +38,7 @@ manage ingest jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-ingest-jobs|sdj [options]
+Usage: mdsp sdi-ingest-jobs|sdj [options]
 
 manage ingest jobs for SDI *
 

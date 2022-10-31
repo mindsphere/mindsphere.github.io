@@ -38,7 +38,7 @@ creates a starter project in javascript #
 Parameter list:
 
 ```text
-Usage: mc starter-js|sj [options]
+Usage: mdsp starter-js|sj [options]
 
 creates a starter project in javascript #
 

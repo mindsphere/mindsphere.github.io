@@ -38,7 +38,7 @@ starts mindsphere development proxy & (optional passkey) *
 Parameter list:
 
 ```text
-Usage: mc dev-proxy|px [options]
+Usage: mdsp dev-proxy|px [options]
 
 starts mindsphere development proxy & (optional passkey) *
 

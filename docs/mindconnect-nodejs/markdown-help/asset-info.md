@@ -38,7 +38,7 @@ get infos about asset *
 Parameter list:
 
 ```text
-Usage: mc asset-info|ai [options]
+Usage: mdsp asset-info|ai [options]
 
 get infos about asset *
 

@@ -38,7 +38,7 @@ lock/unlock asset model modifications *
 Parameter list:
 
 ```text
-Usage: mc asset-lock|lck [options]
+Usage: mdsp asset-lock|lck [options]
 
 lock/unlock asset model modifications *
 

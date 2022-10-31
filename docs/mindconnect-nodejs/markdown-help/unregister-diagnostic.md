@@ -38,7 +38,7 @@ unregister agent from diagnostic *
 Parameter list:
 
 ```text
-Usage: mc unregister-diagnostic|ud [options]
+Usage: mdsp unregister-diagnostic|ud [options]
 
 unregister agent from diagnostic *
 

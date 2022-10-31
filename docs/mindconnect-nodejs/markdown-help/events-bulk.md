@@ -38,7 +38,7 @@ download or delete the events in bulk *
 Parameter list:
 
 ```text
-Usage: mc events-bulk|dn [options]
+Usage: mdsp events-bulk|dn [options]
 
 download or delete the events in bulk *
 

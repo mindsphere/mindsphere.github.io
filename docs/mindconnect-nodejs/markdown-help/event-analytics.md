@@ -38,7 +38,7 @@ analyze mindsphere events @
 Parameter list:
 
 ```text
-Usage: mc event-analytics|ea [options]
+Usage: mdsp event-analytics|ea [options]
 
 analyze mindsphere events @
 
@@ -46,8 +46,8 @@ Options:
   -m, --mode [count|filter|duplicate|top]  mode see @ Additional Documentation (default: "top")
   -f, --file                         events file
   -o, --output                     result mode.ea.mdsp.json
-  -t, --type [timeseries|event]            event analytics can be used on both timeseries (with string properties as event names) and event formats (default:
-                                           "event")
+  -t, --type [timeseries|event]            event analytics can be used on both timeseries (with string properties as event names) and event
+                                           formats (default: "event")
   -p, --property                 property name used for grouping and counting (default: "description")
   -l, --filterlist             filter events (default: "[]")
   -x, --top                           number of events (for top mode) (default: "10")

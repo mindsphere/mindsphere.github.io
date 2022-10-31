@@ -38,7 +38,7 @@ list, create or delete (open edge) devices *
 Parameter list:
 
 ```text
-Usage: mc oe-devices|oed [options]
+Usage: mdsp oe-devices|oed [options]
 
 list, create or delete (open edge) devices *
 

@@ -38,7 +38,7 @@ creates a template directory for timeseries (bulk) upload *
 Parameter list:
 
 ```text
-Usage: mc prepare-bulk|pb [options]
+Usage: mdsp prepare-bulk|pb [options]
 
 creates a template directory for timeseries (bulk) upload *
 

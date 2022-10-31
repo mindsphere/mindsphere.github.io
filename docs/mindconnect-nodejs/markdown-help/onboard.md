@@ -38,7 +38,7 @@ onboard the agent with configuration stored in the config file
 Parameter list:
 
 ```text
-Usage: mc onboard|ob [options]
+Usage: mdsp onboard|ob [options]
 
 onboard the agent with configuration stored in the config file
 
