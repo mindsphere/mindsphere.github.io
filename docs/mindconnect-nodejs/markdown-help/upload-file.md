@@ -38,7 +38,7 @@ upload the file to the mindsphere file service (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mc upload-file|uf [options]
+Usage: mdsp upload-file|uf [options]
 
 upload the file to the mindsphere file service (optional: passkey) *
 

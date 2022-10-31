@@ -38,13 +38,13 @@ list, upload, download and manage data exchange files and directories *
 Parameter list:
 
 ```text
-Usage: mc data-exchange|dx [options]
+Usage: mdsp data-exchange|dx [options]
 
 list, upload, download and manage data exchange files and directories *
 
 Options:
-  -m, --mode [list|info|download|upload|rename|delete|renamedir|mkdir|rmdir]  mode [list | info | download | upload | rename | renamedir | delete | mkdir |
-                                                                              rmdir ] (default: "list")
+  -m, --mode [list|info|download|upload|rename|delete|renamedir|mkdir|rmdir]  mode [list | info | download | upload | rename | renamedir |
+                                                                              delete | mkdir | rmdir ] (default: "list")
   -f, --file                                                            file path
   -n, --dirname                                                      directory name for --mode mkdir command
   -w, --newname                                                      new file or directory name for --mode rename or renamedir command

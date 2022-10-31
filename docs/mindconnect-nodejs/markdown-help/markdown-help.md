@@ -38,7 +38,7 @@ generates folder with markdown help commands for the CLI*
 Parameter list:
 
 ```text
-Usage: mc markdown-help|mdhelp [options]
+Usage: mdsp markdown-help|mdhelp [options]
 
 generates folder with markdown help commands for the CLI*
 

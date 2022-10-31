@@ -77,6 +77,7 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp events`](../markdown-help/events.html) |  list, create or delete events * |
 | [`mdsp events-bulk`](../markdown-help/events-bulk.html) |  download or delete the events in bulk * |
 | [`mdsp aggregates`](../markdown-help/aggregates.html) |  list timeseries aggregates * |
+| [`mdsp timeseries`](../markdown-help/timeseries.html) |  list timeseries * |
 | [`mdsp notifications`](../markdown-help/notifications.html) |  send email, sms and push notifications * |
 
 ## MindSphere Open Edge Device Management Commands
@@ -134,13 +135,14 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp sdi-ontologies`](../markdown-help/sdi-ontologies.html) |  manage ontologies for SDI * |
 | [`mdsp sdi-ontology-jobs`](../markdown-help/sdi-ontology-jobs.html) |  manage ontology jobs for SDI * |
 
-## Mobile Apps and Message Broker Commands
+## Mobile Apps, Message Broker, Workorder Commands
 
 | Command     | Description |
 | ----------- | ----------- |
 | [`mdsp mobile-apps`](../markdown-help/mobile-apps.html) |  list, create or delete mobile apps * |
 | [`mdsp mobile-app-instances`](../markdown-help/mobile-app-instances.html) |  list, create or delete mobile app instances * |
 | [`mdsp message-broker`](../markdown-help/message-broker.html) |  manage message broker subscriptions and webhooks * |
+| [`mdsp workorder`](../markdown-help/workorder.html) |  list workorders * |
 
 ## Data Analytics Commands
 

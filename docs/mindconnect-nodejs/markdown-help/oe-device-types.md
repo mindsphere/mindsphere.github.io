@@ -38,7 +38,7 @@ list, create or delete device types (open edge) *
 Parameter list:
 
 ```text
-Usage: mc oe-device-types|oedt [options]
+Usage: mdsp oe-device-types|oedt [options]
 
 list, create or delete device types (open edge) *
 

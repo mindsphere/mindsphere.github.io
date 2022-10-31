@@ -38,7 +38,7 @@ delete asset with id  from mindsphere *
 Parameter list:
 
 ```text
-Usage: mc delete-asset|da [options]
+Usage: mdsp delete-asset|da [options]
 
 delete asset with id  from mindsphere *
 

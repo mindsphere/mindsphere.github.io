@@ -38,7 +38,7 @@ create or delete tenant legal configuration and logo *
 Parameter list:
 
 ```text
-Usage: mc tenant|ti [options]
+Usage: mdsp tenant|ti [options]
 
 create or delete tenant legal configuration and logo *
 

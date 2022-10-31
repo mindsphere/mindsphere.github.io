@@ -38,7 +38,7 @@ list, create, configure or delete app instance (open edge) *
 Parameter list:
 
 ```text
-Usage: mc oe-app-inst|oeai [options]
+Usage: mdsp oe-app-inst|oeai [options]
 
 list, create, configure or delete app instance (open edge) *
 

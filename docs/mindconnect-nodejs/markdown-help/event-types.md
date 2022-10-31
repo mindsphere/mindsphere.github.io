@@ -38,7 +38,7 @@ list, create or delete event types *
 Parameter list:
 
 ```text
-Usage: mc event-types|et [options]
+Usage: mdsp event-types|et [options]
 
 list, create or delete event types *
 

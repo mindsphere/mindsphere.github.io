@@ -38,7 +38,7 @@ create data source configuration and mappings (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mc configure-agent|co [options]
+Usage: mdsp configure-agent|co [options]
 
 create data source configuration and mappings (optional: passkey) *
 

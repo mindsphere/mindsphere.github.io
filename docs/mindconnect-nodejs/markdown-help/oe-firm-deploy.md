@@ -38,7 +38,7 @@ list, create, update firmware deployment task(s) (open edge) *
 Parameter list:
 
 ```text
-Usage: mc oe-firm-deploy|oefd [options]
+Usage: mdsp oe-firm-deploy|oefd [options]
 
 list, create, update firmware deployment task(s) (open edge) *
 

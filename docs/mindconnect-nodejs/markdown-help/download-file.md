@@ -38,7 +38,7 @@ download the file from mindsphere file service *
 Parameter list:
 
 ```text
-Usage: mc download-file|df [options]
+Usage: mdsp download-file|df [options]
 
 download the file from mindsphere file service *
 

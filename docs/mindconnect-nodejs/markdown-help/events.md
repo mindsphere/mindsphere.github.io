@@ -38,7 +38,7 @@ list, create or delete events *
 Parameter list:
 
 ```text
-Usage: mc events|ev [options]
+Usage: mdsp events|ev [options]
 
 list, create or delete events *
 

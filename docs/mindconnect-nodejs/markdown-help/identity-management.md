@@ -38,7 +38,7 @@ manage mindsphere users, groups and roles *
 Parameter list:
 
 ```text
-Usage: mc identity-management|iam [options]
+Usage: mdsp identity-management|iam [options]
 
 manage mindsphere users, groups and roles *
 

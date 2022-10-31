@@ -38,7 +38,7 @@ displays the agent token for use in other tools (e.g. postman)
 Parameter list:
 
 ```text
-Usage: mc agent-token|atk [options]
+Usage: mdsp agent-token|atk [options]
 
 displays the agent token for use in other tools (e.g. postman)
 

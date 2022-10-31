@@ -38,7 +38,7 @@ displays the service token for use in other tools (e.g. postman) *
 Parameter list:
 
 ```text
-Usage: mc service-token|stk [options]
+Usage: mdsp service-token|stk [options]
 
 displays the service token for use in other tools (e.g. postman) *
 

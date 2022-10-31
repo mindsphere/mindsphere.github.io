@@ -38,12 +38,13 @@ list, create or delete analytic models *
 Parameter list:
 
 ```text
-Usage: mc models|ml [options]
+Usage: mdsp models|ml [options]
 
 list, create or delete analytic models *
 
 Options:
-  -m, --mode [list|create|delete|update|info|download|template]  mode [list | create | delete | update | info | download| template] (default: "list")
+  -m, --mode [list|create|delete|update|info|download|template]  mode [list | create | delete | update | info | download| template] (default:
+                                                                 "list")
   -n, --modelname                                     modelname
   -t, --modeltype                                     modeltype
   -d, --modeldesc                                     modeldesc (default: "created with mindsphere CLI")

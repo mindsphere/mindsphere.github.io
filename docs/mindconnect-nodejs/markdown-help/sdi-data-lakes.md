@@ -38,7 +38,7 @@ manage data lakes for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-data-lakes|sdl [options]
+Usage: mdsp sdi-data-lakes|sdl [options]
 
 manage data lakes for SDI *
 

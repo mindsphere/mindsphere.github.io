@@ -38,7 +38,7 @@ manage ontologies for SDI *
 Parameter list:
 
 ```text
-Usage: mc sdi-ontologies|sdo [options]
+Usage: mdsp sdi-ontologies|sdo [options]
 
 manage ontologies for SDI *
 

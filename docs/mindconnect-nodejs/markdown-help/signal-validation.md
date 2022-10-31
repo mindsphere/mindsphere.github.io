@@ -38,7 +38,7 @@ perform signal validation @
 Parameter list:
 
 ```text
-Usage: mc signal-validation|sv [options]
+Usage: mdsp signal-validation|sv [options]
 
 perform signal validation @
 

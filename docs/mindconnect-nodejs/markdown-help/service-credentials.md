@@ -38,7 +38,7 @@ provide login for commands which require technical user credentials *
 Parameter list:
 
 ```text
-Usage: mc service-credentials|sc [options]
+Usage: mdsp service-credentials|sc [options]
 
 provide login for commands which require technical user credentials *
 

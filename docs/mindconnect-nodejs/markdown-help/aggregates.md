@@ -38,26 +38,27 @@ list timeseries aggregates *
 Parameter list:
 
 ```text
-Usage: mc aggregates|ag [options]
+Usage: mdsp aggregates|ag [options]
 
 list timeseries aggregates *
 
 Options:
   -i, --assetid               mindsphere asset id
   -n, --aspectname         mindsphere aspect name
-  -f, --from                     begining of the time range to read
+  -f, --from                     begining of the time range to read (default: "2022-10-30T16:18:24.351Z")
   -t, --to                         end of the time range to read
   -r, --intervalvalue   interval duration for the aggregates in interval units
   -u, --intervalunit     interval duration unit [minute |hour |day |week | month]
   -s, --select                 comma separated list of variable names
-  -d, --download             download aggregates to specified file
+  -d, --download [download]            download aggregates to specified file
   -a, --all                            show all aggregates not just average, min, max, sum and sd
   -l, --local                          use localtime in aggregate list
   -c, --count                   number of aggregates in response
+  -h, --formatted                      write JSON strings with indentation
   -p, --passkey               passkey
   -y, --retry                  retry attempts before giving up (default: "3")
   -v, --verbose                        verbose output
-  -h, --help                           display help for command
+  --help                               display help for command
 
 ```
 
@@ -74,6 +75,13 @@ Here are some examples of how to use the `mdsp aggregates` command:
 									list recent temperature aggregates 
     mc aggregates --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
 									list all recent temperature aggregates
+    mc aggregates --asssetid 1234567..ef --aspectname Environment --intervalunit hour --intervalvalue 2 
+									list all recent temperatre aggregates over every 2 hours
+
+  Important:
+
+    see https://documentation.mindsphere.io/MindSphere/apis/iot-iottsaggregates/api-iottsaggregates-samples-v4.html for documentation about the aggregate parameters
+
 
 ```
 

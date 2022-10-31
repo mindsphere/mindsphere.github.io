@@ -38,7 +38,7 @@ calculate kpi states or compute kpis @
 Parameter list:
 
 ```text
-Usage: mc kpi-calculation|kp [options]
+Usage: mdsp kpi-calculation|kp [options]
 
 calculate kpi states or compute kpis @
 

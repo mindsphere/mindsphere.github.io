@@ -38,7 +38,7 @@ creates a starter project in typescript #
 Parameter list:
 
 ```text
-Usage: mc starter-ts|st [options]
+Usage: mdsp starter-ts|st [options]
 
 creates a starter project in typescript #
 

@@ -38,7 +38,7 @@ list, create or delete mobile apps *
 Parameter list:
 
 ```text
-Usage: mc mobile-apps|mb [options]
+Usage: mdsp mobile-apps|mb [options]
 
 list, create or delete mobile apps *
 

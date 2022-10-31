@@ -38,7 +38,7 @@ register agent for diagnostic *
 Parameter list:
 
 ```text
-Usage: mc register-diagnostic|rd [options]
+Usage: mdsp register-diagnostic|rd [options]
 
 register agent for diagnostic *
 

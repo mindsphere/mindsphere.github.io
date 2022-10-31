@@ -38,7 +38,7 @@ runs the timeseries (bulk) upload job from  directory *
 Parameter list:
 
 ```text
-Usage: mc run-bulk|rb [options]
+Usage: mdsp run-bulk|rb [options]
 
 runs the timeseries (bulk) upload job from  directory *
 

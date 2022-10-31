@@ -38,7 +38,7 @@ list, create or stop jobs *
 Parameter list:
 
 ```text
-Usage: mc jobs|jb [options]
+Usage: mdsp jobs|jb [options]
 
 list, create or stop jobs *
 

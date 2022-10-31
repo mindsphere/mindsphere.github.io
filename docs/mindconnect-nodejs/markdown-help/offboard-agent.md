@@ -38,7 +38,7 @@ offboards the agent in the mindsphere *
 Parameter list:
 
 ```text
-Usage: mc offboard-agent|of [options]
+Usage: mdsp offboard-agent|of [options]
 
 offboards the agent in the mindsphere *
 
