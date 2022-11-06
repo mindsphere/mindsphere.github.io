@@ -25,7 +25,7 @@ It implements support for both frontend (browser e.g. angular, react...) and bac
 
 The SDK implements the Clients for following APIs:
 
-### Platform Core APIs
+## Platform Core APIs
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ The SDK implements the Clients for following APIs:
 
 <sup>2</sup> Message Broker is only available on preview tenants
 
-### IoT and Storage
+## IoT and Storage
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ The SDK implements the Clients for following APIs:
 | IoT TS Bulk  | :heavy_check_mark: | :heavy_check_mark: |
 | Integrated Data Lake  | :heavy_check_mark: | :heavy_check_mark: |
 
-### Connectivity
+## Connectivity
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ The SDK implements the Clients for following APIs:
 | Commanding API (sync) | :heavy_check_mark: | :heavy_check_mark: |
 | OPC UA PubSub    |  | :heavy_check_mark: |
 
-### Advanced Services
+## Advanced Services
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ The SDK implements the Clients for following APIs:
 | WorkOrder Management   | :heavy_check_mark: | :heavy_check_mark: |
 | Visual Flow Creator    | :heavy_check_mark: | :heavy_check_mark: |
 
-### Analytics Services
+## Analytics Services
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ The SDK implements the Clients for following APIs:
 | Spectrum Analysis   | :heavy_check_mark: | :heavy_check_mark: |
 | Trend Prediction   | :heavy_check_mark: | :heavy_check_mark: |
 
-### MindConnect Open Edge
+## MindConnect Open Edge
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ The SDK implements the Clients for following APIs:
 | Edge App Instance Management   | :heavy_check_mark: | :heavy_check_mark:  |
 | Firmware Deployment   | :heavy_check_mark: | :heavy_check_mark:  |
 
-### Semantic Data Interconnect
+## Semantic Data Interconnect
 
 | Name |SDK - Client | Command |
 | --- | --- | --- |
