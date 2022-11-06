@@ -38,7 +38,7 @@ list, create or delete event types *
 Parameter list:
 
 ```text
-Usage: mdsp event-types|et [options]
+Usage: mc event-types|et [options]
 
 list, create or delete event types *
 
@@ -65,11 +65,11 @@ Here are some examples of how to use the `mdsp event-types` command:
 
   Examples:
 
-    mc event-types --mode list 					 list all event types
-    mc event-types --mode list --eventtype PumpEvent		 list all event types which are named PumpEvent
-    mc event-types --mode template --eventtype PumpEvent 
+    mdsp event-types --mode list 					 list all event types
+    mdsp event-types --mode list --eventtype PumpEvent		 list all event types which are named PumpEvent
+    mdsp event-types --mode template --eventtype PumpEvent 
 	create a template file (PumpEvent.eventtype.mdsp.json) for event type PumpEvent
-    mc event-types --mode create --file PumpEvent.eventtype.mdsp.json 
+    mdsp event-types --mode create --file PumpEvent.eventtype.mdsp.json 
 	create event type PumpEvent in MindSphere
 
 ```

@@ -38,7 +38,7 @@ list, create or delete aspects *
 Parameter list:
 
 ```text
-Usage: mdsp aspects|asp [options]
+Usage: mc aspects|asp [options]
 
 list, create or delete aspects *
 
@@ -69,17 +69,17 @@ Here are some examples of how to use the `mdsp aspects` command:
 
   Examples:
 
-    mc aspects --mode list 					 list all aspect types
-    mc aspects --mode list --aspect Environment		 list all aspect types which are named Environment
-    mc aspects --mode template --aspect Environment 
+    mdsp aspects --mode list 					 list all aspect types
+    mdsp aspects --mode list --aspect Environment		 list all aspect types which are named Environment
+    mdsp aspects --mode template --aspect Environment 
 	create a template file (Enironment.aspect.mdsp.json) for aspect Environment
-    mc aspects --mode create --file Environment.aspects.mdsp.json 
+    mdsp aspects --mode create --file Environment.aspects.mdsp.json 
 	create aspect type Environment in MindSphere
-    mc aspects --mode convert --schema Environment.schema.json --aspect Environment 
+    mdsp aspects --mode convert --schema Environment.schema.json --aspect Environment 
 	 create a template file for aspect type Environment from JSON schema
-    mc aspects --mode convert --schema Environment.schema.json --aspect Environment --prefixflattened 
+    mdsp aspects --mode convert --schema Environment.schema.json --aspect Environment --prefixflattened 
 	 prefixes the variable names with parent object names (e.g. Environment_Temperature)
-    mc aspects --mode convert --schema Environment.schema.json --aspect Environment --targetonly 
+    mdsp aspects --mode convert --schema Environment.schema.json --aspect Environment --targetonly 
 	 select only variables from json schema with target property equal to assettype
 
 ```

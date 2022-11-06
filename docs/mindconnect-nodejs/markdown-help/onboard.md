@@ -38,7 +38,7 @@ onboard the agent with configuration stored in the config file
 Parameter list:
 
 ```text
-Usage: mdsp onboard|ob [options]
+Usage: mc onboard|ob [options]
 
 onboard the agent with configuration stored in the config file
 
@@ -59,9 +59,9 @@ Here are some examples of how to use the `mdsp onboard` command:
 
   Examples:
 
-    mc ob   				uses default agentconfig.json
-    mc onboard --config agent.json 	uses specified configuration file
-    mc onboard --config agent.json --cert private.key 	uses specified key for RSA_3072 profile
+    mdsp ob   				uses default agentconfig.json
+    mdsp onboard --config agent.json 	uses specified configuration file
+    mdsp onboard --config agent.json --cert private.key 	uses specified key for RSA_3072 profile
 
 ```
 

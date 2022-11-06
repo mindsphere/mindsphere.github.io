@@ -38,7 +38,7 @@ list, create/instantiate, update or delete/cancel workflow deployment model or i
 Parameter list:
 
 ```text
-Usage: mdsp oe-deploy-workflow|oedw [options]
+Usage: mc oe-deploy-workflow|oedw [options]
 
 list, create/instantiate, update or delete/cancel workflow deployment model or instance(s) (open edge) *
 
@@ -69,18 +69,18 @@ Here are some examples of how to use the `mdsp oe-deploy-workflow` command:
 
   Examples:
 
-    mc oe-deploy-workflow --mode list 			list all workflow instances descriptions belonging to the caller's tenant.
-    mc oe-deploy-workflow --mode template 		create a template files to define the workflow state machine model.
-    mc oe-deploy-workflow --mode create --file edge.app.model.mdsp.json 
+    mdsp oe-deploy-workflow --mode list 			list all workflow instances descriptions belonging to the caller's tenant.
+    mdsp oe-deploy-workflow --mode template 		create a template files to define the workflow state machine model.
+    mdsp oe-deploy-workflow --mode create --file edge.app.model.mdsp.json 
 	creates a new workflow model from template file.
-    mc oe-deploy-workflow --mode instantiate --file edge.app.instance.mdsp.json 
+    mdsp oe-deploy-workflow --mode instantiate --file edge.app.instance.mdsp.json 
 	creates a new workflow instance from template file.
-    mc oe-deploy-workflow --mode update --id "7d018c..." --file edge.app.status.mdsp.json 
+    mdsp oe-deploy-workflow --mode update --id "7d018c..." --file edge.app.status.mdsp.json 
 	update a workflow instance.
-    mc oe-deploy-workflow --mode info --id 		get details of a deployment workflow instance.
-    mc oe-deploy-workflow --mode info --key 	get details of a deployment workflow model.
-    mc oe-deploy-workflow --mode cancel --id  	cancel a deployment workflow.
-    mc oe-deploy-workflow --mode delete --key  	delete a deployment workflow model.
+    mdsp oe-deploy-workflow --mode info --id 		get details of a deployment workflow instance.
+    mdsp oe-deploy-workflow --mode info --key 	get details of a deployment workflow model.
+    mdsp oe-deploy-workflow --mode cancel --id  	cancel a deployment workflow.
+    mdsp oe-deploy-workflow --mode delete --key  	delete a deployment workflow model.
 
 ```
 

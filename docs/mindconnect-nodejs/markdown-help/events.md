@@ -38,7 +38,7 @@ list, create or delete events *
 Parameter list:
 
 ```text
-Usage: mdsp events|ev [options]
+Usage: mc events|ev [options]
 
 list, create or delete events *
 
@@ -68,13 +68,13 @@ Here are some examples of how to use the `mdsp events` command:
 
   Examples:
 
-    mc events --mode list 				 list last  events (default:100)
-    mc events --mode list --eventtype PumpEvent		 list last  PumpEvents (default: 100)
-    mc events --mode info --eventid 		 get info about event with specified id
-    mc events --mode delete --eventid 		 delete event with specified id
-    mc events --mode filtertemplate 			 create filter template for --mode list command
-    mc events --mode template --eventtype PumpEvent 	 create a template file for event 
-    mc events --mode create --file PumpEvent.eventtype.mdsp.json 	 create event
+    mdsp events --mode list 				 list last  events (default:100)
+    mdsp events --mode list --eventtype PumpEvent		 list last  PumpEvents (default: 100)
+    mdsp events --mode info --eventid 		 get info about event with specified id
+    mdsp events --mode delete --eventid 		 delete event with specified id
+    mdsp events --mode filtertemplate 			 create filter template for --mode list command
+    mdsp events --mode template --eventtype PumpEvent 	 create a template file for event 
+    mdsp events --mode create --file PumpEvent.eventtype.mdsp.json 	 create event
 
 ```
 

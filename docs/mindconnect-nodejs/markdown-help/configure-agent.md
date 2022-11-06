@@ -38,7 +38,7 @@ create data source configuration and mappings (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mdsp configure-agent|co [options]
+Usage: mc configure-agent|co [options]
 
 create data source configuration and mappings (optional: passkey) *
 
@@ -66,13 +66,13 @@ Here are some examples of how to use the `mdsp configure-agent` command:
 
   Examples:
 
-    mc configure-agent --config agent.json -assetid 1234567...89 	configures agent for specified assetid
-    mc configure-agent --config agent.json --mode print 		prints data source configuration and mappings
-    mc configure-agent --agentid 12345..ef --typeid .Engine  	creates the data source configuration
-    mc configure-agent --mode map --agentid 12345..ef --assetid 1234567 creates the mappings for assetid
-    mc configure-agent --mode delete --agentid 12345..ef 		deletes the mappings for agentid
-    mc configure-agent --config agent.json --mode test 			sends test data to mindsphere
-    mc configure-agent --mode template \
+    mdsp configure-agent --config agent.json -assetid 1234567...89 	configures agent for specified assetid
+    mdsp configure-agent --config agent.json --mode print 		prints data source configuration and mappings
+    mdsp configure-agent --agentid 12345..ef --typeid .Engine  	creates the data source configuration
+    mdsp configure-agent --mode map --agentid 12345..ef --assetid 1234567 creates the mappings for assetid
+    mdsp configure-agent --mode delete --agentid 12345..ef 		deletes the mappings for agentid
+    mdsp configure-agent --config agent.json --mode test 			sends test data to mindsphere
+    mdsp configure-agent --mode template \
     	--typeid castidev.Pump --language python 			create mapping template and function in python
 
 ```

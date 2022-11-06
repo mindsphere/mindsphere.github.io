@@ -38,7 +38,7 @@ displays the service token for use in other tools (e.g. postman) *
 Parameter list:
 
 ```text
-Usage: mdsp service-token|stk [options]
+Usage: mc service-token|stk [options]
 
 displays the service token for use in other tools (e.g. postman) *
 
@@ -58,8 +58,8 @@ Here are some examples of how to use the `mdsp service-token` command:
 
   Examples:
 
-    mc service-token --passkey mypasskey 		displays the service token (encoded only)
-    mc service-token --passkey mypasskey --verbose 	displays the service token (encoded and decoded)
+    mdsp service-token --passkey mypasskey 		displays the service token (encoded only)
+    mdsp service-token --passkey mypasskey --verbose 	displays the service token (encoded and decoded)
 
 ```
 

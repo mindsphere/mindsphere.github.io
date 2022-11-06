@@ -38,7 +38,7 @@ offboards the agent in the mindsphere *
 Parameter list:
 
 ```text
-Usage: mdsp offboard-agent|of [options]
+Usage: mc offboard-agent|of [options]
 
 offboards the agent in the mindsphere *
 
@@ -60,8 +60,8 @@ Here are some examples of how to use the `mdsp offboard-agent` command:
 
   Examples:
 
-    mc offboard-agent --config agent.json --passkey passkey... 	 offboard agent with agent.json configuration
-    mc offboard-agent --agentid 12345..ef --passkey passkey... 	 offboard agent with 12345..ef agentid
+    mdsp offboard-agent --config agent.json --passkey passkey... 	 offboard agent with agent.json configuration
+    mdsp offboard-agent --agentid 12345..ef --passkey passkey... 	 offboard agent with 12345..ef agentid
 
 ```
 

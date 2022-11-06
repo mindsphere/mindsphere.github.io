@@ -38,7 +38,7 @@ delete asset with id  from mindsphere *
 Parameter list:
 
 ```text
-Usage: mdsp delete-asset|da [options]
+Usage: mc delete-asset|da [options]
 
 delete asset with id  from mindsphere *
 
@@ -59,7 +59,7 @@ Here are some examples of how to use the `mdsp delete-asset` command:
 
   Examples:
 
-    mc delete-asset --assetid 123456...ef 		delete asset with id 132456...ef
+    mdsp delete-asset --assetid 123456...ef 		delete asset with id 132456...ef
 
 ```
 

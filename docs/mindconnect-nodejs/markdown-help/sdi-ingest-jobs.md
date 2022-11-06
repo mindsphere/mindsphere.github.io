@@ -38,7 +38,7 @@ manage ingest jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-ingest-jobs|sdj [options]
+Usage: mc sdi-ingest-jobs|sdj [options]
 
 manage ingest jobs for SDI *
 
@@ -62,10 +62,10 @@ Here are some examples of how to use the `mdsp sdi-ingest-jobs` command:
 
   Examples:
 
-    mc sdi-ingest-jobs --mode list 					 list all sdi data ingest jobs
-    mc sdi-ingest-jobs --mode template 					 create template file
-    mc sdi-ingest-jobs --mode create --ingestjob  	 create sdi ingest job
-    mc sdi-ingest-jobs --mode info --jobid    			 get sdi ingest job info
+    mdsp sdi-ingest-jobs --mode list 					 list all sdi data ingest jobs
+    mdsp sdi-ingest-jobs --mode template 				 create template file
+    mdsp sdi-ingest-jobs --mode create --ingestjob  	 create sdi ingest job
+    mdsp sdi-ingest-jobs --mode info --jobid    			 get sdi ingest job info
 
 ```
 

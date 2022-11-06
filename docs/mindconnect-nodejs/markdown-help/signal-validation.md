@@ -38,7 +38,7 @@ perform signal validation @
 Parameter list:
 
 ```text
-Usage: mdsp signal-validation|sv [options]
+Usage: mc signal-validation|sv [options]
 
 perform signal validation @
 
@@ -69,9 +69,9 @@ Here are some examples of how to use the `mdsp signal-validation` command:
 
   Examples:
 
-    mc signal-validation --mode range --lowerlimit  -1 --upperlimit 1  	 performes the range validation for range [-1..1]
-    mc signal-validation -mode jumps --windowsize 12  			 searches for jumps in the data
-    mc signal-validation --mode interpolate --threshold 1000  		 interpolates a value for every gap > 1000ms
+    mdsp signal-validation --mode range --lowerlimit  -1 --upperlimit 1  	 performes the range validation for range [-1..1]
+    mdsp signal-validation -mode jumps --windowsize 12  			 searches for jumps in the data
+    mdsp signal-validation --mode interpolate --threshold 1000  		 interpolates a value for every gap > 1000ms
 
   Additional Documentation:
 

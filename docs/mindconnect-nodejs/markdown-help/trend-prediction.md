@@ -38,7 +38,7 @@ perform trend prediction (linear/polynomial) @
 Parameter list:
 
 ```text
-Usage: mdsp trend-prediction|tp [options]
+Usage: mc trend-prediction|tp [options]
 
 perform trend prediction (linear/polynomial) @
 
@@ -66,13 +66,13 @@ Here are some examples of how to use the `mdsp trend-prediction` command:
 
   Examples:
 
-    mc trend-prediction --mode list 				 lists all trend prediction models
-    mc trend-prediction --mode get --modelid 12345..ef 		 retrieves the trend prediction model from the mindsphere
-    mc trend-prediction --mode delete --modelid 12345..ef 	 deletes the trend prediction model from the mindsphere
-    mc tp --mode trendandpredict 				 training and prediction in one single step (see parameters below)
+    mdsp trend-prediction --mode list 				 lists all trend prediction models
+    mdsp trend-prediction --mode get --modelid 12345..ef 		 retrieves the trend prediction model from the mindsphere
+    mdsp trend-prediction --mode delete --modelid 12345..ef 	 deletes the trend prediction model from the mindsphere
+    mdsp tp --mode trendandpredict 				 training and prediction in one single step (see parameters below)
 
-    mc tp --mode train -f data.json -i "temp,vibration" -o "quality" -d 2 		   trains quadratic fit function for f(temp, vibration) = quality 
-    mc tp --mode predict --modelid 12345..ef -i "temp,vibration" -o "quality" -p "30,0.01" predict the quality with temp=30, vibration=0.01 using trained model
+    mdsp tp --mode train -f data.json -i "temp,vibration" -o "quality" -d 2 		   trains quadratic fit function for f(temp, vibration) = quality 
+    mdsp tp --mode predict --modelid 12345..ef -i "temp,vibration" -o "quality" -p "30,0.01" predict the quality with temp=30, vibration=0.01 using trained model
 
   Additional Documentation:
 

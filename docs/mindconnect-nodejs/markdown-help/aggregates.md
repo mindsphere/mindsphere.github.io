@@ -38,14 +38,14 @@ list timeseries aggregates *
 Parameter list:
 
 ```text
-Usage: mdsp aggregates|ag [options]
+Usage: mc aggregates|ag [options]
 
 list timeseries aggregates *
 
 Options:
   -i, --assetid               mindsphere asset id
   -n, --aspectname         mindsphere aspect name
-  -f, --from                     begining of the time range to read (default: "2022-10-30T16:18:24.351Z")
+  -f, --from                     begining of the time range to read (default: "2022-11-05T01:51:16.065Z")
   -t, --to                         end of the time range to read
   -r, --intervalvalue   interval duration for the aggregates in interval units
   -u, --intervalunit     interval duration unit [minute |hour |day |week | month]
@@ -70,12 +70,12 @@ Here are some examples of how to use the `mdsp aggregates` command:
 
   Examples:
 
-    mc aggregates --asssetid 1234567..ef --aspectname Environment   	list recent aggregates for aspect Environment
-    mc aggregates --asssetid 1234567..ef --aspectname Environment --select Temperature 
+    mdsp aggregates --asssetid 1234567..ef --aspectname Environment   	list recent aggregates for aspect Environment
+    mdsp aggregates --asssetid 1234567..ef --aspectname Environment --select Temperature 
 									list recent temperature aggregates 
-    mc aggregates --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
+    mdsp aggregates --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
 									list all recent temperature aggregates
-    mc aggregates --asssetid 1234567..ef --aspectname Environment --intervalunit hour --intervalvalue 2 
+    mdsp aggregates --asssetid 1234567..ef --aspectname Environment --intervalunit hour --intervalvalue 2 
 									list all recent temperatre aggregates over every 2 hours
 
   Important:

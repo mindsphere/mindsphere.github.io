@@ -38,7 +38,7 @@ list, create or delete policies *
 Parameter list:
 
 ```text
-Usage: mdsp policy|po [options]
+Usage: mc policy|po [options]
 
 list, create or delete policies *
 
@@ -63,12 +63,12 @@ Here are some examples of how to use the `mdsp policy` command:
 
   Examples:
 
-    mc policy --mode list 				list all policies
-    mc policy --mode template --policy  	create a template file for 
-    mc policy --mode create --file  		create policy 
-    mc policy --mode update --file  --policyid  	 update policy 
-    mc policy --mode info --policyid  	policy info for specified id
-    mc policy --mode delete --policyid  	delete policy with specified id
+    mdsp policy --mode list 				list all policies
+    mdsp policy --mode template --policy  	create a template file for 
+    mdsp policy --mode create --file  		create policy 
+    mdsp policy --mode update --file  --policyid  	 update policy 
+    mdsp policy --mode info --policyid  	policy info for specified id
+    mdsp policy --mode delete --policyid  	delete policy with specified id
 
 ```
 

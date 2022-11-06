@@ -38,7 +38,7 @@ list, create, start, stop or delete job schedules *
 Parameter list:
 
 ```text
-Usage: mdsp schedules|js [options]
+Usage: mc schedules|js [options]
 
 list, create, start, stop or delete job schedules *
 
@@ -66,14 +66,14 @@ Here are some examples of how to use the `mdsp schedules` command:
 
   Examples:
 
-    mc schedules --mode list 					 list all job schedules
-    mc schedules --mode list --status RUNNING 	 list all RUNNING job schedules
-    mc schedules --mode list --modelid  			 list all job schedules for specified model
-    mc schedules --mode template 					 create template file for job schedule creation
-    mc schedules --mode create --file  		 create job schedule
-    mc schedules --mode info --scheduleid  			 get infos about the job schedule
-    mc schedules --mode start --scheduleid  			 start job schedule with job id
-    mc schedules --mode stop --scheduleid  			 stop job schedule with job id
+    mdsp schedules --mode list 					 list all job schedules
+    mdsp schedules --mode list --status RUNNING 	 list all RUNNING job schedules
+    mdsp schedules --mode list --modelid  			 list all job schedules for specified model
+    mdsp schedules --mode template 					 create template file for job schedule creation
+    mdsp schedules --mode create --file  		 create job schedule
+    mdsp schedules --mode info --scheduleid  			 get infos about the job schedule
+    mdsp schedules --mode start --scheduleid  			 start job schedule with job id
+    mdsp schedules --mode stop --scheduleid  			 stop job schedule with job id
 
 ```
 

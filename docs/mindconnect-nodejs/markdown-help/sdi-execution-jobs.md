@@ -38,7 +38,7 @@ manage data execution jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-execution-jobs|sdx [options]
+Usage: mc sdi-execution-jobs|sdx [options]
 
 manage data execution jobs for SDI *
 
@@ -64,13 +64,13 @@ Here are some examples of how to use the `mdsp sdi-execution-jobs` command:
 
   Examples:
 
-    mc sdi-execution-jobs --mode list 		 list all sdi data execution jobs
-    mc sdi-execution-jobs --mode template 	 create template file
-    mc sdi-execution-jobs --mode create --executionjob  	 create sdi data execution job
-    mc sdi-execution-jobs --mode update --executionjob  --jobid                                                                                      		 update sdi data executionjob
-    mc sdi-execution-jobs --mode info --jobid    		 get sdi data execution job info
-    mc sdi-execution-jobs --mode result --jobid    		 get execution job results
-    mc sdi-execution-jobs --mode delete --jobid  		 delete sdi data execution job
+    mdsp sdi-execution-jobs --mode list 		 list all sdi data execution jobs
+    mdsp sdi-execution-jobs --mode template 	 create template file
+    mdsp sdi-execution-jobs --mode create --executionjob  	 create sdi data execution job
+    mdsp sdi-execution-jobs --mode update --executionjob  --jobid                                                                                      		 update sdi data executionjob
+    mdsp sdi-execution-jobs --mode info --jobid    		 get sdi data execution job info
+    mdsp sdi-execution-jobs --mode result --jobid    		 get execution job results
+    mdsp sdi-execution-jobs --mode delete --jobid  		 delete sdi data execution job
 
 ```
 

@@ -38,7 +38,7 @@ list, create or delete mobile apps *
 Parameter list:
 
 ```text
-Usage: mdsp mobile-apps|mb [options]
+Usage: mc mobile-apps|mb [options]
 
 list, create or delete mobile apps *
 
@@ -64,11 +64,11 @@ Here are some examples of how to use the `mdsp mobile-apps` command:
 
   Examples:
 
-    mc mobile-apps --mode list 					list mobile apps
-    mc mobile-apps --mode template --type [android|ios] 	create template file for mobileapp
-    mc mobile-apps --mode create --file [android|ios].mobileapp.mdsp.json	create mobileapp
-    mc mobile-apps --mode info --appid 			mobile app info
-    mc mobile-apps --mode delete --appid 		delete mobile app
+    mdsp mobile-apps --mode list 					list mobile apps
+    mdsp mobile-apps --mode template --type [android|ios] 	create template file for mobileapp
+    mdsp mobile-apps --mode create --file [android|ios].mobileapp.mdsp.json	create mobileapp
+    mdsp mobile-apps --mode info --appid 			mobile app info
+    mdsp mobile-apps --mode delete --appid 		delete mobile app
 
 ```
 

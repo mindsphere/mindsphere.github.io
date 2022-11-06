@@ -38,7 +38,7 @@ list, get, or update (open edge) device status information *
 Parameter list:
 
 ```text
-Usage: mdsp oe-device-status|oeds [options]
+Usage: mc oe-device-status|oeds [options]
 
 list, get, or update (open edge) device status information *
 
@@ -66,25 +66,25 @@ Here are some examples of how to use the `mdsp oe-device-status` command:
 
   Examples:
 
-    mc oe-device-status --mode list --deviceid 
+    mdsp oe-device-status --mode list --deviceid 
                             list all installed software on the device
-    mc oe-device-status --mode list --deviceid 12345... --softwaretype APP
+    mdsp oe-device-status --mode list --deviceid 12345... --softwaretype APP
                              list all apps installed on the device
-    mc oe-device-status --mode info --target health --deviceid 
+    mdsp oe-device-status --mode info --target health --deviceid 
                              get the device health status
-    mc oe-device-status --mode info --target health-config-data --deviceid 
+    mdsp oe-device-status --mode info --target health-config-data --deviceid 
                              get the device health config data
-    mc oe-device-status --mode info --target inventory --deviceid 
+    mdsp oe-device-status --mode info --target inventory --deviceid 
                              get the software inventory of the device
-    mc oe-device-status --mode info --target connection-status --deviceid 
+    mdsp oe-device-status --mode info --target connection-status --deviceid 
                              get the device connection status
-    mc oe-device-status --mode template --target inventory
+    mdsp oe-device-status --mode template --target inventory
                              create template file for software inventory
-    mc oe-device-status --mode template --target connection-status 
+    mdsp oe-device-status --mode template --target connection-status 
                              create template file for connection status
-    mc oe-device-status --mode update --target inventory --file openedge.inventory.mdsp.json --deviceid 
+    mdsp oe-device-status --mode update --target inventory --file openedge.inventory.mdsp.json --deviceid 
                              update the software inventory of the device
-    mc oe-device-status --mode update --target connection-status --deviceid 
+    mdsp oe-device-status --mode update --target connection-status --deviceid 
                              send a heartbeat to the device
 
 ```

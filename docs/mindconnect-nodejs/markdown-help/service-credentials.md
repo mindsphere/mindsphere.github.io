@@ -38,7 +38,7 @@ provide login for commands which require technical user credentials *
 Parameter list:
 
 ```text
-Usage: mdsp service-credentials|sc [options]
+Usage: mc service-credentials|sc [options]
 
 provide login for commands which require technical user credentials *
 
@@ -68,11 +68,11 @@ Here are some examples of how to use the `mdsp service-credentials` command:
 
   Example:
 
-    mc service-credentials --mode config 			 start configuration web server on http://localhost:4994
-    mc service-credentials --mode config --port 10000 		 start configuration web server on http://localhost:10000
-    mc service-credentials --mode list  			 list all configured credentials
-    mc service-credentials --mode select --index  	 select credentials with index  from the list
-    mc service-credentials --mode add --type APP ... 		 add new APP credentials
+    mdsp service-credentials --mode config 			 start configuration web server on http://localhost:4994
+    mdsp service-credentials --mode config --port 10000 	 start configuration web server on http://localhost:10000
+    mdsp service-credentials --mode list  			 list all configured credentials
+    mdsp service-credentials --mode select --index  	 select credentials with index  from the list
+    mdsp service-credentials --mode add --type APP ... 		 add new APP credentials
 
 ```
 

@@ -38,7 +38,7 @@ analyze mindsphere events @
 Parameter list:
 
 ```text
-Usage: mdsp event-analytics|ea [options]
+Usage: mc event-analytics|ea [options]
 
 analyze mindsphere events @
 
@@ -67,8 +67,8 @@ Here are some examples of how to use the `mdsp event-analytics` command:
 
   Examples:
 
-    mc event-analytics --mode top --file events.json --property description 		 find the top 10 events in events.json
-    mc event-analytics --mode duplicate --file events.json --property description --split 5000 		 remove all duplicate events
+    mdsp event-analytics --mode top --file events.json --property description 		 find the top 10 events in events.json
+    mdsp event-analytics --mode duplicate --file events.json --property description --split 5000 		 remove all duplicate events
 
   Additional Documentation:
 

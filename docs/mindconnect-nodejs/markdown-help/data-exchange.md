@@ -38,7 +38,7 @@ list, upload, download and manage data exchange files and directories *
 Parameter list:
 
 ```text
-Usage: mdsp data-exchange|dx [options]
+Usage: mc data-exchange|dx [options]
 
 list, upload, download and manage data exchange files and directories *
 
@@ -66,17 +66,17 @@ Here are some examples of how to use the `mdsp data-exchange` command:
 
   Examples:
 
-    mc data-exchange --mode list 					  list all entries in public data exchange root
-    mc data-exchange --mode list --dirid private 			  list all entries in private data exchange root
-    mc data-exchange --mode info --dirid  			  get full info about the specified directory
-    mc data-exchange --mode info --fileid  			  get full info about the specified
-    mc data-exchange --mode download --fileid  			  download file with specified id
-    mc data-exchange --mode upload --file  --dirid  	  upload file to specified directory
-    mc data-exchange --mode rename --fileid  --newname   rename the specified file
-    mc data-exchange --mode renamedir --dirid  --newname  rename the specified directory
-    mc data-exchange --mode delete --fileid  			  delete file with specified id
-    mc data-exchange --mode rmdir --dirid  			  delete directory with specified id
-    mc data-exchange --mode rmdir --dirid  --recursive 		  delete directory with specified id recrusively
+    mdsp data-exchange --mode list 					  list all entries in public data exchange root
+    mdsp data-exchange --mode list --dirid private 			  list all entries in private data exchange root
+    mdsp data-exchange --mode info --dirid  			  get full info about the specified directory
+    mdsp data-exchange --mode info --fileid  			  get full info about the specified
+    mdsp data-exchange --mode download --fileid  			  download file with specified id
+    mdsp data-exchange --mode upload --file  --dirid  	  upload file to specified directory
+    mdsp data-exchange --mode rename --fileid  --newname   rename the specified file
+    mdsp data-exchange --mode renamedir --dirid  --newname  rename the specified directory
+    mdsp data-exchange --mode delete --fileid  			  delete file with specified id
+    mdsp data-exchange --mode rmdir --dirid  			  delete directory with specified id
+    mdsp data-exchange --mode rmdir --dirid  --recursive 		  delete directory with specified id recrusively
 
 ```
 

@@ -38,7 +38,7 @@ list, create or delete mobile app instances *
 Parameter list:
 
 ```text
-Usage: mdsp mobile-app-instances|mbi [options]
+Usage: mc mobile-app-instances|mbi [options]
 
 list, create or delete mobile app instances *
 
@@ -63,13 +63,13 @@ Here are some examples of how to use the `mdsp mobile-app-instances` command:
 
   Examples:
 
-    mc mobile-app-instances --appid  --mode list 	list mobile apps
-    mc mobile-app-instances --appid  --mode template 	create template file for mobile app instance
-    mc mobile-app-instances --appid  --mode create --file mobileapp.instance.mdsp.json 
+    mdsp mobile-app-instances --appid  --mode list 	list mobile apps
+    mdsp mobile-app-instances --appid  --mode template 	create template file for mobile app instance
+    mdsp mobile-app-instances --appid  --mode create --file mobileapp.instance.mdsp.json 
 						create mobile app instance
-    mc mobile-app-instances --appid  --mode info --instanceid 
+    mdsp mobile-app-instances --appid  --mode info --instanceid 
 						mobile app instance info
-    mc mobile-app-instances --appid  --mode delete --instanceid 
+    mdsp mobile-app-instances --appid  --mode delete --instanceid 
 						delete mobile app instance
 
 ```

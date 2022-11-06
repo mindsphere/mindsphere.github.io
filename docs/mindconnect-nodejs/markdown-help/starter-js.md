@@ -38,7 +38,7 @@ creates a starter project in javascript #
 Parameter list:
 
 ```text
-Usage: mdsp starter-js|sj [options]
+Usage: mc starter-js|sj [options]
 
 creates a starter project in javascript #
 
@@ -57,8 +57,8 @@ Here are some examples of how to use the `mdsp starter-js` command:
 
   Examples:
 
-    mc starter-js 			 this creates a directory called starterts
-    mc sj --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
+    mdsp starter-js 				 this creates a directory called starterts
+    mdsp starter-js --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
 
 ```
 

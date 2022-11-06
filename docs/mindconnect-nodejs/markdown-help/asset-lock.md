@@ -38,7 +38,7 @@ lock/unlock asset model modifications *
 Parameter list:
 
 ```text
-Usage: mdsp asset-lock|lck [options]
+Usage: mc asset-lock|lck [options]
 
 lock/unlock asset model modifications *
 
@@ -59,9 +59,9 @@ Here are some examples of how to use the `mdsp asset-lock` command:
 
   Examples:
 
-    mc asset-lock --mode info 				 print out the asset model lock state
-    mc asset-lock --mode lock 				 lock the asset model and disable modifications
-    mc asset-lock --mode unlock 			 unlock the asset model and enable modifications
+    mdsp asset-lock --mode info 				 print out the asset model lock state
+    mdsp asset-lock --mode lock 				 lock the asset model and disable modifications
+    mdsp asset-lock --mode unlock 			 unlock the asset model and enable modifications
 
 ```
 

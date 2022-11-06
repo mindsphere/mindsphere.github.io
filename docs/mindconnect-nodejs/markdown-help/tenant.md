@@ -38,7 +38,7 @@ create or delete tenant legal configuration and logo *
 Parameter list:
 
 ```text
-Usage: mdsp tenant|ti [options]
+Usage: mc tenant|ti [options]
 
 create or delete tenant legal configuration and logo *
 
@@ -60,12 +60,12 @@ Here are some examples of how to use the `mdsp tenant` command:
 
   Examples:
 
-    mc tenant 					 prints out the tenant information
-    mc tenant --mode info 			 prints out the tenant information
-    mc tenant --mode template 			 creates template file with legal configuration
-    mc tenant --mode delete 			 deletes legal configuration
-    mc tenant --mode create --file  	 creates legal configuration
-    mc tenant --mode upload --file  	 uploads the company logo
+    mdsp tenant 					 prints out the tenant information
+    mdsp tenant --mode info 			 prints out the tenant information
+    mdsp tenant --mode template 			 creates template file with legal configuration
+    mdsp tenant --mode delete 			 deletes legal configuration
+    mdsp tenant --mode create --file  	 creates legal configuration
+    mdsp tenant --mode upload --file  	 uploads the company logo
 
 ```
 

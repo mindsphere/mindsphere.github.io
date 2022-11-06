@@ -38,15 +38,15 @@ list timeseries data *
 Parameter list:
 
 ```text
-Usage: mdsp timeseries|ts [options]
+Usage: mc timeseries|ts [options]
 
 list timeseries data *
 
 Options:
   -i, --assetid         mindsphere asset id
   -n, --aspectname   mindsphere aspect name
-  -f, --from               begining of the time range to read (default: "2022-10-30T16:18:24.684Z")
-  -t, --to                   end of the time range to read (default: "2022-10-31T16:18:24.684Z")
+  -f, --from               begining of the time range to read (default: "2022-11-05T01:51:16.182Z")
+  -t, --to                   end of the time range to read (default: "2022-11-06T01:51:16.182Z")
   -s, --select           comma separated list of variable names
   -d, --download                 download timeseries to a set of files
   -a, --all                      include also quality codes not just variable values
@@ -69,14 +69,14 @@ Here are some examples of how to use the `mdsp timeseries` command:
 
   Examples:
 
-    mc timeseries --asssetid 1234567..ef --aspectname Environment   	list recent timeseries for aspect Environment
-    mc timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature 
+    mdsp timeseries --asssetid 1234567..ef --aspectname Environment   	list recent timeseries for aspect Environment
+    mdsp timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature 
 									list recent temperature timeseries 
-    mc timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
+    mdsp timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
 									list all recent temperature timeseries
-    mc timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
+    mdsp timeseries --asssetid 1234567..ef --aspectname Environment --select Temperature --all 
 									list all recent temperature timeseries
-    mc timeseries --asssetid 1234567..ef --aspectname Environment --download 
+    mdsp timeseries --asssetid 1234567..ef --aspectname Environment --download 
 									download the recent timeseries data for the Environment aspect
 
   Important:

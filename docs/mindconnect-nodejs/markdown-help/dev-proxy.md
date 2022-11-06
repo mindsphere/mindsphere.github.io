@@ -38,7 +38,7 @@ starts mindsphere development proxy & (optional passkey) *
 Parameter list:
 
 ```text
-Usage: mdsp dev-proxy|px [options]
+Usage: mc dev-proxy|px [options]
 
 starts mindsphere development proxy & (optional passkey) *
 
@@ -66,8 +66,8 @@ Here are some examples of how to use the `mdsp dev-proxy` command:
 
   Examples:
 
-    mc dev-proxy  				 runs on default port (7707) using cookies
-    mc dev-proxy --mode credentials --port 7777 --passkey $MDSP_PASSKEY 
+    mdsp dev-proxy  				 runs on default port (7707) using cookies
+    mdsp dev-proxy --mode credentials --port 7777 --passkey $MDSP_PASSKEY 
                                         	 runs on port 7777 using app/service credentials
 
   Configuration:

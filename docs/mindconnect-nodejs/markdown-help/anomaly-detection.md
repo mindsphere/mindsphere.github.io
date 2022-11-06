@@ -38,7 +38,7 @@ train anomaly detection models and detect timeseries anomalies *
 Parameter list:
 
 ```text
-Usage: mdsp anomaly-detection|ad [options]
+Usage: mc anomaly-detection|ad [options]
 
 train anomaly detection models and detect timeseries anomalies *
 
@@ -70,16 +70,16 @@ Here are some examples of how to use the `mdsp anomaly-detection` command:
 
   Examples:
 
-    mc ad --mode template --data timeseries.data.mdsp.json 
+    mdsp ad --mode template --data timeseries.data.mdsp.json 
                  creates a template for a time series data file
-    mc ad --mode train --on data --data timeseries.data.mdsp.json --epsilon 0.5 
+    mdsp ad --mode train --on data --data timeseries.data.mdsp.json --epsilon 0.5 
 
                 trains a model on the timeserie specified in the data file
-    mc ad --mode detect --on data --data timeseries.data.mdsp.json --modelid 
+    mdsp ad --mode detect --on data --data timeseries.data.mdsp.json --modelid 
                  detects anomalities of the timeseries in the data file using the model with specified id
-    mc ad --mode train --on asset --assetid  --aspectname Environment --epsilon 0.5
+    mdsp ad --mode train --on asset --assetid  --aspectname Environment --epsilon 0.5
                 trains a model on the time series of the aspect "Environment" of the asset with the id 
-    mc ad --mode detect --on asset --modelid  --assetid  --aspectname Environment --epsilon 0.5
+    mdsp ad --mode detect --on asset --modelid  --assetid  --aspectname Environment --epsilon 0.5
                 detect anomalities of the timeseries on the specified asset and aspect with selected model
 
 ```

@@ -38,7 +38,7 @@ download the timeseries data in bulk from mindsphere *
 Parameter list:
 
 ```text
-Usage: mdsp download-bulk|db [options]
+Usage: mc download-bulk|db [options]
 
 download the timeseries data in bulk from mindsphere *
 
@@ -64,7 +64,7 @@ Here are some examples of how to use the `mdsp download-bulk` command:
 
   Examples:
 
-    mc download-bulk --assetid 12345..ef --from 12/10/2019 --to 12/16/2019  		 download timeseries from specified asset
+    mdsp download-bulk --assetid 12345..ef --from 12/10/2019 --to 12/16/2019  		 download timeseries from specified asset
 
 ```
 

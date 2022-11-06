@@ -38,7 +38,7 @@ list, create or delete asset types *
 Parameter list:
 
 ```text
-Usage: mdsp asset-types|at [options]
+Usage: mc asset-types|at [options]
 
 list, create or delete asset types *
 
@@ -64,11 +64,11 @@ Here are some examples of how to use the `mdsp asset-types` command:
 
   Examples:
 
-    mc asset-types --mode list 					 list all asset types
-    mc asset-types --mode list --assettype Pump		 list all asset types which are named Pump
-    mc asset-types --mode template --assettype Pump 
+    mdsp asset-types --mode list 					 list all asset types
+    mdsp asset-types --mode list --assettype Pump		 list all asset types which are named Pump
+    mdsp asset-types --mode template --assettype Pump 
 	create a template file (Enironment.assettype.mdsp.json) for assettype Pump
-    mc asset-types --mode create --file Pump.assettype.mdsp.json 
+    mdsp asset-types --mode create --file Pump.assettype.mdsp.json 
 	create asset type Pump in MindSphere
 
 ```

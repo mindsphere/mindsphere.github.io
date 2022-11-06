@@ -38,7 +38,7 @@ checks the progress of the upload jobs from  directory *
 Parameter list:
 
 ```text
-Usage: mdsp check-bulk|cb [options]
+Usage: mc check-bulk|cb [options]
 
 checks the progress of the upload jobs from  directory *
 
@@ -60,8 +60,8 @@ Here are some examples of how to use the `mdsp check-bulk` command:
 
   Examples:
 
-    mc check-bulk 	 displays job progress of bulkimport directory
-    mc check-bulk --dir asset1 --verbose 	displays job progress of asset1 directory with verbose output
+    mdsp check-bulk 	 displays job progress of bulkimport directory
+    mdsp check-bulk --dir asset1 --verbose 	displays job progress of asset1 directory with verbose output
 
 ```
 

@@ -38,7 +38,7 @@ manage data types for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-data-types|sdy [options]
+Usage: mc sdi-data-types|sdy [options]
 
 manage data types for SDI *
 
@@ -66,14 +66,14 @@ Here are some examples of how to use the `mdsp sdi-data-types` command:
 
   Examples:
 
-    mc sdi-data-types --mode list 				 list all sdi data types
-    mc sdi-data-types --mode template --for datatype 		 create template file for --mode create command
-    mc sdi-data-types --mode template --for pattern 		 create pattern file for --mode addpattern command
-    mc sdi-data-types --mode template --for suggest 		 create samples files for --mode suggest command
-    mc sdi-data-types --mode create --datatype  	 create sdi data type
-    mc sdi-data-types --mode info --datatypename    		 get sdi data type info
-    mc sdi-data-types --mode delete --datatypename  		 delete sdi data type
-    mc sdi-data-types --mode suggest --samplevalues  --testvalues                                                                               		 suggest patterns from sample data
+    mdsp sdi-data-types --mode list 				 list all sdi data types
+    mdsp sdi-data-types --mode template --for datatype 		 create template file for --mode create command
+    mdsp sdi-data-types --mode template --for pattern 		 create pattern file for --mode addpattern command
+    mdsp sdi-data-types --mode template --for suggest 		 create samples files for --mode suggest command
+    mdsp sdi-data-types --mode create --datatype  	 create sdi data type
+    mdsp sdi-data-types --mode info --datatypename    		 get sdi data type info
+    mdsp sdi-data-types --mode delete --datatypename  		 delete sdi data type
+    mdsp sdi-data-types --mode suggest --samplevalues  --testvalues                                                                               		 suggest patterns from sample data
 
 ```
 

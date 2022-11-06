@@ -38,12 +38,12 @@ creates a signed token for opcua pub sub authentication #
 Parameter list:
 
 ```text
-Usage: mdsp mqtt-createjwt|jw [options]
+Usage: mc mqtt-createjwt|jw [options]
 
 creates a signed token for opcua pub sub authentication #
 
 Options:
-  -i, --clientid           MQTT ClientId (default: "42b52b32-865a-4352-9807-31414b938cf5")
+  -i, --clientid           MQTT ClientId (default: "1cabd2d8-7b54-4ccd-b963-e3a0813375c1")
   -e, --expiration       time until the token is valid in seconds (default: "3600")
   -c, --rootca               path to CA root certificate (default: "CA-root.pem")
   -d, --devicecrt         path to device certificate (default: "device.crt.pem")
@@ -64,7 +64,7 @@ Here are some examples of how to use the `mdsp mqtt-createjwt` command:
 
   Examples:
 
-    mc mqtt-createjwt --clientid "12345...ef" \
+    mdsp mqtt-createjwt --clientid "12345...ef" \
     --rootca path/to/root.cer.pem \
     --devicecrt path/to/device.cer.pem \
     --devicekey path/to/devicekey.pem \

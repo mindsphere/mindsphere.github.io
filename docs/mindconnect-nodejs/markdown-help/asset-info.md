@@ -38,7 +38,7 @@ get infos about asset *
 Parameter list:
 
 ```text
-Usage: mdsp asset-info|ai [options]
+Usage: mc asset-info|ai [options]
 
 get infos about asset *
 
@@ -59,7 +59,7 @@ Here are some examples of how to use the `mdsp asset-info` command:
 
   Examples:
 
-    mc asset-info --assetid 123456...ef 	 print out infos about asset with id 132456...ef
+    mdsp asset-info --assetid 123456...ef 	 print out infos about asset with id 132456...ef
 
 ```
 

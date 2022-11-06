@@ -38,7 +38,7 @@ manage ontology jobs for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-ontology-jobs|sdb [options]
+Usage: mc sdi-ontology-jobs|sdb [options]
 
 manage ontology jobs for SDI *
 
@@ -65,8 +65,8 @@ Here are some examples of how to use the `mdsp sdi-ontology-jobs` command:
 
   Examples:
 
-    mc sdi-ontology-jobs --mode submit --ontology 	 upload ontology
-    mc sdi-ontology-jobs --mode info --jobid    			 get sdi ontology upload job info
+    mdsp sdi-ontology-jobs --mode submit --ontology 	 upload ontology
+    mdsp sdi-ontology-jobs --mode info --jobid    			 get sdi ontology upload job info
 
 ```
 

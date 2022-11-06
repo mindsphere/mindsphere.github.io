@@ -38,7 +38,7 @@ manage data registries for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-data-registries|sdr [options]
+Usage: mc sdi-data-registries|sdr [options]
 
 manage data registries for SDI *
 
@@ -62,12 +62,12 @@ Here are some examples of how to use the `mdsp sdi-data-registries` command:
 
   Examples:
 
-    mc sdi-data-registries --mode list 		 list all sdi dataregistries
-    mc sdi-data-registries --mode template 	 create template file
-    mc sdi-data-registries --mode create --dataregistry  	 create sdi data registry
-    mc sdi-data-registries --mode update --dataregistry  --registryid                                                                                               		 update sdi data registry
-    mc sdi-data-registries --mode info --registryid    		 get sdi data registry info
-    mc sdi-data-registries --mode delete --registryid  		 delete sdi data registry
+    mdsp sdi-data-registries --mode list 		 list all sdi dataregistries
+    mdsp sdi-data-registries --mode template 	 create template file
+    mdsp sdi-data-registries --mode create --dataregistry  	 create sdi data registry
+    mdsp sdi-data-registries --mode update --dataregistry  --registryid                                                                                               		 update sdi data registry
+    mdsp sdi-data-registries --mode info --registryid    		 get sdi data registry info
+    mdsp sdi-data-registries --mode delete --registryid  		 delete sdi data registry
 
 ```
 

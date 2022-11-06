@@ -38,7 +38,7 @@ list, create, configure or delete app instance (open edge) *
 Parameter list:
 
 ```text
-Usage: mdsp oe-app-inst|oeai [options]
+Usage: mc oe-app-inst|oeai [options]
 
 list, create, configure or delete app instance (open edge) *
 
@@ -63,14 +63,14 @@ Here are some examples of how to use the `mdsp oe-app-inst` command:
 
   Examples:
 
-    mc oe-app-inst --mode list --deviceid  	list all app instances of device with deviceId.
-    mc oe-app-inst --mode template 			create a template file for new app instance data.
-    mc oe-app-inst --mode create --file edge.app.mdsp.json 
+    mdsp oe-app-inst --mode list --deviceid  	list all app instances of device with deviceId.
+    mdsp oe-app-inst --mode template 			create a template file for new app instance data.
+    mdsp oe-app-inst --mode create --file edge.app.mdsp.json 
 	creates a new app instance from template file.
-    mc oe-app-inst --mode config --id  --file edge.appconfig.mdsp.json 
+    mdsp oe-app-inst --mode config --id  --file edge.appconfig.mdsp.json 
 	configure an app instance from template file.
-    mc oe-app-inst --mode info --id 		get details of an app instance.
-    mc oe-app-inst --mode delete --id 	delete app instance configuration.
+    mdsp oe-app-inst --mode info --id 		get details of an app instance.
+    mdsp oe-app-inst --mode delete --id 	delete app instance configuration.
 
 ```
 

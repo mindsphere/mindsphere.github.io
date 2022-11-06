@@ -38,7 +38,7 @@ list, create or stop jobs *
 Parameter list:
 
 ```text
-Usage: mdsp jobs|jb [options]
+Usage: mc jobs|jb [options]
 
 list, create or stop jobs *
 
@@ -65,15 +65,15 @@ Here are some examples of how to use the `mdsp jobs` command:
 
   Examples:
 
-    mc jobs --mode list 					 list all jobs
-    mc jobs --mode list --status FAILED --message import 	 list all jobs which failed on import
-    mc jobs --mode list --modelid  			 list all jobs for specified model
-    mc jobs --mode list --modelid  			 list all jobs for specified model
-    mc jobs --mode list --modelid  			 list all jobs for specified model
-    mc jobs --mode template 					 create template file for job creation
-    mc jobs --mode create --file  		 create job
-    mc jobs --mode info --jobid  			 get infos about the job
-    mc jobs --mode stop --jobid  			 stop job with job id
+    mdsp jobs --mode list 					 list all jobs
+    mdsp jobs --mode list --status FAILED --message import 	 list all jobs which failed on import
+    mdsp jobs --mode list --modelid  			 list all jobs for specified model
+    mdsp jobs --mode list --modelid  			 list all jobs for specified model
+    mdsp jobs --mode list --modelid  			 list all jobs for specified model
+    mdsp jobs --mode template 					 create template file for job creation
+    mdsp jobs --mode create --file  		 create job
+    mdsp jobs --mode info --jobid  			 get infos about the job
+    mdsp jobs --mode stop --jobid  			 stop job with job id
 
 ```
 

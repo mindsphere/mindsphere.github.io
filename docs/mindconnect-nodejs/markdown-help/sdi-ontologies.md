@@ -38,7 +38,7 @@ manage ontologies for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-ontologies|sdo [options]
+Usage: mc sdi-ontologies|sdo [options]
 
 manage ontologies for SDI *
 
@@ -62,11 +62,11 @@ Here are some examples of how to use the `mdsp sdi-ontologies` command:
 
   Examples:
 
-    mc sdi-ontologies --mode list 		 list all sdi ontologies
-    mc sdi-ontologies --mode template 		 create template file
-    mc sdi-ontologies --mode infer --ontology  		 infer sdi  ontology
-    mc sdi-ontologies --mode info --ontologyid    		 get sdi ontology info
-    mc sdi-ontologies --mode delete --ontologyid  		 delete sdi ontology
+    mdsp sdi-ontologies --mode list 		 list all sdi ontologies
+    mdsp sdi-ontologies --mode template 		 create template file
+    mdsp sdi-ontologies --mode infer --ontology  		 infer sdi  ontology
+    mdsp sdi-ontologies --mode info --ontologyid    		 get sdi ontology info
+    mdsp sdi-ontologies --mode delete --ontologyid  		 delete sdi ontology
 
 ```
 

@@ -38,7 +38,7 @@ list, create or delete workorders *
 Parameter list:
 
 ```text
-Usage: mdsp workorder|wo [options]
+Usage: mc workorder|wo [options]
 
 list, create or delete workorders *
 
@@ -63,12 +63,12 @@ Here are some examples of how to use the `mdsp workorder` command:
 
   Examples:
 
-    mc workorder --mode list 				list all workorders
-    mc workorder --mode template --workorder  	create a template file for 
-    mc workorder --mode create --file  		create workorder 
-    mc workorder --mode update --file  --handle  	 update workorder 
-    mc workorder --mode info --handle  	workorder info for specified id
-    mc workorder --mode delete --handle  	delete workorder with specified id
+    mdsp workorder --mode list 				list all workorders
+    mdsp workorder --mode template --workorder  	create a template file for 
+    mdsp workorder --mode create --file  		create workorder 
+    mdsp workorder --mode update --file  --handle  	 update workorder 
+    mdsp workorder --mode info --handle  	workorder info for specified id
+    mdsp workorder --mode delete --handle  	delete workorder with specified id
 
 ```
 

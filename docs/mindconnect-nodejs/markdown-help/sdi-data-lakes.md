@@ -38,7 +38,7 @@ manage data lakes for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-data-lakes|sdl [options]
+Usage: mc sdi-data-lakes|sdl [options]
 
 manage data lakes for SDI *
 
@@ -62,12 +62,12 @@ Here are some examples of how to use the `mdsp sdi-data-lakes` command:
 
   Examples:
 
-    mc sdi-data-lakes --mode list 		 list all sdi datalakes
-    mc sdi-data-lakes --mode template 		 create template file
-    mc sdi-data-lakes --mode create --datalake  		 create sdi data lake
-    mc sdi-data-lakes --mode update --datalake  --datalakeid                                                                                		 update sdi data lake
-    mc sdi-data-lakes --mode info --datalakeid    		 get sdi data lake info
-    mc sdi-data-lakes --mode delete --datalakeid  		 delete sdi data lake
+    mdsp sdi-data-lakes --mode list 		 list all sdi datalakes
+    mdsp sdi-data-lakes --mode template 		 create template file
+    mdsp sdi-data-lakes --mode create --datalake  		 create sdi data lake
+    mdsp sdi-data-lakes --mode update --datalake  --datalakeid                                                                                		 update sdi data lake
+    mdsp sdi-data-lakes --mode info --datalakeid    		 get sdi data lake info
+    mdsp sdi-data-lakes --mode delete --datalakeid  		 delete sdi data lake
 
 ```
 

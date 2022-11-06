@@ -38,7 +38,7 @@ manage iot data registries for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-iot-registries|sdt [options]
+Usage: mc sdi-iot-registries|sdt [options]
 
 manage iot data registries for SDI *
 
@@ -62,12 +62,12 @@ Here are some examples of how to use the `mdsp sdi-iot-registries` command:
 
   Examples:
 
-    mc sdi-iot-registries --mode list 		 list all sdi dataregistries
-    mc sdi-iot-registries --mode template 	 create template file
-    mc sdi-iot-registries --mode create --iotregistry  	 create sdi iot registry
-    mc sdi-iot-registries --mode update --iotregistry  --registryid                                                                                               		 update sdi iot registry
-    mc sdi-iot-registries --mode info --registryid    		 get sdi iot registry info
-    mc sdi-iot-registries --mode delete --registryid  		 delete sdi iot registry
+    mdsp sdi-iot-registries --mode list 		 list all sdi dataregistries
+    mdsp sdi-iot-registries --mode template 	 create template file
+    mdsp sdi-iot-registries --mode create --iotregistry  	 create sdi iot registry
+    mdsp sdi-iot-registries --mode update --iotregistry  --registryid                                                                                               		 update sdi iot registry
+    mdsp sdi-iot-registries --mode info --registryid    		 get sdi iot registry info
+    mdsp sdi-iot-registries --mode delete --registryid  		 delete sdi iot registry
 
 ```
 

@@ -38,7 +38,7 @@ displays the agent token for use in other tools (e.g. postman)
 Parameter list:
 
 ```text
-Usage: mdsp agent-token|atk [options]
+Usage: mc agent-token|atk [options]
 
 displays the agent token for use in other tools (e.g. postman)
 
@@ -60,10 +60,10 @@ Here are some examples of how to use the `mdsp agent-token` command:
 
   Examples:
 
-    mc agent-token   				uses default agentconfig.json
-    mc agent-token --config agent.json 		uses specified configuration file
-    mc agent-token --cert private.key 		uses specified key for RSA_3072 profile
-    mc agent-token --verbose 			displays encoded and decoded version of the token
+    mdsp agent-token   				uses default agentconfig.json
+    mdsp agent-token --config agent.json 		uses specified configuration file
+    mdsp agent-token --cert private.key 		uses specified key for RSA_3072 profile
+    mdsp agent-token --verbose 			displays encoded and decoded version of the token
 
 ```
 

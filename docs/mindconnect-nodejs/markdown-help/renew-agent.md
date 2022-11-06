@@ -38,7 +38,7 @@ renews the agent secrets  *
 Parameter list:
 
 ```text
-Usage: mdsp renew-agent|rn [options]
+Usage: mc renew-agent|rn [options]
 
 renews the agent secrets  *
 
@@ -59,7 +59,7 @@ Here are some examples of how to use the `mdsp renew-agent` command:
 
   Examples:
 
-    mc renew-agent --config agent.json --passkey passkey... 	 renew agent secrets in agent.json configuration
+    mdsp renew-agent --config agent.json --passkey passkey... 	 renew agent secrets in agent.json configuration
 
 ```
 

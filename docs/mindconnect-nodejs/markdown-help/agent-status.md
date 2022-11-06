@@ -38,7 +38,7 @@ displays the agent status and agent onboarding status *
 Parameter list:
 
 ```text
-Usage: mdsp agent-status|as [options]
+Usage: mc agent-status|as [options]
 
 displays the agent status and agent onboarding status *
 
@@ -61,11 +61,11 @@ Here are some examples of how to use the `mdsp agent-status` command:
 
   Examples:
 
-    mc agent-status   					uses default agentconfig.json
-    mc agent-status --config agent.json 		uses specified configuration file
-    mc agent-status --cert private.key 			uses specified key for RSA_3072 profile
-    mc agent-status --passkey mypasskey 		displays also the online agent information
-    mc agent-status --passkey mypasskey --verbose 	displays additionally the mappings and configuration
+    mdsp agent-status   					uses default agentconfig.json
+    mdsp agent-status --config agent.json 		uses specified configuration file
+    mdsp agent-status --cert private.key 			uses specified key for RSA_3072 profile
+    mdsp agent-status --passkey mypasskey 		displays also the online agent information
+    mdsp agent-status --passkey mypasskey --verbose 	displays additionally the mappings and configuration
 
 ```
 

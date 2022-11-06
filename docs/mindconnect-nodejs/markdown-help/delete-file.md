@@ -38,7 +38,7 @@ delete the file from mindsphere file service *
 Parameter list:
 
 ```text
-Usage: mdsp delete-file|de [options]
+Usage: mc delete-file|de [options]
 
 delete the file from mindsphere file service *
 
@@ -61,9 +61,9 @@ Here are some examples of how to use the `mdsp delete-file` command:
 
   Examples:
 
-    mc delete-file -f CHANGELOG.md  --assetid 5..f  				 delete file CHANGELOG.md from specified asset
-    mc delete-file --file  CHANGELOG.md  --assetid 5...f --filepath upload 	 delete file upload/CHANGELOG.md from specified asset
-    mc delete-file --file  upload/CHANGELOG.md  --assetid 5...f 		 delete file upload/CHANGELOG.md from specified asset
+    mdsp delete-file -f CHANGELOG.md  --assetid 5..f  				 delete file CHANGELOG.md from specified asset
+    mdsp delete-file --file  CHANGELOG.md  --assetid 5...f --filepath upload 	 delete file upload/CHANGELOG.md from specified asset
+    mdsp delete-file --file  upload/CHANGELOG.md  --assetid 5...f 		 delete file upload/CHANGELOG.md from specified asset
 
 ```
 

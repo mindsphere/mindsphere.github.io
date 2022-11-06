@@ -38,7 +38,7 @@ list files stored with the asset *
 Parameter list:
 
 ```text
-Usage: mdsp list-files|ls [options]
+Usage: mc list-files|ls [options]
 
 list files stored with the asset *
 
@@ -60,8 +60,8 @@ Here are some examples of how to use the `mdsp list-files` command:
 
   Examples:
 
-    mc ls --assetid 1234...ef --passkey mypasskey 				list all files for assetid
-    mc ls --assetid 1234...ef --filter "path=upload*" --passkey mypasskey 	list all files where path contains upload
+    mdsp ls --assetid 1234...ef --passkey mypasskey 				list all files for assetid
+    mdsp ls --assetid 1234...ef --filter "path=upload*" --passkey mypasskey 	list all files where path contains upload
 
 ```
 

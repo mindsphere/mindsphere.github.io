@@ -38,7 +38,7 @@ runs the timeseries (bulk) upload job from  directory *
 Parameter list:
 
 ```text
-Usage: mdsp run-bulk|rb [options]
+Usage: mc run-bulk|rb [options]
 
 runs the timeseries (bulk) upload job from  directory *
 
@@ -64,8 +64,8 @@ Here are some examples of how to use the `mdsp run-bulk` command:
 
   Examples:
 
-    mc run-bulk runs the upload job from the  bulkimport directory
-    mc run-bulk --dir asset1 --verbose runs the upload job from the asset1 with verbose output
+    mdsp run-bulk runs the upload job from the  bulkimport directory
+    mdsp run-bulk --dir asset1 --verbose runs the upload job from the asset1 with verbose output
 
 ```
 

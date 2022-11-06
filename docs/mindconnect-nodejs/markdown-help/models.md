@@ -38,7 +38,7 @@ list, create or delete analytic models *
 Parameter list:
 
 ```text
-Usage: mdsp models|ml [options]
+Usage: mc models|ml [options]
 
 list, create or delete analytic models *
 
@@ -69,13 +69,13 @@ Here are some examples of how to use the `mdsp models` command:
 
   Examples:
 
-    mc models --mode template --modeltype core.basicmodel --modelname MyModel 	 creates a template for model
-    mc models --mode create --metadata model.metadata.mdsp.json --payload model.payload.mdsp.json 
+    mdsp models --mode template --modeltype core.basicmodel --modelname MyModel 	 creates a template for model
+    mdsp models --mode create --metadata model.metadata.mdsp.json --payload model.payload.mdsp.json 
 							 creates a model from specified files
-    mc models --mode list 				 lists all models in mindsphere
-    mc models --mode delete --modelid 1234567..ef 	 deletes model with specified id
-    mc models --mode info --modelid 123456...ef 	 print out infos about model with id 132456...ef
-    mc models --mode download --modelid 123456...ef 	 download model with id 132456...ef
+    mdsp models --mode list 				 lists all models in mindsphere
+    mdsp models --mode delete --modelid 1234567..ef 	 deletes model with specified id
+    mdsp models --mode info --modelid 123456...ef 	 print out infos about model with id 132456...ef
+    mdsp models --mode download --modelid 123456...ef 	 download model with id 132456...ef
 
 ```
 

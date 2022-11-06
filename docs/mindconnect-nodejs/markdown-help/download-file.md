@@ -38,7 +38,7 @@ download the file from mindsphere file service *
 Parameter list:
 
 ```text
-Usage: mdsp download-file|df [options]
+Usage: mc download-file|df [options]
 
 download the file from mindsphere file service *
 
@@ -61,9 +61,9 @@ Here are some examples of how to use the `mdsp download-file` command:
 
   Examples:
 
-    mc download-file -f CHANGELOG.md  --assetid 5..f  				 download file CHANGELOG.md from specified asset
-    mc download-file --file  CHANGELOG.md  --assetid 5...f --filepath upload 	 download file upload/CHANGELOG.md from specified asset
-    mc download-file --file  upload/CHANGELOG.md  --assetid 5...f 		 download file upload/CHANGELOG.md from specified asset
+    mdsp download-file -f CHANGELOG.md  --assetid 5..f  			 download file CHANGELOG.md from specified asset
+    mdsp download-file --file  CHANGELOG.md  --assetid 5...f --filepath upload 	 download file upload/CHANGELOG.md from specified asset
+    mdsp download-file --file  upload/CHANGELOG.md  --assetid 5...f 		 download file upload/CHANGELOG.md from specified asset
 
 ```
 

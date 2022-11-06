@@ -38,7 +38,7 @@ download or delete the events in bulk *
 Parameter list:
 
 ```text
-Usage: mdsp events-bulk|dn [options]
+Usage: mc events-bulk|dn [options]
 
 download or delete the events in bulk *
 
@@ -66,12 +66,12 @@ Here are some examples of how to use the `mdsp events-bulk` command:
 
   Examples:
 
-    mc events-bulk --mode download  --asssetid 1234567..ef  	 download events from specified asset
-    mc events-bulk --mode download --dir newdir  		 download last 7 days of events to  folder
-    mc events-bulk --mode template --assetid 1234576..ef  	 create template file event.filter.mdsp.json
-    mc events-bulk --mode download --filter event.filter.mdsp.json 		 download events using configured filter
-    mc events-bulk --mode delete --filter event.filter.mdsp.json 		 delete events using configured filter
-    mc events-bulk --mode check --jobid  		 check the state of bulk deleting job
+    mdsp events-bulk --mode download  --asssetid 1234567..ef  	 download events from specified asset
+    mdsp events-bulk --mode download --dir newdir  		 download last 7 days of events to  folder
+    mdsp events-bulk --mode template --assetid 1234576..ef  	 create template file event.filter.mdsp.json
+    mdsp events-bulk --mode download --filter event.filter.mdsp.json 		 download events using configured filter
+    mdsp events-bulk --mode delete --filter event.filter.mdsp.json 		 delete events using configured filter
+    mdsp events-bulk --mode check --jobid  		 check the state of bulk deleting job
 
 ```
 

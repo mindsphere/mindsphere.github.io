@@ -38,7 +38,7 @@ parse .csv file with timeseriesdata and upload the timeseries data to mindsphere
 Parameter list:
 
 ```text
-Usage: mdsp upload-timeseries|uts [options]
+Usage: mc upload-timeseries|uts [options]
 
 parse .csv file with timeseriesdata and upload the timeseries data to mindsphere
 
@@ -62,15 +62,15 @@ Here are some examples of how to use the `mdsp upload-timeseries` command:
 
   Examples:
 
-    mc ts -f timeseries.csv 					 upload timeseries from the csv file to mindsphere 
-    mc upload-timeseries --file timeseries.csv  --size 100  	 use http post size of 100 records 
+    mdsp ts -f timeseries.csv 					 upload timeseries from the csv file to mindsphere 
+    mdsp upload-timeseries --file timeseries.csv  --size 100  	 use http post size of 100 records 
 
   Data Format: (use your own data point ids from mindsphere)
 
   timestamp, dataPointId, qualityCode, value
-  2022-10-31T16:18:22.724Z, DP-Temperature ,0, 20.34
-  2022-10-31T16:18:23.724Z, DP-Humidity, 0, 70
-  2022-10-31T16:18:24.724Z, DP-Pressure, 0, 1012.3
+  2022-11-06T01:51:14.192Z, DP-Temperature ,0, 20.34
+  2022-11-06T01:51:15.192Z, DP-Humidity, 0, 70
+  2022-11-06T01:51:16.192Z, DP-Pressure, 0, 1012.3
 
   Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
   The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)

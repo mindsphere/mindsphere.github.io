@@ -38,7 +38,7 @@ create an event in the mindsphere (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mdsp create-event|ce [options]
+Usage: mc create-event|ce [options]
 
 create an event in the mindsphere (optional: passkey) *
 
@@ -47,11 +47,11 @@ Options:
   -r, --cert [privatekey]        required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -i, --assetid         mindsphere asset id  (default: send event to the agent)
   -y, --sourceType   Source Type (default: "MindConnect-Agent")
-  -S, --sourceId       Source Id (default: "dev.ingenuity.rocks")
+  -S, --sourceId       Source Id (default: "Monikas-Air-2.fritz.box")
   -O, --source           Source (default: "MindConnect-NodeJs CLI")
   -V, --severity       Severity (20:Error, 30:Warning , 40:information) (default: "20")
   -d, --desc        Event description (default: "CLI created event")
-  -t, --timestamp     Timestamp (default: "2022-10-31T16:18:24.690Z")
+  -t, --timestamp     Timestamp (default: "2022-11-06T01:51:16.184Z")
   -y, --retry            retry attempts before giving up (default: "3")
   -p, --passkey         passkey (optional, event creation uses service credentials *)
   -v, --verbose                  verbose output
@@ -67,9 +67,9 @@ Here are some examples of how to use the `mdsp create-event` command:
 
   Examples:
 
-    mc create-event 				 create error event with default values and current timestamp
-    mc ce --desc Warning! --severity 30 	 create warning with description warning
-    mc ce --desc "custom event" --i 123....4 	 create error event for asset with id 123....4
+    mdsp create-event 				 create error event with default values and current timestamp
+    mdsp ce --desc Warning! --severity 30 	 create warning with description warning
+    mdsp ce --desc "custom event" --i 123....4 	 create error event for asset with id 123....4
 
 ```
 

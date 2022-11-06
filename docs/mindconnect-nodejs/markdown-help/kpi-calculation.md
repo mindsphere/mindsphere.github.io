@@ -38,7 +38,7 @@ calculate kpi states or compute kpis @
 Parameter list:
 
 ```text
-Usage: mdsp kpi-calculation|kp [options]
+Usage: mc kpi-calculation|kp [options]
 
 calculate kpi states or compute kpis @
 
@@ -71,11 +71,11 @@ Here are some examples of how to use the `mdsp kpi-calculation` command:
 
   Examples:
 
-    mc kpi-calculation --mode states --file timeseries.mdsp.json --calendar calendar.mdsp.json  --target rpm --threshold 30 
+    mdsp kpi-calculation --mode states --file timeseries.mdsp.json --calendar calendar.mdsp.json  --target rpm --threshold 30 
  		calculate kpi states based on rpm
-    mc kpi-calculation --mode direct --target rpm --assetid 123...ef --aspectname EngineParameters  --from  --to  
+    mdsp kpi-calculation --mode direct --target rpm --assetid 123...ef --aspectname EngineParameters  --from  --to  
  		calculate kpi states based on asset data in MindSphere
-    mc kpi-calculation --mode kpis --file states.mdsp.json --target state 
+    mdsp kpi-calculation --mode kpis --file states.mdsp.json --target state 
  		calculate kpis for state timeseries
 
   State KPIs:

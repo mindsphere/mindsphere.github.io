@@ -38,7 +38,7 @@ upload the file to the mindsphere file service (optional: passkey) *
 Parameter list:
 
 ```text
-Usage: mdsp upload-file|uf [options]
+Usage: mc upload-file|uf [options]
 
 upload the file to the mindsphere file service (optional: passkey) *
 
@@ -67,9 +67,9 @@ Here are some examples of how to use the `mdsp upload-file` command:
 
   Examples:
 
-    mc uf -f CHANGELOG.md   							 upload file CHANGELOG.md to the agent
-    mc upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain 	 upload file to a specified asset with custom mime type
-    mc upload-file --file  CHANGELOG.md  --chunked 				 upload file using experimental chunked upload
+    mdsp uf -f CHANGELOG.md   							 upload file CHANGELOG.md to the agent
+    mdsp upload-file --file  CHANGELOG.md  --assetid 5...f --mime text/plain 	 upload file to a specified asset with custom mime type
+    mdsp upload-file --file  CHANGELOG.md  --chunked 				 upload file using experimental chunked upload
 
 ```
 

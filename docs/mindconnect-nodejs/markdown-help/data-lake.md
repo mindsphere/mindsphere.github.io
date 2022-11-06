@@ -38,7 +38,7 @@ manage data lake, data lake access permissions and STS tokens *
 Parameter list:
 
 ```text
-Usage: mdsp data-lake|dlk [options]
+Usage: mc data-lake|dlk [options]
 
 manage data lake, data lake access permissions and STS tokens *
 
@@ -68,19 +68,19 @@ Here are some examples of how to use the `mdsp data-lake` command:
 
   Examples:
 
-    mc data-lake --mode list 			lists all configured permissions for data lake
-    mc data-lake --mode write 			allow writing to the data lake
-    mc data-lake --mode write --path data/ 	allow writing to the data lake from data/ folder
-    mc data-lake --mode meta --path data/ 	get metadata for path
-    mc data-lake --mode readtoken 		create AWS STS Token with read rights
-    mc data-lake --mode writetoken 		create AWS STS Token with write rights from data lake root
-    mc data-lake --mode writetoken --path data/ create AWS STS Token with write rights from data/ folder
-    mc data-lake --mode delete --permissionid  			 delete writing permission with selected permissionid
-    mc data-lake --mode upload --file CHANGELOG.md --path uploads/CHANGELOG.md 	 upload file to data lake
-    mc data-lake --mode downloadurl --path uploads/CHANGELOG.md 		 generate download url for the path
-    mc data-lake --mode subscriptions 						 list all data lake event subscriptions
-    mc data-lake --mode subscribe --path  --destination aws-sns:// 	 subscribe an AWS SNS topic to folder changes
-    mc data-lake --mode unsubscribe --subscriptionid   			 delete event subscription
+    mdsp data-lake --mode list 			lists all configured permissions for data lake
+    mdsp data-lake --mode write 			allow writing to the data lake
+    mdsp data-lake --mode write --path data/ 	allow writing to the data lake from data/ folder
+    mdsp data-lake --mode meta --path data/ 	get metadata for path
+    mdsp data-lake --mode readtoken 		create AWS STS Token with read rights
+    mdsp data-lake --mode writetoken 		create AWS STS Token with write rights from data lake root
+    mdsp data-lake --mode writetoken --path data/ create AWS STS Token with write rights from data/ folder
+    mdsp data-lake --mode delete --permissionid  			 delete writing permission with selected permissionid
+    mdsp data-lake --mode upload --file CHANGELOG.md --path uploads/CHANGELOG.md 	 upload file to data lake
+    mdsp data-lake --mode downloadurl --path uploads/CHANGELOG.md 		 generate download url for the path
+    mdsp data-lake --mode subscriptions 						 list all data lake event subscriptions
+    mdsp data-lake --mode subscribe --path  --destination aws-sns:// 	 subscribe an AWS SNS topic to folder changes
+    mdsp data-lake --mode unsubscribe --subscriptionid   			 delete event subscription
 
   Additional Information:
 

@@ -38,7 +38,7 @@ unregister agent from diagnostic *
 Parameter list:
 
 ```text
-Usage: mdsp unregister-diagnostic|ud [options]
+Usage: mc unregister-diagnostic|ud [options]
 
 unregister agent from diagnostic *
 
@@ -59,8 +59,8 @@ Here are some examples of how to use the `mdsp unregister-diagnostic` command:
 
   Examples:
 
-    mc ud -k mypasskey
-    mc unregister-diagnostic --config someagent.json -passkey mypasskey
+    mdsp ud -k mypasskey
+    mdsp unregister-diagnostic --config someagent.json -passkey mypasskey
 
 ```
 

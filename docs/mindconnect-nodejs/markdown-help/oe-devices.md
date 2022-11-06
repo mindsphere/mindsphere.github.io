@@ -38,7 +38,7 @@ list, create or delete (open edge) devices *
 Parameter list:
 
 ```text
-Usage: mdsp oe-devices|oed [options]
+Usage: mc oe-devices|oed [options]
 
 list, create or delete (open edge) devices *
 
@@ -67,11 +67,11 @@ Here are some examples of how to use the `mdsp oe-devices` command:
 
   Examples:
 
-    mc oe-devices --mode list --assetid 	list all devices linked to the asset
-    mc oe-devices --mode info --id 		get device details
-    mc oe-devices --mode template 			create a template file for a new device
-    mc oe-devices --mode delete --id 	delete the device with the specified id
-    mc oe-devices --mode create --file openedge.device.mdsp.json 
+    mdsp oe-devices --mode list --assetid 	list all devices linked to the asset
+    mdsp oe-devices --mode info --id 		get device details
+    mdsp oe-devices --mode template 			create a template file for a new device
+    mdsp oe-devices --mode delete --id 	delete the device with the specified id
+    mdsp oe-devices --mode create --file openedge.device.mdsp.json 
                              create new device using the file openedge.device.mdsp.json
 
 ```

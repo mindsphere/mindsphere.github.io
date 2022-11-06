@@ -38,7 +38,7 @@ list, create or delete assets *
 Parameter list:
 
 ```text
-Usage: mdsp assets|ast [options]
+Usage: mc assets|ast [options]
 
 list, create or delete assets *
 
@@ -68,12 +68,12 @@ Here are some examples of how to use the `mdsp assets` command:
 
   Examples:
 
-    mc assets --mode create --typeid core.basicarea --assetname MyArea 	 creates an asset in mindsphere of type basicarea
-    mc assets --mode create --file MyPump.asset.mdsp.json 		 creates an asset from specified file template
-    mc assets --mode list 						 lists all assets in mindsphere
-    mc assets --mode list --typeid mclib				 lists all assets in mindsphere of type core.mclib
-    mc assets --mode delete --assetid 1234567..ef 			 deletes asset with specified id from mindsphere
-    mc assets --mode template --typeid .Pump --assetname MyPump 
+    mdsp assets --mode create --typeid core.basicarea --assetname MyArea 	 creates an asset in mindsphere of type basicarea
+    mdsp assets --mode create --file MyPump.asset.mdsp.json 		 creates an asset from specified file template
+    mdsp assets --mode list 						 lists all assets in mindsphere
+    mdsp assets --mode list --typeid mclib				 lists all assets in mindsphere of type core.mclib
+    mdsp assets --mode delete --assetid 1234567..ef 			 deletes asset with specified id from mindsphere
+    mdsp assets --mode template --typeid .Pump --assetname MyPump 
 		creates a file template MyPump.asset.mdsp.json which can be use in create command
 
 ```

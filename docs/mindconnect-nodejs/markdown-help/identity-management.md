@@ -38,7 +38,7 @@ manage mindsphere users, groups and roles *
 Parameter list:
 
 ```text
-Usage: mdsp identity-management|iam [options]
+Usage: mc identity-management|iam [options]
 
 manage mindsphere users, groups and roles *
 
@@ -66,35 +66,35 @@ Here are some examples of how to use the `mdsp identity-management` command:
 
   Example:
 
-    mc iam --mode list --user 		 list all users
-    mc iam --mode list --user [user] 	 list all users which contain [user] in the login name
-    mc iam --mode list --group 		 list all groups
-    mc iam --mode list --group [group] 	 list all groups which contain [group] in the name
-    mc iam --mode list --role 		 list all roles
-    mc iam --mode list --role [role] 	 list all roles which contain [role] in the name
+    mdsp iam --mode list --user 		 list all users
+    mdsp iam --mode list --user [user] 	 list all users which contain [user] in the login name
+    mdsp iam --mode list --group 		 list all groups
+    mdsp iam --mode list --group [group] 	 list all groups which contain [group] in the name
+    mdsp iam --mode list --role 		 list all roles
+    mdsp iam --mode list --role [role] 	 list all roles which contain [role] in the name
 
-    mc iam --mode info --user [user] --meta 	 get all infos about users which contain [user] in the login name
-    mc iam --mode info --group [group] --meta 	 get all infos about groups which contain [group] in the name
-    mc iam --mode info --role [role]  --meta 	 get all infos about roles which contain [role] in the name
+    mdsp iam --mode info --user [user] --meta 	 get all infos about users which contain [user] in the login name
+    mdsp iam --mode info --group [group] --meta 	 get all infos about groups which contain [group] in the name
+    mdsp iam --mode info --role [role]  --meta 	 get all infos about roles which contain [role] in the name
 
-    mc iam --mode create|delete --user  	 create or delete user
-    mc iam --mode create|delete --group   create or delete group
-    mc iam --mode create|delete --role   	 create or delete role
-    mc iam --mode create --user  --subtenant subtenant 	 create user in specified subtenant
+    mdsp iam --mode create|delete --user  	 create or delete user
+    mdsp iam --mode create|delete --group   create or delete group
+    mdsp iam --mode create|delete --role   	 create or delete role
+    mdsp iam --mode create --user  --subtenant subtenant 	 create user in specified subtenant
 
-    mc iam --mode assign --user  --group  	 assign user to user group group
-    mc iam --mode assign --user  --role  	 assign role to user user
-    mc iam --mode assign --user  --group  	 assign user to user group group
-    mc iam --mode assign --group  --membergroup  	 assign membergroup to user group group
-    mc iam --mode assign --group  --role  			 assign role to user group group
-    mc iam --mode assign --role  --memberrole  	 assign member role to custom role role
+    mdsp iam --mode assign --user  --group  	 assign user to user group group
+    mdsp iam --mode assign --user  --role  	 assign role to user user
+    mdsp iam --mode assign --user  --group  	 assign user to user group group
+    mdsp iam --mode assign --group  --membergroup  	 assign membergroup to user group group
+    mdsp iam --mode assign --group  --role  			 assign role to user group group
+    mdsp iam --mode assign --role  --memberrole  	 assign member role to custom role role
 
-    mc iam --mode remove --user  --group  	 remove user from user group group
-    mc iam --mode remove --user  --role  	 remove role from user user
-    mc iam --mode remove --user  --group  	 remove user from user group group
-    mc iam --mode remove --group  --membergroup  	 remove membergroup from user group group
-    mc iam --mode remove --group  --role  			 remove role from user group group
-    mc iam --mode remove --role  --memberrole  	 remove member role from custom role role
+    mdsp iam --mode remove --user  --group  	 remove user from user group group
+    mdsp iam --mode remove --user  --role  	 remove role from user user
+    mdsp iam --mode remove --user  --group  	 remove user from user group group
+    mdsp iam --mode remove --group  --membergroup  	 remove membergroup from user group group
+    mdsp iam --mode remove --group  --role  			 remove role from user group group
+    mdsp iam --mode remove --role  --memberrole  	 remove member role from custom role role
 
 ```
 

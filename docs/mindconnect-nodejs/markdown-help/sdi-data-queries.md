@@ -38,7 +38,7 @@ manage data queries for SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-data-queries|sdq [options]
+Usage: mc sdi-data-queries|sdq [options]
 
 manage data queries for SDI *
 
@@ -63,13 +63,13 @@ Here are some examples of how to use the `mdsp sdi-data-queries` command:
 
   Examples:
 
-    mc sdi-data-queries --mode list 		 list all sdi dataqueries
-    mc sdi-data-queries --mode template 	 create template file
-    mc sdi-data-queries --mode create --query  	 create sdi data query
-    mc sdi-data-queries --mode update --query  --queryid                                                                                               		 update sdi data query
-    mc sdi-data-queries --mode info --queryid    		 get sdi data query info
-    mc sdi-data-queries --mode latest --queryid    		 get latest query results
-    mc sdi-data-queries --mode delete --queryid  		 delete sdi data query
+    mdsp sdi-data-queries --mode list 		 list all sdi dataqueries
+    mdsp sdi-data-queries --mode template 	 create template file
+    mdsp sdi-data-queries --mode create --query  	 create sdi data query
+    mdsp sdi-data-queries --mode update --query  --queryid  	update sdi data query
+    mdsp sdi-data-queries --mode info --queryid    		 get sdi data query info
+    mdsp sdi-data-queries --mode latest --queryid    		 get latest query results
+    mdsp sdi-data-queries --mode delete --queryid  		 delete sdi data query
 
 ```
 

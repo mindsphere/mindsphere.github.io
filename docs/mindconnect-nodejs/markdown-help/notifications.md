@@ -38,7 +38,7 @@ send email, sms and push notifications *
 Parameter list:
 
 ```text
-Usage: mdsp notifications|nt [options]
+Usage: mc notifications|nt [options]
 
 send email, sms and push notifications *
 
@@ -64,8 +64,8 @@ Here are some examples of how to use the `mdsp notifications` command:
 
   Examples:
 
-    mc notifications --mode template --type [mail|sms|push] 	 create template file with notification metadata
-    mc notifications --mode send --metadata  --type [mail|sms|push] 
+    mdsp notifications --mode template --type [mail|sms|push] 	 create template file with notification metadata
+    mdsp notifications --mode send --metadata  --type [mail|sms|push] 
 					 send notifications (mail, sms, push) to recipients
 
 ```

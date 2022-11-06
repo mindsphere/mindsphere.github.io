@@ -38,7 +38,7 @@ upload file to SDI *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-file-upload|sdu [options]
+Usage: mc sdi-file-upload|sdu [options]
 
 upload file to SDI *
 
@@ -61,12 +61,12 @@ Here are some examples of how to use the `mdsp sdi-file-upload` command:
 
   Examples:
 
-    mc sdi-file-upload --file  			 upload file to SDI
+    mdsp sdi-file-upload --file  			 upload file to SDI
 
   Restriction:
 
     This works only for SDI only tenants (without Integrated Data Lake)
-    If you are MindSphere Integrated Data Lake Customer use mc data-lake --mode upload command instead. 
+    If you are MindSphere Integrated Data Lake Customer use mdsp data-lake --mode upload command instead. 
 
 ```
 

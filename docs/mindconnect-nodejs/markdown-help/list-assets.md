@@ -38,7 +38,7 @@ list assets in the tenant *
 Parameter list:
 
 ```text
-Usage: mdsp list-assets|la [options]
+Usage: mc list-assets|la [options]
 
 list assets in the tenant *
 
@@ -63,9 +63,9 @@ Here are some examples of how to use the `mdsp list-assets` command:
 
   Examples:
 
-    mc list-assets --passkey mypasskey 						list all assets
-    mc la --typeid core.mclib --assetname nodered --passkey mypasskey 		list all agents (assets of type core.mclib) with nodered in the name
-    mc la --filter '{"name" : {"contains" : "Engine"}}' --passkey mypasskey 	list all assets where name contains string Engine
+    mdsp list-assets --passkey mypasskey 						list all assets
+    mdsp la --typeid core.mclib --assetname nodered --passkey mypasskey 		list all agents (assets of type core.mclib) with nodered in the name
+    mdsp la --filter '{"name" : {"contains" : "Engine"}}' --passkey mypasskey 	list all assets where name contains string Engine
 
 ```
 

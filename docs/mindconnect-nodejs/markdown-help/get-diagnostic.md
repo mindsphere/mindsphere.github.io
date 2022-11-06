@@ -38,7 +38,7 @@ get diagnostic information *
 Parameter list:
 
 ```text
-Usage: mdsp get-diagnostic|gd [options]
+Usage: mc get-diagnostic|gd [options]
 
 get diagnostic information *
 
@@ -62,9 +62,9 @@ Here are some examples of how to use the `mdsp get-diagnostic` command:
 
   Examples: 
 
-    mc gd -k mypasskey
-    mc get-diagnostic --config someagent.json --passkey mypasskey
-    mc get-diagnostic --passkey mypasskey --text --all > log.csv
+    mdsp gd -k mypasskey
+    mdsp get-diagnostic --config someagent.json --passkey mypasskey
+    mdsp get-diagnostic --passkey mypasskey --text --all > log.csv
 
 ```
 

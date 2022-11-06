@@ -38,7 +38,7 @@ perform spectrum analysis on a sound file @
 Parameter list:
 
 ```text
-Usage: mdsp spectrum-analysis|sp [options]
+Usage: mc spectrum-analysis|sp [options]
 
 perform spectrum analysis on a sound file @
 
@@ -65,9 +65,9 @@ Here are some examples of how to use the `mdsp spectrum-analysis` command:
 
   Examples:
 
-    mc spectrum-analysis -f machine.wav  	 Decomposes the sound file into frequency components
-    mc spectrum-analysis -f machine.wav --windowtype blackman 	 use blackman window type for FFT preprocessing
-    mc spectrum-analysis --mode threshold 	 detect threshold violations for thresholds stored in thresholds.spectrum.json
+    mdsp spectrum-analysis -f machine.wav  	 Decomposes the sound file into frequency components
+    mdsp spectrum-analysis -f machine.wav --windowtype blackman 	 use blackman window type for FFT preprocessing
+    mdsp spectrum-analysis --mode threshold 	 detect threshold violations for thresholds stored in thresholds.spectrum.json
 
 ```
 

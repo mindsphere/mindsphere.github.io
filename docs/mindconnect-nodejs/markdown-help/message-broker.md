@@ -38,7 +38,7 @@ manage message broker subscriptions and webhooks *
 Parameter list:
 
 ```text
-Usage: mdsp message-broker|mbk [options]
+Usage: mc message-broker|mbk [options]
 
 manage message broker subscriptions and webhooks *
 
@@ -65,11 +65,11 @@ Here are some examples of how to use the `mdsp message-broker` command:
 
   Examples:
 
-    mc message-broker --mode info   --subscriptionid  --versionid  --topicid  	 get subscription webhook uri
-    mc message-broker --mode delete --subscriptionid  --versionid  --topicid  	 delete webhook 
-    mc message-broker --mode modify --subscriptionid  --versionid  --topicid  --webhook  	 configure webhook 
-    mc message-broker --mode template --file messagebroker.message.mdsp.json 			 create template message file 
-    mc message-broker --mode send --file messagebroker.message.mdsp.json --topicid  	 send message to the topic 
+    mdsp message-broker --mode info   --subscriptionid  --versionid  --topicid  	 get subscription webhook uri
+    mdsp message-broker --mode delete --subscriptionid  --versionid  --topicid  	 delete webhook 
+    mdsp message-broker --mode modify --subscriptionid  --versionid  --topicid  --webhook  	 configure webhook 
+    mdsp message-broker --mode template --file messagebroker.message.mdsp.json 			 create template message file 
+    mdsp message-broker --mode send --file messagebroker.message.mdsp.json --topicid  	 send message to the topic 
 
 ```
 

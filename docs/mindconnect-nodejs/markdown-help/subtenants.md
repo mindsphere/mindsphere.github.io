@@ -38,7 +38,7 @@ list, create or delete subtenants *
 Parameter list:
 
 ```text
-Usage: mdsp subtenants|st [options]
+Usage: mc subtenants|st [options]
 
 list, create or delete subtenants *
 
@@ -62,11 +62,11 @@ Here are some examples of how to use the `mdsp subtenants` command:
 
   Examples:
 
-    mc subtenants --mode list 					list all subtenants
-    mc subtenants --mode template --subtenant  	create a template file for 
-    mc subtenants --mode create --file  		create subtenant 
-    mc subtenants --mode info --subtenantid  	subtenant info for specified id
-    mc subtenants --mode delete --subtenantid  	delete subtenant with specified id
+    mdsp subtenants --mode list 					list all subtenants
+    mdsp subtenants --mode template --subtenant  	create a template file for 
+    mdsp subtenants --mode create --file  		create subtenant 
+    mdsp subtenants --mode info --subtenantid  	subtenant info for specified id
+    mdsp subtenants --mode delete --subtenantid  	delete subtenant with specified id
 
 ```
 

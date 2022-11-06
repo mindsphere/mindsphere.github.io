@@ -38,7 +38,7 @@ process timeseries data *
 Parameter list:
 
 ```text
-Usage: mdsp signal-calculation|cal [options]
+Usage: mc signal-calculation|cal [options]
 
 process timeseries data *
 
@@ -68,18 +68,18 @@ Here are some examples of how to use the `mdsp signal-calculation` command:
 
   Examples:
 
-    mc signal-calculation --mode template 	 create template file for signal calculation
-    mc signal-calculation --mode template --on asset --assetid  --aspect  --variable variable
+    mdsp signal-calculation --mode template 	 create template file for signal calculation
+    mdsp signal-calculation --mode template --on asset --assetid  --aspect  --variable variable
                                             	 creates template for calculation using mindsphere timeseries data
-    mc signal-calculation --mode calculate --template  
+    mdsp signal-calculation --mode calculate --template  
                                             	 calculates new signal from the timeseries specified in template file
-    mc signal-calculation --mode calculate \
+    mdsp signal-calculation --mode calculate \
                      --template  \
                      --timeseries  \
                      --assetid  \
                      --aspect 
                                             	 calculates new signal from the timeseries specified in external file
-    mc signal-calculation --mode calculate --on asset --template  
+    mdsp signal-calculation --mode calculate --on asset --template  
                                             	 calculates new signal from the mindsphere timeseries
 
   Operation List: 

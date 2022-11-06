@@ -38,7 +38,7 @@ list, create, update firmware deployment task(s) (open edge) *
 Parameter list:
 
 ```text
-Usage: mdsp oe-firm-deploy|oefd [options]
+Usage: mc oe-firm-deploy|oefd [options]
 
 list, create, update firmware deployment task(s) (open edge) *
 
@@ -66,19 +66,19 @@ Here are some examples of how to use the `mdsp oe-firm-deploy` command:
 
   Examples:
 
-    mc oe-firm-deploy --mode list --deviceid "7d018c..." 
+    mdsp oe-firm-deploy --mode list --deviceid "7d018c..." 
 	list all firmware deployment taks on a specified device.
-    mc oe-firm-deploy --mode template 
+    mdsp oe-firm-deploy --mode template 
 	create template files to define an firmware installation/update task.
-    mc oe-firm-deploy --mode create --file edge.install.firmware.mdsp.json 
+    mdsp oe-firm-deploy --mode create --file edge.install.firmware.mdsp.json 
 	creates a new firmware installtion tak.
-    mc oe-firm-deploy --mode update --id "7d018c..." --file edge.firmware.status.mdsp.json 
+    mdsp oe-firm-deploy --mode update --id "7d018c..." --file edge.firmware.status.mdsp.json 
 	update a firmware installation task from status template file.
-    mc oe-firm-deploy --mode info --id 
+    mdsp oe-firm-deploy --mode info --id 
 	get details of a firmware installation task.
-    mc oe-firm-deploy --mode check --deviceid  --realeaseid   
+    mdsp oe-firm-deploy --mode check --deviceid  --realeaseid   
 	check terms and condition of a firmware realease on a a specific device.
-    mc oe-firm-deploy --mode accept --deviceid  --realeaseid  
+    mdsp oe-firm-deploy --mode accept --deviceid  --realeaseid  
 	accept terms and condition of a firmware realease on a a specific device.
 
 ```

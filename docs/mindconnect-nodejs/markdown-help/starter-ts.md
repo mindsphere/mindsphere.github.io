@@ -38,7 +38,7 @@ creates a starter project in typescript #
 Parameter list:
 
 ```text
-Usage: mdsp starter-ts|st [options]
+Usage: mc starter-ts|st [options]
 
 creates a starter project in typescript #
 
@@ -57,8 +57,8 @@ Here are some examples of how to use the `mdsp starter-ts` command:
 
   Examples:
 
-    mc starter-ts 			 this creates a directory called starterts
-    mc st --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
+    mdsp starter-ts 				 this creates a directory called starterts
+    mdsp starter-ts --dir mindconnect-agent 	 this creates a directory called mindconnect-agent
 
 ```
 

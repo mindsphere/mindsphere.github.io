@@ -38,7 +38,7 @@ list, create, update app installation task(s) (open edge) *
 Parameter list:
 
 ```text
-Usage: mdsp oe-app-deploy|oead [options]
+Usage: mc oe-app-deploy|oead [options]
 
 list, create, update app installation task(s) (open edge) *
 
@@ -47,7 +47,7 @@ Options:
                                                                      (default: "list")
   -i, --id                                                       the installation task id
   -d, --deviceid                                           deviceid to filter
-  -r, --realeaseid                                       software realease id
+  -r, --releaseid                                         software release id
   -f, --file                                                   .mdsp.json file with app data
   -s, --status  [closed|open]                                closed | open
   -o, --overwrite                                                    overwrite template file if it already exists
@@ -66,22 +66,22 @@ Here are some examples of how to use the `mdsp oe-app-deploy` command:
 
   Examples:
 
-    mc oe-app-deploy --mode list --deviceid "7d018c..." 
+    mdsp oe-app-deploy --mode list --deviceid "7d018c..." 
 	list all installation and removal tasks of a specified device.
-    mc oe-app-deploy --mode template 
+    mdsp oe-app-deploy --mode template 
 	create template files to define an app installation/removal task.
-    mc oe-app-deploy --mode create --file edge.install.app.mdsp.json 
+    mdsp oe-app-deploy --mode create --file edge.install.app.mdsp.json 
 	creates a new installation app taks.
-    mc oe-app-deploy --mode remove --file edge.remove.app.mdsp.json 
+    mdsp oe-app-deploy --mode remove --file edge.remove.app.mdsp.json 
 	creates a new removal app task.
-    mc oe-app-deploy --mode update --id "7d018c..." --file edge.app.status.mdsp.json 
+    mdsp oe-app-deploy --mode update --id "7d018c..." --file edge.app.status.mdsp.json 
 	update an installation/removal task from status template file.
-    mc oe-app-deploy --mode info --id 
+    mdsp oe-app-deploy --mode info --id 
 	get details of an installation task.
-    mc oe-app-deploy --mode check --deviceid  --realeaseid   
-	check terms and condition of a software realease on a a specific device.
-    mc oe-app-deploy --mode accept --deviceid  --realeaseid  
-	accept terms and condition of a software realease on a a specific device.
+    mdsp oe-app-deploy --mode check --deviceid  --releaseid   
+	check terms and condition of a software release on a a specific device.
+    mdsp oe-app-deploy --mode accept --deviceid  --releaseid  
+	accept terms and condition of a software release on a a specific device.
 
 ```
 

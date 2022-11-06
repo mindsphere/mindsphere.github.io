@@ -38,7 +38,7 @@ manage mqtt delivery jobs to publish MQTT commands to the clients *
 Parameter list:
 
 ```text
-Usage: mdsp delivery-jobs|dj [options]
+Usage: mc delivery-jobs|dj [options]
 
 manage mqtt delivery jobs to publish MQTT commands to the clients *
 
@@ -67,16 +67,16 @@ Here are some examples of how to use the `mdsp delivery-jobs` command:
 
   Examples:
 
-    mc delivery-jobs --mode list 					 list all jobs
-    mc delivery-jobs --mode list --name  				 list all mqtt delivery jobs with the given name
-    mc delivery-jobs --mode list --filter '{"createdAt": {"after": "2021-11-06T13:46:00Z"}}'  
+    mdsp delivery-jobs --mode list 					 list all jobs
+    mdsp delivery-jobs --mode list --name  				 list all mqtt delivery jobs with the given name
+    mdsp delivery-jobs --mode list --filter '{"createdAt": {"after": "2021-11-06T13:46:00Z"}}'  
                                                                          list all mqtt delivery jobs created after the specified date
-    mc delivery-jobs --mode template 					 create template file for job creation
-    mc delivery-jobs --mode create --file  		 create job
-    mc delivery-jobs --mode info --jobid  			 get infos about the job
-    mc delivery-jobs --mode delete --jobid  			 delete job with job id
-    mc delivery-jobs --mode commands --jobid  			 list all commands for specified job id
-    mc delivery-jobs --mode commandinfo --jobid  --commandid   
+    mdsp delivery-jobs --mode template 					 create template file for job creation
+    mdsp delivery-jobs --mode create --file  		 create job
+    mdsp delivery-jobs --mode info --jobid  			 get infos about the job
+    mdsp delivery-jobs --mode delete --jobid  			 delete job with job id
+    mdsp delivery-jobs --mode commands --jobid  			 list all commands for specified job id
+    mdsp delivery-jobs --mode commandinfo --jobid  --commandid   
                                                                          get info for selected command
 
 ```

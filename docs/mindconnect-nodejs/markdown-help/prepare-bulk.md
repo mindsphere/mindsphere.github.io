@@ -38,7 +38,7 @@ creates a template directory for timeseries (bulk) upload *
 Parameter list:
 
 ```text
-Usage: mdsp prepare-bulk|pb [options]
+Usage: mc prepare-bulk|pb [options]
 
 creates a template directory for timeseries (bulk) upload *
 
@@ -65,9 +65,9 @@ Here are some examples of how to use the `mdsp prepare-bulk` command:
 
   Examples:
 
-    mc prepare-bulk  --typeid castidev.Engine 	 this creates a directory called bulkimport for new asset of type castidev.Engine
-    mc pb --dir asset1 -i 123456...abc 		 this creates a directory called asset1 for existing asset
-    mc pb -of 3 -t castidev.Engine 		 start data creation template 3 days before now
+    mdsp prepare-bulk  --typeid castidev.Engine 	 this creates a directory called bulkimport for new asset of type castidev.Engine
+    mdsp pb --dir asset1 -i 123456...abc 		 this creates a directory called asset1 for existing asset
+    mdsp pb -of 3 -t castidev.Engine 		 start data creation template 3 days before now
 
 	use --mode performance for standard data generation or --mode simulation for high frequency data generation 
 	The typeid must be derived from core.basicdevice and asset twintype must be simulation for high frequency data upload

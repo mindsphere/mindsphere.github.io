@@ -38,7 +38,7 @@ list, create or delete device types (open edge) *
 Parameter list:
 
 ```text
-Usage: mdsp oe-device-types|oedt [options]
+Usage: mc oe-device-types|oedt [options]
 
 list, create or delete device types (open edge) *
 
@@ -66,14 +66,14 @@ Here are some examples of how to use the `mdsp oe-device-types` command:
 
   Examples:
 
-    mc oe-device-types --mode list 			 list all device types
-    mc oe-device-types --mode list --tenant siemens	 list all device types which belongs to the tenant "siemens"
-    mc oe-device-types --mode info --id 	 get details of device type with the specified device id
-    mc oe-device-types --mode template --devicetype board 
+    mdsp oe-device-types --mode list 			 list all device types
+    mdsp oe-device-types --mode list --tenant siemens	 list all device types which belongs to the tenant "siemens"
+    mdsp oe-device-types --mode info --id 	 get details of device type with the specified device id
+    mdsp oe-device-types --mode template --devicetype board 
 	create a template file for specified device type
-    mc oe-device-types --mode create --file board.devicetype.mdsp.json 
+    mdsp oe-device-types --mode create --file board.devicetype.mdsp.json 
 	create device type board in MindSphere
-    mc oe-device-types --mode delete --id 	 delete the device type with the device id
+    mdsp oe-device-types --mode delete --id 	 delete the device type with the device id
 
 ```
 

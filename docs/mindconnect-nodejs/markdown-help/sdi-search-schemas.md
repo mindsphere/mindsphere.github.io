@@ -38,7 +38,7 @@ search SDI schemas *
 Parameter list:
 
 ```text
-Usage: mdsp sdi-search-schemas|sds [options]
+Usage: mc sdi-search-schemas|sds [options]
 
 search SDI schemas *
 
@@ -61,8 +61,8 @@ Here are some examples of how to use the `mdsp sdi-search-schemas` command:
 
   Examples:
 
-    mc sdi-search-schemas --mode template 	 create template file
-    mc sdi-search-schemas --mode search --searchrequest  	 search for sdi schemas
+    mdsp sdi-search-schemas --mode template 	 create template file
+    mdsp sdi-search-schemas --mode search --searchrequest  	 search for sdi schemas
 
 ```
 

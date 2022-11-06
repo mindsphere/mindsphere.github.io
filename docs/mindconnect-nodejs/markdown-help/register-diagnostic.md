@@ -38,7 +38,7 @@ register agent for diagnostic *
 Parameter list:
 
 ```text
-Usage: mdsp register-diagnostic|rd [options]
+Usage: mc register-diagnostic|rd [options]
 
 register agent for diagnostic *
 
@@ -59,8 +59,8 @@ Here are some examples of how to use the `mdsp register-diagnostic` command:
 
   Examples:
 
-    mc rd -k mypasskey
-    mc register-diagnostic --config someagent.json -passkey mypasskey
+    mdsp rd -k mypasskey
+    mdsp register-diagnostic --config someagent.json -passkey mypasskey
 
 ```
 
