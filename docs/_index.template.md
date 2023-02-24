@@ -119,7 +119,7 @@ featured:
             <li class="featurelist__feature">
                 <div class="featurelist__feature--{{ feature.icon }}">
                 </div>
-                 <h2>
+                <h2>
                     {{ feature.title | replace: "MindSphere", site.productname}}
                 </h2>
                 <p>
