@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp trend-prediction Command
+title:  CLI -  mdsp trend-prediction Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp trend-prediction Command
+# {{site.productname}} CLI: mdsp trend-prediction Command
 
 Syntax:
 
@@ -67,8 +67,8 @@ Here are some examples of how to use the `mdsp trend-prediction` command:
   Examples:
 
     mdsp trend-prediction --mode list 				 lists all trend prediction models
-    mdsp trend-prediction --mode get --modelid 12345..ef 		 retrieves the trend prediction model from the mindsphere
-    mdsp trend-prediction --mode delete --modelid 12345..ef 	 deletes the trend prediction model from the mindsphere
+    mdsp trend-prediction --mode get --modelid 12345..ef 		 retrieves the trend prediction model from the {{site.productname}}
+    mdsp trend-prediction --mode delete --modelid 12345..ef 	 deletes the trend prediction model from the {{site.productname}}
     mdsp tp --mode trendandpredict 				 training and prediction in one single step (see parameters below)
 
     mdsp tp --mode train -f data.json -i "temp,vibration" -o "quality" -d 2 		   trains quadratic fit function for f(temp, vibration) = quality 
@@ -80,4 +80,4 @@ Here are some examples of how to use the `mdsp trend-prediction` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

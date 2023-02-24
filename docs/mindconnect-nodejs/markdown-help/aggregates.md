@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp aggregates Command
+title:  CLI -  mdsp aggregates Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp aggregates Command
+# {{site.productname}} CLI: mdsp aggregates Command
 
 Syntax:
 
@@ -43,8 +43,8 @@ Usage: mc aggregates|ag [options]
 list timeseries aggregates *
 
 Options:
-  -i, --assetid               mindsphere asset id
-  -n, --aspectname         mindsphere aspect name
+  -i, --assetid               {{site.productname}} asset id
+  -n, --aspectname         {{site.productname}} aspect name
   -f, --from                     begining of the time range to read (default: "2022-11-05T01:51:16.065Z")
   -t, --to                         end of the time range to read
   -r, --intervalvalue   interval duration for the aggregates in interval units
@@ -85,4 +85,4 @@ Here are some examples of how to use the `mdsp aggregates` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

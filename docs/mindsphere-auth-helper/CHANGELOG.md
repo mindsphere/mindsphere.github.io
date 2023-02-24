@@ -1,5 +1,5 @@
 ---
-title: MindSphere Authentication Helper Extension - Changelog
+title:  Authentication Helper Extension - Changelog
 ---
 
 <!-- @format -->

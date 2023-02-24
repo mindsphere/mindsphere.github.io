@@ -1,8 +1,8 @@
 ---
-title: MindSphere DevOps Demo - License
+title:  DevOps Demo - License
 ---
 
-# MindSphere DevOps Demo - <small>License</small>
+# {{site.productname}} DevOps Demo - <small>License</small>
 
 MIT License
 

@@ -13,15 +13,15 @@ next:
 
 ## Introduction
 
-The CLI provides the command line tooling for import of the historical timeseries data to the MindSphere, which is something which you might need when starting to work with the platform. This set of commands sends the data directly to the (Bulk-)TimeSeries APIs of the MindSphere.
+The CLI provides the command line tooling for import of the historical timeseries data to the {{site.productname}}, which is something which you might need when starting to work with the platform. This set of commands sends the data directly to the (Bulk-)TimeSeries APIs of the {{site.productname}}.
 
 <!-- prettier-ignore-start -->
 <i class="fas fa-exclamation-triangle"></i>
     Please be aware that the use of this feature has a direct impact
-    on _your_ mindsphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+    on _your_ {{site.productname}} resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 <!-- prettier-ignore-end -->
 
-The upload of historical timeseries data to MindSphere is done in several steps:
+The upload of historical timeseries data to {{site.productname}} is done in several steps:
 
 -   Preparing the directory with the template `.csv` files for the data upload.
 -   Importing your data into the prepared directory according to the created template
@@ -51,7 +51,7 @@ creates a template directory for timeseries (bulk) upload *
 Options:
   -d, --dir <directoryname>  config file with agent configuration (default: "bulkupload")
   -w, --twintype <mode>      twintype of asset [performance|simulation]
-  -i, --assetid <assetid>    asset id from the mindsphere
+  -i, --assetid <assetid>    asset id from the {{site.productname}}
   -t, --typeid <typeid>      typeid e.g. castidev.Engine
   -s, --size <size>          entries per file  (default: 100)
   -f, --files <files>        generated files  (default: 2)
@@ -124,7 +124,7 @@ Options:
   -f, --force                force generation of json files, file upload and creation of jobs
   -k, --passkey <passkey>    passkey
   -v, --verbose              verbose output
-  -t, --start                start sending data to mindsphere
+  -t, --start                start sending data to {{site.productname}}
   -h, --help                 output usage information
 
   Examples:
@@ -145,10 +145,10 @@ will convert the csv files and produce an output similar to this one:
 Running timeseries bulk API ingest for simulationAsset of type castidev.SimulationEngine with twintype simulation
 √ Done converting files to json.
 
-run mc bulk-run with --start option to start sending data to mindsphere
+run mc bulk-run with --start option to start sending data to {{site.productname}}
 ```
 
-The following command will start uploading the data to MindSphere
+The following command will start uploading the data to {{site.productname}}
 
 ```bash
 mc run-bulk --passkey {yourpasskey} --start

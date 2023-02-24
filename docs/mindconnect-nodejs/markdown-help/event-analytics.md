@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp event-analytics Command
+title:  CLI -  mdsp event-analytics Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp event-analytics Command
+# {{site.productname}} CLI: mdsp event-analytics Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc event-analytics
 
 ## Description
 
-analyze mindsphere events @
+analyze {{site.productname}} events @
 
 ## Usage
 
@@ -40,7 +40,7 @@ Parameter list:
 ```text
 Usage: mc event-analytics|ea [options]
 
-analyze mindsphere events @
+analyze {{site.productname}} events @
 
 Options:
   -m, --mode [count|filter|duplicate|top]  mode see @ Additional Documentation (default: "top")
@@ -77,4 +77,4 @@ Here are some examples of how to use the `mdsp event-analytics` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp dev-proxy Command
+title:  CLI -  mdsp dev-proxy Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp dev-proxy Command
+# {{site.productname}} CLI: mdsp dev-proxy Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc dev-proxy
 
 ## Description
 
-starts mindsphere development proxy & (optional passkey) *
+starts {{site.productname}} development proxy & (optional passkey) *
 
 ## Usage
 
@@ -40,7 +40,7 @@ Parameter list:
 ```text
 Usage: mc dev-proxy|px [options]
 
-starts mindsphere development proxy & (optional passkey) *
+starts {{site.productname}} development proxy & (optional passkey) *
 
 Options:
   -m, --mode [credentials|session]  service/app credentials authentication of session authentication (default: "session")
@@ -79,4 +79,4 @@ Here are some examples of how to use the `mdsp dev-proxy` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

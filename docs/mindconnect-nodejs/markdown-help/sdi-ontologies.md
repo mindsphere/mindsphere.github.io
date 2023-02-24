@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp sdi-ontologies Command
+title:  CLI -  mdsp sdi-ontologies Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp sdi-ontologies Command
+# {{site.productname}} CLI: mdsp sdi-ontologies Command
 
 Syntax:
 
@@ -70,4 +70,4 @@ Here are some examples of how to use the `mdsp sdi-ontologies` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

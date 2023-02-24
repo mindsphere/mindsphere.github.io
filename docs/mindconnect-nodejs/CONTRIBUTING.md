@@ -17,7 +17,7 @@ Please check for the issues in the project and look for unassigned ones or creat
 Working together in an open and welcoming environment is the foundation of our
 success, so please respect our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Contributing to MindSphere TypeScript SDK
+## Contributing to {{site.productname}} TypeScript SDK
 
 If you want to contribute with a new Client Implementation to typescript SDK here are some guidelines
 
@@ -147,7 +147,7 @@ Please follow the typescript code style which is established in tslint.json. (Wo
 
 ## Setting up the local development environment
 
-You will need a MindSphere Account to setup the development environment.
+You will need a {{site.productname}} Account to setup the development environment.
 If you don't have an account yet, you can [register here for a free account](https://siemens.mindsphere.io/en/start). (that is free as in a beer :)
 
 ### Executing unit tests
@@ -166,7 +166,7 @@ mc service-credentials
 # mc service-credentials --help will provide more help (you can use app credentials or service credentials)
 ```
 
-[Setting up the MindSphere CLI](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html)
+[Setting up the {{site.productname}} CLI](https://opensource.mindsphere.io/docs/mindconnect-nodejs/cli/setting-up-the-cli.html)
 
 after that you will need a 3072 bit certificate
 
@@ -175,7 +175,7 @@ after that you will need a 3072 bit certificate
 npm run createkey
 ```
 
-You are now all set and should be able to run the unit tests locally. Please note that not all tests will run on your machine if you have a start-for-free account due to MindSphere restrictions.
+You are now all set and should be able to run the unit tests locally. Please note that not all tests will run on your machine if you have a start-for-free account due to {{site.productname}} restrictions.
 
 ```bash
 npm run test

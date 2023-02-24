@@ -15,7 +15,7 @@ The first step is to configure the CLI. For this, you will need application cred
 -   [Service Credentials](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html#creating-service-credentials) (deprecated)
 -   [SESSION and XSRF-TOKEN cookie](https://developer.mindsphere.io/howto/howto-local-development.html#generate-user-credentials)
 
-**Important:** the service credentials (which are now deprecated) could only be acquired by emailing MindSphere Support. They are not connected to the _Cloud Foundry Service Credentials_ from MindSphere settings app.
+**Important:** the service credentials (which are now deprecated) could only be acquired by emailing {{site.productname}} Support. They are not connected to the _Cloud Foundry Service Credentials_ from {{site.productname}} settings app.
 
 ## Application Credentials / Service Credentials Configuration
 
@@ -36,7 +36,7 @@ The image below shows the dialog for adding new credentials (press on the + sign
 
 ![CLI](../images/servicecredentials.png)
 
-You can get the application credentials from your developer or operator cockpit in MindSphere. (if you don't have any application you can register a dummy one just for CLI)
+You can get the application credentials from your developer or operator cockpit in {{site.productname}}. (if you don't have any application you can register a dummy one just for CLI)
 
 ![CLI](../images/cockpit.png)
 
@@ -111,7 +111,7 @@ The results of the commands will be colored yellow if you are using SESSION / XS
 
 The use of Service or Application credentials always takes precedence over Session Cookie / XSRF-TOKEN Authentication.
 
-## MindSphere Authentication Helper
+## {{site.productname}} Authentication Helper
 
 You can use the [Mindsphere Auth Helper](../../mindsphere-auth-helper/index.html) Chrome extension (<a href="https://chrome.google.com/webstore/detail/mindsphere-authentication/licndiiilobojikmhmmcgdbpmnmdeoee"><i class="fab fa-chrome"></i> chrome web store</a>
 ) to simplify the copying of the authentication cookies. The extension already

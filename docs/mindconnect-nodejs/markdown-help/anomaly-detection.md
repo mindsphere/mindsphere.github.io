@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp anomaly-detection Command
+title:  CLI -  mdsp anomaly-detection Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp anomaly-detection Command
+# {{site.productname}} CLI: mdsp anomaly-detection Command
 
 Syntax:
 
@@ -50,9 +50,9 @@ Options:
   -s, --clustersize                   minimum cluster size
   -a, --algorithm [EUCLIDEAN|MANHATTAN|CHEBYSHEV]  distance measure algorithm [EUCLIDEAN | MANHATTAN | CHEBYSHEV]
   -n, --modelname                       human-friendly name of the model
-  -i, --modelid                           mindsphere model id
-  -i, --assetid                           mindsphere asset id
-  -n, --aspectname                     mindsphere aspect name
+  -i, --modelid                           {{site.productname}} model id
+  -i, --assetid                           {{site.productname}} asset id
+  -n, --aspectname                     {{site.productname}} aspect name
   -f, --from                                 begining of the time range
   -u, --to                                     end of the time range
   -k, --passkey                           passkey
@@ -84,4 +84,4 @@ Here are some examples of how to use the `mdsp anomaly-detection` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

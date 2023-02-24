@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp create-event Command
+title:  CLI -  mdsp create-event Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp create-event Command
+# {{site.productname}} CLI: mdsp create-event Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc create-event
 
 ## Description
 
-create an event in the mindsphere (optional: passkey) *
+create an event in the {{site.productname}} (optional: passkey) *
 
 ## Usage
 
@@ -40,12 +40,12 @@ Parameter list:
 ```text
 Usage: mc create-event|ce [options]
 
-create an event in the mindsphere (optional: passkey) *
+create an event in the {{site.productname}} (optional: passkey) *
 
 Options:
   -c, --config      config file with agent configuration
   -r, --cert [privatekey]        required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
-  -i, --assetid         mindsphere asset id  (default: send event to the agent)
+  -i, --assetid         {{site.productname}} asset id  (default: send event to the agent)
   -y, --sourceType   Source Type (default: "MindConnect-Agent")
   -S, --sourceId       Source Id (default: "Monikas-Air-2.fritz.box")
   -O, --source           Source (default: "MindConnect-NodeJs CLI")
@@ -73,4 +73,4 @@ Here are some examples of how to use the `mdsp create-event` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

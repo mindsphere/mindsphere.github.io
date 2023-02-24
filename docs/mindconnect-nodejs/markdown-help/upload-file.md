@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp upload-file Command
+title:  CLI -  mdsp upload-file Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp upload-file Command
+# {{site.productname}} CLI: mdsp upload-file Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc upload-file
 
 ## Description
 
-upload the file to the mindsphere file service (optional: passkey) *
+upload the file to the {{site.productname}} file service (optional: passkey) *
 
 ## Usage
 
@@ -40,15 +40,15 @@ Parameter list:
 ```text
 Usage: mc upload-file|uf [options]
 
-upload the file to the mindsphere file service (optional: passkey) *
+upload the file to the {{site.productname}} file service (optional: passkey) *
 
 Options:
   -c, --config   config file with agent configuration
   -r, --cert [privatekey]     required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -f, --file    file to upload to the file service
-  -h, --filepath    file path in the mindsphere
+  -h, --filepath    file path in the {{site.productname}}
   -l, --parallel      parallel chunk uploads (default: "3")
-  -i, --assetid [assetid]     mindsphere asset id  (default: upload to the agent)
+  -i, --assetid [assetid]     {{site.productname}} asset id  (default: upload to the agent)
   -m, --mime [mime-type]      mime type of the file (default: automatic recognition)
   -d, --desc [description]    description
   -k, --chunked               Use chunked upload
@@ -73,4 +73,4 @@ Here are some examples of how to use the `mdsp upload-file` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -15,7 +15,7 @@ title: MindConnect-NodeJS - Changelog
 ## 3.20.0 - (Spring Green Vienna) - July 2022
 
 - SDK: added GetUserTenant() method to SDK Level read out the user tenant from the current configuration (if token manager authentication is used)
-- CLI: new mode `--mode tree` for `mdsp assets` command provides tree visualization of mindsphere assets in the tenant
+- CLI: new mode `--mode tree` for `mdsp assets` command provides tree visualization of {{site.productname}} assets in the tenant
 - CLI: added default value (`aggregates.mdsp.json`) for `mdsp aggregates --download` parameter
 - CLI: improved `mdsp aggregates` command. all parameters, including intervalunit and intervalvalue can be specified.
 - CLI: Created a new `mdsp timeseries` command to match the `mdsp aggregates` command. [#318](https://github.com/mindsphere/mindconnect-nodejs/issues/318)
@@ -63,7 +63,7 @@ title: MindConnect-NodeJS - Changelog
 
 ### Announcement 3.14.0
 
-Thanks to the final push of contributions from @jupiterbak, the typescript SDK and the CLI have now support for all publicly avaialable MindSphere APIs.
+Thanks to the final push of contributions from @jupiterbak, the typescript SDK and the CLI have now support for all publicly avaialable {{site.productname}} APIs.
 
 ### Bugfixes and Improvements 3.14.0
 
@@ -99,8 +99,8 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - CLI: new `mc data-exchange` command [#256]
 - CLI: new `mc mobile-app-instances` command [#252]
 - CLI: new `mc mobile-apps` command [#252]
-- CLI: new `mc notifications` command for MindSphere notifications [#252]
-- CLI: new `mc signal-calculation` command for MindSphere Signal Calculation Service [#258]
+- CLI: new `mc notifications` command for {{site.productname}} notifications [#252]
+- CLI: new `mc signal-calculation` command for {{site.productname}} Signal Calculation Service [#258]
 - CLI: new `mc sdi-data-lakes` command for SDI [#265]
 - CLI: new `mc sdi-data-registries` command for SDI [#265]
 - CLI: new `mc sdi-data-types` command for SDI [#265]
@@ -162,7 +162,7 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 ### Bugfixes and Improvements 3.11.0
 
 - CLI: `mc data-lake` added `--mode meta` which prints out the metadata of a path
-- CLI: `mc configure-agent --mode template` can now generate a template for JSON schema to MindSphere conversion see [medium](https://medium.com/@sn0wcat_92713/how-to-create-mindsphere-artefacts-from-json-schema-definitions-1b2f3e446f6a) for more
+- CLI: `mc configure-agent --mode template` can now generate a template for JSON schema to {{site.productname}} conversion see [medium](https://medium.com/@sn0wcat_92713/how-to-create-mindsphere-artefacts-from-json-schema-definitions-1b2f3e446f6a) for more
 - CLI: new `--mode template` parameter on `mc configure-agent`  command
 - CLI: new `--mode info` parameter on `mc asset-types` and `mc aspects` commands (#211)
 - CLI: new `mc event-types` command with `--includeshared` support for cross-tenancy (#170)
@@ -265,7 +265,7 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - SDK: typescript sdk released to beta status
 - SDK: typescript browser support (e.g. for react, angular, etc)
 - CLI: mc service-credentials command has now http based configuration frontend
-- CLI: mc dev-proxy added simple api proxy for MindSphere local app development
+- CLI: mc dev-proxy added simple api proxy for {{site.productname}} local app development
 
 ### Contributions 3.8.0 heart: <3
 
@@ -297,17 +297,17 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - SDK: added ServiceCredentialsAuth to SDK
 - Agent: added support for creating automatic data source configuration and automatic mappings
 - Agent: added support for typed events
-- Agent: exposed Sdk() property on the Agent for future use (at the moment only some APIs of MindSphere can be called with Agent Credentials)
+- Agent: exposed Sdk() property on the Agent for future use (at the moment only some APIs of {{site.productname}} can be called with Agent Credentials)
 - SDK: added utility class for MQTT OPC UA PubSub key rotation
 - SDK: added TokenManagerAuth to SDK
-- CLI: mc iam command can now manage MindSphere users
+- CLI: mc iam command can now manage {{site.productname}} users
 - CLI: mc configure-agent can now automatically create the data source configuration and the mappings for selected assetid
 - CLI: mc configure-agent can now automatically create the data source configuration and the mappings for selected assetid
 - CLI: mc offboard-agent has now a command to offboard an agent with the id only (mc offboard --assetid) (#130)
 - CLI: added mc mqtt-createjwt command which can create a key for MQTT OPC UA PubSub authentication
 - CLI: mc service-credentials command is now accepting application credentials
 - CLI: mc service-credentials command has now http based configuration frontend
-- CLI: mc dev-proxy added simple api proxy for MindSphere local app development
+- CLI: mc dev-proxy added simple api proxy for {{site.productname}} local app development
 - CLI: deprecated use of classical service credentials
 - Improved documentation for GetDataSourceConfiguration and GetDataMappings methods (#149, #150)
 - Switched the fetch library to cross-fetch for browser support for SDK
@@ -319,8 +319,8 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 ## Bugfixes and Improvements 3.7.0
 
 - CLI: mc kpi-calculation command (calculate kpis and kpi states based on signal values)
-- CLI: mc trend-prediction command (perform linear and polynomial trend prediction on MindSphere aspects)
-- CLI: mc bulk-download command (download timeseries aspects from MindSphere)
+- CLI: mc trend-prediction command (perform linear and polynomial trend prediction on {{site.productname}} aspects)
+- CLI: mc bulk-download command (download timeseries aspects from {{site.productname}})
 - CLI: mc delete-file command
 - CLI: mc delete-asset command
 - CLI: mc agent-token and mc service-token command print out the full token (including header in signature) in --verbose mode
@@ -346,10 +346,10 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - SDK: added SpectrumAnalysisClient to the SDK
 - SDK: added SignalValidationClient to the SDK
 - CLI Command: mc spectrum-analysis: performs spectrum analysis on a sound file (#40)
-- CLI Command: mc signal-validation: performs signal validation on the MindSphere data (#39)
+- CLI Command: mc signal-validation: performs signal validation on the {{site.productname}} data (#39)
 - CLI Command: mc list-files: lists iot files stored with the asset (#35)
 - CLI Command: mc list-assets: lists assets in the tenant (#35)
-- CLI Command: mc download-file: downloads file from MindSphere iot file service (#35)
+- CLI Command: mc download-file: downloads file from {{site.productname}} iot file service (#35)
 
 ## Bugfixes and Improvements 3.6.0
 
@@ -383,8 +383,8 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - CLI Command: prepare-bulk - creates a template directory for timeseries (bulk) upload
 - CLI Command: run-bulk - runs the timeseries (bulk) upload jobs
 - CLI Command: check-bulk - checks the progress of the upload jobs
-- CLI Command: create-agent - creates a new agent in the MindSphere (#12)
-- CLI Command: offboard-agent - offboards the agent in the MindSphere (#11)
+- CLI Command: create-agent - creates a new agent in the {{site.productname}} (#12)
+- CLI Command: offboard-agent - offboards the agent in the {{site.productname}} (#11)
 - CLI Command: renew-agent - renews the agent secrets (#13)
 - CLI Command: upload-file - New option: passkey : enables uploading the files also with service credentials
 - CLI Command: upload-file - New option: parallel :configures the number of parallel uploads
@@ -393,10 +393,10 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 - mindconnect-agent: created new UploadFile method capable of running the multipart upload (#4)
 - mindconnect-agent: the UploadFile can now take a buffer additionally to file (#23)
 - mindconnect-agent: the UploadFile can now run in parallel (#23)
-- mindconnect-agent: the MindSphere path name can be configured (#23)
+- mindconnect-agent: the {{site.productname}} path name can be configured (#23)
 - mindconnect-agent: removed the manual chunking of the files in favor of multipart upload (#23)
 - mindconnect-agent: deprecated the old upload method (#23)
-- SDK: started a PRELIMINARY SDK for the new commands which require additional MindSphere APIs
+- SDK: started a PRELIMINARY SDK for the new commands which require additional {{site.productname}} APIs
 - SDK: preliminary Support for following services
 - Agent Management Service
 - Asset Management Service
@@ -410,7 +410,7 @@ Thanks to the final push of contributions from @jupiterbak, the typescript SDK a
 ## Bugfixes and improvements 3.5.1
 
 - CLI Command: upload-timeseries - improved help and error messages during parsing #20
-- mindconnect-agent: removed content-type header from GET Messages according to MindSphere recommendation
+- mindconnect-agent: removed content-type header from GET Messages according to {{site.productname}} recommendation
 - Moved the documentation generation to compodoc instead of typedoc
 - Bumped all dependencies
 
@@ -440,7 +440,7 @@ works with service credentials authentication.
 
 At this point in time (May 2019) the Bulk Import only works for Simulation Assets and not for Performance Assets. This is why in this version
 we still use the standard APIs for the import of the historical data. Please be aware that the use of this feature has a direct impact
-on _your_ MindSphere resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
+on _your_ {{site.productname}} resource consumption and that you might get a notice that you will need to upgrade your account's data ingest rate.
 
 The standard import feature will be deprecated and removed from the CLI once bulk upload also gets enabled for performance assets.
 
@@ -494,7 +494,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 ## 3.0.1 - (Honeydew Vienna) - November 2018
 
-- Added MindSphere Developer License Agreement
+- Added {{site.productname}} Developer License Agreement
 - Added RSA_3072 support
 - Preparation for Open Source Release
 - Refactored to separate authentication and function
@@ -540,7 +540,7 @@ The standard import feature will be deprecated and removed from the CLI once bul
 - Added Validation for PostData Message (Thanks @Patrick Niederlohner for Contribution!)
 - Fixed some path errors
 - Added generators for starter agents (typescript and javascript)
-- Support for MindSphere 3.0 version of the MindConnect API.
+- Support for {{site.productname}} 3.0 version of the MindConnect API.
 - Agent Onboarding for the agents with SHARED_SECRET configuration.
 - Key Rotation for agents with SHARED_SECRET configuration.
 - Client Assertions for the agents with SHARED_SECRET configuration.
@@ -573,4 +573,4 @@ The standard import feature will be deprecated and removed from the CLI once bul
 
 ### New Features 2.0.0
 
-- Initial version for MindSphere 2.0
+- Initial version for {{site.productname}} 2.0

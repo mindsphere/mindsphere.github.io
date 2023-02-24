@@ -8,7 +8,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## New Features 3.12.1
 
-- Support for MindSphere Integrated Data Lake in China
+- Support for {{site.productname}} Integrated Data Lake in China
 - Docker images based on node-red 2.2.2
 - Bumped all dependencies
 
@@ -16,9 +16,9 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## New Features 3.12.0
 
-- Support for "bidirectional" communication with MindSphere [#129]
+- Support for "bidirectional" communication with {{site.productname}} [#129]
 - new message type to read asset information [#129]
-- new message type to execute a custom javascript script using MindSphere javascript/typescript SDK [#129]
+- new message type to execute a custom javascript script using {{site.productname}} javascript/typescript SDK [#129]
 - Bumped all dependencies
 
 ## 3.11.0 (Vienna Jaguarundi) - March 2021
@@ -38,7 +38,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 ## Bugfix 3.11.0
 
-- **Important** - There is now a new type of mapping in MindSphere (unitless mapping) which versions before 3.11.0 are not aware of and which was causing the node to create mappings with the _"null"_ unit. (that is "null" as a string). This is fixed in version 3.11.0. It is **strongly recommended** to upgrade to 3.11.0 if you are using automatic mapping feature.
+- **Important** - There is now a new type of mapping in {{site.productname}} (unitless mapping) which versions before 3.11.0 are not aware of and which was causing the node to create mappings with the _"null"_ unit. (that is "null" as a string). This is fixed in version 3.11.0. It is **strongly recommended** to upgrade to 3.11.0 if you are using automatic mapping feature.
 
 ## 3.10.0 (Vienna European Shorthair) - November 2020
 
@@ -74,7 +74,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 - Configuration Information Dialog about current agent state.
 - Buttons to copy timeseries-, bulk timeseries-, event- and file- templates to the clipboard.
 - New examples on <https://playground.mindconnect.rocks> for flows
-- MindSphere Start for Free suited example on <https://playground.mindconnect.rocks>
+- {{site.productname}} Start for Free suited example on <https://playground.mindconnect.rocks>
 - Bumped all dependencies
 
 ## 3.8.1 (Vienna Tigers) - July 2020
@@ -88,8 +88,8 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 ## New Features 3.8.0
 
 - Custom Event Support via \_customEvent switch on the message.
-- Added msg.\_includeMindSphereToken and msg.\_ignorePayload switch which propagates the MindSphere Authentication Token in msg.headers
-- The msg.\_includeMindSphereToken switch can be used in conjunction with the http request node to call custom southbound mindsphere APIs (#83)
+- Added msg.\_includeMindSphereToken and msg.\_ignorePayload switch which propagates the {{site.productname}} Authentication Token in msg.headers
+- The msg.\_includeMindSphereToken switch can be used in conjunction with the http request node to call custom southbound {{site.productname}} APIs (#83)
 - New examples on <https://playground.mindconnect.rocks> for flows
 - Bumped all dependencies
 - New Logo <3
@@ -104,7 +104,7 @@ title: MindConnect Node-RED Node - <small>Changelog</small>
 
 - new docker images with version 1.0.\* for multiple architectures
 - the old 0.20.\* based docker images are now deprecated
-- the node has now a link to agent diagnostic application in the mindsphere
+- the node has now a link to agent diagnostic application in the {{site.productname}}
 - new configuration button to delete all local data of the agent (including the .mc/agentconfig.json)
 - the node will await parallel asynchronous requests automatically after configured number of seconds
 - the node will regularly display information about asynchronous requests
@@ -150,7 +150,7 @@ Stay strong, safe and healthy! <3 :hearth:
 
 ## New Features 3.6.0
 
-- Added Links to MindSphere OpenSource Tools and Libraries Documentation
+- Added Links to {{site.productname}} OpenSource Tools and Libraries Documentation
 - upgraded to version 3.6.0 of the mindconnect-nodejs library
 - bumped all dependencies
 - added explicit :rw to the docker container documentation (see #39)
@@ -189,7 +189,7 @@ Stay strong, safe and healthy! <3 :hearth:
 
 - Updated to version 3.3.0. of mindconnect library
 - added container build process on hub.docker.com
-- direct link to configuration settings in MindSphere from Node-RED UI
+- direct link to configuration settings in {{site.productname}} from Node-RED UI
 - improved error handling
 
 ### Bugfix 3.3.0
@@ -218,7 +218,7 @@ Stay strong, safe and healthy! <3 :hearth:
 - Preparation for release
 - Added support for RSA_3072
 - Added Bulk Upload
-- Retries for mindsphere operations
+- Retries for {{site.productname}} operations
 
 ## 3.0.0 - Beta 2 (Vienna Kittens) - April 2018
 
@@ -238,4 +238,4 @@ Stay strong, safe and healthy! <3 :hearth:
 - Provided Docker Images for x86 and arm architectures with siemens proxy (COIA) support.
 - Shamelessly upgraded the version to 3.0.0 to match mindconnect-nodejs library.
 - Initial support for nodejs.
-- Retired mindsphere 2 branch.
+- Retired {{site.productname}} 2 branch.

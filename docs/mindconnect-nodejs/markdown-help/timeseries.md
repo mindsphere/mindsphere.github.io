@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp timeseries Command
+title:  CLI -  mdsp timeseries Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp timeseries Command
+# {{site.productname}} CLI: mdsp timeseries Command
 
 Syntax:
 
@@ -43,8 +43,8 @@ Usage: mc timeseries|ts [options]
 list timeseries data *
 
 Options:
-  -i, --assetid         mindsphere asset id
-  -n, --aspectname   mindsphere aspect name
+  -i, --assetid         {{site.productname}} asset id
+  -n, --aspectname   {{site.productname}} aspect name
   -f, --from               begining of the time range to read (default: "2022-11-05T01:51:16.182Z")
   -t, --to                   end of the time range to read (default: "2022-11-06T01:51:16.182Z")
   -s, --select           comma separated list of variable names
@@ -86,4 +86,4 @@ Here are some examples of how to use the `mdsp timeseries` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

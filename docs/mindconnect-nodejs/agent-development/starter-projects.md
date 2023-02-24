@@ -72,9 +72,9 @@ Configure your agent at:
         https://{yourtenant}-assetmanager.eu1.mindsphere.io/entity/{agentid}/plugin/uipluginassetmanagermclib
 ```
 
-## Step 2 - Create the assets in MindSphere
+## Step 2 - Create the assets in {{site.productname}}
 
-Create aspect types, asset type and asset in MindSphere. Remember your asset id.
+Create aspect types, asset type and asset in {{site.productname}}. Remember your asset id.
 
 ## Step 3 - Configure the agent
 
@@ -84,7 +84,7 @@ You can use the new automatic creation of DataSourceConfiguration and DataSource
 import {
   DataPointValue,
   MindConnectAgent,
-  MindsphereStandardEvent,
+  {{site.productname}}StandardEvent,
   retry,
   TimeStampedDataPoint,
 } from "@mindconnect/mindconnect-nodejs";
@@ -109,7 +109,7 @@ import {
     log("Agent onboarded");
   }
 
-  // you can use agent.Sdk().GetAssetManagementClient() to get the asset id and asset type from mindsphere
+  // you can use agent.Sdk().GetAssetManagementClient() to get the asset id and asset type from {{site.productname}}
   const targetAssetId = "1234567....";
   const targetAssetType = `${agent.GetTenant()}.Engine`;
 
@@ -123,7 +123,7 @@ import {
 
   // create mappings for asset id
   const mappings = await agent.GenerateMappings(targetAssetId);
-  // store mappings in mindsphere
+  // store mappings in {{site.productname}}
   await agent.PutDataMappings(mappings);
 
   // instead of creating the data source configuration and mappings separately
@@ -144,7 +144,7 @@ import {
     try {
       log(`Iteration : ${index}`);
 
-      // if you have configred the data points in the mindsphere UI you will have to use the long integer values instead of descriptive dataPointIds.
+      // if you have configred the data points in the {{site.productname}} UI you will have to use the long integer values instead of descriptive dataPointIds.
 
       const values: DataPointValue[] = [
         {
@@ -192,7 +192,7 @@ import {
       log("Data posted");
       await sleep(1000);
 
-      const event: MindsphereStandardEvent = {
+      const event: {{site.productname}}StandardEvent = {
         entityId: agent.ClientId(), // use assetid if you want to send event somewhere else :)
         sourceType: "Event",
         sourceId: "application",

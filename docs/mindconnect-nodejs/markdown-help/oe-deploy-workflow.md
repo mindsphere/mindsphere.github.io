@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp oe-deploy-workflow Command
+title:  CLI -  mdsp oe-deploy-workflow Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp oe-deploy-workflow Command
+# {{site.productname}} CLI: mdsp oe-deploy-workflow Command
 
 Syntax:
 
@@ -84,4 +84,4 @@ Here are some examples of how to use the `mdsp oe-deploy-workflow` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

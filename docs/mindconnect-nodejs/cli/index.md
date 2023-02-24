@@ -11,7 +11,7 @@ next:
 
 ## Introduction
 
-The library comes with a command line interface which can be used to upload timeseries, files and create events in the mindsphere.
+The library comes with a command line interface which can be used to upload timeseries, files and create events in the {{site.productname}}.
 It can also be used to create starter projects, list, create and delete assets, aspect and asset types, manage users and groups, create data lake permissions etc.
 
 ### Installation via `npm` package manager
@@ -43,12 +43,12 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp onboard`](../markdown-help/onboard.html) |  onboard the agent with configuration stored in the config file |
 | [`mdsp configure-agent`](../markdown-help/configure-agent.html) |  create data source configuration and mappings (optional: passkey) * |
 | [`mdsp agent-token`](../markdown-help/agent-token.html) |  displays the agent token for use in other tools (e.g. postman) |
-| [`mdsp upload-timeseries`](../markdown-help/upload-timeseries.html) |  parse .csv file with timeseriesdata and upload the timeseries data to mindsphere |
-| [`mdsp upload-file`](../markdown-help/upload-file.html) |  upload the file to the mindsphere file service (optional: passkey) * |
-| [`mdsp create-event`](../markdown-help/create-event.html) |  create an event in the mindsphere (optional: passkey) * |
+| [`mdsp upload-timeseries`](../markdown-help/upload-timeseries.html) |  parse .csv file with timeseriesdata and upload the timeseries data to {{site.productname}} |
+| [`mdsp upload-file`](../markdown-help/upload-file.html) |  upload the file to the {{site.productname}} file service (optional: passkey) * |
+| [`mdsp create-event`](../markdown-help/create-event.html) |  create an event in the {{site.productname}} (optional: passkey) * |
 | [`mdsp agent-status`](../markdown-help/agent-status.html) |  displays the agent status and agent onboarding status * |
-| [`mdsp create-agent`](../markdown-help/create-agent.html) |  create an agent in the mindsphere * |
-| [`mdsp offboard-agent`](../markdown-help/offboard-agent.html) |  offboards the agent in the mindsphere * |
+| [`mdsp create-agent`](../markdown-help/create-agent.html) |  create an agent in the {{site.productname}} * |
+| [`mdsp offboard-agent`](../markdown-help/offboard-agent.html) |  offboards the agent in the {{site.productname}} * |
 | [`mdsp renew-agent`](../markdown-help/renew-agent.html) |  renews the agent secrets  * |
 | [`mdsp register-diagnostic`](../markdown-help/register-diagnostic.html) |  register agent for diagnostic * |
 | [`mdsp get-diagnostic`](../markdown-help/get-diagnostic.html) |  get diagnostic information * |
@@ -61,7 +61,7 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp prepare-bulk`](../markdown-help/prepare-bulk.html) |  creates a template directory for timeseries (bulk) upload * |
 | [`mdsp run-bulk`](../markdown-help/run-bulk.html) |  runs the timeseries (bulk) upload job from  directory * |
 | [`mdsp check-bulk`](../markdown-help/check-bulk.html) |  checks the progress of the upload jobs from  directory * |
-| [`mdsp download-bulk`](../markdown-help/download-bulk.html) |  download the timeseries data in bulk from mindsphere * |
+| [`mdsp download-bulk`](../markdown-help/download-bulk.html) |  download the timeseries data in bulk from {{site.productname}} * |
 | [`mdsp delivery-jobs`](../markdown-help/delivery-jobs.html) |  manage mqtt delivery jobs to publish MQTT commands to the clients * |
 
 ## Assets, Files and Event Handling Commands
@@ -80,7 +80,7 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp timeseries`](../markdown-help/timeseries.html) |  list timeseries * |
 | [`mdsp notifications`](../markdown-help/notifications.html) |  send email, sms and push notifications * |
 
-## MindSphere Open Edge Device Management Commands
+## {{site.productname}} Open Edge Device Management Commands
 
 | Command     | Description |
 | ----------- | ----------- |
@@ -104,16 +104,16 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | Command     | Description |
 | ----------- | ----------- |
 | [`mdsp list-assets`](../markdown-help/list-assets.html) |  list assets in the tenant * |
-| [`mdsp delete-asset`](../markdown-help/delete-asset.html) |  delete asset with id  from mindsphere * |
+| [`mdsp delete-asset`](../markdown-help/delete-asset.html) |  delete asset with id  from {{site.productname}} * |
 | [`mdsp list-files`](../markdown-help/list-files.html) |  list files stored with the asset * |
-| [`mdsp download-file`](../markdown-help/download-file.html) |  download the file from mindsphere file service * |
-| [`mdsp delete-file`](../markdown-help/delete-file.html) |  delete the file from mindsphere file service * |
+| [`mdsp download-file`](../markdown-help/download-file.html) |  download the file from {{site.productname}} file service * |
+| [`mdsp delete-file`](../markdown-help/delete-file.html) |  delete the file from {{site.productname}} file service * |
 
 ## Identity and Access Management Commands
 
 | Command     | Description |
 | ----------- | ----------- |
-| [`mdsp identity-management`](../markdown-help/identity-management.html) |  manage mindsphere users, groups and roles * |
+| [`mdsp identity-management`](../markdown-help/identity-management.html) |  manage {{site.productname}} users, groups and roles * |
 | [`mdsp policy`](../markdown-help/policy.html) |  list, create or delete policies * |
 | [`mdsp service-credentials`](../markdown-help/service-credentials.html) |  provide login for commands which require technical user credentials * |
 | [`mdsp service-token`](../markdown-help/service-token.html) |  displays the service token for use in other tools (e.g. postman) * |
@@ -153,7 +153,7 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 | [`mdsp signal-calculation`](../markdown-help/signal-calculation.html) |  process timeseries data * |
 | [`mdsp trend-prediction`](../markdown-help/trend-prediction.html) |  perform trend prediction (linear/polynomial) @ |
 | [`mdsp kpi-calculation`](../markdown-help/kpi-calculation.html) |  calculate kpi states or compute kpis @ |
-| [`mdsp event-analytics`](../markdown-help/event-analytics.html) |  analyze mindsphere events @ |
+| [`mdsp event-analytics`](../markdown-help/event-analytics.html) |  analyze {{site.productname}} events @ |
 | [`mdsp models`](../markdown-help/models.html) |  list, create or delete analytic models * |
 | [`mdsp jobs`](../markdown-help/../markdown-help/jobs.html) |  list, create or stop jobs * |
 | [`mdsp schedules`](../markdown-help/schedules.html) |  list, create, start, stop or delete job schedules * |
@@ -164,7 +164,7 @@ Linux, macOS: Rename the file to `mc` or `mdsp` and make sure that the file is m
 
 | Command     | Description |
 | ----------- | ----------- |
-| [`mdsp dev-proxy`](../markdown-help/dev-proxy.html) |  starts mindsphere development proxy & (optional passkey) * |
+| [`mdsp dev-proxy`](../markdown-help/dev-proxy.html) |  starts {{site.productname}} development proxy & (optional passkey) * |
 | [`mdsp mqtt-createjwt`](../markdown-help/mqtt-createjwt.html) |  creates a signed token for opcua pub sub authentication # |
 | [`mdsp starter-ts`](../markdown-help/starter-ts.html) |  creates a starter project in typescript # |
 | [`mdsp starter-js`](../markdown-help/starter-js.html) |  creates a starter project in javascript # |

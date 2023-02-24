@@ -1,8 +1,8 @@
 ---
-title: MindSphere DevOps Demo - <small>Contributing</small>
+title:  DevOps Demo - <small>Contributing</small>
 ---
 
-# MindSphere DevOps Demo - <small>Contributing</small>
+# {{site.productname}} DevOps Demo - <small>Contributing</small>
 
 We welcome contributions in several forms, e.g.
 

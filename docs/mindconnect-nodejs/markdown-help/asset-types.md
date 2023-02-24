@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp asset-types Command
+title:  CLI -  mdsp asset-types Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp asset-types Command
+# {{site.productname}} CLI: mdsp asset-types Command
 
 Syntax:
 
@@ -69,8 +69,8 @@ Here are some examples of how to use the `mdsp asset-types` command:
     mdsp asset-types --mode template --assettype Pump 
 	create a template file (Enironment.assettype.mdsp.json) for assettype Pump
     mdsp asset-types --mode create --file Pump.assettype.mdsp.json 
-	create asset type Pump in MindSphere
+	create asset type Pump in {{site.productname}}
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp run-bulk Command
+title:  CLI -  mdsp run-bulk Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp run-bulk Command
+# {{site.productname}} CLI: mdsp run-bulk Command
 
 Syntax:
 
@@ -51,7 +51,7 @@ Options:
   -k, --passkey     passkey
   -i, --timeseries           use (deprecated) timeseries upload
   -v, --verbose              verbose output
-  -t, --start                start sending data to mindsphere
+  -t, --start                start sending data to {{site.productname}}
   -h, --help                 display help for command
 
 ```
@@ -69,4 +69,4 @@ Here are some examples of how to use the `mdsp run-bulk` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

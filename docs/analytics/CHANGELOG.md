@@ -6,7 +6,7 @@ title: Analytics Examples - Changelog
 
 ## 1.0.0 - February 2020
 
-### Jupyter Notebooks demonstrating the use of the MindSphere Analytics APIs
+### Jupyter Notebooks demonstrating the use of the Analytics APIs
 
 - Trend Prediction API
 - KPI Calculation API

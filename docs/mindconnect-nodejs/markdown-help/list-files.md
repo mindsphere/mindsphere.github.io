@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp list-files Command
+title:  CLI -  mdsp list-files Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp list-files Command
+# {{site.productname}} CLI: mdsp list-files Command
 
 Syntax:
 
@@ -43,7 +43,7 @@ Usage: mc list-files|ls [options]
 list files stored with the asset *
 
 Options:
-  -i, --assetid   mindsphere asset id
+  -i, --assetid   {{site.productname}} asset id
   -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/iot-iotfile/api-iotfile-references-filtering.html)
   -k, --passkey   passkey
   -y, --retry      retry attempts before giving up (default: "3")
@@ -65,4 +65,4 @@ Here are some examples of how to use the `mdsp list-files` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

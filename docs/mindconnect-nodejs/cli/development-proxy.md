@@ -5,7 +5,7 @@ next:
     link: index
   - title: Setting up the CLI
     link: setting-up-the-cli
-  - title: MindSphere Auth Helper
+  - title:  Auth Helper
     link: ../../mindsphere-auth-helper/index
 ---
 
@@ -13,7 +13,7 @@ next:
 
 # MindConnect-NodeJS - <small>Development Proxy</small>
 
-The CLI comes with a development proxy which can be used to kickstart your MindSphere development. It provides an endpoint
+The CLI comes with a development proxy which can be used to kickstart your {{site.productname}} development. It provides an endpoint
 at your local machine at
 
 [http://localhost:7707](http://localhost:7707)
@@ -26,7 +26,7 @@ which will authenticate all requests using either one of:
 
 ## Developing with SESSION and XSRF-TOKEN Cookie
 
-First you should deploy an application to your tenant and configure its user rights. (any frontend app will do, including just an empty index.html. The important part is that you have configured the MindSphere API scopes for your application).
+First you should deploy an application to your tenant and configure its user rights. (any frontend app will do, including just an empty index.html. The important part is that you have configured the {{site.productname}} API scopes for your application).
 
 ![api roles](../images/apiroles.png)
 
@@ -38,7 +38,7 @@ export MDSP_SESSION="NzBi...Zl"
 export MDSP_XSRF_TOKEN="fed5edc5-...2565238c114"
 ```
 
-After that the proxy will authorize all requests to MindSphere as if the app would be deployed and if you would be logged in.
+After that the proxy will authorize all requests to {{site.productname}} as if the app would be deployed and if you would be logged in.
 
 ```bash
 mc dev-proxy
@@ -66,7 +66,7 @@ Start the proxy using the `-mode credentials` switch.
 mc dev-proxy --mode credentials --passkey <yourpasskey>
 ```
 
-After that the proxy will authorize all requests to MindSphere with selected Application Credentials.
+After that the proxy will authorize all requests to {{site.productname}} with selected Application Credentials.
 
 ![credential auth](../images/proxy-credential.png)
 
@@ -77,7 +77,7 @@ Run `mc dev-proxy --help` for options:
 ```text
 Usage: mc dev-proxy|px [options]
 
-starts mindsphere development proxy (optional passkey) *
+starts {{site.productname}} development proxy (optional passkey) *
 
 Options:
   -m, --mode [credentials|session]  service/app credentials authentication of

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp oe-devices Command
+title:  CLI -  mdsp oe-devices Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp oe-devices Command
+# {{site.productname}} CLI: mdsp oe-devices Command
 
 Syntax:
 
@@ -48,7 +48,7 @@ Options:
   -n, --devicename                   device name
   -a, --assetid                         the id of the asset linked to the device
   -t, --typeid                           the device type id
-  -d, --desc                               description (default: "created with mindsphere CLI")
+  -d, --desc                               description (default: "created with {{site.productname}} CLI")
   -s, --serialnumber               the id of the asset linked to the device
   -i, --id                                   the device id
   -o, --overwrite                                overwrite template file if it already exists
@@ -76,4 +76,4 @@ Here are some examples of how to use the `mdsp oe-devices` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

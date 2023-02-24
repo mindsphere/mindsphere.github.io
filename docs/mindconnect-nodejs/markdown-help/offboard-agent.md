@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp offboard-agent Command
+title:  CLI -  mdsp offboard-agent Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp offboard-agent Command
+# {{site.productname}} CLI: mdsp offboard-agent Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc offboard-agent
 
 ## Description
 
-offboards the agent in the mindsphere *
+offboards the agent in the {{site.productname}} *
 
 ## Usage
 
@@ -40,7 +40,7 @@ Parameter list:
 ```text
 Usage: mc offboard-agent|of [options]
 
-offboards the agent in the mindsphere *
+offboards the agent in the {{site.productname}} *
 
 Options:
   -c, --config   config file for agent configuration
@@ -65,4 +65,4 @@ Here are some examples of how to use the `mdsp offboard-agent` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

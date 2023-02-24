@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp download-file Command
+title:  CLI -  mdsp download-file Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp download-file Command
+# {{site.productname}} CLI: mdsp download-file Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc download-file
 
 ## Description
 
-download the file from mindsphere file service *
+download the file from {{site.productname}} file service *
 
 ## Usage
 
@@ -40,12 +40,12 @@ Parameter list:
 ```text
 Usage: mc download-file|df [options]
 
-download the file from mindsphere file service *
+download the file from {{site.productname}} file service *
 
 Options:
   -f, --file   file to download from the file service
-  -h, --filepath [filepath]    file path in the mindsphere (default: "")
-  -i, --assetid       mindsphere asset id
+  -h, --filepath [filepath]    file path in the {{site.productname}} (default: "")
+  -i, --assetid       {{site.productname}} asset id
   -p, --passkey       passkey
   -y, --retry          retry attempts before giving up (default: "3")
   -v, --verbose                verbose output
@@ -67,4 +67,4 @@ Here are some examples of how to use the `mdsp download-file` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp message-broker Command
+title:  CLI -  mdsp message-broker Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp message-broker Command
+# {{site.productname}} CLI: mdsp message-broker Command
 
 Syntax:
 
@@ -73,4 +73,4 @@ Here are some examples of how to use the `mdsp message-broker` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

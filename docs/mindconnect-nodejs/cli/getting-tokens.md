@@ -13,13 +13,13 @@ next:
 
 ## Introduction
 
-Sometimes it is required during development to have an easy way to get a valid service token or agent token for the tools which are using MindSphere API (curl, postman...)
+Sometimes it is required during development to have an easy way to get a valid service token or agent token for the tools which are using {{site.productname}} API (curl, postman...)
 
 The CLI provides two utility commands which can generate a service credential token and agent token.
 
 ## Get Service Token (`mc service-token`)
 
-This is a utility command which the developers can use to get the valid MindSphere API token.
+This is a utility command which the developers can use to get the valid {{site.productname}} API token.
 
 ```bash
 mc service-token --help
@@ -81,7 +81,7 @@ mc service-token --passkey {yourpasskey} | clip
 
 ## Get Agent Token (`mc agent-token`)
 
-This creates a valid agent credentials token for the MindSphere APIs.
+This creates a valid agent credentials token for the {{site.productname}} APIs.
 
 ```bash
 mc agent-token --help

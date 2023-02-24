@@ -15,11 +15,11 @@ next:
 
 # MindConnect-NodeJS - Agent Development - <small>MindConnect Agent Methods</small>
 
-MindConnect Agent implements the V3 of the MindSphere API.
+MindConnect Agent implements the V3 of the {{site.productname}} API.
 
 The synchronous methods (IsOnBoarded, HasConfiguration, HasDataMapping...) are operating on agent state storage only.
 
-The asynchronous methods (GetDataSourceConfiguration, BulkPostData...) are calling MindSphere APIs.
+The asynchronous methods (GetDataSourceConfiguration, BulkPostData...) are calling {{site.productname}} APIs.
 
 ## IsOnBoarded
 
@@ -28,7 +28,7 @@ The asynchronous methods (GetDataSourceConfiguration, BulkPostData...) are calli
  *
  * Check in the local storage if the agent is onboarded.
  *
- * * This is a local agent state storage setting only. MindSphere API is not called.
+ * * This is a local agent state storage setting only. {{site.productname}} API is not called.
  *
  * @returns {boolean}
  * @memberof MindConnectAgent
@@ -42,8 +42,8 @@ public IsOnBoarded(): boolean
 /**
  * Checks in the local storage if the agent has a data source configuration.
  *
- * * This is a local agent state storage setting only. MindSphere API is not called.
- * * Call await GetDataSourceConfiguration() if you want to check if there is configuration in the mindsphere.
+ * * This is a local agent state storage setting only. {{site.productname}} API is not called.
+ * * Call await GetDataSourceConfiguration() if you want to check if there is configuration in the {{site.productname}}.
  *
  *
  * @returns {boolean}
@@ -58,8 +58,8 @@ public HasDataSourceConfiguration(): boolean
 /**
  * Checks in the local storage if the agent has configured mappings.
  *
- * * This is a local agent state storage setting only. MindSphere API is not called.
- * * Call await GetDataMappings() to check if the agent has configured mappings in the MindSphere.
+ * * This is a local agent state storage setting only. {{site.productname}} API is not called.
+ * * Call await GetDataMappings() to check if the agent has configured mappings in the {{site.productname}}.
  *
  * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
@@ -74,12 +74,12 @@ public HasDataMappings(): boolean
 ```javascript
 
 /**
- * Stores the configuration in the mindsphere.
+ * Stores the configuration in the {{site.productname}}.
  *
  * By default the eTag parameter in the provided configuration is ignored, and the agent just updates the configuration every time the put method is stored
  * and automatically increases the eTag.
  * This is why its a good idea to check if the configuration was stored before the data was posted. If the ignoreEtag is set to false then the agent just uses
- * the eTag which was specified in the configuration. This might throw an "already stored" exception in the mindsphere.
+ * the eTag which was specified in the configuration. This might throw an "already stored" exception in the {{site.productname}}.
  *
  * @param {DataSourceConfiguration} dataSourceConfiguration
  * @param {boolean} [ignoreEtag=true]
@@ -111,7 +111,7 @@ public async GetDataSourceConfiguration(): Promise<DataSourceConfiguration>
 
 ```javascript
 /**
- * Acquire the data mappings from the MindSphere and store them in the agent state storage.
+ * Acquire the data mappings from the {{site.productname}} and store them in the agent state storage.
  *
  * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
@@ -126,7 +126,7 @@ public async GetDataMappings(): Promise<Array<Mapping>>
 
 ```javascript
 /**
- * Store data mappings in the mindsphere and also in the local agent state storage.
+ * Store data mappings in the {{site.productname}} and also in the local agent state storage.
  *
  * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *
@@ -213,9 +213,9 @@ public async BulkPostData(
 
 ```javascript
 /**
- * Upload file to MindSphere IOTFileService
+ * Upload file to {{site.productname}} IOTFileService
  *
- * * This method is used to upload the files to the MindSphere.
+ * * This method is used to upload the files to the {{site.productname}}.
  * * It supports standard and multipart upload which can be configured with the [optional.chunk] parameter.
  *
  * * The method will try to abort the multipart upload if an exception occurs.
@@ -225,13 +225,13 @@ public async BulkPostData(
  *     * uploading last chunk.
  *
  * @param {string} entityId - asset id or agent.ClientId() for agent
- * @param {string} filepath - mindsphere file path
+ * @param {string} filepath - {{site.productname}} file path
  * @param {(string | Buffer)} file - local path or Buffer
  * @param {fileUploadOptionalParameters} [optional] - optional parameters: enable chunking, define retries etc.
  * @param {(number | undefined)}[optional.part] multipart/upload part
- * @param {(Date | undefined)} [optional.timestamp] File timestamp in mindsphere.
- * @param {(string | undefined)} [optional.description] Description in mindsphere.
- * @param {(string | undefined)} [optional.type] Mime type in mindsphere.
+ * @param {(Date | undefined)} [optional.timestamp] File timestamp in {{site.productname}}.
+ * @param {(string | undefined)} [optional.description] Description in {{site.productname}}.
+ * @param {(string | undefined)} [optional.type] Mime type in {{site.productname}}.
  * @param {(number | undefined)} [optional.chunkSize] chunkSize. It must be bigger than 5 MB. Default 8 MB.
  * @param {(number | undefined)} [optional.retry] Number of retries
  * @param {(Function | undefined)} [optional.logFunction] log functgion is called every time a retry happens.
@@ -308,7 +308,7 @@ public GenerateMappings(targetAssetId: string): Mapping[]
  * This method can automatically create all necessary configurations and mappings for selected target asset id.
  *
  * * This method will automatically create all necessary configurations and mappings to start sending the data
- * * to an asset with selected assetid in Mindsphere
+ * * to an asset with selected assetid in {{site.productname}}
  *
  * @param {string} targetAssetId
  * @param {("NUMERICAL" | "DESCRIPTIVE")} mode
@@ -329,9 +329,9 @@ public async ConfigureAgentForAssetId(
 
 ```javascript
 /**
- * MindSphere SDK using agent authentication
+ * {{site.productname}} SDK using agent authentication
  *
- * ! important: not all APIs can be called with agent credentials, however MindSphere is currently working on making this possible.
+ * ! important: not all APIs can be called with agent credentials, however {{site.productname}} is currently working on making this possible.
  *
  *  * Here is a list of some APIs which you can use:
  *
@@ -342,7 +342,7 @@ public async ConfigureAgentForAssetId(
  *
  * @memberOf MindConnectAgent
  */
-public Sdk(): MindSphereSdk
+public Sdk(): {{site.productname}}Sdk
 ```
 
 ## GetValidator
@@ -364,7 +364,7 @@ public GetValidator(): ajv.ValidateFunction
 ```javascript
 /**
  *
- * Ajv Validator (@see https://github.com/ajv-validator/ajv) for the events. Validates the syntax of the mindsphere events.
+ * Ajv Validator (@see https://github.com/ajv-validator/ajv) for the events. Validates the syntax of the {{site.productname}} events.
  *
  * @returns {ajv.ValidateFunction}
  *
@@ -380,7 +380,7 @@ public GetEventValidator(): ajv.ValidateFunction
 /**
  * Get local configuration from the agent state storage.
  *
- * * This is a local agent state storage setting only. MindSphere API is not called.
+ * * This is a local agent state storage setting only. {{site.productname}} API is not called.
  *
  * @see https://opensource.mindsphere.io/docs/mindconnect-nodejs/agent-development/agent-state-storage.html
  *

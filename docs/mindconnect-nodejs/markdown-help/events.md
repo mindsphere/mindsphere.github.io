@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp events Command
+title:  CLI -  mdsp events Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp events Command
+# {{site.productname}} CLI: mdsp events Command
 
 Syntax:
 
@@ -45,7 +45,7 @@ list, create or delete events *
 Options:
   -m, --mode [list|create|delete|template|filtertemplate|info]  list | create | delete | template | filtertemplate | info (default: "list")
   -f, --file                                              .mdsp.json file with event definition
-  -i, --assetid                                        mindsphere asset id
+  -i, --assetid                                        {{site.productname}} asset id
   -e, --eventid                                        event id
   -f, --filter [filter]                                         JSON file with filter (see:
                                                                 https://developer.mindsphere.io/apis/advanced-eventmanagement/api-eventmanagement-best-practices.html)
@@ -78,4 +78,4 @@ Here are some examples of how to use the `mdsp events` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

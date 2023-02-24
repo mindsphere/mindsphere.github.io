@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp events-bulk Command
+title:  CLI -  mdsp events-bulk Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp events-bulk Command
+# {{site.productname}} CLI: mdsp events-bulk Command
 
 Syntax:
 
@@ -45,7 +45,7 @@ download or delete the events in bulk *
 Options:
   -m, --mode [download|template|delete|check]  mode [download | template | delete | check] (default: "download")
   -d, --dir                               download folder (default: "eventdownload")
-  -i, --assetid                       mindsphere asset id
+  -i, --assetid                       {{site.productname}} asset id
   -j, --jobid                           check deletion process of jobs with jobid
   -f, --filter [filter]                        JSON file with filter (see:
                                                https://developer.mindsphere.io/apis/advanced-eventmanagement/api-eventmanagement-best-practices.html)
@@ -75,4 +75,4 @@ Here are some examples of how to use the `mdsp events-bulk` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

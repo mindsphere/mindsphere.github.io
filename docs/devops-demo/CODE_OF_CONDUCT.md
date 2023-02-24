@@ -1,8 +1,8 @@
 ---
-title: MindSphere DevOps Demo - Code of Conduct
+title:  DevOps Demo - Code of Conduct
 ---
 
-# MindSphere DevOps Demo - <small>Code of Conduct</small>
+# {{site.productname}} DevOps Demo - <small>Code of Conduct</small>
 
 ## Our Pledge
 

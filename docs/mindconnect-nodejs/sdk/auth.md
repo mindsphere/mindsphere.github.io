@@ -19,7 +19,7 @@ All authorizer implement the `TokenRotation` interface so that you can also deve
 
 <i class="fa fa-info"></i> The `HttpAction` method is overridden in different authorizers, this is how the SDK works in both backend and frontend scenarios.
 
-All backend authorizer are automatically rotating the MindSphere Bearer tokens, you don't have to do it manually. For the frontend authorization we suggest to implement some kind of keep alive functionality in your app to avoid session expiration.
+All backend authorizer are automatically rotating the {{site.productname}} Bearer tokens, you don't have to do it manually. For the frontend authorization we suggest to implement some kind of keep alive functionality in your app to avoid session expiration.
 
 ```javascript
 export interface TokenRotation {
@@ -32,30 +32,30 @@ export interface TokenRotation {
 
 ## BrowserAuth
 
-<i class="fa fa-info"></i> The `BrowserAuth` authentication and authorization only works for applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> MindSphere APP Gateway<i class="fa fac-fa-external-link-alt"></i></a>.
+<i class="fa fa-info"></i> The `BrowserAuth` authentication and authorization only works for applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> {{site.productname}} APP Gateway<i class="fa fac-fa-external-link-alt"></i></a>.
 
 This Authorizer implements support for calling applications from frontend, where `Authorization: Bearer...` token is not required. Instead, the authorizer reuses the SESSION and XSRF-TOKEN Cookies and sets the X-XSRF-TOKEN header for you.
 
 -   [Calling APIs from Frontend](https://developer.mindsphere.io/concepts/concept-authentication.html#calling-apis-from-frontend)
 -   [Local Development with Session Cookies](https://developer.mindsphere.io/howto/howto-local-development.html#accessing-mindsphere-apis-using-session-cookies)
 
-The Authorizer uses MindSphere Frontend API Calling Schema:
+The Authorizer uses {{site.productname}} Frontend API Calling Schema:
 
 ```text
 {web_app_host}/api/
 ```
 
-This means that it is using relative URLs as it is expecting to run in the browser behind the MindSphere API gateway so it will call e.g. `/api/identitymanagement/v3/Users` instead of `https://gateway.eu1.mindsphere.io/api/identitymanagement/v3/Users`.
+This means that it is using relative URLs as it is expecting to run in the browser behind the {{site.productname}} API gateway so it will call e.g. `/api/identitymanagement/v3/Users` instead of `https://gateway.eu1.mindsphere.io/api/identitymanagement/v3/Users`.
 
-You can simplify your local development by using the MindSphere <a href="../development-proxy.html">development proxy</a> when using this authorizer. You need to redirect the `/api/**` calls of your application to use the the development proxy which is running on `http://localhost:7707`.
+You can simplify your local development by using the {{site.productname}} <a href="../development-proxy.html">development proxy</a> when using this authorizer. You need to redirect the `/api/**` calls of your application to use the the development proxy which is running on `http://localhost:7707`.
 
 ### Code Sample
 
 ```javascript
-// Browser authentication is the  Default Authentication for the MindSphere Sdk
+// Browser authentication is the  Default Authentication for the {{site.productname}} Sdk
 // it is used automatically if no other authorizer is passed
-const sdk = new MindSphereSdk();
-// this is equivalent to new MindSphereSdk(new BrowserAuth());
+const sdk = new {{site.productname}}Sdk();
+// this is equivalent to new {{site.productname}}Sdk(new BrowserAuth());
 
 const assetManagement = sdk.GetAssetManagementClient();
 await assetManagement.GetAssets();
@@ -70,19 +70,19 @@ await assetManagement.GetAssets();
 
 ## UserAuth
 
-<i class="fa fa-info"></i> The `UserAuth` authentication and authorization only works for applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> MindSphere APP Gateway<i class="fa fac-fa-external-link-alt"></i></a>.
+<i class="fa fa-info"></i> The `UserAuth` authentication and authorization only works for applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> {{site.productname}} APP Gateway<i class="fa fac-fa-external-link-alt"></i></a>.
 
 This Authorizer implements support for calling applications from backend, where `Authorization: Bearer...` Token _is required_.
 
 -   [Calling APIs from Backend](https://developer.mindsphere.io/concepts/concept-authentication.html#calling-apis-from-backend)
 
-The Authorizer uses MindSphere Backend API Calling Schema:
+The Authorizer uses {{site.productname}} Backend API Calling Schema:
 
 ```text
 gateway.{region}.{mindsphere-domain}/api/...
 ```
 
-You can simplify your local development by using the MindSphere <a href="../development-proxy.html">development proxy</a> when using this authorizer, just replace the gateway url with `http://localhost:7707` when instantiating this authorizer.
+You can simplify your local development by using the {{site.productname}} <a href="../development-proxy.html">development proxy</a> when using this authorizer, just replace the gateway url with `http://localhost:7707` when instantiating this authorizer.
 
 ### Code Sample
 
@@ -113,7 +113,7 @@ And here is an example
 ```javascript
 const bearerToken = request.get("Authorization");
 
-const sdk = new MindSphereSdk(new UserAuth(bearerToken, "https://gateway.eu1.mindsphere.io"));
+const sdk = new {{site.productname}}Sdk(new UserAuth(bearerToken, "https://gateway.eu1.mindsphere.io"));
 const identity = sdk.GetIdentityManagementClient();
 
 const newUser = await identity.PostUser({ userName: username });
@@ -121,20 +121,20 @@ const newUser = await identity.PostUser({ userName: username });
 
 ## TokenManager Auth
 
-<i class="fa fa-info"></i> The `TokenManagerAuth` authentication and authorization works for both applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> MindSphere APP Gateway<i class="fa fac-fa-external-link-alt"></i></a> and for self hosted applications which are just calling MindSphere APIs.
+<i class="fa fa-info"></i> The `TokenManagerAuth` authentication and authorization works for both applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> {{site.productname}} APP Gateway<i class="fa fac-fa-external-link-alt"></i></a> and for self hosted applications which are just calling {{site.productname}} APIs.
 
 This Authorizer implements the bearer token rotation for app credentials.
 
 -   [Self-Hosted API access](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html)
 -   [Token Management Service](https://developer.mindsphere.io/apis/exchange-tokenmanager/api-tokenmanager-overview.html)
 
-The Authorizer uses MindSphere Backend API Calling Schema:
+The Authorizer uses {{site.productname}} Backend API Calling Schema:
 
 ```text
 gateway.{region}.{mindsphere-domain}/api/...
 ```
 
-If you are using this type of credentials you can call MindSphere APIs directly, there is no need to use development proxy.
+If you are using this type of credentials you can call {{site.productname}} APIs directly, there is no need to use development proxy.
 
 ### Code Sample
 
@@ -183,7 +183,7 @@ Basic ZGlvcDEtaGVybWlvbmUtaGVybWlvbmU6c2RqaGZhc2RqaGZqYXNkaGZqa2FzZGh
 
 const basicAuth = `Basic ${Buffer.from("<yourclientid>" + ":" + "<your_secret>").toString("base64")}`;
 
-const sdk = new MindSphereSdk( new TokenManagerAuth(
+const sdk = new {{site.productname}}Sdk( new TokenManagerAuth(
         "https://gateway.eu1.mindsphere.io",
         basicAuth,
         "hostTenant",
@@ -199,20 +199,20 @@ await timeSeries.PutTimeSeries(assetid, aspectname, [{_time: new Date() rpm: "12
 
 You can (almost always) just use TokenManagerAuth instead.
 
-<i class="fa fa-info"></i> The `CredentialsAuth` authentication and authorization works for both applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> MindSphere APP Gateway<i class="fa fac-fa-external-link-alt"></i></a> and for self hosted applications which are just calling MindSphere APIs.
+<i class="fa fa-info"></i> The `CredentialsAuth` authentication and authorization works for both applications which are registered behind <a href="https://developer.mindsphere.io/concepts/concept-gateway-url-schemas.html" target="_new"> {{site.productname}} APP Gateway<i class="fa fac-fa-external-link-alt"></i></a> and for self hosted applications which are just calling {{site.productname}} APIs.
 
 This Authorizer implements the bearer token rotation for app credentials.
 
 -   [Self-Hosted API access](https://developer.mindsphere.io/howto/howto-selfhosted-api-access.html)
 -   [Token Management Service](https://developer.mindsphere.io/apis/exchange-tokenmanager/api-tokenmanager-overview.html)
 
-The Authorizer uses MindSphere Backend API Calling Schema:
+The Authorizer uses {{site.productname}} Backend API Calling Schema:
 
 ```text
 gateway.{region}.{mindsphere-domain}/api/...
 ```
 
-If you are using this type of credentials you can call MindSphere APIs directly, there is no need to use development proxy.
+If you are using this type of credentials you can call {{site.productname}} APIs directly, there is no need to use development proxy.
 
 ### Code Sample
 
@@ -251,7 +251,7 @@ Example Using ServiceCredentials
 ```javascript
 const basicAuth = `Basic ${Buffer.from("<yourclientid>" + ":" + "<your_secret>").toString("base64")}`;
 
-const sdk = new MindSphereSdk(new CredentialAuth("https://gateway.eu1.mindsphere.io", basicAuth, "hostTenant"));
+const sdk = new {{site.productname}}Sdk(new CredentialAuth("https://gateway.eu1.mindsphere.io", basicAuth, "hostTenant"));
 
 const timeSeries = sdk.GetTimeSeriesClient();
 await timeSeries.PutTimeSeries(assetid, aspectname, [
@@ -259,9 +259,9 @@ await timeSeries.PutTimeSeries(assetid, aspectname, [
 ]);
 ```
 
-## MindSphere Agent as Authorizer
+## {{site.productname}} Agent as Authorizer
 
-The MindSphere agents implement the same `TokenRotation` interface like all other Authorizers which means that they can be used with SDK as well. (The agents will have a limited set of scopes but important AssetManagement methods will work)
+The {{site.productname}} agents implement the same `TokenRotation` interface like all other Authorizers which means that they can be used with SDK as well. (The agents will have a limited set of scopes but important AssetManagement methods will work)
 
 ```javascript
 const configuration = require("agentconfig.json");
@@ -269,7 +269,7 @@ const agent = new MindConnectAgent(configuration);
 agent.SetupAgentCertificate(fs.readFileSync("private.key"));
 await agent.OnBoard();
 
-const sdk = new MindSphereSdk(agent);
+const sdk = new {{site.productname}}Sdk(agent);
 await sdk.GetAssetManagementClient().GetAssetType(assetTypeId, { exploded: true });
 ```
 
@@ -280,18 +280,18 @@ For TokenManagerAuth and CredentialAuth you can also use just the object with au
 The following two lines are equivalent:
 
 ```javascript
-const sdk = MindSphereSdk(new CredentialAuth("https://gateway.eu1.mindsphere.io", basicAuth, "hostTenant"));
-const sdk = MindSphereSdk({ gateway: "https://gateway.eu1.mindsphere.io", basicAuth: basicAuth, tenant: "hostTenant" });
+const sdk = {{site.productname}}Sdk(new CredentialAuth("https://gateway.eu1.mindsphere.io", basicAuth, "hostTenant"));
+const sdk = {{site.productname}}Sdk({ gateway: "https://gateway.eu1.mindsphere.io", basicAuth: basicAuth, tenant: "hostTenant" });
 ```
 
 and the same is valid for these lines:
 
 ```javascript
-const sdk = new MindSphereSdk(
+const sdk = new {{site.productname}}Sdk(
     new TokenManagerAuth("https://gateway.eu1.mindsphere.io", basicAuth, "hostTenant", "userTenant", "myApp", "1.0.0")
 );
 
-const sdk = new MindSphereSdk({
+const sdk = new {{site.productname}}Sdk({
     gateway: "https://gateway.eu1.mindsphere.io",
     basicAuth: basicAuth,
     tenant: "hostTenant",

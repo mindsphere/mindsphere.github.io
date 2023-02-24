@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp register-diagnostic Command
+title:  CLI -  mdsp register-diagnostic Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp register-diagnostic Command
+# {{site.productname}} CLI: mdsp register-diagnostic Command
 
 Syntax:
 
@@ -64,4 +64,4 @@ Here are some examples of how to use the `mdsp register-diagnostic` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

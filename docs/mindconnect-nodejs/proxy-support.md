@@ -15,7 +15,7 @@ next:
 
 # MindConnect-NodeJS - <small>Proxy Support</small>
 
-Set the http_proxy or HTTP_PROXY environment variable if you need to connect via proxy to MindSphere. The settings are valid
+Set the http_proxy or HTTP_PROXY environment variable if you need to connect via proxy to {{site.productname}}. The settings are valid
 for the MindConnect Agents, SDK, CLI, the development proxy and also for Node-RED agent.
 
 ## BASH (Linux, git bash...)

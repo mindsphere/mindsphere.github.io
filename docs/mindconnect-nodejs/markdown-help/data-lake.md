@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp data-lake Command
+title:  CLI -  mdsp data-lake Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp data-lake Command
+# {{site.productname}} CLI: mdsp data-lake Command
 
 Syntax:
 
@@ -89,4 +89,4 @@ Here are some examples of how to use the `mdsp data-lake` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

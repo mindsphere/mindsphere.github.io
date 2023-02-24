@@ -36,14 +36,14 @@ You can install the node also via the Manage palette feature in the Node-RED adm
 
 ## How to use the Node-RED node
 
-Since version 3.9.0 it is possible to completely configure the agent from Node-RED. You will only need the initial Boarding configuration from the MindSphere UI.
+Since version 3.9.0 it is possible to completely configure the agent from Node-RED. You will only need the initial Boarding configuration from the {{site.productname}} UI.
 
-### Step 0: Create (at least) one asset and one agent in MindSphere
+### Step 0: Create (at least) one asset and one agent in {{site.productname}}
 
 - Create an asset in Asset Manager for your data
 - Create an agent of the type MindConnectLib [core.mclib] and store the agent.
 
-### Step 1: Get the initial agent configuration from Mindsphere Asset Manager
+### Step 1: Get the initial agent configuration from {{site.productname}} Asset Manager
 
 You can choose between:
 
@@ -73,13 +73,13 @@ MindSphere Asset. If this type of configuration is sufficient for your use case 
 
 ![implementation](images/automatic-configuration.png)
 
-The node will automatically configure all necessary data sources and mapping for you. If you need a more complex setup, just click on the **MindSphere Configuration Dialog** button which will lead you to the configuration dialog in the MindSphere, where you can create more complex configurations and mappings.
+The node will automatically configure all necessary data sources and mapping for you. If you need a more complex setup, just click on the **MindSphere Configuration Dialog** button which will lead you to the configuration dialog in the {{site.productname}}, where you can create more complex configurations and mappings.
 
 ![implementation](images/mindsphere-configuration.png)
 
 ### Step 4: Create and deploy the flow and send data
 
-You can use the node to send timeseries, bulk timeseries, events and files to MindSphere. The templates for the input messages are listed
+You can use the node to send timeseries, bulk timeseries, events and files to {{site.productname}}. The templates for the input messages are listed
 below, but you can also just use the **Agent Information** button which will let you copy the corresponding template to clipboard.
 
 ![implementation](images/infodialog-templates.png)
@@ -130,7 +130,7 @@ msg.payload = values;
 return msg;
 ```
 
-**Note:** All MindSphere timestamps must be in the **ISO format** (use `toISOString()` function).
+**Note:** All {{site.productname}} timestamps must be in the **ISO format** (use `toISOString()` function).
 
 #### Send events
 
@@ -151,7 +151,7 @@ msg.payload = {
 return msg;
 ```
 
-If you are using the custom events instead of MindSphere Standard Events please include the following switch in the message.
+If you are using the custom events instead of {{site.productname}} Standard Events please include the following switch in the message.
 
 ```javascript
 msg._customEvent = true;
@@ -211,7 +211,7 @@ Please note:
 
 #### Reading Asset Information
 
-You can read the data (e.g. static asset variables, or full asset information) from MindSphere using the following message. This can be used to implement a "digital shadow/digital twin" pattern, where the change in the MindSphere variables is reflected to the real world asset. See [bidirectional communication example flow](https://playground.mindconnect.rocks/#flow/9ff72be.3d502d8) on playground for a full example.
+You can read the data (e.g. static asset variables, or full asset information) from {{site.productname}} using the following message. This can be used to implement a "digital shadow/digital twin" pattern, where the change in the {{site.productname}} variables is reflected to the real world asset. See [bidirectional communication example flow](https://playground.mindconnect.rocks/#flow/9ff72be.3d502d8) on playground for a full example.
 
 ```javascript
 msg.payload = {
@@ -226,9 +226,9 @@ return msg;
 You can reduce the number of items in payload by specifying list of properties to include in the message: e.g.
 `propertyNames: ["variables"] or ["location"]`
 
-#### Executing custom functions using MindSphere javascript/typescript SDK
+#### Executing custom functions using {{site.productname}} javascript/typescript SDK
 
-The node can be used to execute a complex script which uses [MindSphere javascript/typescript SDK](https://opensource.mindsphere.io/docs/mindconnect-nodejs/sdk/index.html). The node will create an asyncronous function with one parameter (sdk) and the specified function body and execute it. You can only call the MindSphere APIs which allow agent authorization.
+The node can be used to execute a complex script which uses [MindSphere javascript/typescript SDK](https://opensource.mindsphere.io/docs/mindconnect-nodejs/sdk/index.html). The node will create an asyncronous function with one parameter (sdk) and the specified function body and execute it. You can only call the {{site.productname}} APIs which allow agent authorization.
 
 ```javascript
 msg.payload = {
@@ -244,7 +244,7 @@ return msg;
 
 #### Error handling in the flows
 
-The node can be configured to retry all mindsphere operations (1-10 times, with delay of time \* 300ms before the next try)
+The node can be configured to retry all {{site.productname}} operations (1-10 times, with delay of time \* 300ms before the next try)
 If you need more complex flows, the node also returns the
 
 ```javascript
@@ -259,13 +259,13 @@ properties which can be used to create more complex flows. (e.g. in the flow bel
 ## JWT Token Generation for SouthBound APIs
 
 The node can be used to generate authentication tokens which you can use to call your own custom southbound APIs.
-The msg.headers will have a Mindsphere Authorization JWT.
+The msg.headers will have a {{site.productname}} Authorization JWT.
 
 ```javascript
 msg._includeMindSphereToken = true;
 ```
 
-if you just want to get the token without sending any data to MindSphere
+if you just want to get the token without sending any data to {{site.productname}}
 
 ```javascript
 msg._ignorePayload = true;
@@ -277,24 +277,24 @@ Treat tokens as you would any other credentials.
 
 [![Demo Flows](https://img.shields.io/badge/node--RED-playground-%23009999.svg)](https://playground.mindconnect.rocks)
 
-[MindConnect Node-RED playground](https://playground.mindconnect.rocks) provides following demo flows importing following data points to MindSphere
+[MindConnect Node-RED playground](https://playground.mindconnect.rocks) provides following demo flows importing following data points to {{site.productname}}
 
 - CPU-Usage
 - Batched MQTT Data
 - OPCUA Data
-- Real Weather Data to MindSphere
+- Real Weather Data to {{site.productname}}
 - Simulated Water Pump Data
 
 The simulated water pump data can be inspected at
 
 <https://dreamforce.mindconnect.rocks>
 
-This application can be used without mindsphere credentials.
+This application can be used without {{site.productname}} credentials.
 
 - username: guest@mindsphere.io
 - password: Siemens123!
 
-This data is also used as an example for the KPI-Calculation and Trend prediction with help of MindSphere APIs. <https://github.com/mindsphere/analytics-examples>
+This data is also used as an example for the KPI-Calculation and Trend prediction with help of {{site.productname}} APIs. <https://github.com/mindsphere/analytics-examples>
 
 ## Securing API Endpoints
 
@@ -328,10 +328,10 @@ Press on the "delete local configuration" :wastebucket: button on the node, conf
 
 If you are having problems, it is a good idea to restart the Node-RED runtime completely.
 
-### Diagnostic in MindSphere
+### Diagnostic in {{site.productname}}
 
-If the data is not arriving in your configured asset you should take a look if the data is being dropped in MindSphere because of a misconfiguration.
-The agent diagnostic button will lead you directly to the agent diagnostic application in the MindSphere.
+If the data is not arriving in your configured asset you should take a look if the data is being dropped in {{site.productname}} because of a misconfiguration.
+The agent diagnostic button will lead you directly to the agent diagnostic application in the {{site.productname}}.
 
 ![diagnostic](images/diag.png)
 

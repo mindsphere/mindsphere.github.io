@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp assets Command
+title:  CLI -  mdsp assets Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp assets Command
+# {{site.productname}} CLI: mdsp assets Command
 
 Syntax:
 
@@ -48,9 +48,9 @@ Options:
   -n, --assetname                     assetname
   -p, --parentid                       parentid
   -e, --externalid                   externalid
-  -i, --assetid                         mindsphere asset id
+  -i, --assetid                         {{site.productname}} asset id
   -t, --typeid                           typeid
-  -d, --desc                               description (default: "created with mindsphere CLI")
+  -d, --desc                               description (default: "created with {{site.productname}} CLI")
   -w, --twintype                       digital twin type [performance|simulation]
   -c, --includeshared                            include shared aspect types
   -k, --passkey                         passkey
@@ -68,14 +68,14 @@ Here are some examples of how to use the `mdsp assets` command:
 
   Examples:
 
-    mdsp assets --mode create --typeid core.basicarea --assetname MyArea 	 creates an asset in mindsphere of type basicarea
+    mdsp assets --mode create --typeid core.basicarea --assetname MyArea 	 creates an asset in {{site.productname}} of type basicarea
     mdsp assets --mode create --file MyPump.asset.mdsp.json 		 creates an asset from specified file template
-    mdsp assets --mode list 						 lists all assets in mindsphere
-    mdsp assets --mode list --typeid mclib				 lists all assets in mindsphere of type core.mclib
-    mdsp assets --mode delete --assetid 1234567..ef 			 deletes asset with specified id from mindsphere
+    mdsp assets --mode list 						 lists all assets in {{site.productname}}
+    mdsp assets --mode list --typeid mclib				 lists all assets in {{site.productname}} of type core.mclib
+    mdsp assets --mode delete --assetid 1234567..ef 			 deletes asset with specified id from {{site.productname}}
     mdsp assets --mode template --typeid .Pump --assetname MyPump 
 		creates a file template MyPump.asset.mdsp.json which can be use in create command
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

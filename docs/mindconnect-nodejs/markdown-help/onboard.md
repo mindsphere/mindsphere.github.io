@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp onboard Command
+title:  CLI -  mdsp onboard Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp onboard Command
+# {{site.productname}} CLI: mdsp onboard Command
 
 Syntax:
 
@@ -65,4 +65,4 @@ Here are some examples of how to use the `mdsp onboard` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

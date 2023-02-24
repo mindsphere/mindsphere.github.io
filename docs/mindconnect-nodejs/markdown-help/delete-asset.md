@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp delete-asset Command
+title:  CLI -  mdsp delete-asset Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp delete-asset Command
+# {{site.productname}} CLI: mdsp delete-asset Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc delete-asset
 
 ## Description
 
-delete asset with id  from mindsphere *
+delete asset with id  from {{site.productname}} *
 
 ## Usage
 
@@ -40,10 +40,10 @@ Parameter list:
 ```text
 Usage: mc delete-asset|da [options]
 
-delete asset with id  from mindsphere *
+delete asset with id  from {{site.productname}} *
 
 Options:
-  -i, --assetid   mindsphere asset id
+  -i, --assetid   {{site.productname}} asset id
   -k, --passkey   passkey
   -y, --retry      retry attempts before giving up (default: "3")
   -v, --verbose            verbose output
@@ -63,4 +63,4 @@ Here are some examples of how to use the `mdsp delete-asset` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

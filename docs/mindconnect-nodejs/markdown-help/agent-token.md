@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp agent-token Command
+title:  CLI -  mdsp agent-token Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp agent-token Command
+# {{site.productname}} CLI: mdsp agent-token Command
 
 Syntax:
 
@@ -67,4 +67,4 @@ Here are some examples of how to use the `mdsp agent-token` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

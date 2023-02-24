@@ -1,5 +1,5 @@
 ---
-title: MindConnect-NodeJS - CLI - Uploading Data to MindSphere
+title: MindConnect-NodeJS - CLI - Uploading Data to {{site.productname}}
 next:
   - title: Overview
     link: index
@@ -9,15 +9,15 @@ next:
 
 <!-- @format -->
 
-# MindConnect-NodeJS - CLI - <small>Uploading Data to MindSphere</small>
+# MindConnect-NodeJS - CLI - <small>Uploading Data to {{site.productname}}</small>
 
 ## Introduction
 
 The MindConnect APIs provide the agents with the possibility to
 
 - ingest timeseries data (`mc upload-timeseries`)
-- create events in the MindSphere (`mc create-event`)
-- upload files to the the MindSphere (`mc upload-file`)
+- create events in the {{site.productname}} (`mc create-event`)
+- upload files to the the {{site.productname}} (`mc upload-file`)
 
 All these commands use the agent credentials. Take a look at [Agent Management](./agent-management.md) part of the documentation for instructions how to acquire them.
 
@@ -35,12 +35,12 @@ mc upload-timeseries --help
 
 Usage: upload-timeseries|ts [options]
 
-parse .csv file with timeseriesdata and upload the timeseries data to mindsphere
+parse .csv file with timeseriesdata and upload the timeseries data to {{site.productname}}
 
 Options:
   -c, --config <agentconfig>       config file with agent configuration (default: "agentconfig.json")
   -r, --cert [privatekey]          required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
-  -f, --file <timeseriesdata.csv>  csv file containing the timeseries data to upload to mindsphere
+  -f, --file <timeseriesdata.csv>  csv file containing the timeseries data to upload to {{site.productname}}
   -s, --size <size>                max records per http post (default: 200)
   -n, --no-validation              switch validation off (only if you are sure that the timeseries upload works)
   -y, --retry <number>             retry attempts before giving up (default: 3)
@@ -49,10 +49,10 @@ Options:
 
   Examples:
 
-    mc ts -f timeseries.csv        upload timeseries from the csv file to mindsphere
+    mc ts -f timeseries.csv        upload timeseries from the csv file to {{site.productname}}
     mc upload-timeseries --file timeseries.csv  --size 100  use http post size of 100 records
 
-  Data Format: (use your own data point ids from mindsphere)
+  Data Format: (use your own data point ids from {{site.productname}})
 
   timestamp, dataPointId, qualityCode, value
   2019-05-16T14:50:53.048Z, DP-Temperature ,0, 20.34
@@ -60,22 +60,22 @@ Options:
   2019-05-16T14:50:55.048Z, DP-Pressure, 0, 1012.3
 
   Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
-  The values must correspond with data types configured in mindsphere (in example: DP-Humidity must be an integer)
+  The values must correspond with data types configured in {{site.productname}} (in example: DP-Humidity must be an integer)
 
   Important:
 
-    You have to configure the data source and data mappings in mindsphere asset manager before you can upload the data
+    You have to configure the data source and data mappings in {{site.productname}} asset manager before you can upload the data
     See also: https://documentation.mindsphere.io/resources/html/asset-manager/en-US/116404525451.html
 ```
 
 ## Example
 
-The timeseries data for the upload must match your DataSourceConfiguration in the MindSphere.
+The timeseries data for the upload must match your DataSourceConfiguration in the {{site.productname}}.
 For example: if you have the data source configuration from the
 development example the csv file should look like in the documentation below.
 
 Make sure that the timestamp is in ISO format. The headers and the casing (timestamp, dataPointId) are important.
-The values must correspond with data types configured in MindSphere (in example: DP-Humidity must be an integer)
+The values must correspond with data types configured in {{site.productname}} (in example: DP-Humidity must be an integer)
 
 ```csv
 timestamp, dataPointId, qualityCode, value
@@ -103,12 +103,12 @@ will upload the data to MindConnect API in batches of 100 messages.
 mc create-event --help
 Usage: mc create-event|ce [options]
 
-create an event in the mindsphere (optional: passkey) *
+create an event in the {{site.productname}} (optional: passkey) *
 
 Options:
   -c, --config <agentconfig>     config file with agent configuration
   -r, --cert [privatekey]        required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
-  -i, --assetid <assetid>        asset id from the mindsphere  (default: send event to the agent)
+  -i, --assetid <assetid>        asset id from the {{site.productname}}  (default: send event to the agent)
   -y, --sourceType <sourceType>  Source Type (default: "MindConnect-Agent")
   -S, --sourceId <sourceId>      Source Id (default: "md1ru58c")
   -O, --source <source>          Source (default: "MindConnect-NodeJs CLI")
@@ -151,20 +151,20 @@ This will create event in the agent asset. You can add the --assetid {assetid} i
     This command can also be used with service credentials instead.
 <!-- prettier-ignore-end -->
 
-The upload-file command can upload the files to MindSphere. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overridden in the MindSphere.
+The upload-file command can upload the files to {{site.productname}}. If the files are bigger then 8MB you can use --chunked option which will switch the uploading of data to the multipart upload instead. The mime type of the file is automatically determined but it can be overridden in the {{site.productname}}.
 
 ```text
 Usage: upload-file|uf [options]
 
-upload the file to the mindsphere file service (optional: passkey) *
+upload the file to the {{site.productname}} file service (optional: passkey) *
 
 Options:
   -c, --config <agentconfig>  config file with agent configuration (default: "agentconfig.json")
   -r, --cert [privatekey]     required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -f, --file <fileToUpload>   file to upload to the file service
-  -h, --filepath <filepath>   file path in the mindsphere
+  -h, --filepath <filepath>   file path in the {{site.productname}}
   -l, --parallel <number>     parallel chunk uploads (default: 3)
-  -i, --assetid [assetid]     asset id from the mindsphere  (default: upload to the agent)
+  -i, --assetid [assetid]     asset id from the {{site.productname}}  (default: upload to the agent)
   -m, --mime [mime-type]      mime type of the file (default: automatic recognition)
   -d, --desc [description]    description
   -k, --chunked               Use chunked upload
@@ -182,7 +182,7 @@ Options:
 
 ### Example
 
-The following command will upload the file to the MindSphere using multipart upload and 5 parallel threads.
+The following command will upload the file to the {{site.productname}} using multipart upload and 5 parallel threads.
 
 ```bash
 mc upload-file --file simulationdata.zip --chunked --parallel 5

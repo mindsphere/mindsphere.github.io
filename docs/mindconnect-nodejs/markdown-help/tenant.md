@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp tenant Command
+title:  CLI -  mdsp tenant Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp tenant Command
+# {{site.productname}} CLI: mdsp tenant Command
 
 Syntax:
 
@@ -69,4 +69,4 @@ Here are some examples of how to use the `mdsp tenant` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

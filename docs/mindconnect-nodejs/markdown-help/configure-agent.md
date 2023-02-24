@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp configure-agent Command
+title:  CLI -  mdsp configure-agent Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp configure-agent Command
+# {{site.productname}} CLI: mdsp configure-agent Command
 
 Syntax:
 
@@ -71,10 +71,10 @@ Here are some examples of how to use the `mdsp configure-agent` command:
     mdsp configure-agent --agentid 12345..ef --typeid .Engine  	creates the data source configuration
     mdsp configure-agent --mode map --agentid 12345..ef --assetid 1234567 creates the mappings for assetid
     mdsp configure-agent --mode delete --agentid 12345..ef 		deletes the mappings for agentid
-    mdsp configure-agent --config agent.json --mode test 			sends test data to mindsphere
+    mdsp configure-agent --config agent.json --mode test 			sends test data to {{site.productname}}
     mdsp configure-agent --mode template \
     	--typeid castidev.Pump --language python 			create mapping template and function in python
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

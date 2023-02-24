@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp delete-file Command
+title:  CLI -  mdsp delete-file Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp delete-file Command
+# {{site.productname}} CLI: mdsp delete-file Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc delete-file
 
 ## Description
 
-delete the file from mindsphere file service *
+delete the file from {{site.productname}} file service *
 
 ## Usage
 
@@ -40,12 +40,12 @@ Parameter list:
 ```text
 Usage: mc delete-file|de [options]
 
-delete the file from mindsphere file service *
+delete the file from {{site.productname}} file service *
 
 Options:
   -f, --file   file to delete from the file service
-  -h, --filepath [filepath]  file path in the mindsphere (default: "")
-  -i, --assetid     mindsphere asset id
+  -h, --filepath [filepath]  file path in the {{site.productname}} (default: "")
+  -i, --assetid     {{site.productname}} asset id
   -p, --passkey     passkey
   -y, --retry        retry attempts before giving up (default: "3")
   -v, --verbose              verbose output
@@ -67,4 +67,4 @@ Here are some examples of how to use the `mdsp delete-file` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

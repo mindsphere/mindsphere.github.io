@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp signal-calculation Command
+title:  CLI -  mdsp signal-calculation Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp signal-calculation Command
+# {{site.productname}} CLI: mdsp signal-calculation Command
 
 Syntax:
 
@@ -70,7 +70,7 @@ Here are some examples of how to use the `mdsp signal-calculation` command:
 
     mdsp signal-calculation --mode template 	 create template file for signal calculation
     mdsp signal-calculation --mode template --on asset --assetid  --aspect  --variable variable
-                                            	 creates template for calculation using mindsphere timeseries data
+                                            	 creates template for calculation using {{site.productname}} timeseries data
     mdsp signal-calculation --mode calculate --template  
                                             	 calculates new signal from the timeseries specified in template file
     mdsp signal-calculation --mode calculate \
@@ -80,7 +80,7 @@ Here are some examples of how to use the `mdsp signal-calculation` command:
                      --aspect 
                                             	 calculates new signal from the timeseries specified in external file
     mdsp signal-calculation --mode calculate --on asset --template  
-                                            	 calculates new signal from the mindsphere timeseries
+                                            	 calculates new signal from the {{site.productname}} timeseries
 
   Operation List: 
 
@@ -89,4 +89,4 @@ Here are some examples of how to use the `mdsp signal-calculation` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

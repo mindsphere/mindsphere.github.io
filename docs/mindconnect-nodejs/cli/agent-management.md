@@ -11,9 +11,9 @@ next:
 
 # MindConnect-NodeJS - CLI - <small>Managing Agent Credentials</small>
 
-## Acquiring the agent credentials from the MindSphere
+## Acquiring the agent credentials from the {{site.productname}}
 
-The MindSphere agents require the initial agent configuration which can be acquired from the MindSphere in several different ways. For example you can create an Agent in the asset manager of the type core.mclib and store the credentials on your machine (preferably in the file called agentconfig.json)
+The {{site.productname}} agents require the initial agent configuration which can be acquired from the {{site.productname}} in several different ways. For example you can create an Agent in the asset manager of the type core.mclib and store the credentials on your machine (preferably in the file called agentconfig.json)
 
 ```json
 {
@@ -34,7 +34,7 @@ The mindconnect-nodejs CLI provides a set of commands which can be used to acqui
 
 These commands can
 
-- Create new agent in the MindSphere `mc create-agent`
+- Create new agent in the {{site.productname}} `mc create-agent`
 - Onboard the agent `mc onboard`
 - Check the agent status `mc agent-status`
 - Offboard the agent `mc offboard-agent`
@@ -48,7 +48,7 @@ The prerequisite for most of these commands is that you have registered your app
 mc create-agent --help
 Usage: mc create-agent|ca [options]
 
-create an agent in the mindsphere *
+create an agent in the {{site.productname}} *
 
 Options:
   -c, --config <agentconfig>   config file for agent configuration
@@ -83,7 +83,7 @@ Options:
 
 ### Example
 
-The command below will create a new agent with default settings in your root asset in the MindSphere and prompt you with the link to asset management in your cockpit where you can configure the agent details. Define the agent configuration, the asset mapping etc.
+The command below will create a new agent with default settings in your root asset in the {{site.productname}} and prompt you with the link to asset management in your cockpit where you can configure the agent details. Define the agent configuration, the asset mapping etc.
 
 ```bash
 mc create-agent --config agentconfig.json --passkey {yourpasskey}
@@ -137,7 +137,7 @@ You can configure your agent using command line interface as well. The `mc confi
 - **map**: manages mapping for the agents
 - **print**: prints the current configuration
 - **delete**: deletes the data source configuration and or mappings
-- **test** : generates random data and sends them to MindSphere
+- **test** : generates random data and sends them to {{site.productname}}
 
 ```text
 Usage: mc configure-agent|co [options]
@@ -162,7 +162,7 @@ Options:
     mc configure-agent --agentid 12345..ef --typeid <tenant>.Engine         creates the data source configuration
     mc configure-agent --mode map --agentid 12345..ef --assetid 1234567     creates the mappings for assetid
     mc configure-agent --mode delete --agentid 12345..ef --assetid 1234567  deletes the mappings for assetid
-    mc configure-agent --config agent.json --mode test                      sends test data to mindsphere
+    mc configure-agent --config agent.json --mode test                      sends test data to {{site.productname}}
 ```
 
 For example the following command will automatically configure data source configuration and the mappings for selected assetid.
@@ -245,7 +245,7 @@ The agent can be offboarded with help of the CLI as well.
 mc offboard-agent --help
 Usage: mc offboard-agent|of [options]
 
-offboards the agent in the mindsphere *
+offboards the agent in the {{site.productname}} *
 
 Options:
   -c, --config <agentconfig>  config file for agent configuration

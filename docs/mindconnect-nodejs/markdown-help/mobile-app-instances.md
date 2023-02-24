@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp mobile-app-instances Command
+title:  CLI -  mdsp mobile-app-instances Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp mobile-app-instances Command
+# {{site.productname}} CLI: mdsp mobile-app-instances Command
 
 Syntax:
 
@@ -74,4 +74,4 @@ Here are some examples of how to use the `mdsp mobile-app-instances` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

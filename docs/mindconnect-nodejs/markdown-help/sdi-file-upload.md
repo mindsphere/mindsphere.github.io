@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp sdi-file-upload Command
+title:  CLI -  mdsp sdi-file-upload Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp sdi-file-upload Command
+# {{site.productname}} CLI: mdsp sdi-file-upload Command
 
 Syntax:
 
@@ -66,8 +66,8 @@ Here are some examples of how to use the `mdsp sdi-file-upload` command:
   Restriction:
 
     This works only for SDI only tenants (without Integrated Data Lake)
-    If you are MindSphere Integrated Data Lake Customer use mdsp data-lake --mode upload command instead. 
+    If you are {{site.productname}} Integrated Data Lake Customer use mdsp data-lake --mode upload command instead. 
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

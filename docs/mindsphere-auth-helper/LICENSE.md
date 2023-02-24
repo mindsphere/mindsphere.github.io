@@ -1,14 +1,14 @@
 ---
-title: MindSphere Authentication Helper Extension - License
+title: Authentication Helper Extension - License
 ---
 
 <!-- @format -->
 
-# MindSphere Development License Agreement
+# {{site.productname}} Development License Agreement
 
 December 2018
 
-This Development License Agreement (the “License”) stipulates the rights that Siemens AG, Germany (“Siemens”) grants to you (“you”) in receipt of certain development material in relation to MindSphere (the “Platform”). This material may include software, sample code, scripts, libraries, software development kits, technology, documentation, and other proprietary material or information (collectively, the “Licensed Material”).
+This Development License Agreement (the “License”) stipulates the rights that Siemens AG, Germany (“Siemens”) grants to you (“you”) in receipt of certain development material in relation to {{site.productname}} (the “Platform”). This material may include software, sample code, scripts, libraries, software development kits, technology, documentation, and other proprietary material or information (collectively, the “Licensed Material”).
 Siemens retains the right to utilize its affiliated companies in pursuing any of its rights and fulfilling any of its obligations under this License. Therefore, the term “Siemens” as used herein may also refer to affiliated companies that are directly or indirectly owned or controlled by the ultimate parent company of Siemens AG and who have been authorized by Siemens AG to distribute the Licensed Material.
 
 ## 1. Proprietary Rights in the Licensed Material

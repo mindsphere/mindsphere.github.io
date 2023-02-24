@@ -13,15 +13,15 @@ next:
 
 # TypeScript SDK - Overview
 
-The library comes with the typescript SDK which can be used to access MindSphere APIs
+The library comes with the typescript SDK which can be used to access {{site.productname}} APIs
 
 [![SDK](https://img.shields.io/badge/SDK-full%20documentation-%23009999.svg)](/docs/mindconnect-nodejs/sdk/index.html)
 
-It implements support for both frontend (browser e.g. angular, react...) and backend development in node.js while supporting different MindSphere authentication types.
+It implements support for both frontend (browser e.g. angular, react...) and backend development in node.js while supporting different {{site.productname}} authentication types.
 
 **Frontend:** - Browser (Session, Cookies)
 
-**Backend (node.js):** - UserCredentials - AppCredentials - ServiceCredentials - MindSphere Agents
+**Backend (node.js):** - UserCredentials - AppCredentials - ServiceCredentials - {{site.productname}} Agents
 
 The SDK implements the Clients for following APIs:
 
@@ -37,7 +37,7 @@ The SDK implements the Clients for following APIs:
 | Message Broker<sup>2</sup> (preview)  | :heavy_check_mark: | :heavy_check_mark: |
 | Usage Transparency  | :heavy_check_mark: |  |
 
-<sup>1</sup> In the first stage of the availability Resource Access Management must be enabled for the tenant via MindSphere support team.
+<sup>1</sup> In the first stage of the availability Resource Access Management must be enabled for the tenant via {{site.productname}} support team.
 
 <sup>2</sup> Message Broker is only available on preview tenants
 
@@ -108,16 +108,16 @@ The SDK implements the Clients for following APIs:
 The example below shows how to use the SDK from browser:
 
 ```javascript
-// The example shows how to Get Assets from MindSphere with custom AssetType
+// The example shows how to Get Assets from {{site.productname}} with custom AssetType
 // using frontend authentication
 // you can pass an instance an Authorizer
 // (BrowserAuth, UserAuth, CredentialsAuth, TokenManagerAuth, MindConnectAgent)
-// to use different authorization types in MindSphere or implement the TokenRotation
+// to use different authorization types in {{site.productname}} or implement the TokenRotation
 // interface if you want to provide your own authorizer.
 //
 // The default constructor uses frontend authorization.
 
-const sdk = new MindSphereSdk();
+const sdk = new {{site.productname}}Sdk();
 const am = sdk.GetAssetManagementClient();
 
 const assets = await am.GetAssets({

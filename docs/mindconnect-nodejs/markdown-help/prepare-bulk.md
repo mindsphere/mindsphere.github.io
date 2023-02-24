@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp prepare-bulk Command
+title:  CLI -  mdsp prepare-bulk Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp prepare-bulk Command
+# {{site.productname}} CLI: mdsp prepare-bulk Command
 
 Syntax:
 
@@ -45,7 +45,7 @@ creates a template directory for timeseries (bulk) upload *
 Options:
   -d, --dir   config file with agent configuration (default: "bulkupload")
   -w, --twintype       twintype of asset [performance|simulation]
-  -i, --assetid     mindsphere asset id
+  -i, --assetid     {{site.productname}} asset id
   -t, --typeid       typeid e.g. castidev.Engine
   -s, --size           entries per file  (default: "100")
   -f, --files         generated files  (default: "2")
@@ -75,4 +75,4 @@ Here are some examples of how to use the `mdsp prepare-bulk` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp download-bulk Command
+title:  CLI -  mdsp download-bulk Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp download-bulk Command
+# {{site.productname}} CLI: mdsp download-bulk Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc download-bulk
 
 ## Description
 
-download the timeseries data in bulk from mindsphere *
+download the timeseries data in bulk from {{site.productname}} *
 
 ## Usage
 
@@ -40,11 +40,11 @@ Parameter list:
 ```text
 Usage: mc download-bulk|db [options]
 
-download the timeseries data in bulk from mindsphere *
+download the timeseries data in bulk from {{site.productname}} *
 
 Options:
   -d, --dir       directory for the download (shouldn't exist) (default: "bulkdownload")
-  -i, --assetid         mindsphere asset id
+  -i, --assetid         {{site.productname}} asset id
   -a, --aspectname   aspectname
   -f, --from               from date
   -t, --to                   to date
@@ -68,4 +68,4 @@ Here are some examples of how to use the `mdsp download-bulk` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

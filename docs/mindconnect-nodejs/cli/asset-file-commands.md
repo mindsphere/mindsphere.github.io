@@ -15,14 +15,14 @@ next:
 
 The asset and file commands can be used to
 
-- list assets in the MindSphere tenant
+- list assets in the {{site.productname}} tenant
 - list, upload and download files stored with the asset
 
 These commands require app or service credentials.
 
 ## List Assets (`mc list-assets`)
 
-This command lists the assets in the current MindSphere tenant.
+This command lists the assets in the current {{site.productname}} tenant.
 
 ```text
 mc list-assets --help
@@ -97,7 +97,7 @@ Usage: mc list-files|ls [options]
 list files stored with the asset *
 
 Options:
-  -i, --assetid <assetid>  asset id from the mindsphere
+  -i, --assetid <assetid>  asset id from the {{site.productname}}
   -f, --filter [filter]    filter (see: https://developer.mindsphere.io/apis/iot-iotfile/api-iotfile-references-filtering.html)
   -k, --passkey <passkey>  passkey
   -y, --retry <number>     retry attempts before giving up (default: "3")
@@ -141,15 +141,15 @@ Upload a file to the asset
 mc upload-file --help
 Usage: mc upload-file|uf [options]
 
-upload the file to the mindsphere file service (optional: passkey) *
+upload the file to the {{site.productname}} file service (optional: passkey) *
 
 Options:
   -c, --config <agentconfig>  config file with agent configuration
   -r, --cert [privatekey]     required for agents with RSA_3072 profile. create with: openssl genrsa -out private.key 3072
   -f, --file <fileToUpload>   file to upload to the file service
-  -h, --filepath <filepath>   file path in the mindsphere
+  -h, --filepath <filepath>   file path in the {{site.productname}}
   -l, --parallel <number>     parallel chunk uploads (default: "3")
-  -i, --assetid [assetid]     asset id from the mindsphere  (default: upload to the agent)
+  -i, --assetid [assetid]     asset id from the {{site.productname}}  (default: upload to the agent)
   -m, --mime [mime-type]      mime type of the file (default: automatic recognition)
   -d, --desc [description]    description
   -k, --chunked               Use chunked upload
@@ -175,17 +175,17 @@ mc upload-file --file  bigdata.zip --assetid 1234..ef  --chunked --passkey mypas
 
 ## Download File (`mc download-file`)
 
-Download a file from MindSphere
+Download a file from {{site.productname}}
 
 ```text
 Usage: mc download-file|df [options]
 
-download the file from mindsphere file service *
+download the file from {{site.productname}} file service *
 
 Options:
   -f, --file <fileToDownload>  file to download from the file service
-  -h, --filepath [filepath]    file path in the mindsphere (default: "")
-  -i, --assetid <assetid>      asset id from the mindsphere
+  -h, --filepath [filepath]    file path in the {{site.productname}} (default: "")
+  -i, --assetid <assetid>      asset id from the {{site.productname}}
   -p, --passkey <passkey>      passkey
   -y, --retry <number>         retry attempts before giving up (default: "3")
   -v, --verbose                verbose output

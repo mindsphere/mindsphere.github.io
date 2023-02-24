@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp identity-management Command
+title:  CLI -  mdsp identity-management Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp identity-management Command
+# {{site.productname}} CLI: mdsp identity-management Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc identity-management
 
 ## Description
 
-manage mindsphere users, groups and roles *
+manage {{site.productname}} users, groups and roles *
 
 ## Usage
 
@@ -40,7 +40,7 @@ Parameter list:
 ```text
 Usage: mc identity-management|iam [options]
 
-manage mindsphere users, groups and roles *
+manage {{site.productname}} users, groups and roles *
 
 Options:
   -m, --mode [list|create|assign|remove|delete|info]  Mode can be list | create | assign | remove | delete | info (default: "list")
@@ -98,4 +98,4 @@ Here are some examples of how to use the `mdsp identity-management` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp kpi-calculation Command
+title:  CLI -  mdsp kpi-calculation Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp kpi-calculation Command
+# {{site.productname}} CLI: mdsp kpi-calculation Command
 
 Syntax:
 
@@ -74,7 +74,7 @@ Here are some examples of how to use the `mdsp kpi-calculation` command:
     mdsp kpi-calculation --mode states --file timeseries.mdsp.json --calendar calendar.mdsp.json  --target rpm --threshold 30 
  		calculate kpi states based on rpm
     mdsp kpi-calculation --mode direct --target rpm --assetid 123...ef --aspectname EngineParameters  --from  --to  
- 		calculate kpi states based on asset data in MindSphere
+ 		calculate kpi states based on asset data in {{site.productname}}
     mdsp kpi-calculation --mode kpis --file states.mdsp.json --target state 
  		calculate kpis for state timeseries
 
@@ -93,4 +93,4 @@ Here are some examples of how to use the `mdsp kpi-calculation` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

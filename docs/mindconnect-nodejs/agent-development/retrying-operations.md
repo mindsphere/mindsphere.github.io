@@ -22,7 +22,7 @@ You can wrap all asynchronous object calls into the retry function which will au
 ```javascript
 import {
     MindConnectAgent,
-    MindsphereStandardEvent,
+    {{site.productname}}StandardEvent,
     retry,
     TimeStampedDataPoint,
 } from "@mindconnect/mindconnect-nodejs";

@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp event-types Command
+title:  CLI -  mdsp event-types Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp event-types Command
+# {{site.productname}} CLI: mdsp event-types Command
 
 Syntax:
 
@@ -70,8 +70,8 @@ Here are some examples of how to use the `mdsp event-types` command:
     mdsp event-types --mode template --eventtype PumpEvent 
 	create a template file (PumpEvent.eventtype.mdsp.json) for event type PumpEvent
     mdsp event-types --mode create --file PumpEvent.eventtype.mdsp.json 
-	create event type PumpEvent in MindSphere
+	create event type PumpEvent in {{site.productname}}
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

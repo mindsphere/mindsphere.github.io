@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp aspects Command
+title:  CLI -  mdsp aspects Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp aspects Command
+# {{site.productname}} CLI: mdsp aspects Command
 
 Syntax:
 
@@ -74,7 +74,7 @@ Here are some examples of how to use the `mdsp aspects` command:
     mdsp aspects --mode template --aspect Environment 
 	create a template file (Enironment.aspect.mdsp.json) for aspect Environment
     mdsp aspects --mode create --file Environment.aspects.mdsp.json 
-	create aspect type Environment in MindSphere
+	create aspect type Environment in {{site.productname}}
     mdsp aspects --mode convert --schema Environment.schema.json --aspect Environment 
 	 create a template file for aspect type Environment from JSON schema
     mdsp aspects --mode convert --schema Environment.schema.json --aspect Environment --prefixflattened 
@@ -84,4 +84,4 @@ Here are some examples of how to use the `mdsp aspects` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

@@ -13,14 +13,14 @@ next:
 
 ## Introduction
 
-The analytical functions of MindSphere like:
+The analytical functions of {{site.productname}} like:
 
 - Spectrum Analysis or
 - Signal Validation
 
 can be used with help of the CLI.
 
-These commands require MindSphere app or service credentials.
+These commands require {{site.productname}} app or service credentials.
 
 ## Spectrum Analysis (`mc spectrum-analysis`)
 

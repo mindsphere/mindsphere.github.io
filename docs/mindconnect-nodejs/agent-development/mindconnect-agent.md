@@ -70,7 +70,7 @@ agent.OnBoard()
     });
 ```
 
-## How to create a nodejs MindSphere agent
+## How to create a nodejs {{site.productname}} agent
 
 The following steps describe the easiest way to test the library. You can of course create the required dependencies also programmatically via API calls.
 
@@ -86,7 +86,7 @@ More information about [MindSphere Data Model](https://siemens.mindsphere.io/en/
 
 Create an asset (In example it is called **AcmeMotor**) of type Engine in AssetManager for your data.
 
-### Step 2: Create an agent of type MindConnectLib in MindSphere
+### Step 2: Create an agent of type MindConnectLib in {{site.productname}}
 
 Create an agent in Asset Manager of type MindConnectLib (core.mclib) create initial JSON token and store it to file (e.g. agentconfig.json)
 
@@ -126,7 +126,7 @@ agent.SetupAgentCertificate(fs.readFileSync("private.key"));
 
 ### Step 4: Onboard the agent
 
-The first operation is onboarding of the agent. This creates a client secret which is used for the communication with MindSphere.
+The first operation is onboarding of the agent. This creates a client secret which is used for the communication with {{site.productname}}.
 
 This data is stored by default in the .mc folder in your application if you don't change the base path in the constructor of the agent.
 
@@ -171,11 +171,11 @@ If you are just creating 1:1 asset to agent mappings the two steps above can be 
 await agent.ConfigureAgentForAssetId(targetAssetId);
 ```
 
-### SDK access: The agents have now access to MindSphere TypeScript SDK
+### SDK access: The agents have now access to {{site.productname}} TypeScript SDK
 
 ```javascript
 agent.Sdk();
-// the sdk gives you access to e.g. asset management client with which you can get asset types or assets from mindsphere
+// the sdk gives you access to e.g. asset management client with which you can get asset types or assets from {{site.productname}}
 // which can be used for automatic data source configuration and automatic mappings
 
 const assetMgmt = agent.Sdk().GetAssetManagementClient();
@@ -184,7 +184,7 @@ await assetMgmt.GetAspectTypes(...);
 
 ```
 
-If you take a look at the MindSphere configuration of your agent now it should look like this:
+If you take a look at the {{site.productname}} configuration of your agent now it should look like this:
 
 ![datasources](../images/datasources.png)
 
@@ -258,7 +258,7 @@ if (!agent.IsOnBoarded()) {
     await agent.OnBoard();
 }
 
-const event: MindsphereStandardEvent = {
+const event: {{site.productname}}StandardEvent = {
     entityId: configuration.content.clientId, // use assetid if you dont want to store event in the agent :)
     sourceType: "Event",
     sourceId: "application",
@@ -278,7 +278,7 @@ await agent.PostEvent(event);
 
 Files can now be uploaded via the library. You can upload files for your agent or for your entities. In order to create an event for your entity you need to know the assetId of the asset.
 
-Since version 3.5.1. the agents are using the multipart upload API of the MindSphere. This means that the agents can upload files also bigger > 8 MB, The
+Since version 3.5.1. the agents are using the multipart upload API of the {{site.productname}}. This means that the agents can upload files also bigger > 8 MB, The
 multipart upload must be switched on (chunk:true) if you want to activate this behavior. The parameter parallelUploads determine the maximal number of parallel uploads. You can increase this on a powerful computer to speed up the upload or decrease to prevent network congestion.
 
 ```javascript
@@ -305,4 +305,4 @@ Here is a demo agent implementation.
 
 [![mindsphere-agent](https://img.shields.io/badge/mindsphere-agent-green.svg)](https://github.com/mindsphere/mindconnect-nodejs/blob/master/src/demoagent/test-agent.ts)
 
-The data in the MindSphere can be observed in the fleet manager.
+The data in the {{site.productname}} can be observed in the fleet manager.

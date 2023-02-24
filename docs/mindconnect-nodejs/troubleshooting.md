@@ -17,14 +17,14 @@ Most troubleshooting tips apply for both the mindconnect-nodejs library and the 
 
 ## Connection can't be established
 
-An error like this indicates that there is some problem with network connectivity between your computer and MindSphere.
+An error like this indicates that there is some problem with network connectivity between your computer and {{site.productname}}.
 
 ```text
 Network error occured request to https://<tenant>.piam.eu1.mindsphere.io/oauth/token failed,
 reason: connect ECONNREFUSED
 ```
 
-This can be caused by several reasons (and in the very rare case, the MindSphere could be offline) but the most common one is that your http proxy is not properly configured.
+This can be caused by several reasons (and in the very rare case, the {{site.productname}} could be offline) but the most common one is that your http proxy is not properly configured.
 
 The proxy configuration is set via environment variables:
 
@@ -35,15 +35,15 @@ export HTTP_PROXY=http://localhost:8888
 
 If you are using node-RED make sure that the environment variable is created **before the node-RED process is started**, especially if you are running it as a service.
 
-### MindSphere Online Status
+### {{site.productname}} Online Status
 
-If you are convinced that your proxy settings are correctly set, it also might be that MindSphere is undergoing occasional offline maintenance. The current status of all Mindsphere services is available at:
+If you are convinced that your proxy settings are correctly set, it also might be that {{site.productname}} is undergoing occasional offline maintenance. The current status of all {{site.productname}} services is available at:
 
 <https://status.mindsphere.io/>
 
 ## The library/node are sending the data but there is no data in Fleet Manager
 
-This is probably caused by some misconfiguration in your data source configuration and/or in the mappings. Please use Agent Diagnostic Tool on your MindSphere dashboard to troubleshoot the issue.
+This is probably caused by some misconfiguration in your data source configuration and/or in the mappings. Please use Agent Diagnostic Tool on your {{site.productname}} dashboard to troubleshoot the issue.
 
 ![delete local settings](images/diagnostic.png)
 
@@ -62,9 +62,9 @@ the client secret has expired, you will have to onboard the agent again
 
 Here are some probable causes:
 
-### The agent hasn't called MindSphere APIs for a long time
+### The agent hasn't called {{site.productname}} APIs for a long time
 
-If your agent is calling MindSphere APIs only occasionally the authentication secrets might expire. In order to prevent that the Node-RED has an automatic keep alive feature which renews the client secrets even if no data is sent. If you are writing a custom agent make sure that you are doing something like this:
+If your agent is calling {{site.productname}} APIs only occasionally the authentication secrets might expire. In order to prevent that the Node-RED has an automatic keep alive feature which renews the client secrets even if no data is sent. If you are writing a custom agent make sure that you are doing something like this:
 
 ```javascript
 setInterval(async () => {

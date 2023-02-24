@@ -55,7 +55,7 @@ subpages:
             file_name: setting-up-the-cli.html
           - name: Managing Agent Credentials
             file_name: agent-management.html
-          - name: Uploading Data to MindSphere
+          - name: Uploading Data
             file_name: agent-dataupload.html
           - name: Agent Diagnostics
             file_name: agent-diagnostic.html
@@ -71,12 +71,12 @@ subpages:
             file_name: data-lake.html
           - name: Creating Starter Projects
             file_name: starter-projects.html
-      - name: MindSphere Development Proxy
+      - name: Development Proxy
         local_path: docs/mindconnect-nodejs/cli
         subpages:
           - name: Development Proxy
             file_name: development-proxy.html
-      - name: MindSphere Auth Helper
+      - name: Auth Helper
         local_path: docs/mindsphere-auth-helper
         subpages:
           - name: Overview
@@ -102,7 +102,7 @@ subpages:
             file_name: CHANGELOG.html
           - name: License
             file_name: LICENSE.html
-      - name: MindSphere DevOps Demo
+      - name: DevOps Demo
         local_path: docs/devops-demo
         subpages:
           - name: Overview

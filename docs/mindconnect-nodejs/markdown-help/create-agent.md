@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp create-agent Command
+title:  CLI -  mdsp create-agent Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp create-agent Command
+# {{site.productname}} CLI: mdsp create-agent Command
 
 Syntax:
 
@@ -31,7 +31,7 @@ mc create-agent
 
 ## Description
 
-create an agent in the mindsphere *
+create an agent in the {{site.productname}} *
 
 ## Usage
 
@@ -40,7 +40,7 @@ Parameter list:
 ```text
 Usage: mc create-agent|ca [options]
 
-create an agent in the mindsphere *
+create an agent in the {{site.productname}} *
 
 Options:
   -c, --config    config file for agent configuration
@@ -67,4 +67,4 @@ Here are some examples of how to use the `mdsp create-agent` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

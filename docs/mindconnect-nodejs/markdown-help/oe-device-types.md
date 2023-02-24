@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp oe-device-types Command
+title:  CLI -  mdsp oe-device-types Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp oe-device-types Command
+# {{site.productname}} CLI: mdsp oe-device-types Command
 
 Syntax:
 
@@ -72,9 +72,9 @@ Here are some examples of how to use the `mdsp oe-device-types` command:
     mdsp oe-device-types --mode template --devicetype board 
 	create a template file for specified device type
     mdsp oe-device-types --mode create --file board.devicetype.mdsp.json 
-	create device type board in MindSphere
+	create device type board in {{site.productname}}
     mdsp oe-device-types --mode delete --id 	 delete the device type with the device id
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

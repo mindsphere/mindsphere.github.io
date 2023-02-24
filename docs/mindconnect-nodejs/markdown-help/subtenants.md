@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp subtenants Command
+title:  CLI -  mdsp subtenants Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp subtenants Command
+# {{site.productname}} CLI: mdsp subtenants Command
 
 Syntax:
 
@@ -70,4 +70,4 @@ Here are some examples of how to use the `mdsp subtenants` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

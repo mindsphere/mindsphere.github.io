@@ -1,5 +1,5 @@
 ---
-title: MindSphere CLI -  mdsp asset-info Command
+title:  CLI -  mdsp asset-info Command
 next:
     - title: Overview
       link: ../cli/index
@@ -7,7 +7,7 @@ next:
       link: ../cli/setting-up-the-cli
 ---
 
-# MindSphere CLI: mdsp asset-info Command
+# {{site.productname}} CLI: mdsp asset-info Command
 
 Syntax:
 
@@ -43,7 +43,7 @@ Usage: mc asset-info|ai [options]
 get infos about asset *
 
 Options:
-  -i, --assetid   mindsphere asset id
+  -i, --assetid   {{site.productname}} asset id
   -k, --passkey   passkey
   -y, --retry      retry attempts before giving up (default: "3")
   -v, --verbose            verbose output
@@ -63,4 +63,4 @@ Here are some examples of how to use the `mdsp asset-info` command:
 
 ```
 
-See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about MindSphere APIs.
+See [MindSphere API documentation](https://documentation.mindsphere.io/MindSphere/apis/index.html) for more information about {{site.productname}} APIs.

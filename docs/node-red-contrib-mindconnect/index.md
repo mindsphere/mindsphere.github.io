@@ -13,7 +13,7 @@ next:
 
 ## Introduction
 
-A Node-RED node which can be used to upload the time series data, files and events to MindSphere via MindConnect. The node also has support for the MindSphere Industrial Data Lake. It runs on x86, Raspberry PI, Siemens IOT 2040 and is also available as a docker container for your convenience.
+A Node-RED node which can be used to upload the time series data, files and events to {{site.productname}} via MindConnect. The node also has support for the {{site.productname}} Industrial Data Lake. It runs on x86, Raspberry PI, Siemens IOT 2040 and is also available as a docker container for your convenience.
 
 [<i class="fab fa-github"></i> GitHub](https://github.com/mindsphere/node-red-contrib-mindconnect) [<i class="fab fa-npm"></i> npm](https://www.npmjs.com/package/@mindconnect/node-red-contrib-mindconnect) [<i class="fab fa-docker"></i> DockerHub](https://hub.docker.com/r/mindconnect/node-red-contrib-mindconnect)
 
@@ -21,7 +21,7 @@ The node is written in typescript/javascript without any native dependencies so 
 
 ## About MindConnect Node-RED Node
 
-The Node-RED platform targets the makers who want an easy, flow-based way to configure and manage the flow of data with their IoT devices. This node provides the connectivity to MindSphere for TimeSeries upload, File upload and Event Creation.
+The Node-RED platform targets the makers who want an easy, flow-based way to configure and manage the flow of data with their IoT devices. This node provides the connectivity to {{site.productname}} for TimeSeries upload, File upload and Event Creation.
 
 ![MindConnect Node-RED Node](./images/mindconnectagent-flow.png)
 
