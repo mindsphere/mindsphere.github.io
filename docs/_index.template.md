@@ -39,12 +39,12 @@ featured:
     - title:  Analytics Examples
       description: Jupyter Lab Notebooks demonstrating the use of the MindSphere Analytics APIs (KPI Calculation, SignalValidation...)<br/> <br/> <a href="https://github.com/mindsphere/analytics-examples" target="_new"><i class="fab fa-github"></i> GitHub</a>
       icon: components
-      url1: /docs/analytics/index.html
+      url1: https://github.com/mindsphere/analytics-examples
 
     - title:  DevOps Demo
       description: Demo application, providing tools and a devops admin backend for accessing Prometheus and Grafana.<br/> <br/> <a href="https://gitlab.com/mindsphere/devops-demo" target="_new"><i class="fab fa-gitlab"></i> GitLab</a> <a href="https://github.com/mindsphere/devops-demo" target="_new"><i class="fab fa-github"></i> GitHub Mirror</a>
       icon: components
-      url1: /docs/devops-demo/index.html
+      url1: https://github.com/mindsphere/devops-demo
 
     - title: Start For Free Demo App
       description: A small demo app which can be used as a starting point for your <a href="https://siemens.mindsphere.io/en/start" target="_new">MindSphere StartForFree</a> developer experience. The app uses <a href="https://reactjs.org" target="_new">React</a>, <a href="https://design.mindsphere.io" target="_new"> MindSphere Design System</a> and <a href="https://developer.mindsphere.io/resources/mindsphere-webcomponents/index.html" target="_new"> MindSphere Web Components</a><br/><br/><a href="https://github.com/mindsphere/start-for-free-demo-app" target="_new"><i class="fab fa-github"></i> GitHub</a>

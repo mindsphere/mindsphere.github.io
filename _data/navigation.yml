@@ -102,27 +102,4 @@ subpages:
             file_name: CHANGELOG.html
           - name: License
             file_name: LICENSE.html
-      - name: DevOps Demo
-        local_path: docs/devops-demo
-        subpages:
-          - name: Overview
-            file_name: index.html
-          - name: Code of Conduct
-            file_name: CODE_OF_CONDUCT.html
-          - name: Contribution Guidelines
-            file_name: CONTRIBUTING.html
-          - name: License
-            file_name: LICENSE.html
-      - name: Analytics Examples
-        local_path: docs/analytics
-        subpages:
-          - name: Overview
-            file_name: index.html
-          - name: Code of Conduct
-            file_name: CODE_OF_CONDUCT.html
-          - name: Contribution Guidelines
-            file_name: CONTRIBUTING.html
-          - name: Changelog
-            file_name: CHANGELOG.html
-          - name: License
-            file_name: LICENSE.html
+
