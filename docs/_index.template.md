@@ -134,7 +134,7 @@ featured:
 
     <p class="mdsp-introduction">
 
-    We <i class="fa fa-heart"></i> contributions! All projects have the CONTRIBUTING.md and CODE_OF_CONDUCT.md files with contribution information. Thank you for being part of the {{site.productname}} Community!
+    We <i class="fa fa-heart"></i> contributions! All projects have the CONTRIBUTING.md and CODE_OF_CONDUCT.md files with contribution information. Thank you for being part of our community!
     </p>
 
 </div>
