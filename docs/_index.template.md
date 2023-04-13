@@ -96,8 +96,8 @@ featured:
         <ul class="mdsp-featurelist">
           <li class="featurelist_feature" style="width:55%; vertical-align:top !important">
           <h2>Featured: Command Line Interface</h2>
-          The <a href="/docs/mindconnect-nodejs/cli/index.html">Command Line Interface</a> is a powerful tool for {{site.productname}} developers and administrators
-          as it gives you scriptable access to common tasks in MindSphere.
+          The <a href="/docs/mindconnect-nodejs/cli/index.html">Command Line Interface</a> is a powerful tool for developers and administrators
+          as it gives you scriptable access to common tasks in Industrial IoT and Insights Hub.
           <br/><br/>
           It is packaged as part of @mindconnect/mindconnect-nodejs library.<br/>
           You can install it from <a href="https://www.npmjs.com/package/@mindconnect/mindconnect-nodejs" target="_new"><i class="fab fa-npm"></i> npm</a> or download binaries from the links below.
