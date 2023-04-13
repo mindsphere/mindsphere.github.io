@@ -107,9 +107,7 @@ featured:
           <div class="feature__links" id="download2"></div>
           </li>
           <li class="featurelist_feature" style="paddin-left:40px">
-              <video controls autoplay loop src="assets/media/CLI-video.mp4" style="width:400px !important; height: auto !important;text-align:right padding-left:30px !important;">
-                Your browser does not support embedded video.
-              </video>
+          &nbsp;
           </li>
         </ul>
       </div>
@@ -134,7 +132,7 @@ featured:
 
     <p class="mdsp-introduction">
 
-    We <i class="fa fa-heart"></i> contributions! All projects have the CONTRIBUTING.md and CODE_OF_CONDUCT.md files with contribution information. Thank you for being part of our community!
+    We love contributions! All projects have the CONTRIBUTING.md and CODE_OF_CONDUCT.md files with contribution information. Thank you for being part of our community!
     </p>
 
 </div>
