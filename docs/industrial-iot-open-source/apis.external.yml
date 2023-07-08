@@ -1,0 +1,69 @@
+- title: Industrial IoT Typescript SDK
+  desc: TypeScript/JavaScript Community SDK for Industrial IoT APIs.
+  link: industrial-iot-open-source/mindconnect-nodejs/sdk/index.html
+  tags:
+    - Industrial Operations X
+    - Industrial IoT
+    - Open Source
+  productline: Insights Hub and Industrial IoT
+  vertical:
+    - Manufacturing
+    - Digital Industries
+  resourcetype:
+    - SDK
+
+- title: Industrial IoT Command Line Interface
+  desc: Command Line Interface for Industrial IoT APIs.
+  link: industrial-iot-open-source/mindconnect-nodejs/cli/index.html
+  tags:
+    - Industrial Operations X
+    - Industrial IoT
+    - Open Source
+  productline: Insights Hub and Industrial IoT
+  vertical:
+    - Manufacturing
+    - Digital Industries
+  resourcetype:
+    - CLI
+
+- title: MindConnect-NodeJs
+  desc: Starting point for custom field to cloud connectivity implementation in node.js.
+  link: industrial-iot-open-source/mindconnect-nodejs/index.html
+  tags:
+    - Industrial Operations X
+    - Industrial IoT
+    - Open Source
+  productline: Insights Hub and Industrial IoT
+  vertical:
+    - Manufacturing
+    - Digital Industries
+  resourcetype:
+    - Library
+
+- title: MindConnect Node-RED Node
+  desc: A Node-RED node which can be used to upload the time series data, files and events to the cloud.
+  link: industrial-iot-open-source/node-red-contrib-mindconnect/index.html
+  tags:
+    - Industrial Operations X
+    - Industrial IoT
+    - Open Source
+  productline: Insights Hub and Industrial IoT
+  vertical:
+    - Manufacturing
+    - Digital Industries
+  resourcetype:
+    - Library
+
+- title: Authentication Helper
+  desc: Chrome extension which simplifies development tasks for which you need to use the SESSION and XSRF-TOKEN to access Industrial IoT APIs.
+  link: industrial-iot-open-source/mindsphere-auth-helper/index.html
+  tags:
+    - Industrial Operations X
+    - Industrial IoT
+    - Open Source
+  productline: Insights Hub and Industrial IoT
+  vertical:
+    - Manufacturing
+    - Digital Industries
+  resourcetype:
+    - Library

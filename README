@@ -1,24 +1,9 @@
 <!-- vim: syntax=Markdown -->
-# MindSphere Community Documentation
+# Industrial IoT Open Source Tools and Libraries
 
-[![Build](https://github.com/mindsphere/mindsphere.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/mindsphere/mindsphere.github.io/actions/workflows/jekyll.yml)
-[![Documentation](https://img.shields.io/badge/mindsphere-documentation-%23009999.svg)](https://opensource.mindsphere.io/docs/mindconnect-nodejs/index.html)
-[![Forum](https://img.shields.io/badge/mindsphere-community-%23009999.svg)](https://community.plm.automation.siemens.com/t5/Developer-Space/bd-p/MindSphere-platform-forum)
+Industrial IoT Open Source Tools and Libraries are contributions from the Industrial IoT community. These are demo applications, libraries and SDKs and useful connectivity tools which are maintained and released as open source software. The source code for all libraries is available on Github and the packages can be downloaded via common package management tools.
 
-
-MindSphere Open Source Tools and Libraries are contributions from the MindSphere community. These are demo applications, libraries, SDKs and useful connectivity tools which are maintained and released as open source software.
-
-This project contains documentation for MindSphere Open Source Tools and Libraries which is available on [https://opensource.mindsphere.io](https://opensource.mindsphere.io).
-
-## Contributing
-
-Interested in contributing to the MindSphere Open Source Tools and Libraries Documentation?
-Want to report a bug? Before you do, please read the following guidelines.
-
-- [Contributing](./CONTRIBUTING)
-- [Code of conduct](./CODE_OF_CONDUCT)
-
-Thank you for being part of the MindSphere Community!
+This documentation is available on [Siemens Developer Portal](https://developer.siemens.com/industrial-iot-open-source/index.html)
 
 ## License
 
